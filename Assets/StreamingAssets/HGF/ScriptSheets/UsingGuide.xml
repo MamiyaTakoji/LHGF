@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为你演示HOILAI Galgame Framework(HGF)</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="你跳转到了选项1" TextType="TMP" Id="S1-0"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S2">
+			<Speak CharacterID="1" Content="你跳转到了选项2" TextType="TexDraw" Id="S2-0"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S3">
+			<Speak CharacterID="1" Content="再次点击，你将跳转到下一章节" TextType="TMP" Id="S3-0"/>
+			<NextScript NextScriptName="NextScript"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S4">
+			<LongSpeak Continue="0" Content="\sf{\color{red}捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你}" End="1" TextType="TexDraw" Skip="0" Id="S4-0"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<LongSpeak Continue="0" Content="这个剧情脚本用来介绍如何使用LHGF(LaTeX-supported HOILAI Galgame Framework) 编辑自己的剧情。 " End="0" TextType="TexDraw" Skip="0" Id="0"/>
+		<LongSpeak Continue="1" Content="作为开始，你要先在根目录的\text{Game\_Data\backslash StreamingAssets}文件夹下创建一个叫HGF的文件 夹 ，并在HGF文件夹下创建一个叫ScriptSheets的文件夹。" End="0" TextType="TexDraw" Skip="0" Id="1"/>
+		<LongSpeak Continue="1" Content="然后随便在一个地方创建一个xlsx文件，在这个xlsx文件中要包含两个特定名字的sheet，分别为章节信息和剧情脚本。" End="0" TextType="TexDraw" Skip="0" Id="2"/>
+		<LongSpeak Continue="1" Content="在章节信息中填入：
+\begin{tabular}{|c |c|} 
+ \hline
+ \textbf{标题} &amp; \textbf{简介} \\ [0.5ex] 
+ \hline
+ 测试章节 &amp; 本章节为你演示HOILAI Galgame Framework(HGF) \\ [1ex] 
+ \hline
+\end{tabular}
+" End="0" TextType="TexDraw" Skip="1" Id="3"/>
+		<LongSpeak Continue="1" Content="在剧情脚本中填入：
+\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+ LongSpeak &amp;0&amp; 这是一段文字&amp;0&amp;TexDraw&amp;0\\ [1ex]  \hline
+\end{tabular}
+
+" End="0" TextType="TexDraw" Skip="1" Id="4"/>
+		<LongSpeak Continue="1" Content="然后运行\text{Game\_Data\backslash StreamingAssets\backslash dist}文件夹下的\_WriteXml.exe， 按提示步骤就可以 看到文件夹下多了一个FirstScript.xml文件。" End="0" TextType="TexDraw" Skip="0" Id="5"/>
+		<LongSpeak Continue="1" Content="把这个xml文件重命名为&quot;FirstScript.xml&quot;，并复制到先前创建的ScriptSheets文件夹下。" End="0" TextType="TexDraw" Skip="0" Id="6"/>
+		<LongSpeak Continue="1" Content="然后运行Game.exe，游戏启动后点击Start，就可以看到：" End="1" TextType="TexDraw" Skip="0" Id="7"/>
+		<LongSpeak Continue="0" Content="这是一段文字" End="0" TextType="TexDraw" Skip="0" Id="8"/>
+		<LongSpeak Continue="1" Content="当然如果你熟悉Python的话，可以直接运行HGF文件夹下的\_WriteXml.py，或者直接在xml文件里面编辑剧情也是可以的。" End="0" TextType="TexDraw" Skip="0" Id="9"/>
+		<LongSpeak Continue="1" Content="对于LongSpeak的每一个参数的解释如下：" End="0" TextType="TexDraw" Skip="0" Id="10"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{| c | c | c | c | c|} 
+ \hline
+ \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+  是否继续&amp; 文本内容&amp;是否结束&amp;文本类型&amp;是否跳过动画\\ [1ex] 
+\hline
+Continue&amp;Content&amp;End&amp;TextType&amp;Skip\\ [1ex] 
+\hline
+\end{tabular}
+其中表格的第三行为在xml文件中对应的参数。
+" End="0" TextType="TexDraw" Skip="1" Id="11"/>
+		<LongSpeak Continue="1" Content="具体来说，如果第一个参数为0，则开始新的一页。如果为1，则会在先前的内容上继续添加内容，" End="0" TextType="TexDraw" Skip="0" Id="12"/>
+		<LongSpeak Continue="1" Content="第二个参数为文本内容，需要注意读取xml文件的内容时无法识别换行，在需要换行的地方要加入@{}@，" End="0" TextType="TexDraw" Skip="0" Id="13"/>
+		<LongSpeak Continue="1" Content="第三个参数为是否结束，如果为1，则代表在下一个文本中切换为新的长对话或者是短对话，如果为0则代表继续长对话，" End="0" TextType="TexDraw" Skip="0" Id="14"/>
+		<LongSpeak Continue="1" Content="第四个参数为文本类型，目前只支持Unity自带的TextMeshPro类型和TexDraw类型两张类型。TextMeshPro的功能比较丰富，所以如果你的文本没有公式，也可以考虑使用TextMeshPro作为文本类型。目前一段长对话只能使用一种类型，" End="0" TextType="TexDraw" Skip="0" Id="15"/>
+		<LongSpeak Continue="1" Content="第五个参数决定是否跳过文本动画，一般情况可以填写0，不用跳过。但是对于表格类的tex文本，使用动画会报错，这种时候必须填写1。" End="1" TextType="TexDraw" Skip="0" Id="16"/>
+		<LongSpeak Continue="0" Content="好了，现在你已经学会如何使用LongSpeak了，理论上来说你可以使用它在组会进行报告了。尽管我并&lt;b&gt;不&lt;/b&gt;觉得目前它是beamer的上位替代，也&lt;b&gt;不&lt;/b&gt;推荐你真的拿这个去报告。" End="0" TextType="TMP" Skip="0" Id="17"/>
+		<LongSpeak Continue="1" Content="接下来介绍如何引入一个角色并让TA说话。" End="0" TextType="TMP" Skip="0" Id="18"/>
+		<LongSpeak Continue="1" Content="首先，需要定义一个角色，在先前创建的HGF文件夹下，创建一个名为CharacterInfo.ini的文件，它负责记录角色的基本信息。在这个文件下写入如下内容
+@@[简称]
+@@Name=名字
+@@ResourcesPath=资源路径
+@@Department=所属简称
+@@Portrait-Normall=正常立绘.png" End="0" TextType="TMP" Skip="0" Id="19"/>
+		<LongSpeak Continue="1" Content="接着，在HGF文件夹下，创建一个名为Department.ini的文件，它负责记录角色的部门信息。在这个文件下写入如下内容
+@@[所属简称]
+@@Name=角色所属
+@@Describe=这个不写好像也可以" End="0" TextType="TMP" Skip="0" Id="20"/>
+		<LongSpeak Continue="1" Content="然后，在HGF文件夹下创建新的文件夹Texture2D，然后在Texture2D文件夹下创建文件夹Portrait，最后在Portrait文件夹下创建文件夹资源路径，并在这个文件夹下放一张名位正常立绘.png的图像" End="1" TextType="TMP" Skip="0" Id="21"/>
+		<LongSpeak Continue="0" Content="最后，在之前创建的xlsx文件的剧情脚本sheet中填入如下内容：" End="0" TextType="TexDraw" Skip="0" Id="22"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+AddCharacter &amp;1&amp; 简称&amp;Outside-ToLeft&amp; &amp; \\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="23"/>
+		<LongSpeak Continue="1" Content="其中，各个参数代表如下的意思：" End="0" TextType="TexDraw" Skip="0" Id="24"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{| c | c | c | c | c|} 
+ \hline
+ \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+  角色ID&amp; 角色简称&amp;动画类型&amp; 无&amp;无\\ [1ex] 
+\hline
+Continue&amp;Content&amp;End&amp; &amp;\\ [1ex] 
+\hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="25"/>
+		<LongSpeak Continue="1" Content="具体来说，第一个参数代表了角色在这个剧本中的ID，" End="0" TextType="TexDraw" Skip="0" Id="26"/>
+		<LongSpeak Continue="1" Content="第二个参数代表了角色在CharacterInfo.ini中的简称，" End="0" TextType="TexDraw" Skip="0" Id="27"/>
+		<LongSpeak Continue="1" Content="第三个参数代表角色出现的位置，目前支持参数&quot;ToShow&quot;, &quot;Outside-ToLeft&quot;, &quot;Outside-ToRight&quot;，它们分别代表让角色出现在中间、左边、右边。" End="1" TextType="TexDraw" Skip="0" Id="28"/>
+		<LongSpeak Continue="0" Content="目前角色出现必须要跟一段对话，所以还需要加上一段简单的对话。" End="0" TextType="TexDraw" Skip="0" Id="29"/>
+		<LongSpeak Continue="1" Content="在之前创建的xlsx文件的剧情脚本sheet中填入如下内容：" End="0" TextType="TexDraw" Skip="0" Id="30"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp; 你好？&amp; &amp; TexDraw&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="31"/>
+		<LongSpeak Continue="1" Content="其中，各个参数代表如下的意思：" End="0" TextType="TexDraw" Skip="0" Id="32"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{| c | c | c | c | c|} 
+ \hline
+ \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+  说话角色ID&amp; 角色说话内容&amp;角色语音位置&amp; 文本类型&amp;无\\ [1ex] 
+\hline
+CharacterID&amp;Content&amp;AudioPath&amp; TextType&amp;\\ [1ex] 
+\hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="33"/>
+		<LongSpeak Continue="1" Content="具体来说···除了语音位置，这真没什么好说的了。语音位置在之后会介绍。" End="0" TextType="TexDraw" Skip="0" Id="34"/>
+		<LongSpeak Continue="1" Content="重复之前对于xlsx文件的操作（下次不再重复介绍这个步骤了），再运行Game.exe，你应该能看到：" End="1" TextType="TexDraw" Skip="0" Id="35"/>
+		<AddCharacter CharacterID="1" From="简称" SendMessage="Outside-ToLeft"/>
+		<Speak CharacterID="1" Content="你好？" TextType="TexDraw" Id="36"/>
+		<LongSpeak Continue="0" Content="我觉得给角色配音已经属于大制作了，不过HGF框架提供了这个功能，所以我还是简单展示一下吧。" End="0" TextType="TMP" Skip="0" Id="37"/>
+		<LongSpeak Continue="1" Content="在HGF文件夹下创建文件夹Audio\FirstScript\名字，" End="0" TextType="TMP" Skip="0" Id="38"/>
+		<LongSpeak Continue="1" Content="然后在这个文件夹下添加一个名为你好.wav的文件(你好.mp3也行，注意下面表格填入的内容也要记得修改)" End="0" TextType="TMP" Skip="0" Id="39"/>
+		<LongSpeak Continue="1" Content="在xlsx文件中加入如下内容：" End="1" TextType="TMP" Skip="0" Id="40"/>
+		<LongSpeak Continue="0" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp; &lt;size=60&gt;你好！&lt;/size&gt;&amp; 你好.wav&amp; TMP&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="41"/>
+		<LongSpeak Continue="1" Content="那么你就可以看到：" End="0" TextType="TexDraw" Skip="0" Id="42"/>
+		<Speak CharacterID="1" Content=" &lt;size=60&gt;你好！&lt;/size&gt;" AudioPath="你好.wav" TextType="TMP" Id="43"/>
+		<LongSpeak Continue="1" Content="除了语音外，你还可以为当前的状态添加背景音乐。" End="0" TextType="TexDraw" Skip="0" Id="44"/>
+		<LongSpeak Continue="1" Content="添加背景音乐的方式和添加角色配音的方式类似。在Audio文件夹下添加一个名为BGM的文件夹，然后在里面放入一个名为背景音乐.mp3(背景音乐.wav也行，注意下面表格的内容也要记得修改)" End="0" TextType="TexDraw" Skip="0" Id="45"/>
+		<LongSpeak Continue="1" Content="然后在xlsx文件中添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="46"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+SetBGM &amp; &amp; &amp; 背景音乐.mp3&amp;  &amp; \\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="47"/>
+		<LongSpeak Continue="1" Content="这个参数的意义想必不需要我解释了···背景音乐目前只能循环播放。" End="0" TextType="TexDraw" Skip="0" Id="48"/>
+		<LongSpeak Continue="1" Content="和AddCharacter一样，SetBGM后面也要跟一句对话（当然其实长对话也行），所以在xlsx文件上继续添加" End="0" TextType="TexDraw" Skip="0" Id="49"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp; 正在播放背景音乐&amp; &amp; TexDraw&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="50"/>
+		<LongSpeak Continue="1" Content="你将会看到如下结果：" End="1" TextType="TexDraw" Skip="0" Id="51"/>
+		<SetBGM BGMName="背景音乐.mp3"/>
+		<Speak CharacterID="1" Content="正在播放背景音乐。" TextType="TexDraw" Id="52"/>
+		<LongSpeak Continue="0" Content="如果不希望播放背景音乐，就在xlsx文件中添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="53"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+SetBGM &amp; &amp; &amp; Stop&amp;  &amp; \\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="54"/>
+		<LongSpeak Continue="1" Content="同样跟一句对话@@
+\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp; 背景音乐已停止&amp; &amp; TexDraw&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="55"/>
+		<LongSpeak Continue="1" Content="那么你就可以看到：" End="1" TextType="TexDraw" Skip="0" Id="56"/>
+		<SetBGM BGMName="Stop"/>
+		<Speak CharacterID="1" Content="背景音乐已停止。" TextType="TexDraw" Id="57"/>
+		<LongSpeak Continue="0" Content="你还可以为角色添加一些简单的动画，例如让角色抖动一下或者让角色变个位置。" End="0" TextType="TexDraw" Skip="0" Id="58"/>
+		<LongSpeak Continue="1" Content="为了达到这个目的，先在xlsx文件的剧情脚本sheet下添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="59"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+CharacterAnimate &amp; 1&amp; &amp; Shake&amp;  &amp; \\ [1ex]  \hline
+Speak &amp; 1&amp;角色发生抖动 &amp; &amp; TexDraw &amp; \\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="60"/>
+		<LongSpeak Continue="1" Content="你将看到如下效果：" End="0" TextType="TexDraw" Skip="0" Id="61"/>
+		<CharacterAnimate CharacterID="1" SendMessage="Shake"/>
+		<Speak CharacterID="1" Content="角色发生抖动" TextType="TexDraw" Id="62"/>
+		<LongSpeak Continue="1" Content="角色动画的各个参数的介绍如下：" End="0" TextType="TexDraw" Skip="0" Id="63"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{| c | c | c | c | c|} 
+ \hline
+ \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+  说话角色ID&amp; 无 &amp;动画类型&amp; 无&amp;无\\ [1ex] 
+\hline
+CharacterID&amp; &amp;SendMessage&amp; &amp;\\ [1ex] 
+\hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="64"/>
+		<LongSpeak Continue="1" Content="目前，动画类型只支持下面这些参数：@@Shake,Shake-Y-Once,ToLeft, ToCenter,ToRight" End="1" TextType="TexDraw" Skip="0" Id="65"/>
+		<LongSpeak Continue="0" Content="下面来介绍如何添加带有选项的对话。在xlsx文件下添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="66"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp;选项同样支持TMP和TexDraw两张类型&amp; &amp; TexDraw&amp;\\ [1ex]  \hline
+Choice &amp;S1&amp; &lt;size=60&gt;大！&lt;/size&gt;&amp; &amp; TMP&amp;\\ [1ex]  \hline
+Choice &amp;S2&amp;\tiny $y=r+\gamma \frac{1}{N}\sum_d{Q_{d}^{-}\left( s^\prime,\underset{a_{d}^{\prime}\in \mathcal{A} _d}{\mathrm{arg} \max}Q_d\left( s^\prime,a_{d}^{\prime} \right) \right)}$ &amp;  &amp; TextDraw&amp;\\ [1ex]  \hline
+Speak &amp;1&amp;这里需要保留一句话，否则会直接游戏结束&amp; &amp; TexDraw&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="67"/>
+		<LongSpeak Continue="1" Content="好吧，你可以输点别的，没必要这么复杂。写到这里我有点想摆烂了，所以关于每个命令对应的参数介绍直接查看xml文件吧。" End="0" TextType="TexDraw" Skip="0" Id="68"/>
+		<LongSpeak Continue="1" Content="接下来，在xlsx文件中创建两个sheet，名字分别为S1和S2，然后在S1和S2上面分别添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="69"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+Speak &amp;1&amp; 你跳转到了选项1&amp; &amp;TMP&amp;0\\ [1ex]  \hline
+\end{tabular}
+\\
+\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+Speak &amp;1&amp; 你跳转到了选项2&amp; &amp;TexDraw&amp;0\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="70"/>
+		<LongSpeak Continue="1" Content="你将会看到如下结果：" End="1" TextType="TexDraw" Skip="0" Id="71"/>
+		<Speak CharacterID="1" Content="选项同样支持TMP和TexDraw两张类型。" TextType="TexDraw" Id="72">
+			<Choice JumpID="S1" TextType="TMP">&lt;size=60&gt;大！&lt;/size&gt;</Choice>
+			<Choice JumpID="S2" TextType="TexDraw">\tiny $y=r+\gamma \frac{1}{N}\sum_d{Q_{d}^{-}\left( s^\prime,\underset{a_{d}^{\prime}\in \mathcal{A} _d}{\mathrm{arg} \max}Q_d\left( s^\prime,a_{d}^{\prime} \right) \right)}$</Choice>
+		</Speak>
+		<Speak CharacterID="1" Content="选项后面必须保留一句话，否则游戏会结束。" TextType="TexDraw" Id="73"/>
+		<LongSpeak Continue="0" Content="在分支执行完毕后，会跳转会主线。对于不同选项会导致不同结局的设计，这显然是不适用的。因此，如果想要实现不同选择导致不同结局的设计，需要跳转到新的章节。" End="0" TextType="TexDraw" Skip="0" Id="74"/>
+		<LongSpeak Continue="1" Content="为了达到这个目的，先在xlsx文件的剧情脚本sheet下添加如下内容：" End="0" TextType="TexDraw" Skip="0" Id="75"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+Speak &amp;1&amp;接下来的两个选项演示如何跳转到其他章节&amp; &amp; TMP&amp;\\ [1ex]  \hline
+Choice &amp;S3&amp; 点这里&amp; &amp; TMP&amp;\\ [1ex]  \hline
+Choice &amp;S4&amp;别点这里 &amp;  &amp; TMP&amp;\\ [1ex]  \hline
+Speak &amp;1&amp;\sf {\color{red} 你被捅死了} &amp; &amp; TextDraw&amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="76"/>
+		<LongSpeak Continue="1" Content="重复之前的步骤，在xlsx文件夹下创建名为S3和S4的sheet，并在里面分别填入如下内容：" End="0" TextType="TexDraw" Skip="0" Id="77"/>
+		<LongSpeak Continue="0" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+Speak &amp;1&amp; 再次点击，你将跳转到下一章节&amp; &amp;TMP&amp;0\\ [1ex]  \hline
+NextScript&amp; &amp;NextScript&amp; &amp; &amp; \\ [1ex]  \hline
+
+\end{tabular}
+\\
+\begin{tabular}{|m | c | x | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+LongSpeak &amp;0&amp; \sf{\color{red}捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你捅死你}&amp; 0&amp;TexDraw&amp;0\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="78"/>
+		<LongSpeak Continue="1" Content="然后新建一个xlsx文件，和之前的xlsx文件一样，建立章节信息和剧情脚本两个sheet，在章节信息中填入和之前完全一样的内容，相信你已经完全掌握了之前的内容，所以剧情脚本填什么内容请你自由发挥吧！" End="0" TextType="TexDraw" Skip="0" Id="79"/>
+		<LongSpeak Continue="1" Content="得到xml文件后，记得把它重命名为NextScript.xml，因为之前的NextScript命令的参数为NextScript。最后别忘了把它放到ScriptSheets文件夹下，如果你照做了，应该能看到如下的效果：" End="0" TextType="TexDraw" Skip="0" Id="80"/>
+		<Speak CharacterID="1" Content="接下来的两个选项演示如何跳转到其他章节" TextType="TMP" Id="81">
+			<Choice JumpID="S3" TextType="TMP">点这里</Choice>
+			<Choice JumpID="S4" TextType="TMP">别点这里</Choice>
+		</Speak>
+		<LongSpeak Continue="0" Content="\sf {\color{red} 你被捅死了}" End="1" TextType="TexDraw" Skip="0" Id="82"/>
+	</MainPlot>
+</data>

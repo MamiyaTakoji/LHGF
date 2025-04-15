@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为你演示HOILAI Galgame Framework(HGF)</Synopsis>
+	<BranchPlot/>
+	<MainPlot>
+		<ChangeBackImg BackImgName="Black.png"/>
+		<LongSpeak Continue="0" Content="在那个下午，我学会了很多新的知识和概念。" End="0" TextType="TexDraw" Skip="0" Id="0"/>
+		<LongSpeak Continue="1" Content="短时间内接受过多的知识使我感到困倦，我放弃了晚上宝贵的打游戏时间，吃完晚饭后没多久就去睡觉了。" End="0" TextType="TexDraw" Skip="0" Id="1"/>
+		<LongSpeak Continue="1" Content="这样，初三暑假的最后一天，就这样被我提前结束了。" End="0" TextType="TexDraw" Skip="0" Id="2"/>
+		<ChangeBackImg BackImgName="classroom_day.jpg"/>
+		<AddCharacter CharacterID="1" From="me" SendMessage="ToShow"/>
+		<Speak CharacterID="1" Content="其实这道题不一定要要像答案那样做，所有的情况可以通过下面这个多项式表示出来，这样不容易写漏···" TextType="TexDraw" Id="3"/>
+		<AddCharacter CharacterID="2" From="lus" SendMessage="Outside-ToRight"/>
+		<Speak CharacterID="2" Content="原来如此···厉害！" TextType="TexDraw" Id="4"/>
+		<Speak CharacterID="2" Content="这个方法是你在哪里看到的？我也想学习一下。" TextType="TexDraw" Id="5"/>
+		<Speak CharacterID="1" Content="在一本叫《令你苦思冥想的数学趣题》的书上看到的。" TextType="TMP" Id="6"/>
+		<Speak CharacterID="1" Content="那本书上讲了很多有趣的数学题，你想看吗？正好我有带。" TextType="TexDraw" Id="7"/>
+		<Speak CharacterID="2" Content="课外书吗？好吧，借我看看吧！" TextType="TexDraw" Id="8"/>
+		<SetBGM BGMName="G9Fried@GRM - 始衷終と少女 (BROKEN).mp3"/>
+		<LongSpeak Continue="0" Content="自从那天起，我似乎也能从那个有点孤独的大姐姐身上感受到一丝数学的乐趣了。" End="0" TextType="TexDraw" Skip="0" Id="9"/>
+		<LongSpeak Continue="1" Content="于是我开始试着阅读各种数学读物。从高中教辅到大学教材，从数学家传记到这种我不知道应该怎么分类的书。" End="0" TextType="TexDraw" Skip="0" Id="10"/>
+		<LongSpeak Continue="1" Content="自从那天后，我再也没见到过她。" End="0" TextType="TexDraw" Skip="0" Id="11"/>
+		<LongSpeak Continue="1" Content="不过我相信，她热情的态度一定能打动身边的人，她现在一定已经不是当初那种孤独的状态了吧。" End="0" TextType="TexDraw" Skip="0" Id="12"/>
+		<LongSpeak Continue="1" Content="下次见到她的时候，也一定要好好和她汇报一下学习进度···如果有下次的话。如果我们在相近的道路上前行，终会有再次相遇的一天吧。" End="0" TextType="TexDraw" Skip="0" Id="13"/>
+		<LongSpeak Continue="1" Content="（完）" End="1" TextType="TexDraw" Skip="0" Id="14"/>
+		<LongSpeak Continue="0" Content="剧情中提到的概率空间的定义见[1]，讲概率论的书基本都采用这个概念。矿工的题目见[2]的例3.5.7。其中第一种方法参考了[3]中的问题“可替换普通骰子的骰子”。" End="0" TextType="TMP" Skip="0" Id="15"/>
+		<LongSpeak Continue="1" Content="[1]应坚刚，何萍，&lt;i&gt;概率论&lt;/i&gt;，第二版，复旦大学出版社，上海，2013@@[2]茆诗松，程依明，濮晓龙，&lt;i&gt;概率论与数理统计教程&lt;/i&gt;，高等教育出版社，北京，2019@@[3]Peter Winkler, &lt;i&gt;Mathematical Mind-Benders&lt;/i&gt;, A K Peters/CRC Press, 2007." End="0" TextType="TMP" Skip="1" Id="16"/>
+		<LongSpeak Continue="1" Content="再次点击返回主菜单。" End="1" TextType="TMP" Skip="0" Id="17"/>
+	</MainPlot>
+</data>

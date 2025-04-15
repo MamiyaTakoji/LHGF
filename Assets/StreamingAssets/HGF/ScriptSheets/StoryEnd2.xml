@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为你演示HOILAI Galgame Framework(HGF)</Synopsis>
+	<BranchPlot/>
+	<MainPlot>
+		<ChangeBackImg BackImgName="Black.png"/>
+		<LongSpeak Continue="0" Content="在那个下午，我学会了很多新的知识和概念。" End="0" TextType="TexDraw" Skip="0" Id="0"/>
+		<LongSpeak Continue="1" Content="短时间内接受过多的知识使我感到困倦，我放弃了晚上宝贵的打游戏时间，吃完晚饭后没多久就去睡觉了。" End="0" TextType="TexDraw" Skip="0" Id="1"/>
+		<LongSpeak Continue="1" Content="大概十一点的时候，我睡醒了。" End="1" TextType="TexDraw" Skip="0" Id="2"/>
+		<AddCharacter CharacterID="1" From="me" SendMessage="ToShow"/>
+		<ChangeBackImg BackImgName="room_night.jpg"/>
+		<SetBGM BGMName="G9Fried@GRM - もっと大人に.mp3"/>
+		<Speak CharacterID="1" Content="手机怎么有99+条消息？？" TextType="TexDraw" Id="3"/>
+		<AddCharacter CharacterID="2" From="空" SendMessage="ToShow"/>
+		<Speak CharacterID="2" Content="我点开一看，50多条消息是班群的聊天，明天就要开学了，沉寂了一整个暑假的班群开始讨论作业的事情。" TextType="TexDraw" Id="4"/>
+		<Speak CharacterID="2" Content="还有的50多条是玛雅发给我的，玛雅就是下午遇到的那个大姐姐的名字。" TextType="TexDraw" Id="5"/>
+		<Speak CharacterID="2" Content="有点吓人，让我看看···" TextType="TexDraw" Id="6"/>
+		<LongSpeak Continue="0" Content="&lt;align=&quot;center&quot;&gt;(20:25)" End="0" TextType="TMP" Skip="1" Id="7"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 既然是你的话，就从这本书看起吧，这本的观点比较高" End="0" TextType="TMP" Skip="1" Id="8"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 数学分析.pdf" End="0" TextType="TMP" Skip="1" Id="9"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 这两本也可以参考一下，不过大体的内容和刚才那本差不多，所以真正要学的内容实际上不多" End="0" TextType="TMP" Skip="1" Id="10"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 数学分析.pdf@@&lt;align=&quot;left&quot;&gt;Maya:向你发送了文件 数学分析.pdf" End="0" TextType="TMP" Skip="1" Id="11"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 第一本打星号的部分可以先跳过，初学看那些内容太困难了" End="0" TextType="TMP" Skip="1" Id="12"/>
+		<LongSpeak Continue="1" Content="（接下来是一些具体的学习指导，我可能要真正开始学才能明白是什么意思）" End="0" TextType="TMP" Skip="0" Id="13"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 学完后可以看看傅里叶分析，复分析，实分析和泛函分析" End="0" TextType="TMP" Skip="1" Id="14"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 Fourier Analysis.pdf@@&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 Complex Analysis.pdf@@&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 Real Analysis.pdf@@&lt;align=&quot;left&quot;&gt;Maya : 向你发送了文件 Functional Analysis.pdf" End="0" TextType="TMP" Skip="1" Id="15"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya:代数方面可以先看这本书" End="0" TextType="TMP" Skip="1" Id="16"/>
+		<LongSpeak Continue="1" Content="（接下来是更多的教材推荐和学习指导，还是等开始学了再看吧）" End="0" TextType="TMP" Skip="0" Id="17"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;center&quot;&gt;(20:57)" End="0" TextType="TMP" Skip="1" Id="18"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 我是不是太激动了？" End="0" TextType="TMP" Skip="1" Id="19"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 如果不想看也没关系的，毕竟这些对考试帮助不大，可能只会浪费你的时间" End="0" TextType="TMP" Skip="1" Id="20"/>
+		<LongSpeak Continue="0" Content="&lt;align=&quot;center&quot;&gt;(22:33)" End="0" TextType="TMP" Skip="1" Id="21"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 在吗？" End="0" TextType="TMP" Skip="1" Id="22"/>
+		<Speak CharacterID="2" Content="她好像以为我在躲着她···我只是睡着了而已。回一下她的消息吧。" TextType="TMP" Id="23"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;right&quot;&gt;憧憬成为白森林高手 : 我刚才睡着了" End="0" TextType="TMP" Skip="1" Id="24"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;right&quot;&gt;憧憬成为白森林高手 : 当然会看的，明天就从你发的第一本书开始看吧" End="0" TextType="TMP" Skip="1" Id="25"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;center&quot;&gt;你接收了文件 数学分析.pdf" End="0" TextType="TMP" Skip="1" Id="26"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;（总之先把她发的文件全部下载下来吧）" End="0" TextType="TMP" Skip="0" Id="27"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 哦哦，加油！" End="0" TextType="TMP" Skip="1" Id="28"/>
+		<LongSpeak Continue="1" Content="&lt;align=&quot;left&quot;&gt;Maya : 有不会的都可以问我" End="1" TextType="TMP" Skip="1" Id="29"/>
+		<Speak CharacterID="2" Content="总感觉她在现实中不是这个形象···" TextType="TexDraw" Id="30"/>
+		<Speak CharacterID="1" Content="算了，先不想这些，开把游戏再说。" TextType="TexDraw" Id="31"/>
+		<Speak CharacterID="2" Content="我凝视着屏幕，人生中新的一页似乎被翻开了。明天又会发生什么？我有些期待。" TextType="TexDraw" Id="32"/>
+		<Speak CharacterID="2" Content="（完）" TextType="TexDraw" Id="33"/>
+		<LongSpeak Continue="0" Content="剧情中提到的概率空间的定义见[1]，讲概率论的书基本都采用这个概念。矿工的题目见[2]的例3.5.7。其中第一种方法参考了[3]中的问题“可替换普通骰子的骰子”。" End="0" TextType="TMP" Skip="0" Id="34"/>
+		<LongSpeak Continue="1" Content="这节中提到的教材都&lt;b&gt;没有&lt;/b&gt;都只是我根据印象随便写上去的，所以没有带任何具体信息。&lt;s&gt;之前还想了一些恶俗的剧情例如主角加上玛雅的微信后发现两个人在相亲相爱一家人这种家族群里面按辈分算玛雅是主角的小姨但感觉这样不太好所以还是算了&lt;/s&gt; 此外在玛雅为什么不怎么和其他人交流数学的动机那里我想了很久也不知道怎么写，有点打算放弃掉这个故事，最后是网友给了我一些建议，非常感谢他。" End="0" TextType="TMP" Skip="0" Id="35"/>
+		<LongSpeak Continue="1" Content="[1]应坚刚，何萍，&lt;i&gt;概率论&lt;/i&gt;，第二版，复旦大学出版社，上海，2013@@[2]茆诗松，程依明，濮晓龙，&lt;i&gt;概率论与数理统计教程&lt;/i&gt;，第三版，高等教育出版社，北京，2019@@[3]Peter Winkler, &lt;i&gt;Mathematical Mind-Benders&lt;/i&gt;, A K Peters/CRC Press, 2007." End="0" TextType="TMP" Skip="1" Id="36"/>
+		<LongSpeak Continue="1" Content="再次点击返回主菜单。" End="1" TextType="TMP" Skip="0" Id="37"/>
+	</MainPlot>
+</data>

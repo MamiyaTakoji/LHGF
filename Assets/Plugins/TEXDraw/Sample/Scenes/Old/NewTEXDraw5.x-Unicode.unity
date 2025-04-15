@@ -1,0 +1,1256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &400223962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400223965}
+  - component: {fileID: 400223964}
+  - component: {fileID: 400223963}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &400223963
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400223962}
+  m_Enabled: 1
+--- !u!20 &400223964
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400223962}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &400223965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400223962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &581969865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581969866}
+  - component: {fileID: 581969869}
+  - component: {fileID: 581969868}
+  - component: {fileID: 581969867}
+  m_Layer: 5
+  m_Name: TEXDraw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &581969866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581969865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1470370594}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 634.2, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &581969867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581969865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a20e387fb84d35479817358ed5fb250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constrainX: 1
+  clamp: 1
+--- !u!114 &581969868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581969865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11dd23e08e5cb942a6a6b4da8d43711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Alignment: {x: 0, y: 1}
+  m_Text: "\\begin{align*}\r\n    Unicode & Latex & Symbolname \\\\\r\n    \xA3 &
+    \\mathsterling & mathsterling \\\\\r\n    \xA5 & \\mathyen & mathyen \\\\\r\n   
+    \xA7 & \\mathsection & mathsection \\\\\r\n    \xAC & \\neg & neg \\\\\r\n   
+    \xB1 & \\pm & pm \\\\\r\n    \xB6 & \\mathparagraph & mathparagraph \\\\\r\n   
+    \xB7 & \\cdotp & cdotp \\\\\r\n    \xD7 & \\times & times \\\\\r\n    \xF0 &
+    \\matheth & matheth \\\\\r\n    \xF7 & \\div & div \\\\\r\n    \u01B5 & \\Zbar
+    & Zbar \\\\\r\n    \u0391 & \\Alpha & Alpha \\\\\r\n    \u0392 & \\Beta & Beta
+    \\\\\r\n    \u0393 & \\Gamma & Gamma \\\\\r\n    \u0394 & \\Delta & Delta \\\\\r\n   
+    \u0395 & \\Epsilon & Epsilon \\\\\r\n    \u0396 & \\Zeta & Zeta \\\\\r\n    \u0397
+    & \\Eta & Eta \\\\\r\n    \u0398 & \\Theta & Theta \\\\\r\n    \u0399 & \\Iota
+    & Iota \\\\\r\n    \u039A & \\Kappa & Kappa \\\\\r\n    \u039B & \\Lambda & Lambda
+    \\\\\r\n    \u039C & \\Mu & Mu \\\\\r\n    \u039D & \\Nu & Nu \\\\\r\n    \u039E
+    & \\Xi & Xi \\\\\r\n    \u039F & \\Omicron & Omicron \\\\\r\n    \u03A0 & \\Pi
+    & Pi \\\\\r\n    \u03A1 & \\Rho & Rho \\\\\r\n    \u03A3 & \\Sigma & Sigma \\\\\r\n   
+    \u03A4 & \\Tau & Tau \\\\\r\n    \u03A5 & \\Upsilon & Upsilon \\\\\r\n    \u03A6
+    & \\Phi & Phi \\\\\r\n    \u03A7 & \\Chi & Chi \\\\\r\n    \u03A8 & \\Psi & Psi
+    \\\\\r\n    \u03A9 & \\Omega & Omega \\\\\r\n    \u03B1 & \\alpha & alpha \\\\\r\n   
+    \u03B2 & \\beta & beta \\\\\r\n    \u03B3 & \\gamma & gamma \\\\\r\n    \u03B4
+    & \\delta & delta \\\\\r\n    \u03B5 & \\varepsilon & varepsilon \\\\\r\n   
+    \u03B6 & \\zeta & zeta \\\\\r\n    \u03B7 & \\eta & eta \\\\\r\n    \u03B8 &
+    \\theta & theta \\\\\r\n    \u03B9 & \\iota & iota \\\\\r\n    \u03BA & \\kappa
+    & kappa \\\\\r\n    \u03BB & \\lambda & lambda \\\\\r\n    \u03BC & \\mu & mu
+    \\\\\r\n    \u03BD & \\nu & nu \\\\\r\n    \u03BE & \\xi & xi \\\\\r\n    \u03BF
+    & \\omicron & omicron \\\\\r\n    \u03C0 & \\pi & pi \\\\\r\n    \u03C1 & \\rho
+    & rho \\\\\r\n    \u03C2 & \\varsigma & varsigma \\\\\r\n    \u03C3 & \\sigma
+    & sigma \\\\\r\n    \u03C4 & \\tau & tau \\\\\r\n    \u03C5 & \\upsilon & upsilon
+    \\\\\r\n    \u03C6 & \\varphi & varphi \\\\\r\n    \u03C7 & \\chi & chi \\\\\r\n   
+    \u03C8 & \\psi & psi \\\\\r\n    \u03C9 & \\omega & omega \\\\\r\n    \u03D1
+    & \\vartheta & vartheta \\\\\r\n    \u03D5 & \\phi & phi \\\\\r\n    \u03D6 &
+    \\varpi & varpi \\\\\r\n    \u03DC & \\upDigamma & upDigamma \\\\\r\n    \u03DD
+    & \\updigamma & updigamma \\\\\r\n    \u03F0 & \\varkappa & varkappa \\\\\r\n   
+    \u03F1 & \\varrho & varrho \\\\\r\n    \u03F4 & \\varTheta & varTheta \\\\\r\n   
+    \u03F5 & \\epsilon & epsilon \\\\\r\n    \u03F6 & \\upbackepsilon & upbackepsilon
+    \\\\\r\n    \u2015 & \\horizbar & horizbar \\\\\r\n    \u2016 & \\Vert & Vert
+    \\\\\r\n    \u2017 & \\twolowline & twolowline \\\\\r\n    \u2020 & \\dagger
+    & dagger \\\\\r\n    \u2021 & \\ddagger & ddagger \\\\\r\n    \u2022 & \\smblkcircle
+    & smblkcircle \\\\\r\n    \u2025 & \\enleadertwodots & enleadertwodots \\\\\r\n   
+    \u2026 & \\ldots & ldots \\\\\r\n    \u2032 & \\prime & prime \\\\\r\n    \u2033
+    & \\dprime & dprime \\\\\r\n    \u2034 & \\trprime & trprime \\\\\r\n    \u2035
+    & \\backprime & backprime \\\\\r\n    \u2036 & \\backdprime & backdprime \\\\\r\n   
+    \u2037 & \\backtrprime & backtrprime \\\\\r\n    \u2038 & \\caretinsert & caretinsert
+    \\\\\r\n    \u203C & \\Exclam & Exclam \\\\\r\n    \u2040 & \\tieconcat & tieconcat
+    \\\\\r\n    \u2043 & \\hyphenbullet & hyphenbullet \\\\\r\n    \u2044 & \\fracslash
+    & fracslash \\\\\r\n    \u2047 & \\Question & Question \\\\\r\n    \u2050 & \\closure
+    & closure \\\\\r\n    \u2057 & \\qprime & qprime \\\\\r\n    \u20AC & \\euro
+    & euro \\\\\r\n    \u20D0 & \\leftharpoonaccent & leftharpoonaccent \\\\\r\n   
+    \u20D1 & \\rightharpoonaccent & rightharpoonaccent \\\\\r\n    \u20D2 & \\vertoverlay
+    & vertoverlay \\\\\r\n    \u20D6 & \\overleftarrow & overleftarrow \\\\\r\n   
+    \u20D7 & \\overrightarrow & overrightarrow \\\\\r\n    \u20DB & \\dddot & dddot
+    \\\\\r\n    \u20DC & \\ddddot & ddddot \\\\\r\n    \u20DD & \\enclosecircle &
+    enclosecircle \\\\\r\n    \u20DE & \\enclosesquare & enclosesquare \\\\\r\n   
+    \u20DF & \\enclosediamond & enclosediamond \\\\\r\n    \u20E1 & \\overleftrightarrow
+    & overleftrightarrow \\\\\r\n    \u20E4 & \\enclosetriangle & enclosetriangle
+    \\\\\r\n    \u20E7 & \\annuity & annuity \\\\\r\n    \u20E8 & \\threeunderdot
+    & threeunderdot \\\\\r\n    \u20E9 & \\widebridgeabove & widebridgeabove \\\\\r\n   
+    \u20EC & \\underrightharpoondown & underrightharpoondown \\\\\r\n    \u20ED &
+    \\underleftharpoondown & underleftharpoondown \\\\\r\n    \u20EE & \\underleftarrow
+    & underleftarrow \\\\\r\n    \u20EF & \\underrightarrow & underrightarrow \\\\\r\n   
+    \u20F0 & \\asteraccent & asteraccent \\\\\r\n    \u2102 & \\mathbb & mathbb{C}
+    \\\\\r\n    \u2107 & \\Eulerconst & Eulerconst \\\\\r\n    \u210A & \\mathcal
+    & mathcal{g} \\\\\r\n    \u210B & \\mathcal & mathcal{H} \\\\\r\n    \u210C &
+    \\mathfrak & mathfrak{H} \\\\\r\n    \u210D & \\mathbb & mathbb{H} \\\\\r\n   
+    \u210E & \\Planckconst & Planckconst \\\\\r\n    \u210F & \\hslash & hslash \\\\\r\n   
+    \u2110 & \\mathcal & mathcal{I} \\\\\r\n    \u2111 & \\Im & Im \\\\\r\n    \u2112
+    & \\mathcal & mathcal{L} \\\\\r\n    \u2113 & \\ell & ell \\\\\r\n    \u2115
+    & \\mathbb & mathbb{N} \\\\\r\n    \u2118 & \\wp & wp \\\\\r\n    \u2119 & \\mathbb
+    & mathbb{P} \\\\\r\n    \u211A & \\mathbb & mathbb{Q} \\\\\r\n    \u211B & \\mathcal
+    & mathcal{R} \\\\\r\n    \u211C & \\Re & Re \\\\\r\n    \u211D & \\mathbb & mathbb{R}
+    \\\\\r\n    \u2124 & \\mathbb & mathbb{Z} \\\\\r\n    \u2127 & \\mho & mho \\\\\r\n   
+    \u2128 & \\mathfrak & mathfrak{Z} \\\\\r\n    \u2129 & \\turnediota & turnediota
+    \\\\\r\n    \u212B & \\Angstrom & Angstrom \\\\\r\n    \u212C & \\mathcal & mathcal{B}
+    \\\\\r\n    \u212D & \\mathfrak & mathfrak{C} \\\\\r\n    \u212F & \\mathcal
+    & mathcal{e} \\\\\r\n    \u2130 & \\mathcal & mathcal{E} \\\\\r\n    \u2131 &
+    \\mathcal & mathcal{F} \\\\\r\n    \u2132 & \\Finv & Finv \\\\\r\n    \u2133
+    & \\mathcal & mathcal{M} \\\\\r\n    \u2134 & \\mathcal & mathcal{o} \\\\\r\n   
+    \u2135 & \\aleph & aleph \\\\\r\n    \u2136 & \\beth & beth \\\\\r\n    \u2137
+    & \\gimel & gimel \\\\\r\n    \u2138 & \\daleth & daleth \\\\\r\n    \u213C &
+    \\mathbb & mathbb{\\\\pi & pi} \\\\\r\n    \u213D & \\mathbb & mathbb{\\\\gamma
+    & gamma} \\\\\r\n    \u213E & \\mathbb & mathbb{\\\\Gamma & Gamma} \\\\\r\n   
+    \u213F & \\mathbb & mathbb{\\\\Pi & Pi} \\\\\r\n    \u2140 & \\mathbb & mathbb{\\\\sum
+    & sum} \\\\\r\n    \u2141 & \\Game & Game \\\\\r\n    \u2142 & \\sansLturned
+    & sansLturned \\\\\r\n    \u2143 & \\sansLmirrored & sansLmirrored \\\\\r\n   
+    \u2144 & \\Yup & Yup \\\\\r\n    \u2145 & \\mathbbit & mathbbit{D} \\\\\r\n   
+    \u2146 & \\mathbbit & mathbbit{d} \\\\\r\n    \u2147 & \\mathbbit & mathbbit{e}
+    \\\\\r\n    \u2148 & \\mathbbit & mathbbit{i} \\\\\r\n    \u2149 & \\mathbbit
+    & mathbbit{j} \\\\\r\n    \u214A & \\PropertyLine & PropertyLine \\\\\r\n   
+    \u214B & \\upand & upand \\\\\r\n    \u2190 & \\leftarrow & leftarrow \\\\\r\n   
+    \u2191 & \\uparrow & uparrow \\\\\r\n    \u2192 & \\rightarrow & rightarrow \\\\\r\n   
+    \u2193 & \\downarrow & downarrow \\\\\r\n    \u2194 & \\leftrightarrow & leftrightarrow
+    \\\\\r\n    \u2195 & \\updownarrow & updownarrow \\\\\r\n    \u2196 & \\nwarrow
+    & nwarrow \\\\\r\n    \u2197 & \\nearrow & nearrow \\\\\r\n    \u2198 & \\searrow
+    & searrow \\\\\r\n    \u2199 & \\swarrow & swarrow \\\\\r\n    \u219A & \\nleftarrow
+    & nleftarrow \\\\\r\n    \u219B & \\nrightarrow & nrightarrow \\\\\r\n    \u219C
+    & \\leftwavearrow & leftwavearrow \\\\\r\n    \u219D & \\rightwavearrow & rightwavearrow
+    \\\\\r\n    \u219E & \\twoheadleftarrow & twoheadleftarrow \\\\\r\n    \u219F
+    & \\twoheaduparrow & twoheaduparrow \\\\\r\n    \u21A0 & \\twoheadrightarrow
+    & twoheadrightarrow \\\\\r\n    \u21A1 & \\twoheaddownarrow & twoheaddownarrow
+    \\\\\r\n    \u21A2 & \\leftarrowtail & leftarrowtail \\\\\r\n    \u21A3 & \\rightarrowtail
+    & rightarrowtail \\\\\r\n    \u21A4 & \\mapsfrom & mapsfrom \\\\\r\n    \u21A5
+    & \\mapsup & mapsup \\\\\r\n    \u21A6 & \\mapsto & mapsto \\\\\r\n    \u21A7
+    & \\mapsdown & mapsdown \\\\\r\n    \u21A8 & \\updownarrowbar & updownarrowbar
+    \\\\\r\n    \u21A9 & \\hookleftarrow & hookleftarrow \\\\\r\n    \u21AA & \\hookrightarrow
+    & hookrightarrow \\\\\r\n    \u21AB & \\looparrowleft & looparrowleft \\\\\r\n   
+    \u21AC & \\looparrowright & looparrowright \\\\\r\n    \u21AD & \\leftrightsquigarrow
+    & leftrightsquigarrow \\\\\r\n    \u21AE & \\nleftrightarrow & nleftrightarrow
+    \\\\\r\n    \u21AF & \\downzigzagarrow & downzigzagarrow \\\\\r\n    \u21B0 &
+    \\Lsh & Lsh \\\\\r\n    \u21B1 & \\Rsh & Rsh \\\\\r\n    \u21B2 & \\Ldsh & Ldsh
+    \\\\\r\n    \u21B3 & \\Rdsh & Rdsh \\\\\r\n    \u21B4 & \\linefeed & linefeed
+    \\\\\r\n    \u21B5 & \\carriagereturn & carriagereturn \\\\\r\n    \u21B6 & \\curvearrowleft
+    & curvearrowleft \\\\\r\n    \u21B7 & \\curvearrowright & curvearrowright \\\\\r\n   
+    \u21B8 & \\barovernorthwestarrow & barovernorthwestarrow \\\\\r\n    \u21B9 &
+    \\barleftarrowrightarrowbar & barleftarrowrightarrowbar \\\\\r\n    \u21BA &
+    \\acwopencirclearrow & acwopencirclearrow \\\\\r\n    \u21BB & \\cwopencirclearrow
+    & cwopencirclearrow \\\\\r\n    \u21BC & \\leftharpoonup & leftharpoonup \\\\\r\n   
+    \u21BD & \\leftharpoondown & leftharpoondown \\\\\r\n    \u21BE & \\upharpoonright
+    & upharpoonright \\\\\r\n    \u21BF & \\upharpoonleft & upharpoonleft \\\\\r\n   
+    \u21C0 & \\rightharpoonup & rightharpoonup \\\\\r\n    \u21C1 & \\rightharpoondown
+    & rightharpoondown \\\\\r\n    \u21C2 & \\downharpoonright & downharpoonright
+    \\\\\r\n    \u21C3 & \\downharpoonleft & downharpoonleft \\\\\r\n    \u21C4 &
+    \\rightleftarrows & rightleftarrows \\\\\r\n    \u21C5 & \\updownarrows & updownarrows
+    \\\\\r\n    \u21C6 & \\leftrightarrows & leftrightarrows \\\\\r\n    \u21C7 &
+    \\leftleftarrows & leftleftarrows \\\\\r\n    \u21C8 & \\upuparrows & upuparrows
+    \\\\\r\n    \u21C9 & \\rightrightarrows & rightrightarrows \\\\\r\n    \u21CA
+    & \\downdownarrows & downdownarrows \\\\\r\n    \u21CB & \\leftrightharpoons
+    & leftrightharpoons \\\\\r\n    \u21CC & \\rightleftharpoons & rightleftharpoons
+    \\\\\r\n    \u21CD & \\nLeftarrow & nLeftarrow \\\\\r\n    \u21CE & \\nLeftrightarrow
+    & nLeftrightarrow \\\\\r\n    \u21CF & \\nRightarrow & nRightarrow \\\\\r\n   
+    \u21D0 & \\Leftarrow & Leftarrow \\\\\r\n    \u21D1 & \\Uparrow & Uparrow \\\\\r\n   
+    \u21D2 & \\Rightarrow & Rightarrow \\\\\r\n    \u21D3 & \\Downarrow & Downarrow
+    \\\\\r\n    \u21D4 & \\Leftrightarrow & Leftrightarrow \\\\\r\n    \u21D5 & \\Updownarrow
+    & Updownarrow \\\\\r\n    \u21D6 & \\Nwarrow & Nwarrow \\\\\r\n    \u21D7 & \\Nearrow
+    & Nearrow \\\\\r\n    \u21D8 & \\Searrow & Searrow \\\\\r\n    \u21D9 & \\Swarrow
+    & Swarrow \\\\\r\n    \u21DA & \\Lleftarrow & Lleftarrow \\\\\r\n    \u21DB &
+    \\Rrightarrow & Rrightarrow \\\\\r\n    \u21DC & \\leftsquigarrow & leftsquigarrow
+    \\\\\r\n    \u21DD & \\rightsquigarrow & rightsquigarrow \\\\\r\n    \u21DE &
+    \\nHuparrow & nHuparrow \\\\\r\n    \u21DF & \\nHdownarrow & nHdownarrow \\\\\r\n   
+    \u21E0 & \\leftdasharrow & leftdasharrow \\\\\r\n    \u21E1 & \\updasharrow &
+    updasharrow \\\\\r\n    \u21E2 & \\rightdasharrow & rightdasharrow \\\\\r\n   
+    \u21E3 & \\downdasharrow & downdasharrow \\\\\r\n    \u21E4 & \\barleftarrow
+    & barleftarrow \\\\\r\n    \u21E5 & \\rightarrowbar & rightarrowbar \\\\\r\n   
+    \u21E6 & \\leftwhitearrow & leftwhitearrow \\\\\r\n    \u21E7 & \\upwhitearrow
+    & upwhitearrow \\\\\r\n    \u21E8 & \\rightwhitearrow & rightwhitearrow \\\\\r\n   
+    \u21E9 & \\downwhitearrow & downwhitearrow \\\\\r\n    \u21EA & \\whitearrowupfrombar
+    & whitearrowupfrombar \\\\\r\n    \u21F4 & \\circleonrightarrow & circleonrightarrow
+    \\\\\r\n    \u21F5 & \\downuparrows & downuparrows \\\\\r\n    \u21F6 & \\rightthreearrows
+    & rightthreearrows \\\\\r\n    \u21F7 & \\nvleftarrow & nvleftarrow \\\\\r\n   
+    \u21F8 & \\nvrightarrow & nvrightarrow \\\\\r\n    \u21F9 & \\nvleftrightarrow
+    & nvleftrightarrow \\\\\r\n    \u21FA & \\nVleftarrow & nVleftarrow \\\\\r\n   
+    \u21FB & \\nVrightarrow & nVrightarrow \\\\\r\n    \u21FC & \\nVleftrightarrow
+    & nVleftrightarrow \\\\\r\n    \u21FD & \\leftarrowtriangle & leftarrowtriangle
+    \\\\\r\n    \u21FE & \\rightarrowtriangle & rightarrowtriangle \\\\\r\n    \u21FF
+    & \\leftrightarrowtriangle & leftrightarrowtriangle \\\\\r\n    \u2200 & \\forall
+    & forall \\\\\r\n    \u2201 & \\complement & complement \\\\\r\n    \u2202 &
+    \\partial & partial \\\\\r\n    \u2203 & \\exists & exists \\\\\r\n    \u2204
+    & \\nexists & nexists \\\\\r\n    \u2205 & \\varnothing & varnothing \\\\\r\n   
+    \u2206 & \\increment & increment \\\\\r\n    \u2207 & \\nabla & nabla \\\\\r\n   
+    \u2208 & \\in & in \\\\\r\n    \u2209 & \\notin & notin \\\\\r\n    \u220A &
+    \\smallin & smallin \\\\\r\n    \u220B & \\ni & ni \\\\\r\n    \u220C & \\nni
+    & nni \\\\\r\n    \u220D & \\smallni & smallni \\\\\r\n    \u220E & \\QED & QED
+    \\\\\r\n    \u220F & \\prod & prod \\\\\r\n    \u2210 & \\coprod & coprod \\\\\r\n   
+    \u2211 & \\sum & sum \\\\\r\n    \u2212 & \\minus & minus \\\\\r\n    \u2213
+    & \\mp & mp \\\\\r\n    \u2214 & \\dotplus & dotplus \\\\\r\n    \u2215 & \\divslash
+    & divslash \\\\\r\n    \u2216 & \\smallsetminus & smallsetminus \\\\\r\n    \u2217
+    & \\ast & ast \\\\\r\n    \u2218 & \\vysmwhtcircle & vysmwhtcircle \\\\\r\n   
+    \u2219 & \\vysmblkcircle & vysmblkcircle \\\\\r\n    \u221A & \\surd & surd \\\\\r\n   
+    \u221B & \\cuberoot & cuberoot \\\\\r\n    \u221C & \\fourthroot & fourthroot
+    \\\\\r\n    \u221D & \\propto & propto \\\\\r\n    \u221E & \\infty & infty \\\\\r\n   
+    \u221F & \\rightangle & rightangle \\\\\r\n    \u2220 & \\angle & angle \\\\\r\n   
+    \u2221 & \\measuredangle & measuredangle \\\\\r\n    \u2222 & \\sphericalangle
+    & sphericalangle \\\\\r\n    \u2223 & \\mid & mid \\\\\r\n    \u2224 & \\nmid
+    & nmid \\\\\r\n    \u2225 & \\parallel & parallel \\\\\r\n    \u2226 & \\nparallel
+    & nparallel \\\\\r\n    \u2227 & \\wedge & wedge \\\\\r\n    \u2228 & \\vee &
+    vee \\\\\r\n    \u2229 & \\cap & cap \\\\\r\n    \u222A & \\cup & cup \\\\\r\n   
+    \u222B & \\int & int \\\\\r\n    \u222C & \\iint & iint \\\\\r\n    \u222D &
+    \\iiint & iiint \\\\\r\n    \u222E & \\oint & oint \\\\\r\n    \u222F & \\oiint
+    & oiint \\\\\r\n    \u2230 & \\oiiint & oiiint \\\\\r\n    \u2231 & \\intclockwise
+    & intclockwise \\\\\r\n    \u2232 & \\varointclockwise & varointclockwise \\\\\r\n   
+    \u2233 & \\ointctrclockwise & ointctrclockwise \\\\\r\n    \u2234 & \\therefore
+    & therefore \\\\\r\n    \u2235 & \\because & because \\\\\r\n    \u2236 & \\mathratio
+    & mathratio \\\\\r\n    \u2237 & \\Colon & Colon \\\\\r\n    \u2238 & \\dotminus
+    & dotminus \\\\\r\n    \u2239 & \\dashcolon & dashcolon \\\\\r\n    \u223A &
+    \\dotsminusdots & dotsminusdots \\\\\r\n    \u223B & \\kernelcontraction & kernelcontraction
+    \\\\\r\n    \u223C & \\sim & sim \\\\\r\n    \u223D & \\backsim & backsim \\\\\r\n   
+    \u223E & \\invlazys & invlazys \\\\\r\n    \u223F & \\sinewave & sinewave \\\\\r\n   
+    \u2240 & \\wr & wr \\\\\r\n    \u2241 & \\nsim & nsim \\\\\r\n    \u2242 & \\eqsim
+    & eqsim \\\\\r\n    \u2243 & \\simeq & simeq \\\\\r\n    \u2244 & \\nsime & nsime
+    \\\\\r\n    \u2245 & \\cong & cong \\\\\r\n    \u2246 & \\simneqq & simneqq \\\\\r\n   
+    \u2247 & \\ncong & ncong \\\\\r\n    \u2248 & \\approx & approx \\\\\r\n    \u2249
+    & \\napprox & napprox \\\\\r\n    \u224A & \\approxeq & approxeq \\\\\r\n   
+    \u224B & \\approxident & approxident \\\\\r\n    \u224C & \\backcong & backcong
+    \\\\\r\n    \u224D & \\asymp & asymp \\\\\r\n    \u224E & \\Bumpeq & Bumpeq \\\\\r\n   
+    \u224F & \\bumpeq & bumpeq \\\\\r\n    \u2250 & \\doteq & doteq \\\\\r\n    \u2251
+    & \\Doteq & Doteq \\\\\r\n    \u2252 & \\fallingdotseq & fallingdotseq \\\\\r\n   
+    \u2253 & \\risingdotseq & risingdotseq \\\\\r\n    \u2254 & \\coloneqq & coloneqq
+    \\\\\r\n    \u2255 & \\eqqcolon & eqqcolon \\\\\r\n    \u2256 & \\eqcirc & eqcirc
+    \\\\\r\n    \u2257 & \\circeq & circeq \\\\\r\n    \u2258 & \\arceq & arceq \\\\\r\n   
+    \u2259 & \\wedgeq & wedgeq \\\\\r\n    \u225A & \\veeeq & veeeq \\\\\r\n    \u225B
+    & \\stareq & stareq \\\\\r\n    \u225C & \\triangleq & triangleq \\\\\r\n   
+    \u225D & \\eqdef & eqdef \\\\\r\n    \u225E & \\measeq & measeq \\\\\r\n    \u225F
+    & \\questeq & questeq \\\\\r\n    \u2260 & \\ne & ne \\\\\r\n    \u2261 & \\equiv
+    & equiv \\\\\r\n    \u2262 & \\nequiv & nequiv \\\\\r\n    \u2263 & \\Equiv &
+    Equiv \\\\\r\n    \u2264 & \\leq & leq \\\\\r\n    \u2265 & \\geq & geq \\\\\r\n   
+    \u2266 & \\leqq & leqq \\\\\r\n    \u2267 & \\geqq & geqq \\\\\r\n    \u2268
+    & \\lneqq & lneqq \\\\\r\n    \u2269 & \\gneqq & gneqq \\\\\r\n    \u226A & \\ll
+    & ll \\\\\r\n    \u226B & \\gg & gg \\\\\r\n    \u226C & \\between & between
+    \\\\\r\n    \u226D & \\nasymp & nasymp \\\\\r\n    \u226E & \\nless & nless \\\\\r\n   
+    \u226F & \\ngtr & ngtr \\\\\r\n    \u2270 & \\nleq & nleq \\\\\r\n    \u2271
+    & \\ngeq & ngeq \\\\\r\n    \u2272 & \\lesssim & lesssim \\\\\r\n    \u2273 &
+    \\gtrsim & gtrsim \\\\\r\n    \u2274 & \\nlesssim & nlesssim \\\\\r\n    \u2275
+    & \\ngtrsim & ngtrsim \\\\\r\n    \u2276 & \\lessgtr & lessgtr \\\\\r\n    \u2277
+    & \\gtrless & gtrless \\\\\r\n    \u2278 & \\nlessgtr & nlessgtr \\\\\r\n   
+    \u2279 & \\ngtrless & ngtrless \\\\\r\n    \u227A & \\prec & prec \\\\\r\n   
+    \u227B & \\succ & succ \\\\\r\n    \u227C & \\preccurlyeq & preccurlyeq \\\\\r\n   
+    \u227D & \\succcurlyeq & succcurlyeq \\\\\r\n    \u227E & \\precsim & precsim
+    \\\\\r\n    \u227F & \\succsim & succsim \\\\\r\n    \u2280 & \\nprec & nprec
+    \\\\\r\n    \u2281 & \\nsucc & nsucc \\\\\r\n    \u2282 & \\subset & subset \\\\\r\n   
+    \u2283 & \\supset & supset \\\\\r\n    \u2284 & \\nsubset & nsubset \\\\\r\n   
+    \u2285 & \\nsupset & nsupset \\\\\r\n    \u2286 & \\subseteq & subseteq \\\\\r\n   
+    \u2287 & \\supseteq & supseteq \\\\\r\n    \u2288 & \\nsubseteq & nsubseteq \\\\\r\n   
+    \u2289 & \\nsupseteq & nsupseteq \\\\\r\n    \u228A & \\subsetneq & subsetneq
+    \\\\\r\n    \u228B & \\supsetneq & supsetneq \\\\\r\n    \u228C & \\cupleftarrow
+    & cupleftarrow \\\\\r\n    \u228D & \\cupdot & cupdot \\\\\r\n    \u228E & \\uplus
+    & uplus \\\\\r\n    \u228F & \\sqsubset & sqsubset \\\\\r\n    \u2290 & \\sqsupset
+    & sqsupset \\\\\r\n    \u2291 & \\sqsubseteq & sqsubseteq \\\\\r\n    \u2292
+    & \\sqsupseteq & sqsupseteq \\\\\r\n    \u2293 & \\sqcap & sqcap \\\\\r\n   
+    \u2294 & \\sqcup & sqcup \\\\\r\n    \u2295 & \\oplus & oplus \\\\\r\n    \u2296
+    & \\ominus & ominus \\\\\r\n    \u2297 & \\otimes & otimes \\\\\r\n    \u2298
+    & \\oslash & oslash \\\\\r\n    \u2299 & \\odot & odot \\\\\r\n    \u229A & \\circledcirc
+    & circledcirc \\\\\r\n    \u229B & \\circledast & circledast \\\\\r\n    \u229C
+    & \\circledequal & circledequal \\\\\r\n    \u229D & \\circleddash & circleddash
+    \\\\\r\n    \u229E & \\boxplus & boxplus \\\\\r\n    \u229F & \\boxminus & boxminus
+    \\\\\r\n    \u22A0 & \\boxtimes & boxtimes \\\\\r\n    \u22A1 & \\boxdot & boxdot
+    \\\\\r\n    \u22A2 & \\vdash & vdash \\\\\r\n    \u22A3 & \\dashv & dashv \\\\\r\n   
+    \u22A4 & \\top & top \\\\\r\n    \u22A5 & \\bot & bot \\\\\r\n    \u22A6 & \\assert
+    & assert \\\\\r\n    \u22A7 & \\models & models \\\\\r\n    \u22A8 & \\vDash
+    & vDash \\\\\r\n    \u22A9 & \\Vdash & Vdash \\\\\r\n    \u22AA & \\Vvdash &
+    Vvdash \\\\\r\n    \u22AB & \\VDash & VDash \\\\\r\n    \u22AC & \\nvdash & nvdash
+    \\\\\r\n    \u22AD & \\nvDash & nvDash \\\\\r\n    \u22AE & \\nVdash & nVdash
+    \\\\\r\n    \u22AF & \\nVDash & nVDash \\\\\r\n    \u22B0 & \\prurel & prurel
+    \\\\\r\n    \u22B1 & \\scurel & scurel \\\\\r\n    \u22B2 & \\vartriangleleft
+    & vartriangleleft \\\\\r\n    \u22B3 & \\vartriangleright & vartriangleright
+    \\\\\r\n    \u22B4 & \\trianglelefteq & trianglelefteq \\\\\r\n    \u22B5 & \\trianglerighteq
+    & trianglerighteq \\\\\r\n    \u22B6 & \\origof & origof \\\\\r\n    \u22B7 &
+    \\imageof & imageof \\\\\r\n    \u22B8 & \\multimap & multimap \\\\\r\n    \u22B9
+    & \\hermitmatrix & hermitmatrix \\\\\r\n    \u22BA & \\intercal & intercal \\\\\r\n   
+    \u22BB & \\veebar & veebar \\\\\r\n    \u22BC & \\barwedge & barwedge \\\\\r\n   
+    \u22BD & \\barvee & barvee \\\\\r\n    \u22BE & \\measuredrightangle & measuredrightangle
+    \\\\\r\n    \u22BF & \\varlrtriangle & varlrtriangle \\\\\r\n    \u22C0 & \\bigwedge
+    & bigwedge \\\\\r\n    \u22C1 & \\bigvee & bigvee \\\\\r\n    \u22C2 & \\bigcap
+    & bigcap \\\\\r\n    \u22C3 & \\bigcup & bigcup \\\\\r\n    \u22C4 & \\smwhtdiamond
+    & smwhtdiamond \\\\\r\n    \u22C5 & \\cdot & cdot \\\\\r\n    \u22C6 & \\star
+    & star \\\\\r\n    \u22C7 & \\divideontimes & divideontimes \\\\\r\n    \u22C8
+    & \\bowtie & bowtie \\\\\r\n    \u22C9 & \\ltimes & ltimes \\\\\r\n    \u22CA
+    & \\rtimes & rtimes \\\\\r\n    \u22CB & \\leftthreetimes & leftthreetimes \\\\\r\n   
+    \u22CC & \\rightthreetimes & rightthreetimes \\\\\r\n    \u22CD & \\backsimeq
+    & backsimeq \\\\\r\n    \u22CE & \\curlyvee & curlyvee \\\\\r\n    \u22CF & \\curlywedge
+    & curlywedge \\\\\r\n    \u22D0 & \\Subset & Subset \\\\\r\n    \u22D1 & \\Supset
+    & Supset \\\\\r\n    \u22D2 & \\Cap & Cap \\\\\r\n    \u22D3 & \\Cup & Cup \\\\\r\n   
+    \u22D4 & \\pitchfork & pitchfork \\\\\r\n    \u22D5 & \\equalparallel & equalparallel
+    \\\\\r\n    \u22D6 & \\lessdot & lessdot \\\\\r\n    \u22D7 & \\gtrdot & gtrdot
+    \\\\\r\n    \u22D8 & \\lll & lll \\\\\r\n    \u22D9 & \\ggg & ggg \\\\\r\n   
+    \u22DA & \\lesseqgtr & lesseqgtr \\\\\r\n    \u22DB & \\gtreqless & gtreqless
+    \\\\\r\n    \u22DC & \\eqless & eqless \\\\\r\n    \u22DD & \\eqgtr & eqgtr \\\\\r\n   
+    \u22DE & \\curlyeqprec & curlyeqprec \\\\\r\n    \u22DF & \\curlyeqsucc & curlyeqsucc
+    \\\\\r\n    \u22E0 & \\npreccurlyeq & npreccurlyeq \\\\\r\n    \u22E1 & \\nsucccurlyeq
+    & nsucccurlyeq \\\\\r\n    \u22E2 & \\nsqsubseteq & nsqsubseteq \\\\\r\n    \u22E3
+    & \\nsqsupseteq & nsqsupseteq \\\\\r\n    \u22E4 & \\sqsubsetneq & sqsubsetneq
+    \\\\\r\n    \u22E5 & \\sqsupsetneq & sqsupsetneq \\\\\r\n    \u22E6 & \\lnsim
+    & lnsim \\\\\r\n    \u22E7 & \\gnsim & gnsim \\\\\r\n    \u22E8 & \\precnsim
+    & precnsim \\\\\r\n    \u22E9 & \\succnsim & succnsim \\\\\r\n    \u22EA & \\nvartriangleleft
+    & nvartriangleleft \\\\\r\n    \u22EB & \\nvartriangleright & nvartriangleright
+    \\\\\r\n    \u22EC & \\ntrianglelefteq & ntrianglelefteq \\\\\r\n    \u22ED &
+    \\ntrianglerighteq & ntrianglerighteq \\\\\r\n    \u22EE & \\vdots & vdots \\\\\r\n   
+    \u22EF & \\cdots & cdots \\\\\r\n    \u22F0 & \\iddots & iddots \\\\\r\n    \u22F1
+    & \\ddots & ddots \\\\\r\n    \u22F2 & \\disin & disin \\\\\r\n    \u22F3 & \\varisins
+    & varisins \\\\\r\n    \u22F4 & \\isins & isins \\\\\r\n    \u22F5 & \\isindot
+    & isindot \\\\\r\n    \u22F6 & \\varisinobar & varisinobar \\\\\r\n    \u22F7
+    & \\isinobar & isinobar \\\\\r\n    \u22F8 & \\isinvb & isinvb \\\\\r\n    \u22F9
+    & \\isinE & isinE \\\\\r\n    \u22FA & \\nisd & nisd \\\\\r\n    \u22FB & \\varnis
+    & varnis \\\\\r\n    \u22FC & \\nis & nis \\\\\r\n    \u22FD & \\varniobar &
+    varniobar \\\\\r\n    \u22FE & \\niobar & niobar \\\\\r\n    \u22FF & \\bagmember
+    & bagmember \\\\\r\n    \u2300 & \\diameter & diameter \\\\\r\n    \u2302 & \\house
+    & house \\\\\r\n    \u2305 & \\varbarwedge & varbarwedge \\\\\r\n    \u2306 &
+    \\vardoublebarwedge & vardoublebarwedge \\\\\r\n    \u2308 & \\lceil & lceil
+    \\\\\r\n    \u2309 & \\rceil & rceil \\\\\r\n    \u230A & \\lfloor & lfloor \\\\\r\n   
+    \u230B & \\rfloor & rfloor \\\\\r\n    \u2310 & \\invnot & invnot \\\\\r\n   
+    \u2311 & \\sqlozenge & sqlozenge \\\\\r\n    \u2312 & \\profline & profline \\\\\r\n   
+    \u2313 & \\profsurf & profsurf \\\\\r\n    \u2317 & \\viewdata & viewdata \\\\\r\n   
+    \u2319 & \\turnednot & turnednot \\\\\r\n    \u231C & \\ulcorner & ulcorner \\\\\r\n   
+    \u231D & \\urcorner & urcorner \\\\\r\n    \u231E & \\llcorner & llcorner \\\\\r\n   
+    \u231F & \\lrcorner & lrcorner \\\\\r\n    \u2320 & \\inttop & inttop \\\\\r\n   
+    \u2321 & \\intbottom & intbottom \\\\\r\n    \u2322 & \\frown & frown \\\\\r\n   
+    \u2323 & \\smile & smile \\\\\r\n    \u232C & \\varhexagonlrbonds & varhexagonlrbonds
+    \\\\\r\n    \u2332 & \\conictaper & conictaper \\\\\r\n    \u2336 & \\topbot
+    & topbot \\\\\r\n    \u233D & \\obar & obar \\\\\r\n    \u233F & \\APLnotslash
+    & APLnotslash \\\\\r\n    \u2340 & \\APLnotbackslash & APLnotbackslash \\\\\r\n   
+    \u2353 & \\APLboxupcaret & APLboxupcaret \\\\\r\n    \u2370 & \\APLboxquestion
+    & APLboxquestion \\\\\r\n    \u237C & \\rangledownzigzagarrow & rangledownzigzagarrow
+    \\\\\r\n    \u2394 & \\hexagon & hexagon \\\\\r\n    \u239B & \\lparenuend &
+    lparenuend \\\\\r\n    \u239C & \\lparenextender & lparenextender \\\\\r\n   
+    \u239D & \\lparenlend & lparenlend \\\\\r\n    \u239E & \\rparenuend & rparenuend
+    \\\\\r\n    \u239F & \\rparenextender & rparenextender \\\\\r\n    \u23A0 & \\rparenlend
+    & rparenlend \\\\\r\n    \u23A1 & \\lbrackuend & lbrackuend \\\\\r\n    \u23A2
+    & \\lbrackextender & lbrackextender \\\\\r\n    \u23A3 & \\lbracklend & lbracklend
+    \\\\\r\n    \u23A4 & \\rbrackuend & rbrackuend \\\\\r\n    \u23A5 & \\rbrackextender
+    & rbrackextender \\\\\r\n    \u23A6 & \\rbracklend & rbracklend \\\\\r\n    \u23A7
+    & \\lbraceuend & lbraceuend \\\\\r\n    \u23A8 & \\lbracemid & lbracemid \\\\\r\n   
+    \u23A9 & \\lbracelend & lbracelend \\\\\r\n    \u23AA & \\vbraceextender & vbraceextender
+    \\\\\r\n    \u23AB & \\rbraceuend & rbraceuend \\\\\r\n    \u23AC & \\rbracemid
+    & rbracemid \\\\\r\n    \u23AD & \\rbracelend & rbracelend \\\\\r\n    \u23AE
+    & \\intextender & intextender \\\\\r\n    \u23AF & \\harrowextender & harrowextender
+    \\\\\r\n    \u23B0 & \\lmoustache & lmoustache \\\\\r\n    \u23B1 & \\rmoustache
+    & rmoustache \\\\\r\n    \u23B2 & \\sumtop & sumtop \\\\\r\n    \u23B3 & \\sumbottom
+    & sumbottom \\\\\r\n    \u23B4 & \\overbracket & overbracket \\\\\r\n    \u23B5
+    & \\underbracket & underbracket \\\\\r\n    \u23B6 & \\bbrktbrk & bbrktbrk \\\\\r\n   
+    \u23B7 & \\sqrtbottom & sqrtbottom \\\\\r\n    \u23B8 & \\lvboxline & lvboxline
+    \\\\\r\n    \u23B9 & \\rvboxline & rvboxline \\\\\r\n    \u23CE & \\varcarriagereturn
+    & varcarriagereturn \\\\\r\n    \u23DC & \\overparen & overparen \\\\\r\n   
+    \u23DD & \\underparen & underparen \\\\\r\n    \u23DE & \\overbrace & overbrace
+    \\\\\r\n    \u23DF & \\underbrace & underbrace \\\\\r\n    \u23E0 & \\obrbrak
+    & obrbrak \\\\\r\n    \u23E1 & \\ubrbrak & ubrbrak \\\\\r\n    \u23E2 & \\trapezium
+    & trapezium \\\\\r\n    \u23E3 & \\benzenr & benzenr \\\\\r\n    \u23E4 & \\strns
+    & strns \\\\\r\n    \u23E5 & \\fltns & fltns \\\\\r\n    \u23E6 & \\accurrent
+    & accurrent \\\\\r\n    \u23E7 & \\elinters & elinters \\\\\r\n    \u2422 & \\blanksymbol
+    & blanksymbol \\\\\r\n    \u2423 & \\mathvisiblespace & mathvisiblespace \\\\\r\n   
+    \u2506 & \\bdtriplevdash & bdtriplevdash \\\\\r\n    \u2580 & \\blockuphalf &
+    blockuphalf \\\\\r\n    \u2584 & \\blocklowhalf & blocklowhalf \\\\\r\n    \u2588
+    & \\blockfull & blockfull \\\\\r\n    \u258C & \\blocklefthalf & blocklefthalf
+    \\\\\r\n    \u2590 & \\blockrighthalf & blockrighthalf \\\\\r\n    \u2591 & \\blockqtrshaded
+    & blockqtrshaded \\\\\r\n    \u2592 & \\blockhalfshaded & blockhalfshaded \\\\\r\n   
+    \u2593 & \\blockthreeqtrshaded & blockthreeqtrshaded \\\\\r\n    \u25A0 & \\mdlgblksquare
+    & mdlgblksquare \\\\\r\n    \u25A1 & \\mdlgwhtsquare & mdlgwhtsquare \\\\\r\n   
+    \u25A2 & \\squoval & squoval \\\\\r\n    \u25A3 & \\blackinwhitesquare & blackinwhitesquare
+    \\\\\r\n    \u25A4 & \\squarehfill & squarehfill \\\\\r\n    \u25A5 & \\squarevfill
+    & squarevfill \\\\\r\n    \u25A6 & \\squarehvfill & squarehvfill \\\\\r\n   
+    \u25A7 & \\squarenwsefill & squarenwsefill \\\\\r\n    \u25A8 & \\squareneswfill
+    & squareneswfill \\\\\r\n    \u25A9 & \\squarecrossfill & squarecrossfill \\\\\r\n   
+    \u25AA & \\smblksquare & smblksquare \\\\\r\n    \u25AB & \\smwhtsquare & smwhtsquare
+    \\\\\r\n    \u25AC & \\hrectangleblack & hrectangleblack \\\\\r\n    \u25AD &
+    \\hrectangle & hrectangle \\\\\r\n    \u25AE & \\vrectangleblack & vrectangleblack
+    \\\\\r\n    \u25AF & \\vrectangle & vrectangle \\\\\r\n    \u25B0 & \\parallelogramblack
+    & parallelogramblack \\\\\r\n    \u25B1 & \\parallelogram & parallelogram \\\\\r\n   
+    \u25B2 & \\bigblacktriangleup & bigblacktriangleup \\\\\r\n    \u25B3 & \\bigtriangleup
+    & bigtriangleup \\\\\r\n    \u25B4 & \\blacktriangle & blacktriangle \\\\\r\n   
+    \u25B5 & \\vartriangle & vartriangle \\\\\r\n    \u25B6 & \\blacktriangleright
+    & blacktriangleright \\\\\r\n    \u25B7 & \\triangleright & triangleright \\\\\r\n   
+    \u25B8 & \\smallblacktriangleright & smallblacktriangleright \\\\\r\n    \u25B9
+    & \\smalltriangleright & smalltriangleright \\\\\r\n    \u25BA & \\blackpointerright
+    & blackpointerright \\\\\r\n    \u25BB & \\whitepointerright & whitepointerright
+    \\\\\r\n    \u25BC & \\bigblacktriangledown & bigblacktriangledown \\\\\r\n   
+    \u25BD & \\bigtriangledown & bigtriangledown \\\\\r\n    \u25BE & \\blacktriangledown
+    & blacktriangledown \\\\\r\n    \u25BF & \\triangledown & triangledown \\\\\r\n   
+    \u25C0 & \\blacktriangleleft & blacktriangleleft \\\\\r\n    \u25C1 & \\triangleleft
+    & triangleleft \\\\\r\n    \u25C2 & \\smallblacktriangleleft & smallblacktriangleleft
+    \\\\\r\n    \u25C3 & \\smalltriangleleft & smalltriangleleft \\\\\r\n    \u25C4
+    & \\blackpointerleft & blackpointerleft \\\\\r\n    \u25C5 & \\whitepointerleft
+    & whitepointerleft \\\\\r\n    \u25C6 & \\mdlgblkdiamond & mdlgblkdiamond \\\\\r\n   
+    \u25C7 & \\mdlgwhtdiamond & mdlgwhtdiamond \\\\\r\n    \u25C8 & \\blackinwhitediamond
+    & blackinwhitediamond \\\\\r\n    \u25C9 & \\fisheye & fisheye \\\\\r\n    \u25CA
+    & \\mdlgwhtlozenge & mdlgwhtlozenge \\\\\r\n    \u25CB & \\mdlgwhtcircle & mdlgwhtcircle
+    \\\\\r\n    \u25CC & \\dottedcircle & dottedcircle \\\\\r\n    \u25CD & \\circlevertfill
+    & circlevertfill \\\\\r\n    \u25CE & \\bullseye & bullseye \\\\\r\n    \u25CF
+    & \\mdlgblkcircle & mdlgblkcircle \\\\\r\n    \u25D0 & \\circlelefthalfblack
+    & circlelefthalfblack \\\\\r\n    \u25D1 & \\circlerighthalfblack & circlerighthalfblack
+    \\\\\r\n    \u25D2 & \\circlebottomhalfblack & circlebottomhalfblack \\\\\r\n   
+    \u25D3 & \\circletophalfblack & circletophalfblack \\\\\r\n    \u25D4 & \\circleurquadblack
+    & circleurquadblack \\\\\r\n    \u25D5 & \\blackcircleulquadwhite & blackcircleulquadwhite
+    \\\\\r\n    \u25D6 & \\blacklefthalfcircle & blacklefthalfcircle \\\\\r\n   
+    \u25D7 & \\blackrighthalfcircle & blackrighthalfcircle \\\\\r\n    \u25D8 & \\inversebullet
+    & inversebullet \\\\\r\n    \u25D9 & \\inversewhitecircle & inversewhitecircle
+    \\\\\r\n    \u25DA & \\invwhiteupperhalfcircle & invwhiteupperhalfcircle \\\\\r\n   
+    \u25DB & \\invwhitelowerhalfcircle & invwhitelowerhalfcircle \\\\\r\n    \u25DC
+    & \\ularc & ularc \\\\\r\n    \u25DD & \\urarc & urarc \\\\\r\n    \u25DE & \\lrarc
+    & lrarc \\\\\r\n    \u25DF & \\llarc & llarc \\\\\r\n    \u25E0 & \\topsemicircle
+    & topsemicircle \\\\\r\n    \u25E1 & \\botsemicircle & botsemicircle \\\\\r\n   
+    \u25E2 & \\lrblacktriangle & lrblacktriangle \\\\\r\n    \u25E3 & \\llblacktriangle
+    & llblacktriangle \\\\\r\n    \u25E4 & \\ulblacktriangle & ulblacktriangle \\\\\r\n   
+    \u25E5 & \\urblacktriangle & urblacktriangle \\\\\r\n    \u25E6 & \\smwhtcircle
+    & smwhtcircle \\\\\r\n    \u25E7 & \\squareleftblack & squareleftblack \\\\\r\n   
+    \u25E8 & \\squarerightblack & squarerightblack \\\\\r\n    \u25E9 & \\squareulblack
+    & squareulblack \\\\\r\n    \u25EA & \\squarelrblack & squarelrblack \\\\\r\n   
+    \u25EB & \\boxbar & boxbar \\\\\r\n    \u25EC & \\trianglecdot & trianglecdot
+    \\\\\r\n    \u25ED & \\triangleleftblack & triangleleftblack \\\\\r\n    \u25EE
+    & \\trianglerightblack & trianglerightblack \\\\\r\n    \u25EF & \\lgwhtcircle
+    & lgwhtcircle \\\\\r\n    \u25F0 & \\squareulquad & squareulquad \\\\\r\n   
+    \u25F1 & \\squarellquad & squarellquad \\\\\r\n    \u25F2 & \\squarelrquad &
+    squarelrquad \\\\\r\n    \u25F3 & \\squareurquad & squareurquad \\\\\r\n    \u25F4
+    & \\circleulquad & circleulquad \\\\\r\n    \u25F5 & \\circlellquad & circlellquad
+    \\\\\r\n    \u25F6 & \\circlelrquad & circlelrquad \\\\\r\n    \u25F7 & \\circleurquad
+    & circleurquad \\\\\r\n    \u25F8 & \\ultriangle & ultriangle \\\\\r\n    \u25F9
+    & \\urtriangle & urtriangle \\\\\r\n    \u25FA & \\lltriangle & lltriangle \\\\\r\n   
+    \u25FB & \\mdwhtsquare & mdwhtsquare \\\\\r\n    \u25FC & \\mdblksquare & mdblksquare
+    \\\\\r\n    \u25FD & \\mdsmwhtsquare & mdsmwhtsquare \\\\\r\n    \u25FE & \\mdsmblksquare
+    & mdsmblksquare \\\\\r\n    \u25FF & \\lrtriangle & lrtriangle \\\\\r\n    \u2605
+    & \\bigstar & bigstar \\\\\r\n    \u2606 & \\bigwhitestar & bigwhitestar \\\\\r\n   
+    \u2609 & \\astrosun & astrosun \\\\\r\n    \u2621 & \\danger & danger \\\\\r\n   
+    \u263B & \\blacksmiley & blacksmiley \\\\\r\n    \u263C & \\sun & sun \\\\\r\n   
+    \u263D & \\rightmoon & rightmoon \\\\\r\n    \u263E & \\leftmoon & leftmoon \\\\\r\n   
+    \u2640 & \\female & female \\\\\r\n    \u2642 & \\male & male \\\\\r\n    \u2660
+    & \\spadesuit & spadesuit \\\\\r\n    \u2661 & \\heartsuit & heartsuit \\\\\r\n   
+    \u2662 & \\diamondsuit & diamondsuit \\\\\r\n    \u2663 & \\clubsuit & clubsuit
+    \\\\\r\n    \u2664 & \\varspadesuit & varspadesuit \\\\\r\n    \u2665 & \\varheartsuit
+    & varheartsuit \\\\\r\n    \u2666 & \\vardiamondsuit & vardiamondsuit \\\\\r\n   
+    \u2667 & \\varclubsuit & varclubsuit \\\\\r\n    \u2669 & \\quarternote & quarternote
+    \\\\\r\n    \u266A & \\eighthnote & eighthnote \\\\\r\n    \u266B & \\twonotes
+    & twonotes \\\\\r\n    \u266D & \\flat & flat \\\\\r\n    \u266E & \\natural
+    & natural \\\\\r\n    \u266F & \\sharp & sharp \\\\\r\n    \u267E & \\acidfree
+    & acidfree \\\\\r\n    \u2680 & \\dicei & dicei \\\\\r\n    \u2681 & \\diceii
+    & diceii \\\\\r\n    \u2682 & \\diceiii & diceiii \\\\\r\n    \u2683 & \\diceiv
+    & diceiv \\\\\r\n    \u2684 & \\dicev & dicev \\\\\r\n    \u2685 & \\dicevi &
+    dicevi \\\\\r\n    \u2686 & \\circledrightdot & circledrightdot \\\\\r\n    \u2687
+    & \\circledtwodots & circledtwodots \\\\\r\n    \u2688 & \\blackcircledrightdot
+    & blackcircledrightdot \\\\\r\n    \u2689 & \\blackcircledtwodots & blackcircledtwodots
+    \\\\\r\n    \u26A5 & \\Hermaphrodite & Hermaphrodite \\\\\r\n    \u26AA & \\mdwhtcircle
+    & mdwhtcircle \\\\\r\n    \u26AB & \\mdblkcircle & mdblkcircle \\\\\r\n    \u26AC
+    & \\mdsmwhtcircle & mdsmwhtcircle \\\\\r\n    \u26B2 & \\neuter & neuter \\\\\r\n   
+    \u2713 & \\checkmark & checkmark \\\\\r\n    \u2720 & \\maltese & maltese \\\\\r\n   
+    \u272A & \\circledstar & circledstar \\\\\r\n    \u2736 & \\varstar & varstar
+    \\\\\r\n    \u273D & \\dingasterisk & dingasterisk \\\\\r\n    \u2772 & \\lbrbrak
+    & lbrbrak \\\\\r\n    \u2773 & \\rbrbrak & rbrbrak \\\\\r\n    \u279B & \\draftingarrow
+    & draftingarrow \\\\\r\n    \u27C0 & \\threedangle & threedangle \\\\\r\n   
+    \u27C1 & \\whiteinwhitetriangle & whiteinwhitetriangle \\\\\r\n    \u27C2 & \\perp
+    & perp \\\\\r\n    \u27C3 & \\subsetcirc & subsetcirc \\\\\r\n    \u27C4 & \\supsetcirc
+    & supsetcirc \\\\\r\n    \u27C5 & \\lbag & lbag \\\\\r\n    \u27C6 & \\rbag &
+    rbag \\\\\r\n    \u27C7 & \\veedot & veedot \\\\\r\n    \u27C8 & \\bsolhsub &
+    bsolhsub \\\\\r\n    \u27C9 & \\suphsol & suphsol \\\\\r\n    \u27CC & \\longdivision
+    & longdivision \\\\\r\n    \u27D0 & \\diamondcdot & diamondcdot \\\\\r\n    \u27D1
+    & \\wedgedot & wedgedot \\\\\r\n    \u27D2 & \\upin & upin \\\\\r\n    \u27D3
+    & \\pullback & pullback \\\\\r\n    \u27D4 & \\pushout & pushout \\\\\r\n   
+    \u27D5 & \\leftouterjoin & leftouterjoin \\\\\r\n    \u27D6 & \\rightouterjoin
+    & rightouterjoin \\\\\r\n    \u27D7 & \\fullouterjoin & fullouterjoin \\\\\r\n   
+    \u27D8 & \\bigbot & bigbot \\\\\r\n    \u27D9 & \\bigtop & bigtop \\\\\r\n   
+    \u27DA & \\DashVDash & DashVDash \\\\\r\n    \u27DB & \\dashVdash & dashVdash
+    \\\\\r\n    \u27DC & \\multimapinv & multimapinv \\\\\r\n    \u27DD & \\vlongdash
+    & vlongdash \\\\\r\n    \u27DE & \\longdashv & longdashv \\\\\r\n    \u27DF &
+    \\cirbot & cirbot \\\\\r\n    \u27E0 & \\lozengeminus & lozengeminus \\\\\r\n   
+    \u27E1 & \\concavediamond & concavediamond \\\\\r\n    \u27E2 & \\concavediamondtickleft
+    & concavediamondtickleft \\\\\r\n    \u27E3 & \\concavediamondtickright & concavediamondtickright
+    \\\\\r\n    \u27E4 & \\whitesquaretickleft & whitesquaretickleft \\\\\r\n   
+    \u27E5 & \\whitesquaretickright & whitesquaretickright \\\\\r\n    \u27E6 & \\lBrack
+    & lBrack \\\\\r\n    \u27E7 & \\rBrack & rBrack \\\\\r\n    \u27E8 & \\langle
+    & langle \\\\\r\n    \u27E9 & \\rangle & rangle \\\\\r\n    \u27EA & \\lAngle
+    & lAngle \\\\\r\n    \u27EB & \\rAngle & rAngle \\\\\r\n    \u27EC & \\Lbrbrak
+    & Lbrbrak \\\\\r\n    \u27ED & \\Rbrbrak & Rbrbrak \\\\\r\n    \u27EE & \\lgroup
+    & lgroup \\\\\r\n    \u27EF & \\rgroup & rgroup \\\\\r\n    \u27F0 & \\UUparrow
+    & UUparrow \\\\\r\n    \u27F1 & \\DDownarrow & DDownarrow \\\\\r\n    \u27F2
+    & \\acwgapcirclearrow & acwgapcirclearrow \\\\\r\n    \u27F3 & \\cwgapcirclearrow
+    & cwgapcirclearrow \\\\\r\n    \u27F4 & \\rightarrowonoplus & rightarrowonoplus
+    \\\\\r\n    \u27F5 & \\longleftarrow & longleftarrow \\\\\r\n    \u27F6 & \\longrightarrow
+    & longrightarrow \\\\\r\n    \u27F7 & \\longleftrightarrow & longleftrightarrow
+    \\\\\r\n    \u27F8 & \\Longleftarrow & Longleftarrow \\\\\r\n    \u27F9 & \\Longrightarrow
+    & Longrightarrow \\\\\r\n    \u27FA & \\Longleftrightarrow & Longleftrightarrow
+    \\\\\r\n    \u27FB & \\longmapsfrom & longmapsfrom \\\\\r\n    \u27FC & \\longmapsto
+    & longmapsto \\\\\r\n    \u27FD & \\Longmapsfrom & Longmapsfrom \\\\\r\n    \u27FE
+    & \\Longmapsto & Longmapsto \\\\\r\n    \u27FF & \\longrightsquigarrow & longrightsquigarrow
+    \\\\\r\n    \u2900 & \\nvtwoheadrightarrow & nvtwoheadrightarrow \\\\\r\n   
+    \u2901 & \\nVtwoheadrightarrow & nVtwoheadrightarrow \\\\\r\n    \u2902 & \\nvLeftarrow
+    & nvLeftarrow \\\\\r\n    \u2903 & \\nvRightarrow & nvRightarrow \\\\\r\n   
+    \u2904 & \\nvLeftrightarrow & nvLeftrightarrow \\\\\r\n    \u2905 & \\twoheadmapsto
+    & twoheadmapsto \\\\\r\n    \u2906 & \\Mapsfrom & Mapsfrom \\\\\r\n    \u2907
+    & \\Mapsto & Mapsto \\\\\r\n    \u2908 & \\downarrowbarred & downarrowbarred
+    \\\\\r\n    \u2909 & \\uparrowbarred & uparrowbarred \\\\\r\n    \u290A & \\Uuparrow
+    & Uuparrow \\\\\r\n    \u290B & \\Ddownarrow & Ddownarrow \\\\\r\n    \u290C
+    & \\leftbkarrow & leftbkarrow \\\\\r\n    \u290D & \\rightbkarrow & rightbkarrow
+    \\\\\r\n    \u290E & \\leftdbkarrow & leftdbkarrow \\\\\r\n    \u290F & \\dbkarrow
+    & dbkarrow \\\\\r\n    \u2910 & \\drbkarrow & drbkarrow \\\\\r\n    \u2911 &
+    \\rightdotarrow & rightdotarrow \\\\\r\n    \u2912 & \\baruparrow & baruparrow
+    \\\\\r\n    \u2913 & \\downarrowbar & downarrowbar \\\\\r\n    \u2914 & \\nvrightarrowtail
+    & nvrightarrowtail \\\\\r\n    \u2915 & \\nVrightarrowtail & nVrightarrowtail
+    \\\\\r\n    \u2916 & \\twoheadrightarrowtail & twoheadrightarrowtail \\\\\r\n   
+    \u2917 & \\nvtwoheadrightarrowtail & nvtwoheadrightarrowtail \\\\\r\n    \u2918
+    & \\nVtwoheadrightarrowtail & nVtwoheadrightarrowtail \\\\\r\n    \u2919 & \\lefttail
+    & lefttail \\\\\r\n    \u291A & \\righttail & righttail \\\\\r\n    \u291B &
+    \\leftdbltail & leftdbltail \\\\\r\n    \u291C & \\rightdbltail & rightdbltail
+    \\\\\r\n    \u291D & \\diamondleftarrow & diamondleftarrow \\\\\r\n    \u291E
+    & \\rightarrowdiamond & rightarrowdiamond \\\\\r\n    \u291F & \\diamondleftarrowbar
+    & diamondleftarrowbar \\\\\r\n    \u2920 & \\barrightarrowdiamond & barrightarrowdiamond
+    \\\\\r\n    \u2921 & \\nwsearrow & nwsearrow \\\\\r\n    \u2922 & \\neswarrow
+    & neswarrow \\\\\r\n    \u2923 & \\hknwarrow & hknwarrow \\\\\r\n    \u2924 &
+    \\hknearrow & hknearrow \\\\\r\n    \u2925 & \\hksearrow & hksearrow \\\\\r\n   
+    \u2926 & \\hkswarrow & hkswarrow \\\\\r\n    \u2927 & \\tona & tona \\\\\r\n   
+    \u2928 & \\toea & toea \\\\\r\n    \u2929 & \\tosa & tosa \\\\\r\n    \u292A
+    & \\towa & towa \\\\\r\n    \u292B & \\rdiagovfdiag & rdiagovfdiag \\\\\r\n   
+    \u292C & \\fdiagovrdiag & fdiagovrdiag \\\\\r\n    \u292D & \\seovnearrow & seovnearrow
+    \\\\\r\n    \u292E & \\neovsearrow & neovsearrow \\\\\r\n    \u292F & \\fdiagovnearrow
+    & fdiagovnearrow \\\\\r\n    \u2930 & \\rdiagovsearrow & rdiagovsearrow \\\\\r\n   
+    \u2931 & \\neovnwarrow & neovnwarrow \\\\\r\n    \u2932 & \\nwovnearrow & nwovnearrow
+    \\\\\r\n    \u2933 & \\rightcurvedarrow & rightcurvedarrow \\\\\r\n    \u2934
+    & \\uprightcurvearrow & uprightcurvearrow \\\\\r\n    \u2935 & \\downrightcurvedarrow
+    & downrightcurvedarrow \\\\\r\n    \u2936 & \\leftdowncurvedarrow & leftdowncurvedarrow
+    \\\\\r\n    \u2937 & \\rightdowncurvedarrow & rightdowncurvedarrow \\\\\r\n   
+    \u2938 & \\cwrightarcarrow & cwrightarcarrow \\\\\r\n    \u2939 & \\acwleftarcarrow
+    & acwleftarcarrow \\\\\r\n    \u293A & \\acwoverarcarrow & acwoverarcarrow \\\\\r\n   
+    \u293B & \\acwunderarcarrow & acwunderarcarrow \\\\\r\n    \u293C & \\curvearrowrightminus
+    & curvearrowrightminus \\\\\r\n    \u293D & \\curvearrowleftplus & curvearrowleftplus
+    \\\\\r\n    \u293E & \\cwundercurvearrow & cwundercurvearrow \\\\\r\n    \u293F
+    & \\ccwundercurvearrow & ccwundercurvearrow \\\\\r\n    \u2940 & \\acwcirclearrow
+    & acwcirclearrow \\\\\r\n    \u2941 & \\cwcirclearrow & cwcirclearrow \\\\\r\n   
+    \u2942 & \\rightarrowshortleftarrow & rightarrowshortleftarrow \\\\\r\n    \u2943
+    & \\leftarrowshortrightarrow & leftarrowshortrightarrow \\\\\r\n    \u2944 &
+    \\shortrightarrowleftarrow & shortrightarrowleftarrow \\\\\r\n    \u2945 & \\rightarrowplus
+    & rightarrowplus \\\\\r\n    \u2946 & \\leftarrowplus & leftarrowplus \\\\\r\n   
+    \u2947 & \\rightarrowx & rightarrowx \\\\\r\n    \u2948 & \\leftrightarrowcircle
+    & leftrightarrowcircle \\\\\r\n    \u2949 & \\twoheaduparrowcircle & twoheaduparrowcircle
+    \\\\\r\n    \u294A & \\leftrightharpoonupdown & leftrightharpoonupdown \\\\\r\n   
+    \u294B & \\leftrightharpoondownup & leftrightharpoondownup \\\\\r\n    \u294C
+    & \\updownharpoonrightleft & updownharpoonrightleft \\\\\r\n    \u294D & \\updownharpoonleftright
+    & updownharpoonleftright \\\\\r\n    \u294E & \\leftrightharpoonupup & leftrightharpoonupup
+    \\\\\r\n    \u294F & \\updownharpoonrightright & updownharpoonrightright \\\\\r\n   
+    \u2950 & \\leftrightharpoondowndown & leftrightharpoondowndown \\\\\r\n    \u2951
+    & \\updownharpoonleftleft & updownharpoonleftleft \\\\\r\n    \u2952 & \\barleftharpoonup
+    & barleftharpoonup \\\\\r\n    \u2953 & \\rightharpoonupbar & rightharpoonupbar
+    \\\\\r\n    \u2954 & \\barupharpoonright & barupharpoonright \\\\\r\n    \u2955
+    & \\downharpoonrightbar & downharpoonrightbar \\\\\r\n    \u2956 & \\barleftharpoondown
+    & barleftharpoondown \\\\\r\n    \u2957 & \\rightharpoondownbar & rightharpoondownbar
+    \\\\\r\n    \u2958 & \\barupharpoonleft & barupharpoonleft \\\\\r\n    \u2959
+    & \\downharpoonleftbar & downharpoonleftbar \\\\\r\n    \u295A & \\leftharpoonupbar
+    & leftharpoonupbar \\\\\r\n    \u295B & \\barrightharpoonup & barrightharpoonup
+    \\\\\r\n    \u295C & \\upharpoonrightbar & upharpoonrightbar \\\\\r\n    \u295D
+    & \\bardownharpoonright & bardownharpoonright \\\\\r\n    \u295E & \\leftharpoondownbar
+    & leftharpoondownbar \\\\\r\n    \u295F & \\barrightharpoondown & barrightharpoondown
+    \\\\\r\n    \u2960 & \\upharpoonleftbar & upharpoonleftbar \\\\\r\n    \u2961
+    & \\bardownharpoonleft & bardownharpoonleft \\\\\r\n    \u2962 & \\leftharpoonsupdown
+    & leftharpoonsupdown \\\\\r\n    \u2963 & \\upharpoonsleftright & upharpoonsleftright
+    \\\\\r\n    \u2964 & \\rightharpoonsupdown & rightharpoonsupdown \\\\\r\n   
+    \u2965 & \\downharpoonsleftright & downharpoonsleftright \\\\\r\n    \u2966 &
+    \\leftrightharpoonsup & leftrightharpoonsup \\\\\r\n    \u2967 & \\leftrightharpoonsdown
+    & leftrightharpoonsdown \\\\\r\n    \u2968 & \\rightleftharpoonsup & rightleftharpoonsup
+    \\\\\r\n    \u2969 & \\rightleftharpoonsdown & rightleftharpoonsdown \\\\\r\n   
+    \u296A & \\leftharpoonupdash & leftharpoonupdash \\\\\r\n    \u296B & \\dashleftharpoondown
+    & dashleftharpoondown \\\\\r\n    \u296C & \\rightharpoonupdash & rightharpoonupdash
+    \\\\\r\n    \u296D & \\dashrightharpoondown & dashrightharpoondown \\\\\r\n   
+    \u296E & \\updownharpoonsleftright & updownharpoonsleftright \\\\\r\n    \u296F
+    & \\downupharpoonsleftright & downupharpoonsleftright \\\\\r\n    \u2970 & \\rightimply
+    & rightimply \\\\\r\n    \u2971 & \\equalrightarrow & equalrightarrow \\\\\r\n   
+    \u2972 & \\similarrightarrow & similarrightarrow \\\\\r\n    \u2973 & \\leftarrowsimilar
+    & leftarrowsimilar \\\\\r\n    \u2974 & \\rightarrowsimilar & rightarrowsimilar
+    \\\\\r\n    \u2975 & \\rightarrowapprox & rightarrowapprox \\\\\r\n    \u2976
+    & \\ltlarr & ltlarr \\\\\r\n    \u2977 & \\leftarrowless & leftarrowless \\\\\r\n   
+    \u2978 & \\gtrarr & gtrarr \\\\\r\n    \u2979 & \\subrarr & subrarr \\\\\r\n   
+    \u297A & \\leftarrowsubset & leftarrowsubset \\\\\r\n    \u297B & \\suplarr &
+    suplarr \\\\\r\n    \u297C & \\leftfishtail & leftfishtail \\\\\r\n    \u297D
+    & \\rightfishtail & rightfishtail \\\\\r\n    \u297E & \\upfishtail & upfishtail
+    \\\\\r\n    \u297F & \\downfishtail & downfishtail \\\\\r\n    \u2980 & \\Vvert
+    & Vvert \\\\\r\n    \u2981 & \\mdsmblkcircle & mdsmblkcircle \\\\\r\n    \u2982
+    & \\typecolon & typecolon \\\\\r\n    \u2983 & \\lBrace & lBrace \\\\\r\n   
+    \u2984 & \\rBrace & rBrace \\\\\r\n    \u2985 & \\lParen & lParen \\\\\r\n   
+    \u2986 & \\rParen & rParen \\\\\r\n    \u2987 & \\llparenthesis & llparenthesis
+    \\\\\r\n    \u2988 & \\rrparenthesis & rrparenthesis \\\\\r\n    \u2989 & \\llangle
+    & llangle \\\\\r\n    \u298A & \\rrangle & rrangle \\\\\r\n    \u298B & \\lbrackubar
+    & lbrackubar \\\\\r\n    \u298C & \\rbrackubar & rbrackubar \\\\\r\n    \u298D
+    & \\lbrackultick & lbrackultick \\\\\r\n    \u298E & \\rbracklrtick & rbracklrtick
+    \\\\\r\n    \u298F & \\lbracklltick & lbracklltick \\\\\r\n    \u2990 & \\rbrackurtick
+    & rbrackurtick \\\\\r\n    \u2991 & \\langledot & langledot \\\\\r\n    \u2992
+    & \\rangledot & rangledot \\\\\r\n    \u2993 & \\lparenless & lparenless \\\\\r\n   
+    \u2994 & \\rparengtr & rparengtr \\\\\r\n    \u2995 & \\Lparengtr & Lparengtr
+    \\\\\r\n    \u2996 & \\Rparenless & Rparenless \\\\\r\n    \u2997 & \\lblkbrbrak
+    & lblkbrbrak \\\\\r\n    \u2998 & \\rblkbrbrak & rblkbrbrak \\\\\r\n    \u2999
+    & \\fourvdots & fourvdots \\\\\r\n    \u299A & \\vzigzag & vzigzag \\\\\r\n   
+    \u299B & \\measuredangleleft & measuredangleleft \\\\\r\n    \u299C & \\rightanglesqr
+    & rightanglesqr \\\\\r\n    \u299D & \\rightanglemdot & rightanglemdot \\\\\r\n   
+    \u299E & \\angles & angles \\\\\r\n    \u299F & \\angdnr & angdnr \\\\\r\n   
+    \u29A0 & \\gtlpar & gtlpar \\\\\r\n    \u29A1 & \\sphericalangleup & sphericalangleup
+    \\\\\r\n    \u29A2 & \\turnangle & turnangle \\\\\r\n    \u29A3 & \\revangle
+    & revangle \\\\\r\n    \u29A4 & \\angleubar & angleubar \\\\\r\n    \u29A5 &
+    \\revangleubar & revangleubar \\\\\r\n    \u29A6 & \\wideangledown & wideangledown
+    \\\\\r\n    \u29A7 & \\wideangleup & wideangleup \\\\\r\n    \u29A8 & \\measanglerutone
+    & measanglerutone \\\\\r\n    \u29A9 & \\measanglelutonw & measanglelutonw \\\\\r\n   
+    \u29AA & \\measanglerdtose & measanglerdtose \\\\\r\n    \u29AB & \\measangleldtosw
+    & measangleldtosw \\\\\r\n    \u29AC & \\measangleurtone & measangleurtone \\\\\r\n   
+    \u29AD & \\measangleultonw & measangleultonw \\\\\r\n    \u29AE & \\measangledrtose
+    & measangledrtose \\\\\r\n    \u29AF & \\measangledltosw & measangledltosw \\\\\r\n   
+    \u29B0 & \\revemptyset & revemptyset \\\\\r\n    \u29B1 & \\emptysetobar & emptysetobar
+    \\\\\r\n    \u29B2 & \\emptysetocirc & emptysetocirc \\\\\r\n    \u29B3 & \\emptysetoarr
+    & emptysetoarr \\\\\r\n    \u29B4 & \\emptysetoarrl & emptysetoarrl \\\\\r\n   
+    \u29B5 & \\circlehbar & circlehbar \\\\\r\n    \u29B6 & \\circledvert & circledvert
+    \\\\\r\n    \u29B7 & \\circledparallel & circledparallel \\\\\r\n    \u29B8 &
+    \\obslash & obslash \\\\\r\n    \u29B9 & \\operp & operp \\\\\r\n    \u29BA &
+    \\obot & obot \\\\\r\n    \u29BB & \\olcross & olcross \\\\\r\n    \u29BC & \\odotslashdot
+    & odotslashdot \\\\\r\n    \u29BD & \\uparrowoncircle & uparrowoncircle \\\\\r\n   
+    \u29BE & \\circledwhitebullet & circledwhitebullet \\\\\r\n    \u29BF & \\circledbullet
+    & circledbullet \\\\\r\n    \u29C0 & \\olessthan & olessthan \\\\\r\n    \u29C1
+    & \\ogreaterthan & ogreaterthan \\\\\r\n    \u29C2 & \\cirscir & cirscir \\\\\r\n   
+    \u29C3 & \\cirE & cirE \\\\\r\n    \u29C4 & \\boxdiag & boxdiag \\\\\r\n    \u29C5
+    & \\boxbslash & boxbslash \\\\\r\n    \u29C6 & \\boxast & boxast \\\\\r\n   
+    \u29C7 & \\boxcircle & boxcircle \\\\\r\n    \u29C8 & \\boxbox & boxbox \\\\\r\n   
+    \u29C9 & \\boxonbox & boxonbox \\\\\r\n    \u29CA & \\triangleodot & triangleodot
+    \\\\\r\n    \u29CB & \\triangleubar & triangleubar \\\\\r\n    \u29CC & \\triangles
+    & triangles \\\\\r\n    \u29CD & \\triangleserifs & triangleserifs \\\\\r\n   
+    \u29CE & \\rtriltri & rtriltri \\\\\r\n    \u29CF & \\ltrivb & ltrivb \\\\\r\n   
+    \u29D0 & \\vbrtri & vbrtri \\\\\r\n    \u29D1 & \\lfbowtie & lfbowtie \\\\\r\n   
+    \u29D2 & \\rfbowtie & rfbowtie \\\\\r\n    \u29D3 & \\fbowtie & fbowtie \\\\\r\n   
+    \u29D4 & \\lftimes & lftimes \\\\\r\n    \u29D5 & \\rftimes & rftimes \\\\\r\n   
+    \u29D6 & \\hourglass & hourglass \\\\\r\n    \u29D7 & \\blackhourglass & blackhourglass
+    \\\\\r\n    \u29D8 & \\lvzigzag & lvzigzag \\\\\r\n    \u29D9 & \\rvzigzag &
+    rvzigzag \\\\\r\n    \u29DA & \\Lvzigzag & Lvzigzag \\\\\r\n    \u29DB & \\Rvzigzag
+    & Rvzigzag \\\\\r\n    \u29DC & \\iinfin & iinfin \\\\\r\n    \u29DD & \\tieinfty
+    & tieinfty \\\\\r\n    \u29DE & \\nvinfty & nvinfty \\\\\r\n    \u29DF & \\dualmap
+    & dualmap \\\\\r\n    \u29E0 & \\laplac & laplac \\\\\r\n    \u29E1 & \\lrtriangleeq
+    & lrtriangleeq \\\\\r\n    \u29E2 & \\shuffle & shuffle \\\\\r\n    \u29E3 &
+    \\eparsl & eparsl \\\\\r\n    \u29E4 & \\smeparsl & smeparsl \\\\\r\n    \u29E5
+    & \\eqvparsl & eqvparsl \\\\\r\n    \u29E6 & \\gleichstark & gleichstark \\\\\r\n   
+    \u29E7 & \\thermod & thermod \\\\\r\n    \u29E8 & \\downtriangleleftblack & downtriangleleftblack
+    \\\\\r\n    \u29E9 & \\downtrianglerightblack & downtrianglerightblack \\\\\r\n   
+    \u29EA & \\blackdiamonddownarrow & blackdiamonddownarrow \\\\\r\n    \u29EB &
+    \\mdlgblklozenge & mdlgblklozenge \\\\\r\n    \u29EC & \\circledownarrow & circledownarrow
+    \\\\\r\n    \u29ED & \\blackcircledownarrow & blackcircledownarrow \\\\\r\n   
+    \u29EE & \\errbarsquare & errbarsquare \\\\\r\n    \u29EF & \\errbarblacksquare
+    & errbarblacksquare \\\\\r\n    \u29F0 & \\errbardiamond & errbardiamond \\\\\r\n   
+    \u29F1 & \\errbarblackdiamond & errbarblackdiamond \\\\\r\n    \u29F2 & \\errbarcircle
+    & errbarcircle \\\\\r\n    \u29F3 & \\errbarblackcircle & errbarblackcircle \\\\\r\n   
+    \u29F4 & \\ruledelayed & ruledelayed \\\\\r\n    \u29F5 & \\setminus & setminus
+    \\\\\r\n    \u29F6 & \\dsol & dsol \\\\\r\n    \u29F7 & \\rsolbar & rsolbar \\\\\r\n   
+    \u29F8 & \\xsol & xsol \\\\\r\n    \u29F9 & \\xbsol & xbsol \\\\\r\n    \u29FA
+    & \\doubleplus & doubleplus \\\\\r\n    \u29FB & \\tripleplus & tripleplus \\\\\r\n   
+    \u29FC & \\lcurvyangle & lcurvyangle \\\\\r\n    \u29FD & \\rcurvyangle & rcurvyangle
+    \\\\\r\n    \u29FE & \\tplus & tplus \\\\\r\n    \u29FF & \\tminus & tminus \\\\\r\n   
+    \u2A00 & \\bigodot & bigodot \\\\\r\n    \u2A01 & \\bigoplus & bigoplus \\\\\r\n   
+    \u2A02 & \\bigotimes & bigotimes \\\\\r\n    \u2A03 & \\bigcupdot & bigcupdot
+    \\\\\r\n    \u2A04 & \\biguplus & biguplus \\\\\r\n    \u2A05 & \\bigsqcap &
+    bigsqcap \\\\\r\n    \u2A06 & \\bigsqcup & bigsqcup \\\\\r\n    \u2A07 & \\conjquant
+    & conjquant \\\\\r\n    \u2A08 & \\disjquant & disjquant \\\\\r\n    \u2A09 &
+    \\bigtimes & bigtimes \\\\\r\n    \u2A0A & \\modtwosum & modtwosum \\\\\r\n   
+    \u2A0B & \\sumint & sumint \\\\\r\n    \u2A0C & \\iiiint & iiiint \\\\\r\n   
+    \u2A0D & \\intbar & intbar \\\\\r\n    \u2A0E & \\intBar & intBar \\\\\r\n   
+    \u2A0F & \\fint & fint \\\\\r\n    \u2A10 & \\cirfnint & cirfnint \\\\\r\n   
+    \u2A11 & \\awint & awint \\\\\r\n    \u2A12 & \\rppolint & rppolint \\\\\r\n   
+    \u2A13 & \\scpolint & scpolint \\\\\r\n    \u2A14 & \\npolint & npolint \\\\\r\n   
+    \u2A15 & \\pointint & pointint \\\\\r\n    \u2A16 & \\sqint & sqint \\\\\r\n   
+    \u2A17 & \\intlarhk & intlarhk \\\\\r\n    \u2A18 & \\intx & intx \\\\\r\n   
+    \u2A19 & \\intcap & intcap \\\\\r\n    \u2A1A & \\intcup & intcup \\\\\r\n   
+    \u2A1B & \\upint & upint \\\\\r\n    \u2A1C & \\lowint & lowint \\\\\r\n    \u2A1D
+    & \\Join & Join \\\\\r\n    \u2A1E & \\bigtriangleleft & bigtriangleleft \\\\\r\n   
+    \u2A1F & \\zcmp & zcmp \\\\\r\n    \u2A20 & \\zpipe & zpipe \\\\\r\n    \u2A21
+    & \\zproject & zproject \\\\\r\n    \u2A22 & \\ringplus & ringplus \\\\\r\n   
+    \u2A23 & \\plushat & plushat \\\\\r\n    \u2A24 & \\simplus & simplus \\\\\r\n   
+    \u2A25 & \\plusdot & plusdot \\\\\r\n    \u2A26 & \\plussim & plussim \\\\\r\n   
+    \u2A27 & \\plussubtwo & plussubtwo \\\\\r\n    \u2A28 & \\plustrif & plustrif
+    \\\\\r\n    \u2A29 & \\commaminus & commaminus \\\\\r\n    \u2A2A & \\minusdot
+    & minusdot \\\\\r\n    \u2A2B & \\minusfdots & minusfdots \\\\\r\n    \u2A2C
+    & \\minusrdots & minusrdots \\\\\r\n    \u2A2D & \\opluslhrim & opluslhrim \\\\\r\n   
+    \u2A2E & \\oplusrhrim & oplusrhrim \\\\\r\n    \u2A2F & \\vectimes & vectimes
+    \\\\\r\n    \u2A30 & \\dottimes & dottimes \\\\\r\n    \u2A31 & \\timesbar &
+    timesbar \\\\\r\n    \u2A32 & \\btimes & btimes \\\\\r\n    \u2A33 & \\smashtimes
+    & smashtimes \\\\\r\n    \u2A34 & \\otimeslhrim & otimeslhrim \\\\\r\n    \u2A35
+    & \\otimesrhrim & otimesrhrim \\\\\r\n    \u2A36 & \\otimeshat & otimeshat \\\\\r\n   
+    \u2A37 & \\Otimes & Otimes \\\\\r\n    \u2A38 & \\odiv & odiv \\\\\r\n    \u2A39
+    & \\triangleplus & triangleplus \\\\\r\n    \u2A3A & \\triangleminus & triangleminus
+    \\\\\r\n    \u2A3B & \\triangletimes & triangletimes \\\\\r\n    \u2A3C & \\intprod
+    & intprod \\\\\r\n    \u2A3D & \\intprodr & intprodr \\\\\r\n    \u2A3E & \\fcmp
+    & fcmp \\\\\r\n    \u2A3F & \\amalg & amalg \\\\\r\n    \u2A40 & \\capdot & capdot
+    \\\\\r\n    \u2A41 & \\uminus & uminus \\\\\r\n    \u2A42 & \\barcup & barcup
+    \\\\\r\n    \u2A43 & \\barcap & barcap \\\\\r\n    \u2A44 & \\capwedge & capwedge
+    \\\\\r\n    \u2A45 & \\cupvee & cupvee \\\\\r\n    \u2A46 & \\cupovercap & cupovercap
+    \\\\\r\n    \u2A47 & \\capovercup & capovercup \\\\\r\n    \u2A48 & \\cupbarcap
+    & cupbarcap \\\\\r\n    \u2A49 & \\capbarcup & capbarcup \\\\\r\n    \u2A4A &
+    \\twocups & twocups \\\\\r\n    \u2A4B & \\twocaps & twocaps \\\\\r\n    \u2A4C
+    & \\closedvarcup & closedvarcup \\\\\r\n    \u2A4D & \\closedvarcap & closedvarcap
+    \\\\\r\n    \u2A4E & \\Sqcap & Sqcap \\\\\r\n    \u2A4F & \\Sqcup & Sqcup \\\\\r\n   
+    \u2A50 & \\closedvarcupsmashprod & closedvarcupsmashprod \\\\\r\n    \u2A51 &
+    \\wedgeodot & wedgeodot \\\\\r\n    \u2A52 & \\veeodot & veeodot \\\\\r\n   
+    \u2A53 & \\Wedge & Wedge \\\\\r\n    \u2A54 & \\Vee & Vee \\\\\r\n    \u2A55
+    & \\wedgeonwedge & wedgeonwedge \\\\\r\n    \u2A56 & \\veeonvee & veeonvee \\\\\r\n   
+    \u2A57 & \\bigslopedvee & bigslopedvee \\\\\r\n    \u2A58 & \\bigslopedwedge
+    & bigslopedwedge \\\\\r\n    \u2A59 & \\veeonwedge & veeonwedge \\\\\r\n    \u2A5A
+    & \\wedgemidvert & wedgemidvert \\\\\r\n    \u2A5B & \\veemidvert & veemidvert
+    \\\\\r\n    \u2A5C & \\midbarwedge & midbarwedge \\\\\r\n    \u2A5D & \\midbarvee
+    & midbarvee \\\\\r\n    \u2A5E & \\doublebarwedge & doublebarwedge \\\\\r\n   
+    \u2A5F & \\wedgebar & wedgebar \\\\\r\n    \u2A60 & \\wedgedoublebar & wedgedoublebar
+    \\\\\r\n    \u2A61 & \\varveebar & varveebar \\\\\r\n    \u2A62 & \\doublebarvee
+    & doublebarvee \\\\\r\n    \u2A63 & \\veedoublebar & veedoublebar \\\\\r\n   
+    \u2A64 & \\dsub & dsub \\\\\r\n    \u2A65 & \\rsub & rsub \\\\\r\n    \u2A66
+    & \\eqdot & eqdot \\\\\r\n    \u2A67 & \\dotequiv & dotequiv \\\\\r\n    \u2A68
+    & \\equivVert & equivVert \\\\\r\n    \u2A69 & \\equivVvert & equivVvert \\\\\r\n   
+    \u2A6A & \\dotsim & dotsim \\\\\r\n    \u2A6B & \\simrdots & simrdots \\\\\r\n   
+    \u2A6C & \\simminussim & simminussim \\\\\r\n    \u2A6D & \\congdot & congdot
+    \\\\\r\n    \u2A6E & \\asteq & asteq \\\\\r\n    \u2A6F & \\hatapprox & hatapprox
+    \\\\\r\n    \u2A70 & \\approxeqq & approxeqq \\\\\r\n    \u2A71 & \\eqqplus &
+    eqqplus \\\\\r\n    \u2A72 & \\pluseqq & pluseqq \\\\\r\n    \u2A73 & \\eqqsim
+    & eqqsim \\\\\r\n    \u2A74 & \\Coloneq & Coloneq \\\\\r\n    \u2A75 & \\eqeq
+    & eqeq \\\\\r\n    \u2A76 & \\eqeqeq & eqeqeq \\\\\r\n    \u2A77 & \\ddotseq
+    & ddotseq \\\\\r\n    \u2A78 & \\equivDD & equivDD \\\\\r\n    \u2A79 & \\ltcir
+    & ltcir \\\\\r\n    \u2A7A & \\gtcir & gtcir \\\\\r\n    \u2A7B & \\ltquest &
+    ltquest \\\\\r\n    \u2A7C & \\gtquest & gtquest \\\\\r\n    \u2A7D & \\leqslant
+    & leqslant \\\\\r\n    \u2A7E & \\geqslant & geqslant \\\\\r\n    \u2A7F & \\lesdot
+    & lesdot \\\\\r\n    \u2A80 & \\gesdot & gesdot \\\\\r\n    \u2A81 & \\lesdoto
+    & lesdoto \\\\\r\n    \u2A82 & \\gesdoto & gesdoto \\\\\r\n    \u2A83 & \\lesdotor
+    & lesdotor \\\\\r\n    \u2A84 & \\gesdotol & gesdotol \\\\\r\n    \u2A85 & \\lessapprox
+    & lessapprox \\\\\r\n    \u2A86 & \\gtrapprox & gtrapprox \\\\\r\n    \u2A87
+    & \\lneq & lneq \\\\\r\n    \u2A88 & \\gneq & gneq \\\\\r\n    \u2A89 & \\lnapprox
+    & lnapprox \\\\\r\n    \u2A8A & \\gnapprox & gnapprox \\\\\r\n    \u2A8B & \\lesseqqgtr
+    & lesseqqgtr \\\\\r\n    \u2A8C & \\gtreqqless & gtreqqless \\\\\r\n    \u2A8D
+    & \\lsime & lsime \\\\\r\n    \u2A8E & \\gsime & gsime \\\\\r\n    \u2A8F & \\lsimg
+    & lsimg \\\\\r\n    \u2A90 & \\gsiml & gsiml \\\\\r\n    \u2A91 & \\lgE & lgE
+    \\\\\r\n    \u2A92 & \\glE & glE \\\\\r\n    \u2A93 & \\lesges & lesges \\\\\r\n   
+    \u2A94 & \\gesles & gesles \\\\\r\n    \u2A95 & \\eqslantless & eqslantless \\\\\r\n   
+    \u2A96 & \\eqslantgtr & eqslantgtr \\\\\r\n    \u2A97 & \\elsdot & elsdot \\\\\r\n   
+    \u2A98 & \\egsdot & egsdot \\\\\r\n    \u2A99 & \\eqqless & eqqless \\\\\r\n   
+    \u2A9A & \\eqqgtr & eqqgtr \\\\\r\n    \u2A9B & \\eqqslantless & eqqslantless
+    \\\\\r\n    \u2A9C & \\eqqslantgtr & eqqslantgtr \\\\\r\n    \u2A9D & \\simless
+    & simless \\\\\r\n    \u2A9E & \\simgtr & simgtr \\\\\r\n    \u2A9F & \\simlE
+    & simlE \\\\\r\n    \u2AA0 & \\simgE & simgE \\\\\r\n    \u2AA1 & \\Lt & Lt \\\\\r\n   
+    \u2AA2 & \\Gt & Gt \\\\\r\n    \u2AA3 & \\partialmeetcontraction & partialmeetcontraction
+    \\\\\r\n    \u2AA4 & \\glj & glj \\\\\r\n    \u2AA5 & \\gla & gla \\\\\r\n   
+    \u2AA6 & \\ltcc & ltcc \\\\\r\n    \u2AA7 & \\gtcc & gtcc \\\\\r\n    \u2AA8
+    & \\lescc & lescc \\\\\r\n    \u2AA9 & \\gescc & gescc \\\\\r\n    \u2AAA & \\smt
+    & smt \\\\\r\n    \u2AAB & \\lat & lat \\\\\r\n    \u2AAC & \\smte & smte \\\\\r\n   
+    \u2AAD & \\late & late \\\\\r\n    \u2AAE & \\bumpeqq & bumpeqq \\\\\r\n    \u2AAF
+    & \\preceq & preceq \\\\\r\n    \u2AB0 & \\succeq & succeq \\\\\r\n    \u2AB1
+    & \\precneq & precneq \\\\\r\n    \u2AB2 & \\succneq & succneq \\\\\r\n    \u2AB3
+    & \\preceqq & preceqq \\\\\r\n    \u2AB4 & \\succeqq & succeqq \\\\\r\n    \u2AB5
+    & \\precneqq & precneqq \\\\\r\n    \u2AB6 & \\succneqq & succneqq \\\\\r\n   
+    \u2AB7 & \\precapprox & precapprox \\\\\r\n    \u2AB8 & \\succapprox & succapprox
+    \\\\\r\n    \u2AB9 & \\precnapprox & precnapprox \\\\\r\n    \u2ABA & \\succnapprox
+    & succnapprox \\\\\r\n    \u2ABB & \\Prec & Prec \\\\\r\n    \u2ABC & \\Succ
+    & Succ \\\\\r\n    \u2ABD & \\subsetdot & subsetdot \\\\\r\n    \u2ABE & \\supsetdot
+    & supsetdot \\\\\r\n    \u2ABF & \\subsetplus & subsetplus \\\\\r\n    \u2AC0
+    & \\supsetplus & supsetplus \\\\\r\n    \u2AC1 & \\submult & submult \\\\\r\n   
+    \u2AC2 & \\supmult & supmult \\\\\r\n    \u2AC3 & \\subedot & subedot \\\\\r\n   
+    \u2AC4 & \\supedot & supedot \\\\\r\n    \u2AC5 & \\subseteqq & subseteqq \\\\\r\n   
+    \u2AC6 & \\supseteqq & supseteqq \\\\\r\n    \u2AC7 & \\subsim & subsim \\\\\r\n   
+    \u2AC8 & \\supsim & supsim \\\\\r\n    \u2AC9 & \\subsetapprox & subsetapprox
+    \\\\\r\n    \u2ACA & \\supsetapprox & supsetapprox \\\\\r\n    \u2ACB & \\subsetneqq
+    & subsetneqq \\\\\r\n    \u2ACC & \\supsetneqq & supsetneqq \\\\\r\n    \u2ACD
+    & \\lsqhook & lsqhook \\\\\r\n    \u2ACE & \\rsqhook & rsqhook \\\\\r\n    \u2ACF
+    & \\csub & csub \\\\\r\n    \u2AD0 & \\csup & csup \\\\\r\n    \u2AD1 & \\csube
+    & csube \\\\\r\n    \u2AD2 & \\csupe & csupe \\\\\r\n    \u2AD3 & \\subsup &
+    subsup \\\\\r\n    \u2AD4 & \\supsub & supsub \\\\\r\n    \u2AD5 & \\subsub &
+    subsub \\\\\r\n    \u2AD6 & \\supsup & supsup \\\\\r\n    \u2AD7 & \\suphsub
+    & suphsub \\\\\r\n    \u2AD8 & \\supdsub & supdsub \\\\\r\n    \u2AD9 & \\forkv
+    & forkv \\\\\r\n    \u2ADA & \\topfork & topfork \\\\\r\n    \u2ADB & \\mlcp
+    & mlcp \\\\\r\n    \u2ADC & \\forks & forks \\\\\r\n    \u2ADD & \\forksnot &
+    forksnot \\\\\r\n    \u2ADE & \\shortlefttack & shortlefttack \\\\\r\n    \u2ADF
+    & \\shortdowntack & shortdowntack \\\\\r\n    \u2AE0 & \\shortuptack & shortuptack
+    \\\\\r\n    \u2AE1 & \\perps & perps \\\\\r\n    \u2AE2 & \\vDdash & vDdash \\\\\r\n   
+    \u2AE3 & \\dashV & dashV \\\\\r\n    \u2AE4 & \\Dashv & Dashv \\\\\r\n    \u2AE5
+    & \\DashV & DashV \\\\\r\n    \u2AE6 & \\varVdash & varVdash \\\\\r\n    \u2AE7
+    & \\Barv & Barv \\\\\r\n    \u2AE8 & \\vBar & vBar \\\\\r\n    \u2AE9 & \\vBarv
+    & vBarv \\\\\r\n    \u2AEA & \\barV & barV \\\\\r\n    \u2AEB & \\Vbar & Vbar
+    \\\\\r\n    \u2AEC & \\Not & Not \\\\\r\n    \u2AED & \\bNot & bNot \\\\\r\n   
+    \u2AEE & \\revnmid & revnmid \\\\\r\n    \u2AEF & \\cirmid & cirmid \\\\\r\n   
+    \u2AF0 & \\midcir & midcir \\\\\r\n    \u2AF1 & \\topcir & topcir \\\\\r\n   
+    \u2AF2 & \\nhpar & nhpar \\\\\r\n    \u2AF3 & \\parsim & parsim \\\\\r\n    \u2AF4
+    & \\interleave & interleave \\\\\r\n    \u2AF5 & \\nhVvert & nhVvert \\\\\r\n   
+    \u2AF6 & \\threedotcolon & threedotcolon \\\\\r\n    \u2AF7 & \\lllnest & lllnest
+    \\\\\r\n    \u2AF8 & \\gggnest & gggnest \\\\\r\n    \u2AF9 & \\leqqslant & leqqslant
+    \\\\\r\n    \u2AFA & \\geqqslant & geqqslant \\\\\r\n    \u2AFB & \\trslash &
+    trslash \\\\\r\n    \u2AFC & \\biginterleave & biginterleave \\\\\r\n    \u2AFD
+    & \\sslash & sslash \\\\\r\n    \u2AFE & \\talloblong & talloblong \\\\\r\n   
+    \u2AFF & \\bigtalloblong & bigtalloblong \\\\\r\n    \u2B12 & \\squaretopblack
+    & squaretopblack \\\\\r\n    \u2B13 & \\squarebotblack & squarebotblack \\\\\r\n   
+    \u2B14 & \\squareurblack & squareurblack \\\\\r\n    \u2B15 & \\squarellblack
+    & squarellblack \\\\\r\n    \u2B16 & \\diamondleftblack & diamondleftblack \\\\\r\n   
+    \u2B17 & \\diamondrightblack & diamondrightblack \\\\\r\n    \u2B18 & \\diamondtopblack
+    & diamondtopblack \\\\\r\n    \u2B19 & \\diamondbotblack & diamondbotblack \\\\\r\n   
+    \u2B1A & \\dottedsquare & dottedsquare \\\\\r\n    \u2B1B & \\lgblksquare & lgblksquare
+    \\\\\r\n    \u2B1C & \\lgwhtsquare & lgwhtsquare \\\\\r\n    \u2B1D & \\vysmblksquare
+    & vysmblksquare \\\\\r\n    \u2B1E & \\vysmwhtsquare & vysmwhtsquare \\\\\r\n   
+    \u2B1F & \\pentagonblack & pentagonblack \\\\\r\n    \u2B20 & \\pentagon & pentagon
+    \\\\\r\n    \u2B21 & \\varhexagon & varhexagon \\\\\r\n    \u2B22 & \\varhexagonblack
+    & varhexagonblack \\\\\r\n    \u2B23 & \\hexagonblack & hexagonblack \\\\\r\n   
+    \u2B24 & \\lgblkcircle & lgblkcircle \\\\\r\n    \u2B25 & \\mdblkdiamond & mdblkdiamond
+    \\\\\r\n    \u2B26 & \\mdwhtdiamond & mdwhtdiamond \\\\\r\n    \u2B27 & \\mdblklozenge
+    & mdblklozenge \\\\\r\n    \u2B28 & \\mdwhtlozenge & mdwhtlozenge \\\\\r\n   
+    \u2B29 & \\smblkdiamond & smblkdiamond \\\\\r\n    \u2B2A & \\smblklozenge &
+    smblklozenge \\\\\r\n    \u2B2B & \\smwhtlozenge & smwhtlozenge \\\\\r\n    \u2B2C
+    & \\blkhorzoval & blkhorzoval \\\\\r\n    \u2B2D & \\whthorzoval & whthorzoval
+    \\\\\r\n    \u2B2E & \\blkvertoval & blkvertoval \\\\\r\n    \u2B2F & \\whtvertoval
+    & whtvertoval \\\\\r\n    \u2B30 & \\circleonleftarrow & circleonleftarrow \\\\\r\n   
+    \u2B31 & \\leftthreearrows & leftthreearrows \\\\\r\n    \u2B32 & \\leftarrowonoplus
+    & leftarrowonoplus \\\\\r\n    \u2B33 & \\longleftsquigarrow & longleftsquigarrow
+    \\\\\r\n    \u2B34 & \\nvtwoheadleftarrow & nvtwoheadleftarrow \\\\\r\n    \u2B35
+    & \\nVtwoheadleftarrow & nVtwoheadleftarrow \\\\\r\n    \u2B36 & \\twoheadmapsfrom
+    & twoheadmapsfrom \\\\\r\n    \u2B37 & \\twoheadleftdbkarrow & twoheadleftdbkarrow
+    \\\\\r\n    \u2B38 & \\leftdotarrow & leftdotarrow \\\\\r\n    \u2B39 & \\nvleftarrowtail
+    & nvleftarrowtail \\\\\r\n    \u2B3A & \\nVleftarrowtail & nVleftarrowtail \\\\\r\n   
+    \u2B3B & \\twoheadleftarrowtail & twoheadleftarrowtail \\\\\r\n    \u2B3C & \\nvtwoheadleftarrowtail
+    & nvtwoheadleftarrowtail \\\\\r\n    \u2B3D & \\nVtwoheadleftarrowtail & nVtwoheadleftarrowtail
+    \\\\\r\n    \u2B3E & \\leftarrowx & leftarrowx \\\\\r\n    \u2B3F & \\leftcurvedarrow
+    & leftcurvedarrow \\\\\r\n    \u2B40 & \\equalleftarrow & equalleftarrow \\\\\r\n   
+    \u2B41 & \\bsimilarleftarrow & bsimilarleftarrow \\\\\r\n    \u2B42 & \\leftarrowbackapprox
+    & leftarrowbackapprox \\\\\r\n    \u2B43 & \\rightarrowgtr & rightarrowgtr \\\\\r\n   
+    \u2B44 & \\rightarrowsupset & rightarrowsupset \\\\\r\n    \u2B45 & \\LLeftarrow
+    & LLeftarrow \\\\\r\n    \u2B46 & \\RRightarrow & RRightarrow \\\\\r\n    \u2B47
+    & \\bsimilarrightarrow & bsimilarrightarrow \\\\\r\n    \u2B48 & \\rightarrowbackapprox
+    & rightarrowbackapprox \\\\\r\n    \u2B49 & \\similarleftarrow & similarleftarrow
+    \\\\\r\n    \u2B4A & \\leftarrowapprox & leftarrowapprox \\\\\r\n    \u2B4B &
+    \\leftarrowbsimilar & leftarrowbsimilar \\\\\r\n    \u2B4C & \\rightarrowbsimilar
+    & rightarrowbsimilar \\\\\r\n    \u2B50 & \\medwhitestar & medwhitestar \\\\\r\n   
+    \u2B51 & \\medblackstar & medblackstar \\\\\r\n    \u2B52 & \\smwhitestar & smwhitestar
+    \\\\\r\n    \u2B53 & \\rightpentagonblack & rightpentagonblack \\\\\r\n    \u2B54
+    & \\rightpentagon & rightpentagon \\\\\r\n    \u3012 & \\postalmark & postalmark
+    \\\\\r\n    \u3030 & \\\\hzigzag & hzigzag \\\\\r\n\\end{align*}"
+  m_Size: 30
+  m_ScrollArea:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_Padding:
+    left: 2
+    right: 2
+    top: 2
+    bottom: 2
+  m_Overflow: 0
+--- !u!222 &581969869
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581969865}
+  m_CullTransparentMesh: 0
+--- !u!1 &704523169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704523172}
+  - component: {fileID: 704523171}
+  - component: {fileID: 704523170}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &704523170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704523169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &704523171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704523169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &704523172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704523169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1470370590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470370594}
+  - component: {fileID: 1470370593}
+  - component: {fileID: 1470370592}
+  - component: {fileID: 1470370591}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1470370591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470370590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1470370592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470370590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1470370593
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470370590}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 3
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1470370594
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470370590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 581969866}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}

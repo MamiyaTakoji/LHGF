@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>引导章节</title>
+	<Synopsis>这个章节用于选择观看演示故事还是观看使用教程</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="再次点击将跳转演示故事。" TextType="TexDraw" Id="S1-0"/>
+			<NextScript NextScriptName="ExampleStory"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S2">
+			<Speak CharacterID="1" Content="再次点击将跳转使用介绍。" TextType="TexDraw" Id="S2-0"/>
+			<NextScript NextScriptName="UsingGuide"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<AddCharacter CharacterID="1" From="me" SendMessage="ToShow"/>
+		<Speak CharacterID="1" Content="请问你要看哪个？" TextType="TexDraw" Id="0">
+			<Choice JumpID="S1" TextType="TexDraw">观看演示故事</Choice>
+			<Choice JumpID="S2" TextType="TexDraw">观看使用说明</Choice>
+		</Speak>
+		<Speak Content="1111" TextType="TexDraw" Id="1"/>
+	</MainPlot>
+</data>

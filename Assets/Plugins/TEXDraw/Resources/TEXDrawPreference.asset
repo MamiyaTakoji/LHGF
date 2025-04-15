@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f181994389177aa4e8807fb9cd14776f, type: 3}
+  m_Name: TEXDrawPreference
+  m_EditorClassIdentifier: 
+  MainFolderPath: Assets\Plugins\TEXDraw
+  editorReloading: 0
+  defaultMaterial: {fileID: 2100000, guid: 9d473469be5a9fc448e911362f79b8a9, type: 2}
+  spriteMaterial: {fileID: 2100000, guid: 37137b524c1bc134c93e4ef9471abc1c, type: 2}
+  fonts:
+  - {fileID: 11400000, guid: 1d7ad9bce2209b34380596f6fb8f368b, type: 2}
+  - {fileID: 11400000, guid: 8eae75c4c3ee6db4295aae6111643852, type: 2}
+  - {fileID: 11400000, guid: af41f737f27d4574e973f9d0eabf6c73, type: 2}
+  - {fileID: 11400000, guid: 1a64294e11d0b7a47b897de048b96621, type: 2}
+  - {fileID: 11400000, guid: 537d330c496354a42a493d001c4c1a03, type: 2}
+  - {fileID: 11400000, guid: d1767a6331f768a4cb842ac4e853c599, type: 2}
+  - {fileID: 11400000, guid: c0ed075ef334ab3429897b5a5fcf6ef4, type: 2}
+  - {fileID: 11400000, guid: 0332947ffb45a7c4cbe09d21bc3c59c1, type: 2}
+  - {fileID: 11400000, guid: 0c5d291a1221fbe48af09a053ef2efea, type: 2}
+  - {fileID: 11400000, guid: e52d6a9245a3187458f89fd0f589cb54, type: 2}
+  - {fileID: 11400000, guid: 36cbf2b2c6380634f871b143d2c15ebe, type: 2}
+  - {fileID: 11400000, guid: f27ae10c7262cf1458fd1d43c5ef59da, type: 2}
+  - {fileID: 11400000, guid: fa8bd39aa6c4e044a9baf3280fd9011d, type: 2}
+  - {fileID: 11400000, guid: bf6d11d863cc72d4e829d1f2a55b83b1, type: 2}
+  - {fileID: 11400000, guid: 48e69619ecb23b54ca495a6555d3dfd5, type: 2}
+  - {fileID: 11400000, guid: ab36d1fbdcd22334f9bf7fa63e0dae94, type: 2}
+  - {fileID: 11400000, guid: ebbfd8d271b75e444862dc0a3567e7ce, type: 2}
+  - {fileID: 11400000, guid: 2180f100e3f700a4594a88b850d95954, type: 2}
+  - {fileID: 11400000, guid: 7b38db373af75724dbbe4b53d769abc3, type: 2}
+  - {fileID: 11400000, guid: c15f5fd72916dc141a058310c310dfa8, type: 2}
+  - {fileID: 11400000, guid: 8dd1de888066dfd449e8f4b72878b6f3, type: 2}
+  - {fileID: 11400000, guid: 86418612f43ce8d428e465fc429463d9, type: 2}
+  - {fileID: 11400000, guid: b4958a92cef8f644cb202bce031f3b09, type: 2}
+  - {fileID: 11400000, guid: 26848630526b393458917f52ad506014, type: 2}
+  - {fileID: 11400000, guid: dad5de059436e5b4497d4498a40cca1f, type: 2}
+  - {fileID: 11400000, guid: ca9d92552624dc447ba752c03cb7e42b, type: 2}
+  - {fileID: 11400000, guid: 853bca44b44dc4541ab7637be3dd74e2, type: 2}
+  - {fileID: 11400000, guid: 2b8fd1c79b2c22f4aa1c10fbf5b270d9, type: 2}
+  - {fileID: 11400000, guid: 22c23c08b4628c04b8592b9309584e15, type: 2}
+  - {fileID: 11400000, guid: 4578b568985c89d428f612ba3325c88c, type: 2}
+  - {fileID: 11400000, guid: 203e3a1ca102fc44da54f0a3bd32e5e7, type: 2}
+  - {fileID: 11400000, guid: 2281e009173047241917f55e92b405e2, type: 2}
+  - {fileID: 11400000, guid: 4be6ceb1b3de2c14eb0d897458618931, type: 2}
+  - {fileID: 11400000, guid: 9cb7d255bceaad3469416d2bb70e59d6, type: 2}
+  - {fileID: 11400000, guid: e3e2f5b554e30f04484d438efde8c922, type: 2}
+  - {fileID: 11400000, guid: 77774f88cd0325949be01c4001f35c2e, type: 2}
+  configuration: {fileID: 11400000, guid: dd026dbb7bdb46842916dd81de3943bd, type: 2}
+  ConfigIDs:
+  - cmex
+  - cmmi
+  - cmsy
+  - msam
+  - msbm
+  - cmbsy
+  - cmmib
+  - stmary
+  - wasy
+  - cmbx
+  - cmr
+  - cmb
+  - cmbxsl
+  - cmbxti
+  - cmcsc
+  - cmsl
+  - cmti
+  - cmss
+  - cmssbx
+  - cmssdc
+  - cmssi
+  - cmtt
+  - cmitt
+  - cmsltt
+  - cmtcsc
+  - cmtex
+  - cmvtt
+  - cmdunh
+  - cmff
+  - cmfi
+  - cmu
+  - opens
+  - opensb
+  - opensbi
+  - opensi
+  - iconic
+  FontIDs:
+  - -1 (Use Default Typefaces)
+  - 0 - cmex.ttf
+  - 1 - cmmi.ttf
+  - 2 - cmsy.ttf
+  - 3 - msam.ttf
+  - 4 - msbm.ttf
+  - 5 - cmbsy.ttf
+  - 6 - cmmib.ttf
+  - 7 - stmary.ttf
+  - 8 - wasy.ttf
+  - 9 - cmbx.ttf
+  - 10 - cmr.ttf
+  - 11 - cmb.ttf
+  - 12 - cmbxsl.ttf
+  - 13 - cmbxti.ttf
+  - 14 - cmcsc.ttf
+  - 15 - cmsl.ttf
+  - 16 - cmti.ttf
+  - 17 - cmss.ttf
+  - 18 - cmssbx.ttf
+  - 19 - cmssdc.ttf
+  - 20 - cmssi.ttf
+  - 21 - cmtt.ttf
+  - 22 - cmitt.ttf
+  - 23 - cmsltt.ttf
+  - 24 - cmtcsc.ttf
+  - 25 - cmtex.ttf
+  - 26 - cmvtt.ttf
+  - 27 - cmdunh.ttf
+  - 28 - cmff.ttf
+  - 29 - cmfi.ttf
+  - 30 - cmu.ttf
+  - 31 - opens.ttf
+  - 32 - opensb.ttf
+  - 33 - opensbi.ttf
+  - 34 - opensi.ttf
+  - 35 - iconic.ttf
+  FontIDsGUI:
+  - m_Text: -1 (Use Default Typefaces)
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 0 - cmex.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 1 - cmmi.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 2 - cmsy.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 3 - msam.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 4 - msbm.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 5 - cmbsy.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 6 - cmmib.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 7 - stmary.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 8 - wasy.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 9 - cmbx.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 10 - cmr.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 11 - cmb.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 12 - cmbxsl.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 13 - cmbxti.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 14 - cmcsc.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 15 - cmsl.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 16 - cmti.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 17 - cmss.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 18 - cmssbx.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 19 - cmssdc.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 20 - cmssi.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 21 - cmtt.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 22 - cmitt.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 23 - cmsltt.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 24 - cmtcsc.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 25 - cmtex.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 26 - cmvtt.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 27 - cmdunh.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 28 - cmff.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 29 - cmfi.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 30 - cmu.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 31 - opens.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 32 - opensb.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 33 - opensbi.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 34 - opensi.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  - m_Text: 35 - iconic.ttf
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  FontIndexs: ffffffff000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f00000020000000210000002200000023000000

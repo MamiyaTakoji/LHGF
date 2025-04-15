@@ -1,0 +1,907 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb281b282af82a74a8232270ec331b74, type: 3}
+  m_Name: TEXDrawConfiguration
+  m_EditorClassIdentifier: 
+  Document:
+    retinaRatio: 1
+    signedCofficient: 0
+    debug: 0
+    initialSize: 0
+    pixelsPerInch: 166
+    nativeSize: 50
+  Paragraph:
+    alignment: 0
+    justify: 1
+    indent: 0
+    rightToLeft: 0
+    centeredMathBlock: 1
+    lineSpacing: 2.5
+    paragraphSpacing: 10
+    indentSpacing: 20
+    bulletSpacing: 30
+    leftPadding: 0
+    rightPadding: 0
+  Typeface:
+    defaultTypeface: cmr
+    typewriterTypeface: cmtt
+    mathTypeface: cmmi
+    functionTypeface: cmr
+    blankSpaceWidth: 6
+    lineAscent: 16
+    lineMedian: 5.25
+    lineDescent: 6
+    underlineLevel: 0
+    overlineLevel: 0
+    midlineLevel: 0
+  Math:
+    thinSpace: 2
+    mediumSpace: 3
+    thickSpace: 5
+    scriptRatio: 0.707
+    scriptScriptRatio: 0.499
+    lineThickness: 1.2
+    radicalLineThickness: 1.3
+    delimiterPadding: 3.5
+    framePadding: 1.14
+    matricePadding: 5.2
+    fractionPadding: 10
+    upperBaselineDistance: 4.5
+    upperMinimumDistance: 3
+    lowerBaselineDistance: 14.4
+    lowerMinimumDistance: 3
+    scriptHorizontalMargin: 1.5
+    scriptHeightMargin: 6.9
+    scriptDepthMargin: 4.7
+    scriptAscentOffset: -5.44
+    scriptAscentCrampedOffset: 8.1
+    scriptDescentOffset: -1.2
+  GlueTable: 00000000000000000300000003000000000000000000000000000000010000000100000000000000000000000000000003000000030000000000000000000000000000000100000001000000000000000300000003000000030000000300000003000000020000000300000002000000030000000000000003000000030000000300000000000000000000000300000000000000030000000300000000000000020000000100000004000000010000000100000001000000010000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000003000000000000000000000000000000010000000100000000000000010000000100000004000000030000000000000000000000000000000100000001000000000000000100000001000000030000000300000001000000010000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  InlineMacros:
+  - key: /
+    value: 
+  - key: LaTeX
+    value: L\kern{-.2em}\raisebox{.2em}{\scriptsize A}\kern{-.1em}\TeX
+  - key: TeX
+    value: T\kern{-.1em}\raisebox{-.2em}{E}\kern{-.1em}X
+  - key: TEXDraw
+    value: '{\itTEXDraw}'
+  - key: ldots
+    value: ...
+  - key: cdots
+    value: '{\cdot\cdot\cdot}'
+  - key: varkappa
+    value: '{\msbm\kappa}'
+  - key: SS
+    value: '{SS}'
+  - key: trademark
+    value: '{$^{\rm TM}$}'
+  - key: varpropto
+    value: '{\msam\proportional}'
+  - key: vartriangle
+    value: '{\msam\triangle}'
+  - key: vartriangledown
+    value: '{\msam\triangleinv}'
+  - key: vartriangleleft
+    value: '{\msam\triangleleft}'
+  - key: vartriangleright
+    value: '{\msam\triangleright}'
+  - key: bigstar
+    value: '{\msam\star}'
+  - key: photon
+    value: '{\AC\AC\AC\AC}'
+  - key: gluon
+    value: '{\gluonbelement\gluonelement\gluonelement\gluonelement\gluonelement\gluonelement\gluonelement\gluoneelement}'
+  - key: precsim
+    value: '{\msam\precedesorequal}'
+  - key: succsim
+    value: '{\msam\followsorequal}'
+  - key: precapprox
+    value: '{\msbm\precedesorequal}'
+  - key: succapprox
+    value: '{\msbm\followsorequal}'
+  - key: thicksim
+    value: '{\msbm\similar}'
+  - key: thickapprox
+    value: '{\msbm\approxequal}'
+  - key: \documentclass[#1]#2
+    value: 
+  - key: \usepackage#1
+    value: 
+  - key: \newcommand#1
+    value: 
+  - key: \newenvironment#1#2#3
+    value: 
+  - key: item
+    value: \\
+  - key: neq
+    value: \not=
+  - key: aa
+    value: \r{a}
+  - key: AA
+    value: \accentabove\r{A}
+  - key: \b#1
+    value: \accentdown\macron{#1}
+  - key: \d#1
+    value: \accentdown\dotaccent{#1}
+  - key: vysmwhtcircle
+    value: ^{\openbullet}
+  - key: textunderscore
+    value: \verb|_|
+  - key: labelitemi
+    value: \par\hbox by 25pt{\hss\bullet\w}
+  - key: labelitemii
+    value: \par\hbox by 25pt{\hss\endash}
+  - key: labelitemiii
+    value: \par\hbox by 25pt{\hss\asterisk}
+  - key: labelitemiv
+    value: \par\hbox by 25pt{\hss\periodcentered}
+  - key: labelenumi
+    value: \par\hbox by 25pt{\hss\the\advance\count5 by 1.\w}
+  - key: Alpha
+    value: \mathrm{A}
+  - key: Beta
+    value: \mathrm{B}
+  - key: Epsilon
+    value: \mathrm{P}
+  - key: Zeta
+    value: \mathrm{Z}
+  - key: Eta
+    value: \mathrm{H}
+  - key: Iota
+    value: \mathrm{I}
+  - key: Kappa
+    value: \mathrm{K}
+  - key: Mu
+    value: \mathrm{M}
+  - key: Nu
+    value: \mathrm{N}
+  - key: Omicron
+    value: \mathrm{O}
+  - key: omicron
+    value: \mathrm{o}
+  - key: Rho
+    value: \mathrm{P}
+  - key: Tau
+    value: \mathrm{T}
+  - key: Chi
+    value: \mathrm{C}
+  - key: lvert
+    value: \mathopen{\vert}
+  - key: rvert
+    value: \mathclose{\vert}
+  - key: ulink#1
+    value: \link{\underline{#1}}
+  BlockMacros:
+  - key: \title#1
+    value: \begin{center}\bf\Huge #1\end{center}
+  - key: \subtitle#1
+    value: \begin{center}\bf\Large #1\end{center}
+  - key: \date#1
+    value: \begin{center}\bf #1\end{center}
+  - key: \centerline#1
+    value: \begin{center}#1\end{center}
+  - key: \parasection#1
+    value: '{\bf\LARGE\hbox{\the\advance\count1 by 1.}\count2=0\count3=0\count4=0\enskip
+      #1}'
+  - key: \subsection#1
+    value: '{\bf\large\hbox{\the\count1.\the\advance\count2 by 1}\count3=0\count4=0\enskip
+      #1}'
+  SymbolAliases:
+  - key: size
+    value: fontsize
+  - key: lbrace
+    value: braceleft
+  - key: rbrace
+    value: braceright
+  - key: langle
+    value: angbracketleft
+  - key: rangle
+    value: angbracketright
+  - key: lceil
+    value: ceilingleft
+  - key: rceil
+    value: ceilingright
+  - key: lfloor
+    value: floorleft
+  - key: rfloor
+    value: floorright
+  - key: lmoustache
+    value: bracelefttp
+  - key: rmoustache
+    value: bracerighttp
+  - key: lgroup
+    value: braceleftbt
+  - key: rgroup
+    value: bracerightbt
+  - key: vert
+    value: bar
+  - key: Vert
+    value: bardbl
+  - key: varrho
+    value: rho1
+  - key: varepsilon
+    value: epsilon1
+  - key: varpi
+    value: pi1
+  - key: varphi
+    value: phi1
+  - key: varsigma
+    value: sigma1
+  - key: vartheta
+    value: theta1
+  - key: \
+    value: softbreak
+  - key: t
+    value: tie
+  - key: u
+    value: breve
+  - key: '`'
+    value: grave
+  - key: ''''
+    value: acute
+  - key: ^
+    value: circumflex
+  - key: v
+    value: caron
+  - key: hat
+    value: circumflex
+  - key: '"'
+    value: dieresis
+  - key: umlaut
+    value: dieresis
+  - key: .
+    value: dotaccent
+  - key: ~
+    value: tilde
+  - key: H
+    value: hungarumlaut
+  - key: r
+    value: ring
+  - key: =
+    value: macron
+  - key: c
+    value: cedilla
+  - key: i
+    value: dotlessi
+  - key: j
+    value: dotlessj
+  - key: section
+    value: parasection
+  - key: P
+    value: pilcrow
+  - key: S
+    value: section
+  - key: o
+    value: oslash
+  - key: O
+    value: Oslash
+  - key: dag
+    value: dagger
+  - key: dagg
+    value: daggerdbl
+  - key: ddagger
+    value: daggerdbl
+  - key: wr
+    value: wreathproduct
+  - key: infty
+    value: infinity
+  - key: ss
+    value: germandbls
+  - key: circledR
+    value: circleR
+  - key: circledS
+    value: circleS
+  - key: yen
+    value: Yen
+  - key: backprime
+    value: primereverse
+  - key: ell
+    value: lscript
+  - key: partial
+    value: partialdiff
+  - key: varnothing
+    value: emptyset
+  - key: mho
+    value: Omegainv
+  - key: digamma
+    value: Digamma
+  - key: wp
+    value: weierstrass
+  - key: Re
+    value: Rfractur
+  - key: Im
+    value: Ifractur
+  - key: hslash
+    value: planckover2pi
+  - key: hbar
+    value: planckover2pi1
+  - key: Game
+    value: Gmir
+  - key: forall
+    value: universal
+  - key: exists
+    value: existential
+  - key: nexists
+    value: notexistential
+  - key: surd
+    value: radical
+  - key: amalg
+    value: coproduct
+  - key: diagup
+    value: upslope
+  - key: diagdown
+    value: downslope
+  - key: neg
+    value: logicalnot
+  - key: bowtie
+    value: Bowtie
+  - key: venus
+    value: female
+  - key: mars
+    value: male
+  - key: neptune
+    value: neptun
+  - key: capricornus
+    value: capricorn
+  - key: leo
+    value: ascnode
+  - key: blacktriangle
+    value: trianglesolid
+  - key: blacktriangledown
+    value: triangledownsld
+  - key: blacktriangleleft
+    value: triangleleftsld
+  - key: blacktriangleright
+    value: trianglerightsld
+  - key: triangledown
+    value: vartriangledown
+  - key: circ
+    value: openbullet
+  - key: bigcirc
+    value: circlecopyrt
+  - key: blacksquare
+    value: squaresolid
+  - key: lozenge
+    value: diamond
+  - key: blacklozenge
+    value: diamondsolid
+  - key: clubsuit
+    value: club
+  - key: diamondsuit
+    value: diamond
+  - key: heartsuit
+    value: heart
+  - key: eighthnote
+    value: eigthnote
+  - key: comment
+    value: APLcomment
+  - key: maltese
+    value: maltesecross
+  - key: oplus
+    value: circleplus
+  - key: ominus
+    value: circleminus
+  - key: otimes
+    value: circlemultiply
+  - key: oast
+    value: circleast
+  - key: oslash
+    value: circledivide
+  - key: odot
+    value: circledot
+  - key: boxplus
+    value: squareplus
+  - key: boxminus
+    value: squareminus
+  - key: boxtimes
+    value: squaremultiply
+  - key: boxarrowup
+    value: APLuparrowbox
+  - key: boxarrowdown
+    value: APLdownarrowbox
+  - key: boxarrowleft
+    value: APLleftarrowbox
+  - key: boxarrowright
+    value: APLrightarrowbox
+  - key: imath
+    value: dotlessi
+  - key: jmath
+    value: dotlessj
+  - key: pm
+    value: plusminus
+  - key: mp
+    value: minusplus
+  - key: cdot
+    value: periodcentered
+  - key: cdotp
+    value: periodcentered
+  - key: times
+    value: multiply
+  - key: multiply
+    value: cmultiply
+  - key: divide
+    value: cdivide
+  - key: ast
+    value: asteriskmath
+  - key: div
+    value: divide
+  - key: uplus
+    value: unionmulti
+  - key: cup
+    value: union
+  - key: cap
+    value: intersection
+  - key: sqcup
+    value: unionsq
+  - key: sqcap
+    value: intersectionsq
+  - key: doublecup
+    value: uniondbl
+  - key: doublecap
+    value: intersectiondbl
+  - key: Cup
+    value: uniondbl
+  - key: Cap
+    value: intersectiondbl
+  - key: vee
+    value: logicalor
+  - key: wedge
+    value: logicaland
+  - key: curlyvee
+    value: downfall
+  - key: curlywedge
+    value: uprise
+  - key: leftthreetimes
+    value: multiopenleft
+  - key: rightthreetimes
+    value: multiopenright
+  - key: ltimes
+    value: multicloseleft
+  - key: rtimes
+    value: multicloseright
+  - key: barwedge
+    value: nand
+  - key: veebar
+    value: orunderscore
+  - key: doublebarwedge
+    value: perpcorrespond
+  - key: equiv
+    value: equivalence
+  - key: triangleq
+    value: defines
+  - key: doteqdot
+    value: equalsdots
+  - key: risingdotseq
+    value: equaldotrightleft
+  - key: fallingdotseq
+    value: equaldotleftright
+  - key: asymp
+    value: equivasymptotic
+  - key: propto
+    value: proportional
+  - key: bumpeq
+    value: difference
+  - key: Bumpeq
+    value: geomequivalent
+  - key: eqcirc
+    value: ringinequal
+  - key: circeq
+    value: circleequal
+  - key: sim
+    value: similar
+  - key: approx
+    value: approxequal
+  - key: simeq
+    value: similarequal
+  - key: eqsim
+    value: equalorsimilar
+  - key: backsim
+    value: revsimilar
+  - key: backsimeq
+    value: revasymptequal
+  - key: approxeq
+    value: approxorequal
+  - key: Vvdash
+    value: forcesbar
+  - key: vdash
+    value: turnstileleft
+  - key: dashv
+    value: turnstileright
+  - key: Vdash
+    value: forces
+  - key: vDash
+    value: satisfies
+  - key: in
+    value: element
+  - key: ni
+    value: owner
+  - key: mid
+    value: bar
+  - key: parallel
+    value: bardbl
+  - key: shortmid
+    value: barshort
+  - key: shortparallel
+    value: parallelshort
+  - key: pitchfork
+    value: fork
+  - key: gtr
+    value: greater
+  - key: leq
+    value: lessequal
+  - key: geq
+    value: greaterequal
+  - key: ne
+    value: neq
+  - key: ge
+    value: greaterequal
+  - key: le
+    value: lessequal
+  - key: ge
+    value: greaterequal
+  - key: leqslant
+    value: lessorequalslant
+  - key: geqslant
+    value: greaterorequalslant
+  - key: leqq
+    value: lessdblequal
+  - key: geqq
+    value: greaterdblequal
+  - key: lessequivl
+    value: lessorsimilar
+  - key: greaterequivlnt
+    value: greaterorsimilar
+  - key: lesssim
+    value: lessorsimilar
+  - key: gtrsim
+    value: greaterorsimilar
+  - key: lessapprox
+    value: lessorapproxeql
+  - key: gtrapprox
+    value: greaterorapproxeql
+  - key: eqslantless
+    value: equalorless
+  - key: eqslantgtr
+    value: equalorgreater
+  - key: lessgtr
+    value: lessorgreater
+  - key: gtrless
+    value: greaterorless
+  - key: lesseqgtr
+    value: lessequalgreater
+  - key: gtreqless
+    value: greaterlessequal
+  - key: lesseqqgtr
+    value: lessdbleqlgreater
+  - key: gtreqqless
+    value: greaterdbleqlless
+  - key: ll
+    value: lessmuch
+  - key: gg
+    value: greatermuch
+  - key: lll
+    value: muchless
+  - key: ggg
+    value: muchgreater
+  - key: gtrdot
+    value: greaterdot
+  - key: prec
+    value: precedes
+  - key: succ
+    value: follows
+  - key: preceq
+    value: precedesequal
+  - key: succeq
+    value: followsequal
+  - key: preccurlyeq
+    value: precedesorcurly
+  - key: succcurlyeq
+    value: followsorcurly
+  - key: curlyeqprec
+    value: equalorprecedes
+  - key: curlyeqsucc
+    value: equalorfollows
+  - key: subset
+    value: propersubset
+  - key: supset
+    value: propersuperset
+  - key: subseteq
+    value: reflexsubset
+  - key: supseteq
+    value: reflexsuperset
+  - key: sqsubseteq
+    value: subsetsqequal
+  - key: sqsupseteq
+    value: supersetsqequal
+  - key: Subset
+    value: subsetdbl
+  - key: Supset
+    value: supersetdbl
+  - key: subseteqq
+    value: subsetdblequal
+  - key: supseteqq
+    value: supersetdblequal
+  - key: nless
+    value: notless
+  - key: ngtr
+    value: notgreater
+  - key: nleq
+    value: notlessequal
+  - key: ngeq
+    value: notgreaterequal
+  - key: nleqslant
+    value: notlessorslnteql
+  - key: ngeqslant
+    value: notgreaterorslnteql
+  - key: nleqq
+    value: notlessdblequal
+  - key: ngeqq
+    value: notgreaterdblequal
+  - key: lnsim
+    value: lessornotsimilar
+  - key: gnsim
+    value: greaterornotsimilar
+  - key: lnaprrox
+    value: lessnotdblequal
+  - key: gnapprox
+    value: greaternotdblequal
+  - key: lneq
+    value: lessnotequal
+  - key: gneq
+    value: greaternotequal
+  - key: lneqq
+    value: lessornotdbleql
+  - key: gneqq
+    value: greaterornotdbleql
+  - key: nprec
+    value: notprecedes
+  - key: nsucc
+    value: notfollows
+  - key: npreceq
+    value: notprecedesoreql
+  - key: nsucceq
+    value: notfollowsoreql
+  - key: precnsim
+    value: precedeornoteqvlnt
+  - key: succnsim
+    value: followornoteqvlnt
+  - key: precnapprox
+    value: precedenotdbleqv
+  - key: succnapprox
+    value: follownotdbleqv
+  - key: precneqq
+    value: precedenotslnteql
+  - key: succneqq
+    value: follownotslnteql
+  - key: nsubseteq
+    value: notsubseteql
+  - key: nsupseteq
+    value: notsuperseteql
+  - key: subsetneq
+    value: subsetnoteql
+  - key: supsetneq
+    value: supersetnoteql
+  - key: nsubseteqq
+    value: notsubsetordbleql
+  - key: nsupseteqq
+    value: notsupersetordbleql
+  - key: varsubsetneq
+    value: notsubsetoreql
+  - key: varsupsetneq
+    value: notsupersetoreql
+  - key: subsetneqq
+    value: subsetornotdbleql
+  - key: supsetneqq
+    value: supersetornotdbleql
+  - key: varsubsetneqq
+    value: subsetornoteql
+  - key: varsupsetneqq
+    value: supersetornoteql
+  - key: ntriangleleft
+    value: nottriangleleft
+  - key: ntriangleright
+    value: nottriangleright
+  - key: ntrianglelefteq
+    value: nottriangeqlright
+  - key: ntrianglerighteq
+    value: nottriangeqlleft
+  - key: nsim
+    value: notsimilar
+  - key: ncong
+    value: notapproxequal
+  - key: nvdash
+    value: notturnstile
+  - key: nvDash
+    value: notsatisfies
+  - key: nVdash
+    value: notforces
+  - key: nVDash
+    value: notforcesextra
+  - key: nmid
+    value: notbar
+  - key: nparallel
+    value: notparallel
+  - key: nshortmid
+    value: notshortbar
+  - key: nshortparallel
+    value: notshortparallel
+  - key: to
+    value: arrowright
+  - key: uparrow
+    value: arrowup
+  - key: downarrow
+    value: arrowdown
+  - key: leftarrow
+    value: arrowleft
+  - key: rightarrow
+    value: arrowright
+  - key: Uparrow
+    value: arrowdblup
+  - key: Downarrow
+    value: arrowdbldown
+  - key: Leftarrow
+    value: arrowdblleft
+  - key: Rightarrow
+    value: arrowdblright
+  - key: updownarrow
+    value: arrowbothv
+  - key: Updownarrow
+    value: arrowdblbothv
+  - key: leftrightarrow
+    value: arrowboth
+  - key: Leftrightarrow
+    value: arrowdblboth
+  - key: leftharpoonup
+    value: arrowlefttophalf
+  - key: leftharpoondown
+    value: arrowleftbothalf
+  - key: rightharpoonup
+    value: arrowrighttophalf
+  - key: rightharpoondown
+    value: arrowrightbothalf
+  - key: upharpoonleft
+    value: harpoonupleft
+  - key: upharpoonright
+    value: harpoonupright
+  - key: downharpoonleft
+    value: harpoondownleft
+  - key: downharpoonright
+    value: harpoondownright
+  - key: nearrow
+    value: arrownortheast
+  - key: searrow
+    value: arrowsoutheast
+  - key: swarrow
+    value: arrowsouthwest
+  - key: nwarrow
+    value: arrownorthwest
+  - key: curvearrowleft
+    value: archleftdown
+  - key: curvearrowright
+    value: archrightdown
+  - key: circlearrowleft
+    value: anticlockwise
+  - key: circlearrowright
+    value: clockwise
+  - key: upuparrows
+    value: dblarrowup
+  - key: downdownarrows
+    value: dblarrowdwn
+  - key: leftleftarrows
+    value: dblarrowleft
+  - key: rightrightarrows
+    value: dblarrowright
+  - key: leftrightarrows
+    value: arrowparrleftright
+  - key: rightleftarrows
+    value: arrowparrrightleft
+  - key: leftrightharpoons
+    value: harpoonrightleft
+  - key: rightleftharpoons
+    value: harpoonleftright
+  - key: nleftarrow
+    value: notarrowleft
+  - key: nLeftarrow
+    value: notdblarrowleft
+  - key: nrightarrow
+    value: notarrowright
+  - key: nRightarrow
+    value: notdblarrowright
+  - key: nleftrightarrow
+    value: notarrowboth
+  - key: nLeftrightarrow
+    value: notdblarrowboth
+  - key: multimap
+    value: multimap
+  - key: twoheadleftarrow
+    value: dblarrowheadleft
+  - key: twoheadrightarrow
+    value: dblarrowheadright
+  - key: Lleftarrow
+    value: arrowtripleleft
+  - key: Rrightarrow
+    value: arrowtripleright
+  - key: Lsh
+    value: shiftleft
+  - key: Rsh
+    value: shiftright
+  - key: looparrowleft
+    value: curlyleft
+  - key: looparrowright
+    value: curlyright
+  - key: leftarrowtail
+    value: arrowtailleft
+  - key: rightarrowtail
+    value: arrowtailright
+  - key: leftrightsquigarrow
+    value: squiggleleftright
+  - key: rightsquigarrow
+    value: squiggleright
+  - key: leftarrowtriangle
+    value: leftarrowtriangle
+  - key: rightarrowtriangle
+    value: rightarrowtriangle
+  - key: leftrightarrowtriangle
+    value: leftrightarrowtriangle
+  - key: sum
+    value: summationtext
+  - key: prod
+    value: producttext
+  - key: int
+    value: integraltext
+  - key: oint
+    value: contintegraltext
+  - key: mathyen
+    value: Yen
+  - key: mathsection
+    value: section
+  - key: mathparagraph
+    value: paragraph
+  - key: matheth
+    value: eth
+  - key: Angstrom
+    value: AA
+  - key: amgstrom
+    value: AA
+  - key: Nearrow
+    value: arrownortheast
+  - key: Searrow
+    value: arrowsoutheast
+  - key: Swarrow
+    value: arrowsouthwest
+  - key: Nwarrow
+    value: arrownorthwest
+  - key: increment
+    value: Delta
+  - key: coproduct
+    value: coprod
+  - key: divslash
+    value: slash
+  - key: circledast
+    value: varoast
+  - key: _
+    value: textunderscore
+  - key: dots
+    value: ldots
+  - key: text
+    value: textrm
+  GlobalSymbolFonts:
+  - cmex
+  - cmmi
+  - cmr
+  - cmsy
+  - msam
+  - msbm
+  - stmary
+  - wasy
+  - iconic

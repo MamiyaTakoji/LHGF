@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为你演示HOILAI Galgame Framework(HGF)</Synopsis>
+	<BranchPlot/>
+	<MainPlot>
+		<AddCharacter CharacterID="1" From="M" SendMessage="ToShow"/>
+		<Speak CharacterID="1" Content="角色添加完成" TextType="TexDraw" Id="0"/>
+		<Speak CharacterID="1" Content="你好呀！不知道看到这里你是否感觉有些烦躁了？" TextType="TexDraw" Id="1"/>
+		<Speak CharacterID="1" Content="还有两个功能就介绍完了，所以请再忍耐一下哦？" TextType="TexDraw" Id="2"/>
+		<Speak CharacterID="1" Content="接下来介绍如何更换背景。" TextType="TexDraw" Id="3"/>
+		<LongSpeak Continue="0" Content="摩耶孝次：在新的xlsx文件中填入如下内容：" End="0" TextType="TexDraw" Skip="0" Id="4"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+ChangeBackImg &amp; &amp; &amp;Background1.jpg &amp; &amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="5"/>
+		<LongSpeak Continue="1" Content="摩耶孝次：然后在Texture2D文件夹（之前存放立绘的文件夹）下创建一个名BackgroundImage的文件夹，并在里面放入一个名为Background1.jpg的图片文件。" End="0" TextType="TexDraw" Skip="0" Id="6"/>
+		<LongSpeak Continue="1" Content="摩耶孝次：运行后你将会看见背景变化的效果。" End="1" TextType="TexDraw" Skip="0" Id="7"/>
+		<Speak CharacterID="1" Content="···" TextType="TexDraw" Id="8"/>
+		<ChangeBackImg BackImgName="Background1.jpg"/>
+		<Speak CharacterID="1" Content="就像这样" TextType="TexDraw" Id="9"/>
+		<Speak CharacterID="1" Content="现在来介绍最后一个功能，即让角色退场。" TextType="TexDraw" Id="10"/>
+		<Speak CharacterID="1" Content="为了不让画面太奇怪，请你利用之前学过的知识，自己再添加一个角色吧。" TextType="TexDraw" Id="11"/>
+		<AddCharacter CharacterID="2" From="空"/>
+		<AddCharacter CharacterID="3" From="M??" SendMessage="Outside-ToRight"/>
+		<Speak CharacterID="2" Content="这时，一个黑影忽然出现在面前。" TextType="TexDraw" Id="12"/>
+		<Speak CharacterID="3" Content="（低沉的嘶吼声）" TextType="TMP" Id="13"/>
+		<LongSpeak Continue="0" Content="摩耶孝次：糟糕，这是什么怪物？" End="0" TextType="TexDraw" Skip="0" Id="14"/>
+		<LongSpeak Continue="1" Content="摩耶孝次：为了击退它，必须在剧情脚本上写下什么。" End="0" TextType="TexDraw" Skip="0" Id="15"/>
+		<LongSpeak Continue="1" Content="我记得它的角色ID是3，所以我应该在剧情脚本中输入：" End="0" TextType="TexDraw" Skip="0" Id="16"/>
+		<LongSpeak Continue="1" Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline 
+DeleteCharacter &amp; 3&amp; &amp; &amp; &amp;\\ [1ex]  \hline
+\end{tabular}" End="0" TextType="TexDraw" Skip="1" Id="17"/>
+		<LongSpeak Continue="1" Content="这样一来它就会消失了" End="1" TextType="TexDraw" Skip="0" Id="18"/>
+		<Speak CharacterID="1" Content="···" TextType="TexDraw" Id="19"/>
+		<DeleteCharacter CharacterID="3"/>
+		<Speak CharacterID="2" Content="黑影消失了" TextType="TexDraw" Id="20"/>
+		<Speak CharacterID="1" Content="那么到此为止所有的功能都介绍完了，显然在xlsx文件上编辑的编辑方式还是不够直观，目前的功能也不是很完善，或许下次我会更新更多的功能上去，感谢你的观看！" TextType="TexDraw" Id="21"/>
+	</MainPlot>
+</data>

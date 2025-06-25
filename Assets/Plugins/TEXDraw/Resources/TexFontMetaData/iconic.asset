@@ -1,0 +1,2756 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3a5a8d53a9a0f4994e08bc9b008895, type: 3}
+  m_Name: iconic
+  m_EditorClassIdentifier: 
+  assetIndex: 35
+  editorMetadata:
+    catalogs: a100a200a300a400a500a600a700a800a900aa00ad00ae00af00b000b100b200b300b400b500b6001922b800b900ba00bb00bc00bd00be00bf00c000c100c200c3002100220023002400250026002700280029002a002b002c002d002e002f0030003100320033003400350036003700380039003a003b003c003d003e003f0040004100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a005b005c005d005e005f0060006100620063006400650066006700680069006a006b006c006d006e006f0070007100720073007400750076007700780079007a007b007c007d007e00c400
+    catalogsToken: \xA1-\xAA \xAD-\xB6 \x2219 \xB8-\xC3 \x21-\x7E \xC4
+    assetPath: Assets/Plugins/TEXDraw/Fonts/Sprites/Iconic.png
+    category: 
+    order: 100
+    variantAssetNames: []
+  metadata:
+    height: 0
+    depth: 0
+    width: 0
+    preferUnicode: 0
+    style: 0
+    category: 0
+    baseAsset: {fileID: 0}
+    variantAssets: []
+  chars:
+  - characterIndex: 161
+    type: 0
+    symbol: play
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 162
+    type: 0
+    symbol: pause
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 163
+    type: 0
+    symbol: stop
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 164
+    type: 0
+    symbol: step
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 165
+    type: 0
+    symbol: electric
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 166
+    type: 0
+    symbol: sunshine
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 167
+    type: 0
+    symbol: moon
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 168
+    type: 0
+    symbol: cloud
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 169
+    type: 0
+    symbol: lock
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 170
+    type: 0
+    symbol: finger
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 173
+    type: 0
+    symbol: convexstar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 174
+    type: 0
+    symbol: time
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 175
+    type: 0
+    symbol: rocket
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 176
+    type: 0
+    symbol: flight
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 177
+    type: 0
+    symbol: placemark
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 178
+    type: 0
+    symbol: speed
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 179
+    type: 0
+    symbol: reset
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 180
+    type: 0
+    symbol: wrench
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 181
+    type: 0
+    symbol: dumpbin
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 182
+    type: 0
+    symbol: stack
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 8729
+    type: 0
+    symbol: call
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 184
+    type: 0
+    symbol: heart
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 185
+    type: 0
+    symbol: wrongmark
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 186
+    type: 0
+    symbol: checkmark
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 187
+    type: 0
+    symbol: cross
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 188
+    type: 0
+    symbol: speedup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 189
+    type: 0
+    symbol: levelup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 190
+    type: 0
+    symbol: chat
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 191
+    type: 0
+    symbol: idea
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 192
+    type: 0
+    symbol: lookup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 193
+    type: 0
+    symbol: key
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 194
+    type: 0
+    symbol: gift
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 195
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 33
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 34
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 35
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 36
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 37
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 38
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 39
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 40
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 41
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 42
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 43
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 44
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 45
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 46
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 47
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 48
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 49
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 50
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 51
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 52
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 53
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 54
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 55
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 56
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 57
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 58
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 59
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 60
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 61
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 62
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 63
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 64
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 65
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 66
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 67
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 68
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 69
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 70
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 71
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 72
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 73
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 74
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 75
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 76
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 77
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 78
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 79
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 80
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 81
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 82
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 83
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 84
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 85
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 86
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 87
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 88
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 89
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 90
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 91
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 92
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 93
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 94
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 95
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 96
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 97
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 98
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 99
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 100
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 101
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 102
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 103
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 104
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 105
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 106
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 107
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 108
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 109
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 110
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 111
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 112
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 113
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 114
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 115
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 116
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 117
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 118
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 119
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 120
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 121
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 122
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 123
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 124
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 125
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 126
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 196
+    type: 0
+    symbol: 
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  assets:
+  - {fileID: 21300000, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300002, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300004, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300006, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300008, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300010, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300012, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300014, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300016, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300018, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300020, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300022, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300024, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300026, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300028, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300030, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300032, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300034, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300036, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300038, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300040, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300042, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300044, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300046, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300048, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300050, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300052, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300054, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300056, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300058, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300060, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  - {fileID: 21300062, guid: 70cc3e8406f29d34ab8e7b5bb2cfae2e, type: 3}
+  lineOffset: 0
+  lineHeight: 1
+  alphaOnly: 1

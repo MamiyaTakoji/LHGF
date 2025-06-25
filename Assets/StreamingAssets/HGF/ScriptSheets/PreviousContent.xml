@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>Start</title>
+	<Synopsis>展示当前版本和之前版本的介绍以及演示</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="你选择了访问V1.0的内容。" Id="S1-0" TextType="TexDraw"/>
+			<NextScript NextScriptName="ContentV1.0"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<AddCharacter CharacterID="1" From="空" SendMessage="Outside-ToRight"/>
+		<Speak CharacterID="1" Content="随着版本的更新，使用说明的内容有可能不再适用。不过一般不会出现太大的变化" Id="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="你要访问之前哪个版本的内容？" Id="1" TextType="TexDraw">
+			<Choice JumpID="S1" TextType="TMP">V1.0</Choice>
+		</Speak>
+		<Speak CharacterID="1" Content="占位" Id="2" TextType="TexDraw"/>
+	</MainPlot>
+</data>

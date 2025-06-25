@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为你演示HOILAI Galgame Framework(HGF)</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="我觉得你应该鼓起勇气向其他人交流。" Id="S1-0" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="我应该···向其他人交流吗？" Id="S1-1" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="嗯，如果一直害怕的话，不就只能一直孤独下去了吗？" Id="S1-2" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="对方真的不被感兴趣又怎么样？最多就是占用了别人几句话或者读几条消息的时间。" Id="S1-3" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="被人认为是显摆和炫耀又如何？你的实力就是如此，你应该为此感到骄傲而不是在这样的地方在意别人的想法。" Id="S1-4" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="被人嫌弃太菜又怎么样？表现出虚心请教的态度，总是能交流得下去的吧。" Id="S1-5" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="···" Id="S1-6" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="她好像对我的发言有所触动，陷入了沉思。" Id="S1-7" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="何况，你长得这么漂亮，别人一定也会很高兴和你交流的！" Id="S1-8" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="为···为什么忽然说这个？" Id="S1-9" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="···" Id="S1-10" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="···" Id="S1-11" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="总之，你说的有道理，我应该试着去交流，而不是像现在这样逃避。" Id="S1-12" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="谢谢你的建议。" Id="S1-13" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="收好了东西后，我和她在门口道别。" Id="S1-14" TextType="TexDraw"/>
+			<NextScript NextScriptName="StoryEnd1V1.0"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S2">
+			<Speak CharacterID="1" Content="或许你可以试试看···和我交流数学？" Id="S2-0" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="···？" Id="S2-1" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="今天下午你过的很开心不是吗？你可以加一下我的QQ，然后教我数学。等我更上了你的进度，就可以和你一起学习了。" Id="S2-2" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="可以吗？学这些东西对中高考可没什么帮助。" Id="S2-3" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="没事的，我的学习能力超强，大部分时间都在打游戏也能考到班级前3。对我的成绩我还是蛮有自信的。" Id="S2-4" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="她低头盯着已经收好的桌子，看起来好像在认真思考这个问题。" Id="S2-5" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="来，扫一下这个码。" Id="S2-6" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="我点开好友码，朝她递出。" Id="S2-7" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="啊，是二次元头像，不过好像是那种我小时候看的动画了。" Id="S2-8" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="像是下定了决心一般，她深吸了一口气：" Id="S2-9" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="那就···很高兴认识你——" Id="S2-10" TextType="TexDraw"/>
+			<Speak CharacterID="3" Content="憧憬成为白森林高手" Id="S2-11" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="不要在这种公共场合念出我的网名啊！" Id="S2-12" TextType="TexDraw"/>
+			<Speak CharacterID="1" Content="我也很高兴认识你，说不定以后我有不会的问题也要请教你呢。" Id="S2-13" TextType="TexDraw"/>
+			<Speak CharacterID="2" Content="就这样，我们又交谈了一段时间，最后愉快地在门口道别。" Id="S2-14" TextType="TexDraw"/>
+			<NextScript NextScriptName="StoryEnd2V1.0"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<ChangeBackImg BackImgName="Sky.png"/>
+		<LongSpeak Content="七月的天气极为炎热，何况现在是下午一点，从刚开始通风的房间中就能感受到阵阵热浪。" Continue="0" End="0" Id="0" Skip="0" TextType="TexDraw"/>
+		<SetBGM BGMName="蝉鸣.mp3"/>
+		<AddCharacter CharacterID="1" From="me" SendMessage="ToShow"/>
+		<LongSpeak Content="但即使如此，也不能阻止我出门的步伐，我背上了装满了作业书包，坚毅地打开了家门。" Continue="1" End="0" Id="1" Skip="0" TextType="TexDraw"/>
+		<AddCharacter CharacterID="2" From="空" SendMessage="ToShow"/>
+		<LongSpeak Content="印象里附近的图书馆在暑假会有很多很吵的小孩，但是在家里完全没有心思学习，所以即使环境很吵闹的环境我也要去图书馆。" Continue="1" End="0" Id="2" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="即使顶着噪声也要学习，自然不是因为我有多热爱学习，而是因为···" Continue="1" End="0" Id="3" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="暑假只剩下最后一天了！明天就要检查暑假作业···" Continue="1" End="0" Id="4" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="我借来了同班同学的作业，打算今天花一天的时间抄完。" Continue="1" End="1" Id="5" Skip="0" TextType="TexDraw"/>
+		<ChangeBackImg BackImgName="library_day.jpg"/>
+		<SetBGM BGMName="Stop"/>
+		<Speak CharacterID="2" Content="不知是因为小学生已经开学了还是我来的太早了，图书馆竟然只有我一个人。我挑了离大门最近的座位坐下。把作业摊在桌上开始抄了起来。" Id="6" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="什么？你问抄作业怎么能算学习？作业的题目那么简单，抄一下答案就知道怎么回事了。" Id="7" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="（两个小时过后）" Id="8" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="作业意外的不是很多呢，我还以为要抄上一下午。抄完这本练习册的最后几页就可以回家了。" Id="9" TextType="TexDraw"/>
+		<AddCharacter CharacterID="3" From="M?" SendMessage="Outside-ToRight"/>
+		<Speak CharacterID="2" Content="就在这时，我看见正对面有人坐了下来。" Id="10" TextType="TexDraw"/>
+		<CharacterAnimate CharacterID="3" SendMessage="Shake-Y-Once"/>
+		<Speak CharacterID="2" Content="好像是个女生···明明到处都是空位置，为什么要坐我的斜对面？" Id="11" TextType="TexDraw"/>
+		<LongSpeak Content="她正在从书包里掏出草稿纸和书，趁这个时机我偷偷打量着她。" Continue="0" End="0" Id="12" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="她的头发凌乱，神情冷漠。" Continue="1" End="0" Id="13" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="瞟了一眼她放在桌上的书，上面好像写着概率论、概率论与数理统计什么的。" Continue="1" End="0" Id="14" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="看起来是大学生吧，没想到大学生也要在暑假快结束的时候补作业，我妈老是说上了大学就轻松了，我就知道完全是骗人的。" Continue="1" End="0" Id="15" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="不管怎么说，我还是有点好奇书上的内容，我大概知道概率是什么意思，专门讲概率的书是什么样的呢？" Continue="1" End="0" Id="16" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这种想法在我的脑海中挥之不去，于是我在抄作业的时候不时向她的桌上望去。" Continue="1" End="0" Id="17" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="又过了一段时间，我终于把剩下的作业抄完了，虽然有点在意书上写的是什么，但是还是回家打游戏比较重要！我最后朝她的桌上看了一眼，准备收拾一下就回家了。" Id="18" TextType="TexDraw"/>
+		<SetBGM BGMName="G9Fried@GRM - もっと大人に.mp3"/>
+		<Speak CharacterID="3" Content="你对我桌上的书感兴趣吗？" Id="19" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="她小声地对对我说话。果然被她发现我一直朝她那里看了吗？" Id="20" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="额···是有点感兴趣。" Id="21" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="虽然经常听到别人使用概率这个词，但是还是有点好奇专门介绍概率的书到底是什么样的。" Id="22" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="这样啊，我可以给你介绍一下什么是概率，你有兴趣听吗？" Id="23" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="可以吗？那谢谢你了。" Id="24" TextType="TexDraw"/>
+		<CharacterAnimate CharacterID="3" SendMessage="ToCenter"/>
+		<Speak CharacterID="2" Content="她拿起草稿纸和笔坐到了我旁边，边说边在纸上比划。" Id="25" TextType="TexDraw"/>
+		<LongSpeak Content="概率是用来衡量事件发生的可能性的大小的工具，因此在定义概率之前，需要先定义什么是事件。" Continue="0" End="0" Id="26" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="一般来说，可以先考虑那些不可再拆分的，最基础的事件，把这样的事件成为样本，或者基础事件。把它们放到一个集合中，称这个集合为样本空间，记为$\Omega$。" Continue="1" End="0" Id="27" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="在定义样本后，就可以定义一般的事件了，每一个事件都是$\Omega$的子集，把所有事件构成的集合
+ 称为事件域，记为$\mathcal{F}$. 注意事件肯定是样本空间的子集，但是样本空间的子集不一定是事件。" Continue="1" End="0" Id="28" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="最后就可以定义概率了，概率赋予每一个事件$A\in\mathcal{F}$一个介于0和1之间的数，用$\mathbb{P}$表示概率， 用$\mathbb{P}(A)$表示$A$发生的概率。" Continue="1" End="0" Id="29" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="直到这里你有听懂吗？" Id="30" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="说实话没有。" Id="31" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="好吧，那就让我举一个简单的例子吧。" Id="32" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="比如说抛硬币，把抛出正面记为1，抛出反面记为0.那么它的样本空间是$\Omega =\{0,1\}$，那么它的一个事件域可 以是$\mathcal{F} =\{\{0\},\left\{ 1 \right\} ,\left\{ 0,1 \right\} ,\varnothing \}$，它的一个概率可以是$\mathbb{P} \left(   A \right) =\frac{\left| A \right|}{\left| \Omega \right|}$，这样能理解吗？" Id="33" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="有太多不认识的符号了，不过抛硬币的概率大概是什么我还是能猜到的。我在她的草稿纸上，拙劣地写下刚刚才学会的符号。" Id="34" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以$\mathbb{P}\left( \left\{ 0,1 \right\} \right) =1,\mathbb{P}\left( \varnothing \right) =0$，对吗？" Id="35" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="没错，你觉得对事件域和概率有什么要求呢？" Id="36" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="比如说，如果硬币抛出正面和抛出反面都是事件，那么硬币抛出正面或者反面也应该算一个事件对吗？" Id="37" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="听起来很有道理，我点了点头。" Id="38" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="所以如果集合都在事件域里面，那它们的并也要在事件域里面。" Id="39" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="同样，如果一个事件在事件域里面，那与这个事件完全相反的事件也应该算一个事件对吗？" Id="40" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="如果明天某时会下雨是一个事件，那明天一整天都不下雨也应该算一个事件，这个要求大概也合理吧。" Id="41" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="最后，事件域里不能什么元素都没有。" Id="42" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="什么都没有还研究什么呢？这似乎也是合理的。" Id="43" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="她继续边说边在纸上比划：" Id="44" TextType="TexDraw"/>
+		<LongSpeak Content="其中事件域$\mathcal{F}$还必须满足如下要求@@1.$\mathcal{F}$不是空集;@@2.若$A\in\mathcal{F}$, 则$A^c\in\mathcal{F}$;@@3.若$A_n\in \mathcal{F} ,n\ge 1$, 则$\cup_n{A_n}\in \mathcal{F} $." Continue="1" End="0" Id="45" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="仿照上面对于事件域的要求，你能猜猜对概率$\mathbb{P}$有什么要求吗？" Id="46" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我想想···反正就是那些很显然的条件对吧？" Id="47" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="首先，事件$\Omega$发生的概率是100\%，所以$\mathbb{P} \left( \Omega \right) =1$." Id="48" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="其次，概率应该是介于0和1之间的数，所以对任意事件$A$，$1\ge \mathbb{P} \left( A \right) \ge 0$." Id="49" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="最后，如果事件$A$和事件$B$没有公共元素，那么$\mathbb{P} (A)+\mathbb{P} (B)=\mathbb{P} (A\cup B)$." Id="50" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我有猜对吗？" Id="51" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="前两条猜对了，最后一条还需要加强一下。" Id="52" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="她继续边说边在纸上比划：" Id="53" TextType="TexDraw"/>
+		<LongSpeak Content="其中概率$\mathbb{P}$还必须满足如下要求@@1.$\mathbb{P} \left( A \right) \ge 0$;@@2.$\mathbb{P} \left( \Omega \right) =1$;@@3.若$A_n\in \mathcal{F} ,n\ge 1$,互不相交，则$\mathbb{P} \left( \cup _nA_n \right) =\sum_n^{}{\mathbb{P} \left( A_n \right)} .$" Continue="1" End="1" Id="54" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="无限个数相加吗···" Id="55" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="总之，如果给定了样本空间$\Omega$，以及符合上述条件的事件域$\mathcal{F}$，概率$\mathbb{P}$。就可以确定一个概率 空间了。也就是说通常在符合这些条件的概率空间上研究概率。" Id="56" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="直到这里你有听懂吗？" Id="57" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以，先前在做的事情，就是把一些直观上概率应该具有的性质，用抽象的数学符号表示出来，我的理解正确吗？" Id="58" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="可以这么理解。" Id="59" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我有些不解，这样做的意义是什么呢？" Id="60" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="这样可以帮助人们更清晰地理解概率问题，由此进一步深入地研究和提出那些仅靠直觉无法触及的问题。" Id="61" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="哦哦，听起来很有道理。" Id="62" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="这就是大学生吗？说出来的话就是不一样。" Id="63" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="我也觉得书上对你这个问题解释得很好。" Id="64" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="···" Id="65" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="接下来介绍一下随机变量···" Id="66" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="打住！我感觉今天我已经学的够多了！" Id="67" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="而且现在提起概率空间，我的脑子只能想到之前那个抛硬币的简单例子，完全感受不到这样定义的好处。" Id="68" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="也是呢，或许你需要更多的例子。" Id="69" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="这么说来，高中生也应该简单学过概率了，可是仔细回想你刚才说的话，像是完全没学过啊。" Id="70" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我其实是初中生···" Id="71" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="啊，竟然是初中生吗？" Id="72" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="也就是说你连集合是什么都不知道吗？" Id="73" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="在几分钟前还不知道吧，但是现在我大概知道了。" Id="74" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="你的理解能力还真是超乎常人。" Id="75" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="讲抽象的概念似乎确实有点让人头大呢，来做点比较实际的题目吧。" Id="76" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="其实她很高兴和我分享这些知识吧，说不定哪怕我不朝她那看去，她也会主动和我聊这些。" Id="77" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="被奇怪的大姐姐缠着分享知识什么的，好巧妙的体验。" Id="78" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="不过也不坏吧，好像比我上学学的那些知识有意思。" Id="79" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以是什么题目呢？" Id="80" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="有一个矿工被困在了矿井里，这个矿井有三个门。" Id="81" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="选择走第一道门后的坑道，沿此坑道走3小时可到达安全区。" Id="82" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="选择走第二道门后的坑道，沿此坑道走5小时又回到原处。" Id="83" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="选择走第三道门后的坑道，沿此坑道走7小时又回到原处。" Id="84" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="假定这个矿工总是等可能地在三个门中选择一个，那么他平均要用多少时间才能到达安全区？" Id="85" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="这里的平均你能理解什么意思吗？" Id="86" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="比如抛一枚硬币，正面则赚100元，反面则亏50元，那么平均赚25元，我的理解对吗？" Id="87" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="没错，所以你能想到这题怎么做吗？" Id="88" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="我开始陷入了沉思，抛硬币只有两种情况，在这个问题里，可能会发生的情况有无数种。" Id="89" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="或许我应该先把这个问题的事件域和概率写出来？" Id="90" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="···还是算了吧，说实话我这些概念还是有点懵，而且感觉对解决问题没有用处。" Id="91" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="完全没有头绪的话，让我给你两个提示吧。" Id="92" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="首先，如果现在抛一枚硬币，分别用单项式$x_1,x_2$表示抛出抛出正面和抛出反面，那么多项式$x_1+x_2$就能表示抛一枚硬币。" Id="93" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="而如果是抛两枚硬币，抛第二枚硬币可以类似地可以用多项式表示$y_1+y_2$表示。" Id="94" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="如果想表达同时抛两枚硬币，只需要把两个多项式乘起来，也就是$\left( x_1+x_2 \right) \left( y_1+y_2 \right) =x_1y_1$ $+x_1y_2+x_2y_1+x_2y_2$，那么多项式中的每一项都代表一种情况。" Id="95" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="用多项式或许可以简单地表示出这个问题中所有可能发生的情况。" Id="96" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="这是第一个提示，第二个提示是，你可以研究一下多项式的导数。" Id="97" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="导数又是什么？" Id="98" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="而对于一个多项式$f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots +a_0$，定义它的导数为$D\left( f\left( x \right) \right) =na_nx^{n-1}+\left( n-1 \right) a_{n-1}x^{n-2}+\cdots +a_1$. 也就是多项式的每一项乘上它的指数然后 让指数减一。" Id="99" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="话说$f(x)$是什么意思你应该知道吧？" Id="100" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="···现在再问这个有点太迟了吧？" Id="101" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="我的提示就到这了，是你的话这些提示就够了吧？" Id="102" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="不要对才没讲几句话的初中生抱有这种期待啊？" Id="103" TextType="TexDraw"/>
+		<LongSpeak Content="我开始认真思考提示的作用，第一个提示可能可以帮我把所有的情况都列出来。在选择了第三道门后，就能走出矿道，所以在确定了选择第三道门被选择的次数后，前面一定只能选取第一道门和第二道门。如果记第$k$次选择选取了第一、二、三道门分别是$x_k,y_k,z_k$的话，那么 包含了第$K$次选取了第三道门的所有情况就应该是$\left( x_1+y_1 \right) \left( x_2+y_2 \right) \cdots \left( x_k+y_k \right) z_k.$" Continue="0" End="0" Id="104" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="···再认真想想的话，现在要求的是走出去的平均时间，和选择门的先后顺序是没关系的，也就是说$x_1y_2y_3$和$y_1x_2y_3$在这个意义上是一样的。既然这样的话，似乎可以把代表了次数的下标 去掉，这样一来，包含了第$K$次选取了第三道门的所有情况就应该是$\left( x+y \right) ^{K-1}z.$" Continue="1" End="0" Id="105" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="如果$K=3$，那么具体写出来就是$x^2z+2xyz+y^2z$.对式子中的每一项，这里的系数大概就是 
+在所有考虑了顺序的情况中，除去顺序后代表相同情况的个数吧。而指数指的就是选取了某个选项的次数。" Continue="1" End="1" Id="106" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="想到这里我又没了头绪，向旁边一看，她正盯着我的草稿纸看。" Id="107" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="你没有别的事情要干吗？" Id="108" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="啊，我只是在发呆而已。" Id="109" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="为什么你不想想怎么把概率也考虑进多项式里面呢？" Id="110" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="把概率也考虑进去吗？" Id="111" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="如果直到第三次还没出去，那么前两次都选择第一道门的概率就是$\frac{1}{3}\cdot \frac{1}{3}=\frac{1}{9}$." Id="112" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="而前两次都选择第一道门，可以表示为$x_1x_2$. 所以···" Id="113" TextType="TexDraw"/>
+		<LongSpeak Content="如果把 $\left( x+y \right) ^{K-1}z$ 改成$\left( \frac{1}{3}x+\frac{1}{3}y \right) ^{K-1}\frac{1}{3}z$，那么把式子展开后每一项的系数就代表对应的事 
+件会发生的概率。" Continue="0" End="0" Id="114" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="感觉有点不可思议，试着验证一下好了，所有可能的情况加起来发生的概率应该是1，也就是说如果$x=y=z=1$时，应该成立$\frac{1}{3}\left( 1+\frac{2}{3}+\left( \frac{2}{3} \right) ^2+\left( \frac{2}{3} \right) ^3+\cdots \right) =1$. 这是对的吗？" Continue="1" End="0" Id="115" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="你没学过这个？网上随便搜一下就有的，很简单。" Id="116" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="1+1/3+1/9+...怎么求，输入···" Id="117" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="我明白了，假设$S=\sum_{n=0}^{\infty}{\left( \frac{2}{3} \right) ^n}$，那么$\frac{2}{3}S=\sum_{n=1}^{\infty}{\left( \frac{2}{3} \right) ^n}=S-1$，解出来$S=3.$" Id="118" TextType="TexDraw"/>
+		<LongSpeak Content="$\frac{1}{3}\left( 1+\frac{2}{3}+\left( \frac{2}{3} \right) ^2+\left( \frac{2}{3} \right) ^3+\cdots \right) =\frac{1}{3}\cdot 3=1$，所以确实是对的。" Continue="1" End="0" Id="119" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="平均时间等于每种情况发生的概率乘上这种情况需要的事件，如果要计算的是选择门的平均次数的话，那么只需要在每一项的前面乘上那一项对应的次数就好了。" Continue="1" End="0" Id="120" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="我忽然有些明白了。" Continue="1" End="0" Id="121" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="如果只是需要统计次数的话，$x,y,z$这些不同的符号并没有什么本质上的区别，所以可以统一
+用$x$来表示，这样式子就变成了$\left( \frac{2}{3}x \right) ^{K-1}\frac{1}{3}x$." Continue="1" End="0" Id="122" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这时如果想要计算选择门的平均次数，只需要把每一项都乘上它对应的指数，也就是对每一项都使用刚才提示介绍的求导就好了。所以平均次数可以用 $\sum_{k=1}^{\infty}{D\left( \left( \frac{2}{3}x \right) ^{k-1}\frac{1}{3}x \right)}$ 在$x=1$处的值来表示。" Continue="1" End="0" Id="123" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="而如果是计算平均时间的话，只需要把$x,y,z$分别换成$x^3,x^5,x^7$就好了，也就是说，平均时间的 
+表达式为$\sum_{k=1}^{\infty}{D\left( \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\frac{1}{3}x^3 \right)}$在$x=1$处的取值。" Continue="1" End="1" Id="124" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="真是重大突破，最后只要求出这个表达式具体是多少就好了" Id="125" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="她好像看我的草稿看无聊了，正在安静地看书。" Id="126" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="从这个角度看过去意外地还挺漂亮的，听说大学的老师不管大学生谈恋爱，她大概也有男朋友吧。" Id="127" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="我在想什么？还是先把这道题做出来吧。" Id="128" TextType="TexDraw"/>
+		<LongSpeak Content="直接展开来计算肯定是不行的，我得找一些规律。" Continue="0" End="0" Id="129" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="先从研究怎么计算$D\left( f_1\left( x \right) f_2\left( x \right) \right) $开始吧，假设$f_1\left( x \right) =a_nx^n+a_{n-1}x^{n-1}+\cdots +a_0$，那么最 
+后只要计算$D\left( x^kf_2\left( x \right) \right) $就好了。" Continue="1" End="0" Id="130" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="再假设$f_2\left( x \right) =b_mx^m+b_{m-1}x^{m-1}+\cdots +b_0$，那么
+\[\begin{align}
+&amp;D\left( x^kf_2\left( x \right) \right) =D\left( b_mx^{m+k}+b_{m-1}x^{m+k-1}+\cdots +b_0x^k \right) 
+\\
+&amp;=\left( m+k \right) b_mx^{m+k-1}+\left( m+k-1 \right) b_{m-1}x^{m+k-2}+\cdots kb_0x^{k-1}
+\\
+&amp;=x^{k-1}\left( \left( m+k \right) b_mx^m+\left( m+k-1 \right) b_{m-1}x^{m-1}+\cdots kb_0 \right) 
+\\
+&amp;=x^{k-1}\left( k\left( b_mx^m+b_{m-1}x^{m-1}+b_0 \right) +x\left( mb_mx^{m-1}+\left( m-1 \right) b_{m-1}x^{m-2}+\cdots +b_1 \right) \right) 
+\\
+&amp;=x^{k-1}\left( kf_2\left( x \right) +xD\left( f_2\left( x \right) \right) \right) 
+\\
+&amp;=kx^{k-1}f_2\left( x \right) +x^kD\left( f_2\left( x \right) \right) 
+\end{align}\]" Continue="1" End="0" Id="131" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="所以\[\begin{aligned}
+ &amp;D\left( f_1\left( x \right) f_2\left( x \right) \right)\\
+ &amp;=a_nnx^{n-1}f_2\left( x \right) +a_{n-1}\left( n-1 \right) x^{n-2}f_2\left( x \right) +\cdots +a_1f_2\left( x \right)\\
+ &amp;+a_nx^nD\left( f_2\left( x \right) \right) +a_{n-1}x^{n-1}D\left( f_2\left( x \right) \right) +\cdots +a_0D\left( f_2\left( x \right) \right)\\
+ &amp;=D\left( f_1\left( x \right) \right) f_2\left( x \right) +f_1\left( x \right) D\left( f_2\left( x \right) \right)\\
+\end{aligned}\]" Continue="1" End="1" Id="132" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这个规律尚且不足以计算$D\left( \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1} \right) $，所以我还需要计算一下$D\left( \left( f\left( x \right) \right) ^k \right) .$" Continue="0" End="0" Id="133" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这并不困难，只需要重复使用刚才得到的规律就好了\[\begin{aligned}
+ &amp;D\left( \left( f\left( x \right) \right) ^k \right) =D\left( \left( f\left( x \right) \right) ^{k-1}f\left( x \right) \right)\\
+ &amp;=D\left( f\left( x \right) \right) \left( f\left( x \right) \right) ^{k-1}+f\left( x \right) D\left( \left( f\left( x \right) \right) ^{k-1} \right)\\
+ &amp;=D\left( f\left( x \right) \right) \left( f\left( x \right) \right) ^{k-1}+f\left( x \right) \left( D\left( f\left( x \right) \right) \left( f\left( x \right) \right) ^{k-2}+f\left( x \right) D\left( \left( f\left( x \right) \right) ^{k-2} \right) \right)\\
+ &amp;=2D\left( f\left( x \right) \right) \left( f\left( x \right) \right) ^{k-1}+\left( f\left( x \right) \right) ^2D\left( \left( f\left( x \right) \right) ^{k-2} \right)\\
+ &amp;=\cdots\\
+ &amp;=kD\left( f\left( x \right) \right) \left( f\left( x \right) \right) ^{k-1}\\
+\end{aligned}\]" Continue="1" End="1" Id="134" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="只需要应用这两个规律，就能化简$\sum_{k=1}^{\infty}{D\left( \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\frac{1}{3}x^3 \right)}$了吧。" Id="135" TextType="TexDraw"/>
+		<LongSpeak Content="化简可得\[\begin{aligned}
+ &amp;D\left( \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\frac{1}{3}x^3 \right)\\
+ &amp;=D\left( \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1} \right) \frac{1}{3}x^3+D\left( \frac{1}{3}x^3 \right) \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\\
+ &amp;=\left( k-1 \right) D\left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) \frac{1}{3}x^3\left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-2}+D\left( \frac{1}{3}x^3 \right) \left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\\
+ &amp;=\left( k-1 \right) \left( \frac{5}{3}x^4+\frac{7}{3}x^6 \right) \frac{1}{3}x^3\left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-2}+x^2\left( \frac{1}{3}x^5+\frac{1}{3}x^7 \right) ^{k-1}\\
+\end{aligned}\]" Continue="0" End="0" Id="136" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="$k=1$的时候$k-1=0$，所以说这个结论对$k=1$适用好像也没错···" Continue="1" End="0" Id="137" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="所以离开的平均时间就是$t=\sum_{k=1}^{\infty}{\frac{4}{3}\left( k-1 \right) \left( \frac{2}{3} \right) ^{k-2}+\left( \frac{2}{3} \right) ^{k-1}}$" Continue="1" End="0" Id="138" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="最后只需要思考一下如何计算$\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^{k-1}}$就行了，应该就和之前的技巧一样。" Continue="1" End="0" Id="139" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="假设$S=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^{k-1}}$，那么$$\frac{2}{3}S=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^k}=\sum_{k=2}^{\infty}{\left( k-1 \right) \left( \frac{2}{3} \right) ^{k-1}}=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^{k-1}}-1-\sum_{k=2}^{\infty}{\left( \frac{2}{3} \right) ^{k-1}}$$" Continue="0" End="0" Id="140" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="假设$S=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^{k-1}}$，那么$\frac{2}{3}S=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^k}=\sum_{k=2}^{\infty}{\left( k-1 \right) \left( \frac{2}{3} \right) ^{k-1}}=\sum_{k=1}^{\infty}{k\left( \frac{2}{3} \right) ^{k-1}}-1-\sum_{k=2}^{\infty}{\left( \frac{2}{3} \right) ^{k-1}}.$@@
+
+也就是$\frac{2}{3}S=S-1-\frac{\frac{2}{3}}{1-\frac{2}{3}}=S-3$，解得$S=9$." Continue="1" End="0" Id="141" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="最后把这个结果带入，就可以得到$t=\frac{4}{3}\cdot 9+\frac{1}{1-\frac{2}{3}}=15$." Continue="1" End="1" Id="142" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我做出来了！答案是15对不对？" Id="143" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="没错。" Id="144" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="我看了你的草稿纸，大概知道你是怎么做的了。" Id="145" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="其实这题有一个更简单的解法。" Id="146" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="如果第一次选择了第一道门，那么总的离开的平均时间就是3。" Id="147" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="假设离开的平均时间是$t$，那么如果第一次选择了第二道门，那么总的离开的平均时间就是$t+5$。如果第一次选择了第三道门，那么总的离开的平均时间就是$t+7$。" Id="148" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="意思就是，把离开拆成三种情况来考虑，分别是第一次选了一二三道门对吗？" Id="149" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="我似乎明白了，这三种情况发生的概率乘上这三种情况各自的平均时间，就等于总的平均时间对吧？" Id="150" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="也就是$t=\frac{1}{3}\left( 3+5+t+7+t \right) $，解出来$t=15$" Id="151" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="你的理解能力确实很强。" Id="152" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="虽然这种解法要简单很多，但我还是顺着你的草稿给了你第一种解法的提示。" Id="153" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="···两张解法都很有意思。" Id="154" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="那之后，她又向我分享了好几道题。" Id="155" TextType="TexDraw"/>
+		<ChangeBackImg BackImgName="library_dusk.png"/>
+		<SetBGM BGMName="Stop"/>
+		<Speak CharacterID="2" Content="天色已经有点晚了，剩下的时间大概不足以做题了。我开始收拾桌上的东西。" Id="156" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="确实已经不早了，我也回去吧。" Id="157" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="你也是来这补作业的吧？和我分享一下午的题目没事吗？" Id="158" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="不，我是来这预习下学期的课程的。少学一个下午倒也无所谓。" Id="159" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="原来是预习吗？我还以为是来补作业的。" Id="160" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="话说，大学的生活是什么样的？听说那里不管手机，不去上课也没事，老师也不会管你有没有谈恋爱。" Id="161" TextType="TexDraw"/>
+		<SetBGM BGMName="金閉開羅巧夢 - 湖面の月.mp3"/>
+		<Speak CharacterID="3" Content="大学生活···" Id="162" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="你听说的大学生活也是存在的，不过这不是我的大学生活。" Id="163" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="我至今为止的大学生活，过的十分孤独。" Id="164" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="我本以为，选择了数学专业的大都是和我一样了解数学专业是干什么，并且对数学感兴趣的人。" Id="165" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="可是入学后我才渐渐发现，事情并不是这样的。" Id="166" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="很多人认为数学专业是“万金油专业”，一开始就抱着转专业的想法选择了数学专业，实际上对数学一点不感兴趣。" Id="167" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="另外一些人即使入学时表现的对数学很感兴趣，但其实不清楚数学专业具体是学什么的，以为和高中那样就是一直做题。" Id="168" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="或者是完全不习惯大学的情况，完全依赖老师，不怎么会自学。" Id="169" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="因为这些原因，很多人在学了几个星期后就对就数学丧失兴趣了。" Id="170" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="除去刚才说的这些人，整个学院对数学感兴趣的人其实不多。" Id="171" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="可是即使如此，在学院里也有很多符合你对数学感兴趣的定义的人吧？为什么不和他们交流呢？" Id="172" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="···" Id="173" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="因为我有点害怕。" Id="174" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="除了室友外，能见到其他人的时间仅限于上课。" Id="175" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="所以我对其他人完全不了解，也不知道如何向他们开口，询问这些问题。" Id="176" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="就算开口了，对方完全不感兴趣该怎么办？" Id="177" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="如果交流完发现对方的进度慢很多，会不会对对方认为自己在炫耀或者显摆呢？" Id="178" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="如果对方进度比自己快很多，会不会被对方嫌弃呢？" Id="179" TextType="TexDraw"/>
+		<Speak CharacterID="3" Content="总之因为各种各样的顾虑，除了偶尔解答室友不会的题目和帮她们突击期末考外，我一直没怎么和其他人交流过数学，就这样自己默默学习了一年。" Id="180" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="原来如此，我有点理解她的行为了。" Id="181" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="自从上了大学后，因为周围的氛围以及自身的顾虑。一直以来她都在一个人独自学习。" Id="182" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="没有人主动和她交流，她也没有和其他人交流的勇气。" Id="183" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="所以哪怕我只是朝她的桌上看了几眼，她也会觉得这是我想要和她交流的信号。" Id="184" TextType="TexDraw"/>
+		<Speak CharacterID="2" Content="今天过后，她恐怕又要回到这种孤独的状态里去了吧。这种时候，我应该说点什么好？" Id="185" TextType="TexDraw">
+			<Choice JumpID="S1" TextType="TexDraw">鼓起勇气来，试着和其他人交流数学吧。</Choice>
+			<Choice JumpID="S2" TextType="TexDraw">你可以和我交流数学。</Choice>
+		</Speak>
+		<Speak CharacterID="2" Content="占位，这句对话不会被触发" Id="186" TextType="TexDraw"/>
+	</MainPlot>
+</data>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>Start</title>
+	<Synopsis>展示当前版本和之前版本的介绍以及演示</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="你选择了观看演示：永远不变的预计完成时间。" Id="S1-0" TextType="TMP"/>
+			<NextScript NextScriptName="PresentationV1.1"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S2">
+			<Speak CharacterID="1" Content="你选择了V1.1更新说明。" Id="S2-0" TextType="TMP"/>
+			<NextScript NextScriptName="UsingGuideV1.1"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S3">
+			<Speak CharacterID="1" Content="你选择了访问往期内容。" Id="S3-0" TextType="TMP"/>
+			<NextScript NextScriptName="PreviousContent"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<AddCharacter CharacterID="1" From="空" SendMessage="Outside-ToRight"/>
+		<Speak CharacterID="1" Content="请问你要访问什么内容？" Id="0" TextType="TexDraw">
+			<Choice JumpID="S1" TextType="TMP">永远不变的预计完成时间</Choice>
+			<Choice JumpID="S2" TextType="TMP">V1.1更新说明</Choice>
+			<Choice JumpID="S3" TextType="TMP">往期内容</Choice>
+		</Speak>
+		<Speak CharacterID="1" Content="占位" Id="1" TextType="TexDraw"/>
+	</MainPlot>
+</data>

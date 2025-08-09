@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>Start</title>
+	<Synopsis>展示PresentationV1.1</Synopsis>
+	<BranchPlot>
+		<BranchPlotNode ID="S1">
+			<Speak CharacterID="1" Content="实际上并不是的, 因为如果$v(t)$是方程的一个解, 那么容易验证$u\left( t \right) =v\left( t \right) +c\left( t \right) $也是方程的一个解, 其中$c(t)$是一个几乎处处为0的函数" Id="S1-0" TextType="TexDraw"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S2">
+			<Speak CharacterID="1" Content="正确, 因为如果$v(t)$是方程的一个解, 那么容易验证$u\left( t \right) =v\left( t \right) +c\left( t \right) $也是方程的一个解, 其中$c(t)$是一个几乎处处为0的函数" Id="S2-0" TextType="TexDraw"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S3">
+			<Speak CharacterID="1" Content="错误, 因为如果$\int_{\left[ 0,T\,\, \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0$,  那么当$t&gt;T$时, $\int_{\left[ 0,t \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}$的情况就完全无法确认 了." Id="S3-0" TextType="TexDraw"/>
+		</BranchPlotNode>
+		<BranchPlotNode ID="S4">
+			<Speak CharacterID="1" Content="正确, 因为如果$\int_{\left[ 0,T\,\, \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0$,  那么当$t&gt;T$时, $\int_{\left[ 0,t \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}$的情况就完全无法确认 了." Id="S4-0" TextType="TexDraw"/>
+		</BranchPlotNode>
+	</BranchPlot>
+	<MainPlot>
+		<SetBGM BGMName="G9Fried@GRM - もっと大人に.mp3"/>
+		<AddCharacter CharacterID="1" From="lus" SendMessage="Outside-ToLeft"/>
+		<Speak CharacterID="1" Content="当你下载文件时, 是否遇到过下载速度越变越慢, 导致下载进度一直在增加, 但是预计剩余下载时间 永远没有变化的绝望情况." Id="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="在这个剧本中, 我们将要研究预计剩余下载时间永远不变的条件下, 下载速度的变化趋势." Id="1" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="一般来说, 下载工具会采用瞬时平均速度或者移动平均速度衡量当前的下载速度,  因此这个剧本也考 虑这两张衡量方式." Id="2" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="在接下来的讨论中, 假设下载速度是定义在$\mathbb{R}^+$的勒贝格可积函数$v(t)$, 它满足$0\le \int_0^t{v\left( \tau \right) \mathrm{d}\tau}&lt;1, t\ge 0$, 并且预计下载时间为常数$c$." Id="3" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="如果使用瞬时平均速度来表示下载时间, 那么$t$时刻的预计下载时间就是剩余进度与$v(t)$的比值, 此 时下载速度满足方程$c=\frac{1}{v\left( t \right)}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $. 因此第一个问题就是:" Id="4" TextType="TexDraw"/>
+		<LongSpeak Content="1.设$v(t)&gt;0$是定义在$[0,+\infty)$的勒贝格可积函数, 满足方程$c=\frac{1}{v\left( t \right)}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $, 求解$v(t)$. " Continue="0" End="1" Id="5" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="而如果使用移动平均速度来表示预计剩余下载时间, 那么进一步假设采取了前$\tau$时刻内的平均速度作 为移动平均深度, 此时t时刻的平均速度为$\frac{1}{\varepsilon}\int_{t-\varepsilon}^t{v\left( \tau \right) \mathrm{d}\tau}$, 此时t时刻的下载速度满足方程\\ $c=\frac{1}{\frac{1}{\varepsilon}\int_{t-\varepsilon}^t{v\left( \tau \right) \mathrm{d}\tau}}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $" Id="6" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="注意移动平均速度只在$t\ge \varepsilon $时有意义, 因此还需要追加假设$v\left( t \right) =v_0\left( t \right) ,t\in \left[ 0,\varepsilon \right) $. 总之, 第二个问题 就是:" Id="7" TextType="TexDraw"/>
+		<LongSpeak Content="2.设$v(t)&gt;0$是定义在$[0,+\infty)$的勒贝格可积函数, 满足方程
+$$c=\frac{1}{\frac{1}{\varepsilon}\int_{t-\varepsilon}^t{v\left( \tau \right) \mathrm{d}\tau}}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right),$$
+以及初值条件$v\left( t \right) =v_0\left( t \right) ,t\in \left[ 0,\varepsilon \right) $,求解$v(t)$.  " Continue="1" End="1" Id="8" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在来求解第一个问题，移项后可得$v\left( t \right) =\frac{1}{c}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $，因为等式左边是连续的，故$v(t)$连续，进而$\int_0^t{v\left( \tau \right) \mathrm{d}\tau}$可导且$\left( \int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) ^{\prime}=v\left( t \right) $。" Id="9" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="因此化简可得$e^{-\frac{t}{c}}\left( e^{\frac{t}{c}}\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) ^{\prime}=\frac{1}{c}$" Id="10" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="进而$e^{\frac{t}{c}}\int_0^t{v\left( \tau \right) \mathrm{d}\tau}=e^{\frac{t}{c}}-1$, 化简可得$\int_0^t{v\left( \tau \right) \mathrm{d}\tau}=1-e^{-\frac{t}{c}}$, 进而$v\left( t \right) =\frac{1}{c}e^{-\frac{t}{c}}$." Id="11" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这意味着此时下载速度随时间的增加指数衰减. 此外$\int_0^{+\infty}{v\left( \tau \right) \mathrm{d}\tau}=1$, 这意味着经过无穷的时间后下 载终将完成, 也意味着只要你等待的时间足够久, 你能看到进度条上的下载进度为99\%,  99.9\%, 99.99\%..." Id="12" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在让我们整理一下分析的过程, 写一下具体的答案:" Id="13" TextType="TexDraw"/>
+		<LongSpeak Content="因为$v\left( t \right) =\frac{1}{c}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $, 故$v(t)$连续, 进而$v(t)$可导." Continue="0" End="0" Id="14" TextType="TexDraw"/>
+		<LongSpeak Content="故$v\left( t \right) +\frac{1}{c}\int_0^t{v\left( \tau \right) \mathrm{d}\tau}=e^{-\frac{t}{c}}\left( e^{\frac{t}{c}}\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) ^{\prime}=\frac{1}{c}$, 化简可得
+$$
+\int_0^t{v\left( \tau \right) \mathrm{d}\tau}=1-e^{-\frac{t}{c}}.
+$$" Continue="1" End="0" Id="15" TextType="TexDraw"/>
+		<LongSpeak Content="两边同时求导可得
+$$v\left( t \right) =\frac{1}{c}e^{-\frac{t}{c}}.$$" Continue="1" End="1" Id="16" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="接下来考虑第二个问题, 这个问题可能会稍微比第一个问题复杂一点." Id="17" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以让我们先考虑简单一点的问题, 也就是如果$v(t)$连续, 那么$v(t)$是什么样的?" Id="18" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="移项可得$\int_0^t{v\left( \tau \right) \mathrm{d}\tau}+\frac{c}{\varepsilon}\int_{t-\varepsilon}^t{v\left( \tau \right) \mathrm{d}\tau}=1.$" Id="19" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="此时左式的每一项都是可导的, 求导可得$v\left( t \right) +\frac{c}{\varepsilon}\left( v\left( t \right) -v\left( t-\varepsilon \right) \right) =0.$" Id="20" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="整理可得$v\left( t \right) =\left( \frac{c}{\varepsilon +c} \right) v\left( t-\varepsilon \right).$ 这意味着此时$v(t)$总可以由先前的时间递推地获取, 注意$v(t)=v_0(t)$, $t\in[0,\varepsilon)$是已知的. 因此$v(t)$可以递推地获得, 即:" Id="21" TextType="TexDraw"/>
+		<LongSpeak Content="$$
+\begin{aligned}
+ v\left( t \right) &amp;=\left( \frac{c}{\varepsilon +c} \right) v\left( t-\varepsilon \right) =\left( \frac{c}{\varepsilon +c} \right) ^2v\left( t-2\varepsilon \right)\\
+ &amp;=\cdots\\
+ &amp;=\left( \frac{c}{\varepsilon +c} \right) ^{\left[ \frac{t}{\varepsilon} \right]}v\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) =\left( \frac{c}{\varepsilon +c} \right) ^{\left[ \frac{t}{\varepsilon} \right]}v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right)\\
+\end{aligned}
+$$" Continue="0" End="1" Id="22" Skip="1" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这个问题中的$c$并不是任意的,注意这个式子对$t=\varepsilon $成立, 故$\int_0^{\varepsilon}{v\left( \tau \right) \mathrm{d}\tau}+\frac{c}{\varepsilon}\int_0^{\varepsilon}{v\left( \tau \right) \mathrm{d}\tau}=1$, 化简可得$\int_0^{\varepsilon}{v\left( \tau \right) \mathrm{d}\tau}=\frac{\varepsilon}{\varepsilon +c}.$" Id="23" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="带回$v(t)$的表达式, 可得$v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}.$" Id="24" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在就来验证一下当$v(t)$仅仅是勒贝格可积时, \\$v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}$是不是方程的一个解." Id="25" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="注意方程出现了区间$[t-\varepsilon,t]$, 因此考虑使用之前得到的递推关系式\\$v\left( t \right) =\left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) v\left( t-\varepsilon \right) $进行证明." Id="26" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="两边同时在$[\varepsilon,t]$上积分, 可得:$\int_{\left[ \varepsilon ,t \right]}^{}{v\left( \tau \right) \mathrm{d}\tau}=\left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) \int_{\left[ \varepsilon ,t \right]}^{}{v\left( \tau -\varepsilon \right) \mathrm{d}\tau}$." Id="27" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="化简可得:$\int_{\left[ \varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}=0.$" Id="28" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在需要验证这个等式与方程是等价的, 方程可以写成\\$\frac{1}{\frac{1}{\varepsilon}\int_0^{\varepsilon}{v\left( \tau \right) \mathrm{d}\tau}}\left( 1-\int_0^{\varepsilon}{v\left( \tau \right) \mathrm{d}\tau} \right) =\frac{1}{\frac{1}{\varepsilon}\int_{t-\varepsilon}^t{v\left( \tau \right) \mathrm{d}\tau}}\left( 1-\int_0^t{v\left( \tau \right) \mathrm{d}\tau} \right) $的形式." Id="29" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="化简可得$    \int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau \int_{\left[ 0,t-\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}=0.$" Id="30" TextType="TexDraw"/>
+		<LongSpeak Content="也就是说,我们需要说明下面两个式子是等价的:
+$${\color{red} \int_{\left[ \varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}}+\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}=0,$$
+
+$${\color{red} \int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}+\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau \int_{\left[ 0,t-\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}=0.$" Continue="0" End="0" Id="31" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="因为$\int_{\left[ \varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}$, 所以这两个式子确实是 等价的." Id="32" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="自此完成了整个求解的第一步, 让我们整理一下:" Id="33" TextType="TexDraw"/>
+		<LongSpeak Content="第一步\,\,\,\,首先证明
+$$
+v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}
+$$
+     \\
+是方程的一个解." Continue="0" End="0" Id="34" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="当$t\in[0,\varepsilon]$时, 有$v(t)=v_0(t)$, 而当$t&gt;\varepsilon$时, 有
+$$\begin{align}
+    v(t-\varepsilon )&amp;=v_0\left( t-\varepsilon -\left[ \frac{t-\varepsilon}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t-\varepsilon}{\varepsilon} \right]}
+    \\
+    &amp;=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right] -1}
+    \\
+    &amp;=\frac{1}{1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}v\left( t \right). 
+\end{align}$$" Continue="1" End="0" Id="35" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="即$v\left( t \right) =v\left( t-\varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right)$. 两边在$[\varepsilon,t]$上积分，可得
+$$
+    \int_{\left[ \varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}=0.
+$$" Continue="1" End="1" Id="36" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="而对于原方程, 取$t=\varepsilon$, 可得
+\[
+    c=\frac{1-\int_{\left[ 0,\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}}{\frac{1}{\varepsilon}\int_{\left[ 0,\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}}=\frac{1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}{\frac{1}{\varepsilon}\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}.
+\]" Continue="0" End="0" Id="37" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="化简可得
+\[
+    \int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau \int_{\left[ 0,t-\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau}}=0.
+\]" Continue="1" End="0" Id="38" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="注意
+\[\int_{\left[ \varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}+\int_{\left[ 0,t-\varepsilon \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}.\]
+故两式是等价的, 即
+\[v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}\]
+确实是方程的一个解." Continue="1" End="1" Id="39" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这个解答有点像&quot;防御性证明&quot;, 让看到这个过程的人完全无法明白这个解是怎么想到的. 不过我觉得 在解答过程详细描述自己的思路有点太过繁琐了." Id="40" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="好吧, 无论如何让我们进行下一步. 你觉得第一步得到的解是这个方程的唯一解吗?" Id="41" TextType="TexDraw">
+			<Choice JumpID="S1" TextType="TMP">是</Choice>
+			<Choice JumpID="S2" TextType="TMP">不是</Choice>
+		</Speak>
+		<Speak CharacterID="1" Content="不过因为整个方程中只有$v(t)$的积分,所以仍然可以猜测方程的任意两个解在$[0,t]$上的积分是相同的. " Id="42" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这个结论显然在$\left[ 0,\varepsilon \right] $上是成立的, 现在希望把这个结论拓展到$\mathbb{R^+}$上." Id="43" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这个时候一个常见的思路是使用勒贝格方法(详见BV1dh411u76p)" Id="44" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="即假设集合$S=\left\{ x:\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau},\forall t\in \left[ 0,x \right] \right\}$的上确界是有限的, 然后导出矛盾." Id="45" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以现在, 假设非空集合$S=\left\{ x:\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau},\forall t\in \left[ 0,x \right] \right\}$的上确界为$T&lt;+\infty$, 那么$\forall \delta &gt;0,\exists \delta^\prime\in \left( T,\,T+\delta \right] $, 使得$\int_{\left[ 0,\delta ^{\prime} \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0.$" Id="46" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="可以直接这样说明吗...?" Id="47" TextType="TMP">
+			<Choice JumpID="S3" TextType="TMP">可以</Choice>
+			<Choice JumpID="S4" TextType="TMP">不可以</Choice>
+		</Speak>
+		<Speak CharacterID="1" Content="所以现在, 需要说明一下$\int_{\left[ 0,T \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=0.$" Id="48" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在我们已知的是$\int_{\left[ 0,t \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=0,t&lt;T.$" Id="49" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="容易推出$\int_{\left[ a,b \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=0,\forall\, 0\le a\le b&lt;T$, 进而\\
+$\int_{\left[ 0,T \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ 0,T \right)}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=\sum_{n=1}^{\infty}{\int_{\left[ T-\frac{T}{n},T-\frac{T}{n+1} \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}}=0.$" Id="50" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="因此确实成立$T\in S$,  并且$\forall \delta &gt;0,\exists \delta^\prime\in \left( T,\,T+\delta \right] $, 使得$\int_{\left[ 0,\delta ^{\prime} \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0.$" Id="51" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在想要导出矛盾, 所以试着利用一下已知条件. 设$t&gt;T$, 且$u(t)$和$v(t)$是方程的两个解, 那么:" Id="52" TextType="TexDraw"/>
+		<LongSpeak Content="\[\frac{1-\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}}{\int_{\left[ t-\varepsilon ,a \right]}{v\left( \tau \right) \mathrm{d}\tau}}=\frac{1-\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau}}{\int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}}$\" Continue="0" End="0" Id="53" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这个条件化简一下就是$\int_{\left[ t-\varepsilon ,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau}.$" Id="54" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="现在想要利用$\int_{\left[ 0,T \right]}{u\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,T \right]}{v\left( \tau \right) \mathrm{d}\tau}$这个条件." Id="55" TextType="TexDraw"/>
+		<CharacterPortrait CharacterID="1" CharacterPortrait="Portrait-Angry"/>
+		<Speak CharacterID="1" Content="但是完整写出来式子也太长了!" Id="56" TextType="TexDraw"/>
+		<CharacterPortrait CharacterID="1" CharacterPortrait="Portrait-Normall"/>
+		<Speak CharacterID="1" Content="所以现在记$p=\int_{\left[ 0,T \right]}{u\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,T \right]}{v\left( \tau \right) \mathrm{d}\tau}.$" Id="57" TextType="TexDraw"/>
+		<LongSpeak Content="那么,$$\begin{aligned}
+ &amp;\int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\\
+ &amp;=\int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\left( \int_{\left[ T,t \right]}{v\left( \tau \right) \mathrm{d}\tau}+p \right) -\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}\left( \int_{\left[ T,t \right]}{u\left( \tau \right) \mathrm{d}\tau}+p \right)\\
+ &amp;=p\left( \int_{\left[ t-\varepsilon ,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) +\left( \int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ T,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ T,t \right]}{u\left( \tau \right) \mathrm{d}\tau} \right)\\
+\end{aligned}$$" Continue="0" End="1" Id="58" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="只是这样并没有充分利用$\forall \delta &gt;0,\exists \delta^\prime\in \left( T,\,T+\delta \right] $, 使得$\int_{\left[ 0,\delta ^{\prime} \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0.$这一条件." Id="59" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="因此进一步假设$t-\varepsilon &lt;T$ 且$\int_{\left[ t,T \right]}{u\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ t,T \right]}{v\left( \tau \right) \mathrm{d}\tau}=q.$" Id="60" TextType="TexDraw"/>
+		<LongSpeak Content="那么\[\begin{aligned}
+ &amp;\int_{\left[ t-\varepsilon ,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}\\
+ &amp;=p\left( \int_{\left[ t-\varepsilon ,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) +\left( \int_{\left[ t-\varepsilon ,t \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ T,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ t-\varepsilon ,t \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ T,t \right]}{u\left( \tau \right) \mathrm{d}\tau} \right)\\
+ &amp;=p\left( \int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) +\left( \left( q+\int_{\left[ T,t \right]}{u\left( \tau \right) \mathrm{d}\tau} \right) \int_{\left[ T,t \right]}{v\left( \tau \right) \mathrm{d}\tau}-\left( q+\int_{\left[ T,t \right]}{v\left( \tau \right) \mathrm{d}\tau} \right) \int_{\left[ T,t \right]}{u\left( \tau \right) \mathrm{d}\tau} \right)\\
+ &amp;=p\left( \int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) +q\left( \int_{\left[ T,t \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau} \right)\\
+ &amp;=\left( p-q \right) \left( \int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right)\\
+ &amp;=\left( \int_{\left[ t-\varepsilon ,T \right]}{u\left( \tau \right) \mathrm{d}\tau} \right) \left( \int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right)\\
+\end{aligned}\]" Continue="0" End="0" Id="61" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这样一来就得到了$\int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\left( \int_{\left[ t-\varepsilon ,T \right]}{u\left( \tau \right) \mathrm{d}\tau} \right) \left( \int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) $.  但是\\$\int_{\left[ t-\varepsilon ,T \right]}{u\left( \tau \right) \mathrm{d}\tau}&lt;1$, 故只能有$\int_{\left[ T,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=0$, 矛盾." Id="62" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这样就说明了$ \int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau},\forall t&gt;0.$ 现在来整理一下过程." Id="63" TextType="TexDraw"/>
+		<LongSpeak Content="第二步\,\,\,\,接下来证明若$u(t)$和$v(t)$是方程(\ref{24})的两个解, 则成立
+\[
+    \int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau},\forall t&gt;0.
+\]" Continue="0" End="0" Id="64" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="记
+\[S=\left\{ x:\int_{\left[ 0,t \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,t \right]}{u\left( \tau \right) \mathrm{d}\tau},\forall t\in \left[ 0,x \right] \right\}. \]
+则因为$\varepsilon\in S$,故$S$非空. 若结论不成立, 则$T=\mathrm{sup} S&lt;+\infty .$
+显然此时$\forall 0\le a&lt;b&lt;T$, 成立
+\[
+    \int_{\left[ a,b \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=0.
+\]" Continue="1" End="0" Id="65" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="故因为$\left[ 0,T \right)$可以表示成
+\[
+    \left[ 0,T \right) =\cup_{n=1}^{\infty}{\left[ \left( 1-\frac{1}{n} \right) T,\left( 1-\frac{1}{n+1} \right) T \right]},
+\]
+并且等式右边的每个集合互不相交, 故
+\[\int_{\left[ 0,T \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ 0,T \right)}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}=\sum_{n=1}^{\infty}{\int_{\left[ T-\frac{T}{n},T-\frac{T}{n+1} \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}}=0.\]
+" Continue="1" End="1" Id="66" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这意味着$T\in S$. 故存在$a\in\left( T,T+\frac{\varepsilon}{2} \right] $, 使得$\int_{\left[ 0,a \right]}{\left( v\left( \tau \right) -u\left( \tau \right) \right) \mathrm{d}\tau}\ne 0.$" Continue="0" End="0" Id="67" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="因为$u(t),v(t)$是方程(\ref{24})的两个解, 故
+\[
+    \frac{1-\int_{\left[ 0,a \right]}{v\left( \tau \right) \mathrm{d}\tau}}{\int_{\left[ a-\varepsilon ,a \right]}{v\left( \tau \right) \mathrm{d}\tau}}=\frac{1-\int_{\left[ 0,a \right]}{u\left( \tau \right) \mathrm{d}\tau}}{\int_{\left[ a-\varepsilon ,a \right]}{u\left( \tau \right) \mathrm{d}\tau}}.
+\]" Continue="1" End="0" Id="68" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="化简可得
+\[
+    \int_{\left[ a-\varepsilon ,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ a-\varepsilon ,a \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,a \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ a-\varepsilon ,a \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,a \right]}{u\left( \tau \right) \mathrm{d}\tau}.
+\]" Continue="1" End="0" Id="69" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="记
+\[
+    \int_{\left[ 0,T \right]}{v\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ 0,T \right]}{u\left( \tau \right) \mathrm{d}\tau} = p, 
+    \int_{\left[ a-\varepsilon,T \right]}{u\left( \tau \right) \mathrm{d}\tau}=\int_{\left[ a-\varepsilon ,T \right]}{v\left( \tau \right) \mathrm{d}\tau} = q.
+\]" Continue="1" End="0" Id="70" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="则
+$$\begin{aligned}
+    &amp;\int_{\left[ a-\varepsilon ,a \right]}{u\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,a \right]}{v\left( \tau \right) \mathrm{d}\tau}-\int_{\left[ a-\varepsilon ,a \right]}{v\left( \tau \right) \mathrm{d}\tau}\int_{\left[ 0,a \right]}{u\left( \tau \right) \mathrm{d}\tau}
+    \\
+    &amp;=\left( q+\int_{\left[ T,a \right]}{u\left( \tau \right) \mathrm{d}\tau} \right) \left( p+\int_{\left[ T,a \right]}{v\left( \tau \right) \mathrm{d}\tau} \right) -\left( q+\int_{\left[ T,a \right]}{v\left( \tau \right) \mathrm{d}\tau} \right) \left( p+\int_{\left[ T,a \right]}{u\left( \tau \right) \mathrm{d}\tau} \right) 
+    \\
+    &amp;=p\left( \int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) -q\left( \int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) 
+    \\
+    &amp;=\left( p-q \right) \left( \int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right)
+    =\int_{\left[ 0,a-\varepsilon \right]}{u\left( \tau \right) \mathrm{d}\tau}\left( \int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right). 
+\end{aligned}$$" Continue="0" End="0" Id="71" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="即
+\[
+    \int_{\left[ 0,a-\varepsilon \right]}{u\left( \tau \right) \mathrm{d}\tau}\left( \int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau} \right) =\int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}
+\]
+因为$\int_{\left[ 0,a-\varepsilon \right]}{u\left( \tau \right) \mathrm{d}\tau}&lt;1$, 故$\int_{\left[ 0,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ T,a \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=0$, 矛盾." Continue="1" End="1" Id="72" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="最后只需要证明如果两个勒贝格可积函数在每一个闭区间上的积分都是相等的,  那么它们只相差一 个几乎处处为0的函数就好了." Id="73" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="这里我直接照抄了周民强上面的方法, 所以就不再分析思路了, 直接给出答案:" Id="74" TextType="TexDraw"/>
+		<LongSpeak Content="第三步\,\,\,\, 最后证明方程的解都可以表示成
+\[
+v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}+c\left( t \right)
+\]
+的形式, 其中$c(t)=0,\text{a.e.}\,t\ge0$. 首先, 上式显然是方程的解, 故只需证明方程的解只能具有上式 子的形式." Continue="0" End="0" Id="75" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="设$u(t),v(t)$是方程(\ref{24})的两个解, 则对于给定的$T&gt;0$,$\int_{\left[ 0,t \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=0,\,\forall t\in[0,T].$ 若存在 可测集$E$满足$m(E)&gt;0$, 且$u(x)&gt;v(x)$, 则存在闭集$F\subset E$满足$m(F)&gt;0$. 设$G=[0,T]-F$, 则
+\[
+    \int_G{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}+\int_F{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=0.
+\]" Continue="1" End="0" Id="76" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="设$G=\cup_{n\ge 0}^{}{\left( a_n,b_n \right)}$, 则
+\[
+    \sum_{n\ge 0}^{}{\int_{\left( a_n,b_n \right)}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}}&lt;0.
+\]
+故存在$k$使得
+\[
+    \int_{\left[ a_k,b_k \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left( a_k,b_k \right)}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}&lt;0.
+\]" Continue="1" End="1" Id="77" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这与
+\[
+    \int_{\left[ a_k,b_k \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=\int_{\left[ 0,b_k \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}-\int_{\left[ 0,a_k \right]}{\left( u\left( \tau \right) -v\left( \tau \right) \right) \mathrm{d}\tau}=0
+\]
+矛盾.
+这个命题对$\forall T&gt;0$都成立, 故$u(t)\le v(t), \,\text{a.e.}\,t\ge 0$. 同理$u(t)\ge v(t), \,\text{a.e.}\,t\ge 0$, 故$u(t) = v(t), \,\text{a.e.}\,t\ge 0$. 故方程所有可能的解只能是\[
+        v(t)=v_0\left( t-\left[ \frac{t}{\varepsilon} \right] \varepsilon \right) \left( 1-\int_{\left[ 0,\varepsilon \right]}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^{\left[ \frac{t}{\varepsilon} \right]}+c\left( t \right)
+.
+\]" Continue="0" End="1" Id="78" Skip="0" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="好吧, 总之最后我们解答了第二个问题, 这个时候速度同样是指数衰减的." Id="79" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="并且可以算出$\int_{n\varepsilon}^{\left( n+1 \right) \varepsilon}{v\left( \tau \right) \mathrm{d}\tau}=\int_0^{\varepsilon}{v_0\left( \tau \right) \mathrm{d}\tau}\left( 1-\int_0^{\varepsilon}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^n.$" Id="80" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="所以同样有$\int_0^{+\infty}{v\left( \tau \right) \mathrm{d}\tau}=\int_0^{\varepsilon}{v_0\left( \tau \right) \mathrm{d}\tau}+\sum_{n=1}^{\infty}{\int_0^{\varepsilon}{v_0\left( \tau \right) \mathrm{d}\tau}\left( 1-\int_0^{\varepsilon}{v_0\left( \tau \right) \mathrm{d}\tau} \right) ^n}=1.$" Id="81" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="那么这期剧本的内容到此就结束了, 最初打算像之前一样录个视频直接讲." Id="82" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="但是转念一想如果自己做的东西自己都不用的话有点说不过去, 于是试着用这种方式表达出来了." Id="83" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="老实说我觉得效果并不是很好, 虽然和题目比较复杂也有关系, 但是我觉得主要问题还是用短对话的 方式录成视频后无法直接查看先前的内容, 想要看之前写的内容就要拖进度跳回去看." Id="84" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="总之,非常感谢你的观看!" Id="85" TextType="TexDraw"/>
+		<Speak CharacterID="1" Content="再次点击回到主界面." Id="86" TextType="TexDraw"/>
+	</MainPlot>
+</data>

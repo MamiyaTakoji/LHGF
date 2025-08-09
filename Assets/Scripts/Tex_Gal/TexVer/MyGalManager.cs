@@ -615,6 +615,7 @@ public class MyGalManager : GalManager
             filePath = "jar:file://" + Application.dataPath + "!/assets/HGF/ScriptSheets/Test.xml";
         }
         UnityWebRequest www = UnityWebRequest.Get(filePath);
+        Debug.Log(filePath);
         yield return www.SendWebRequest();
 
         if (www.isDone && !www.isNetworkError && !www.isHttpError)

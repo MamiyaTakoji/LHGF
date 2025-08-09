@@ -109,7 +109,7 @@ public class GalManager_LongSpeak : MonoBehaviour
     /// <param name="CallBack">回调事件</param>
     /// <returns></returns>
     public virtual Tweener StartTextContent(string TextContent,string IsContiune, string IsEnd,
-        string _TextType, string Skip, out string FinalTextContent, UnityAction CallBack = null)
+        string _TextType, string Skip, out string FinalTextContent ,UnityAction CallBack = null)
     {
         //100  60   40
         /*        void Alwayls()

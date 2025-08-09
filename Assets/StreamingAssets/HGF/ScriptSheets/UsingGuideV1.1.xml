@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<title>测试章节</title>
+	<Synopsis>本章节为LHGF1.1版本的更新说明。</Synopsis>
+	<BranchPlot/>
+	<MainPlot>
+		<LongSpeak Content="这个剧情脚本用来介绍这次更新的改动以及新功能。" Continue="0" End="0" Id="0" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这次的改动主要集中于代码的重构，HGF在设计的时候似乎有点忽视了后续还要做存档功能，并且对于DOTween的动画流程的控制有点混乱。" Continue="1" End="0" Id="1" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="这次重构将整个游戏大部分的操作流程以及动画流程集中在一个叫GameProgress的类里面处理，将需要用到的数据集中在一个叫GameData的类里面处理。希望这样能使游戏的结构更清楚。" Continue="1" End="0" Id="2" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="内容方面新增加了更换立绘的功能，具体的介绍如下表：" Continue="1" End="0" Id="3" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="\begin{tabular}{|c | c | c | c | c | c|} 
+ \hline
+ \textbf{类型} &amp; \textbf{Arg1} &amp;\textbf{Arg2} &amp;\textbf{Arg3} &amp;\textbf{Arg4}  &amp;\textbf{Arg5}  \\  [0.5ex] 
+ \hline 
+CharacterPortrait &amp;0&amp; Portrait-ShySmile&amp; &amp; &amp; \\ [1ex]  \hline
+\end{tabular}
+" Continue="1" End="0" Id="4" Skip="1" TextType="TexDraw"/>
+		<LongSpeak Content="其中，第一个参数代表添加角色时角色的简称，第二个参数代表立绘在CharacterInfo.ini文件中的设置。" Continue="1" End="0" Id="5" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="例如在CharacterInfo.ini文件中加入如下内容：" Continue="0" End="0" Id="6" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="[lus]@@
+Name=同学@@
+ResourcesPath=路人学生@@
+Department=empty@@
+Portrait-Normall=smile.png@@
+Portrait-ShySmile=shysmile.png" Continue="1" End="0" Id="7" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="同时在文件夹Portrait\backslash{}路人学生中添加shysmile.png文件，执行到CharacterPortrait这个命令 时就可以加载shysmile.png作为立绘了。" Continue="1" End="0" Id="8" Skip="0" TextType="TexDraw"/>
+		<LongSpeak Content="除此之外就是一些小更新，具体的更新内容如." Continue="0" End="0" Id="9" Skip="0" TextType="TMP"/>
+		<LongSpeak Content="1. 优化了自动和跳过功能,现在自动将在语音, 动画全部完成后的两秒后跳转下一页. 跳过功能变成每0.1秒跳过一页." Continue="1" End="0" Id="10" Skip="0" TextType="TMP"/>
+		<LongSpeak Content="2. xlsx文件转成xml文件的工具因为单个文件太大所以无法上传github了, 所以现在我单独把它传到百度云上了, 需要使用的朋友可以在release的百度云链接上下载." Continue="1" End="0" Id="11" Skip="0" TextType="TMP"/>
+		<LongSpeak Content="3, 预览公式的工具现在在游戏开始菜单右下角的Preview TeX Expression按钮上，点击按钮 即可进入预览公式的界面。" Continue="1" End="0" Id="12" Skip="0" TextType="TMP"/>
+		<LongSpeak Content="4. 现在长对话也支持语音了,使用方法为在放角色语音的文件夹下添加一个叫LongSpeak的文件夹, 然后在Arg6那一栏填入语音文件的名字(现在xlsx文件夹的第一行需要添加一个Arg6才行)" Continue="1" End="0" Id="13" Skip="0" TextType="TMP"/>
+		<LongSpeak Content="这就是这次更新的全部内容了，谢谢你的观看。" Continue="1" End="0" Id="14" Skip="0" TextType="TMP"/>
+	</MainPlot>
+</data>

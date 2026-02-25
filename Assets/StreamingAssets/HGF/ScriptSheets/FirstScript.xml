@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<Root>
+  <MainPlot>
+    <PlotNode Id="FirstScript-Example-0" NextId="FirstScript-Example-1">
+      <Speak Content="首先，看到这个问题容易联想到恒等式$\left( \alpha -\beta \right) \cdot \gamma +\left( \beta -\gamma \right) \cdot \alpha +\left( \gamma -\alpha \right) \cdot \beta =0.$" CharacterID="1"/>
+      <Blackboard Content="$$\left( \alpha -\beta \right) \cdot \gamma +\left( \beta -\gamma \right) \cdot \alpha +\left( \gamma -\alpha \right) \cdot \beta =0$$" Skip="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-1" NextId="FirstScript-Example-2">
+      <Speak Content="然后利用不等式$\left| \alpha \cdot \beta \right|\le \left| \alpha \right|\left| \beta \right|$，可以得到$\left| \left( \alpha -\beta \right) \cdot \gamma \right|\le \left| \beta -\gamma \right|\left| \alpha \right|+\left| \gamma -\alpha \right|\cdot \left| \beta \right|.$" CharacterID="1"/>
+      <Blackboard Content="$$\Rightarrow \left| \left( \alpha -\beta \right) \cdot \gamma \right|\le \left| \beta -\gamma \right|\left| \alpha \right|+\left| \gamma -\alpha \right|\cdot \left| \beta \right|$$" Skip="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-2" NextId="FirstScript-Example-3">
+      <Speak Content="但是很遗憾，$\left| \left( \alpha -\beta \right) \cdot \gamma \right|\le \left| \alpha -\beta \right|\left| \gamma \right|$. $\left| \left( \alpha -\beta \right) \cdot \gamma \right|$和$\left| \alpha -\beta \right|\left| \gamma \right|$之间还有着较大差距。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-3" NextId="FirstScript-Example-4">
+      <Speak Content="那么怎样才能凑出$\left| \alpha -\beta \right|\left| \gamma \right|$的形式呢？" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-4" NextId="FirstScript-Example-5">
+      <Speak Content="一个直观的想法是将$\gamma$旋转一下，使得它和$\alpha -\beta $平行。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-5" NextId="FirstScript-Example-6">
+      <Speak Content="设这个矩阵是$A$，经过旋转后成立$\left( \alpha -\beta \right) \cdot A\gamma =\left| \alpha -\beta \right|\left| \gamma \right|$（假设$\alpha ,\beta ,\gamma $都是列向量）" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-6" NextId="FirstScript-Example-7">
+      <Speak Content="现在重新考虑一下开头的等式，如果成立$\left( \alpha -\beta \right) \cdot A\gamma +\left( \beta -\gamma \right) \cdot A\alpha +\left( \gamma -\alpha \right) \cdot A\beta =0$，问题似乎就解决了。" CharacterID="1"/>
+      <Blackboard Content="$$
+\left( \alpha -\beta \right) \cdot {\color[RGB]{240, 0, 0} A}\gamma +\left( \beta -\gamma \right) \cdot {\color[RGB]{240, 0, 0} A}\alpha +\left( \gamma -\alpha \right) \cdot {\color[RGB]{240, 0, 0} A}\beta =0?
+$$"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-7" NextId="FirstScript-Example-8">
+      <Speak Content="展开后，式子的左边是$\alpha ^T\left( A-A^T \right) \gamma +\beta ^T\left( A-A^T \right) \alpha +\gamma ^T\left( A-A^T \right) \beta$。因此除非$A$是对称矩阵，不然式子左边一般是不等于$0$的。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-8" NextId="FirstScript-Example-9">
+      <Speak Content="而存在对称矩阵$A$可以把$\gamma $旋转至与$\alpha -\beta $平行。Household矩阵就是一个例子（可以参考我的复习笔记Day35）" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-9" NextId="FirstScript-Example-10">
+      <Speak Content="Household矩阵$H=I-2ww^T,\,w=\frac{y-x}{\left| y-x \right|},\,x,y\ne0$使得$y=Hx.$" CharacterID="1"/>
+      <Blackboard Content="$$y=Hx,\,H=1-2ww^T,\,\,w=\frac{y-x}{\left| y-x \right|}$$" Continue="0" PosInfo="UpperRight"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-10" NextId="FirstScript-Example-11">
+      <Speak Content="因此，在这题中，只需要取$x=|\gamma |\left( \alpha -\beta \right) -|\alpha -\beta |\gamma ,\,w=\frac{x}{\left| x \right|},\,A=I-2ww^T$，就可以证明结论了。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-11" NextId="FirstScript-Example-12">
+      <Speak Content="最后，让我们整理一下答案吧。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-12" NextId="FirstScript-Example-13">
+      <LongSpeak Content="若$\left| \alpha -\beta \right|\left| \gamma \right|=0$，则结论显然成立。否则，$\alpha -\beta ,\gamma \ne 0.$"/>
+      <Blackboard BlackboardState="0"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-13" NextId="FirstScript-Example-14">
+      <LongSpeak Content="注意到对任意非零向量$\forall x,y\in V$，成立$\left( I-2ww^T \right) x=y,\,ww^T =I$，其中$w=\frac{y-x}{\left| y-x \right|},\,$（这里最好补充一下相关的证明）"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-14" NextId="FirstScript-Example-15">
+      <LongSpeak Content="因此，记$A=I-2ww^T,\,w=\frac{x}{\left| x \right|},\,x=|\gamma |\left( \alpha -\beta \right) -|\alpha -\beta |\gamma $，那么因为
+$$
+\left( \alpha -\beta \right) \cdot A\gamma =\left( \gamma -\beta \right) \cdot A\alpha +\left( \alpha -\gamma \right) \cdot A\beta 
+$$"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-15" NextId="FirstScript-Example-16">
+      <LongSpeak Content="两边取长度，可得
+$$
+\begin{aligned}
+	&amp;\left| \left( \alpha -\beta \right) \cdot A\gamma \right|=\left| \alpha -\beta \right|\left| \gamma \right|\\
+	&amp;=\left| \left( \gamma -\beta \right) \cdot A\alpha +\left( \alpha -\gamma \right) \cdot A\beta \right|\\
+	&amp;\le \left| \left( \gamma -\beta \right) \cdot A\alpha \right|+\left| \left( \alpha -\gamma \right) \cdot A\beta \right|\\
+	&amp;\le \left| \beta -\gamma \right|\left| \alpha \right|+\left| \gamma -\alpha \right|\left| \beta \right|\\
+\end{aligned}
+$$
+即证明了结论。"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Example-16" NextId="GAMEFINISH">
+      <Speak Content="以上就是本期视频全部的内容，感谢你能观看到这里。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-0" NextId="FirstScript-Introduction-1">
+      <Speak Content="经过了一段时间的修改，我意识到了之前的代码有很强的局限性，于是我只好重构了之前的代码。" CharacterID="1" CVPath="你好喵.mp3"/>
+      <ImageCharacterAnimation ImageCharacterIllustration="Scarying.png" CharacterID="1" DOTweenAnimation="SetCI"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-1" NextId="FirstScript-Introduction-2">
+      <Speak Content="重构后代码的可读性和可拓展性获得了提升，如果你有Unity基础，可以比较容易地添加新的功能。" CharacterID="1"/>
+      <ImageCharacterAnimation ImageCharacterIllustration="Standing.png" CharacterID="1" DOTweenAnimation="SetCI"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-2" NextId="FirstScript-Introduction-3">
+      <Speak Content="而对于没有Unity基础的朋友，\hnot{你可以去学，}这次更新也提供了详细的工具和教程，便于快速编辑剧情。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-3" NextId="FirstScript-Introduction-4">
+      <Speak CharacterID="1" Content="然而如果你希望更换更漂亮的UI，或者是更漂亮的开始界面，都绕不开使用Unity直接修改项目。因此我还是强烈建议安装一个Unity，然后找几个UI相关的教程简单学习一下。"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-4" NextId="FirstScript-Introduction-5">
+      <Speak Content="接下来，让我们介绍一下本次更新新增的功能。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-5" NextId="FirstScript-Introduction-6">
+      <Speak Content="首先，本次更新通过DOTWeen+xlua的方式，支持了在外部文件夹编辑各种动画。包括立绘，背景以及摄像机的动画。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-6" NextId="FirstScript-Introduction-7">
+      <Speak CharacterID="1" Content="例如，现在可以利用摄像机动画给角色一个特写："/>
+      <CameraAnimation DOTweenAnimation="SetCamera" PosX="0" PosY="0" Size="300"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-7" NextId="FirstScript-Introduction-8">
+      <CameraAnimation DOTweenAnimation="SetCamera" PosX="0" PosY="0" Size="540"/>
+      <Speak Content="在上上期视频中，我试着讲了一道数学题，然而效果个人认为并不是很理想，想要看懂在讲什么需要不断去翻历史记录。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-8" NextId="FirstScript-Introduction-9">
+      <Speak Content="因此，这次更新另外支持的另一个功能是黑板。" CharacterID="1"/>
+      <Blackboard FontSize="40"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-9" NextId="FirstScript-Introduction-10">
+      <Speak CharacterID="1" Content="通过黑板，可以在讲解题目的同时记录必要的信息。"/>
+      <Blackboard Content="这里记录必要的信息"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-10" NextId="FirstScript-Introduction-11">
+      <Speak Content="（额，挡住黑板了）虽然目前还很简陋，但是结合之前提到的脚本编辑器，这种方法应该比图片逐张插入要高效。" CharacterID="1"/>
+      <ImageCharacterAnimation DOTweenAnimation="MoveToLeft" CharacterID="1" Time="0.5"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-11" NextId="FirstScript-Introduction-12">
+      <Speak Content="此外，我仍然做了回撤功能，只要按下退格键（Backspace），就能回到上一个对话。" CharacterID="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-12" NextId="FirstScript-Introduction-13">
+      <Speak Content="也许感觉上回撤没什么，但实际上大部分的bug都出现在这个功能上，所以我必须提一下（写到这里时，我又发现了新的bug）"/>
+      <ImageCharacterAnimation ImageCharacterIllustration="Scarying.png" CharacterID="1" DOTweenAnimation="SetCI"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-Introduction-13" NextId="FirstScript-Example-0">
+      <Speak Content="总之，这就是这次更新的全部内容了。接下来的内容会演示黑板的使用，将会讲黑板上的这一道题，有兴趣的朋友可以留下来继续观看。" CharacterID="1"/>
+      <ImageCharacterAnimation ImageCharacterIllustration="Standing.png" CharacterID="1" DOTweenAnimation="SetCI"/>
+      <Blackboard Content="设$V$是$n$维欧式空间，证明：$$\left| \alpha -\beta \right|\left| \gamma \right|\le \left| \alpha -\gamma \right|\left| \beta \right|+\left| \beta -\gamma \right|\left| \alpha \right|$$" Continue="0" BlackboardState="1"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-0" NextId="FirstScript-Introduction-0">
+      <AddCharacter CharacterID="1" From="M" sizeY="864" Time="2" DOTweenAnimation="SetAt"/>
+      <ChangeImageBackground BgImage="魔法学教室2.png"/>
+      <Speak Content="这期视频来介绍一下本次LHGF框架更新的内容。" CharacterID="1"/>
+      <SetBgm BgmName="InThatMood.mp3"/>
+    </PlotNode>
+  </MainPlot>
+</Root>

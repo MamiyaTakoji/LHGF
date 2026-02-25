@@ -1,0 +1,14 @@
+{
+ "简称":
+    {
+        "Name":"名字",
+        "ResourcesPath":"资源路径",
+        "Portrait-Normall":"正常立绘.png"
+    },
+ "M":
+    {
+        "Name":"Maya",
+        "ResourcesPath":"Illustrater",
+        "Portrait-Normall":"Standing.png"
+    } 
+}

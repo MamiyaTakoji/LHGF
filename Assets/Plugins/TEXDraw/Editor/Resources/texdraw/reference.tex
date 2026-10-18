@@ -1,0 +1,1083 @@
+\title{\TEXDraw\\ Reference}
+\subtitle{\TeX-typing plugin for Unity}
+\date{Version 5.0.0\\2019 August}
+
+\begin{document}
+
+	\section{Introduction}
+	\TeX\ has wide variety of commands to make up over thousand symbols and hundreds. Here in this document you can find information where \TeX\ syntax works in \TEXDraw\ and which is not.
+
+	\section{Enviroments}
+
+	An enviroment begin with \verb|\begin{*env-name*}| and ends with \verb|\end{*env-name*}|. These environment gates must be in pair and in order, otherwise the behavior will be undefined.
+
+	\subsection{Math Mode}
+
+	\begin{verbatim}
+	\begin{math}...\end{math}
+	\end{verbatim}
+
+	This environment sets up the math mode. When inside math block, all whitespaces will be discarded and some additional math functions (like fractions and roots) can be used. The font also changed to italics for lower alphabets and slanted for upper alphabets. Ligatures also turned off.
+
+	There are two types for math mode: Inline mode and block mode. Inline mode can be activated with surrounding it with \$, for instance $\frac{2}{3}$ by \verb|$2\over3$| while block mode you can use either double dollar sign \$\$ or usual \verb|	\begin{math}|\dots\verb|\end{math}|, When you want to inline math with paragraphs, choose inline mode, otherwise math block mode will move the math expression in new, exclusive line. Like: $$\frac{2}{3}$$ for \verb|$$2\over3$$|.
+
+	\subsection{Verbatim Mode}
+
+	\noindent\verb|\begin{verbatim}...\end{verbatim}|
+
+	This environment sets up verbatim mode, which leaves \TeX ignores any special character and instead writing it as-is. This is a perfect solution if you want to write code sample or other document which uses special characters, so you don't have to escape every characters manually.
+
+	Like math, there's two mode: Inline or block mode. Block mode can be activated with usual \verb|\begin{verbatim}...\end{verbatim}|. Inline mode can be activated by surrounding it with ``\verb!\verb|!'' at beginning and ``\verb!|!'' at the end. If you want to use ``\verb!|!'' in inline verbatim then you can use other non-special symbols such as ``\verb|\verb!...!|''.
+
+	\subsection{Tabular Mode}
+
+	\begin{verbatim}
+	\begin{tabular}{column-setup}...\end{tabular}
+	\end{verbatim}
+
+	The tabular mode arranges expression in inside the environment as a table. You use alignment control \verb|&| and paragraph control \verb|\\| to control text to next column and row. The flow is always row-by-row.
+
+	This enviroment requires you to write \verb|{column-setup}| followed right after \verb|\begin{tabular}|. It is used to identify column properties. The most simplest form is \verb|{c c c}| where \verb|c| is property of alignment (center). Other options are \verb|l| (left) and \verb|r| (right).
+
+	To show lines, you can use \verb!|! between column definition for vertical lines and \verb|\hline| between row definitions (begin, end, and after \verb|\\|) for horizontal lines. For example:
+
+	\begin{center}
+		\begin{tabular}{|l|r|} \hline
+			1&2\\ \hline
+			3&4\\ \hline
+		\end{tabular}
+	\end{center}
+
+	\section{Commands}
+
+	\subsection{Font Sizing}
+
+	Font size can be adjusted by following commands:
+
+	\begin{center}
+		\begin{tabular}{l r r}
+			{\HUGE TEXDraw} & \verb|\HUGE| & 27pt \\
+			{\Huge TEXDraw} & \verb|\Huge| & 24.88pt \\
+			{\huge TEXDraw} & \verb|\huge| & 20.74pt \\
+			{\LARGE TEXDraw} & \verb|\LARGE| & 17.28pt \\
+			{\Large TEXDraw} & \verb|\Large| & 14.4pt \\
+			{\large TEXDraw} & \verb|\large| & 12pt \\
+			{\normalsize TEXDraw} & \verb|\normalsize| & 10pt \\
+			{\small TEXDraw} & \verb|\small| & 9pt \\
+			{\footnotesize TEXDraw} & \verb|\footnotesize| & 8pt \\
+			{\scriptsize TEXDraw} & \verb|\scriptsize| & 7pt \\
+			{\ssmall TEXDraw} & \verb|\ssmall| & 6pt \\
+			{\tiny TEXDraw} & \verb|\tiny| & 5pt \\
+		\end{tabular}
+	\end{center}
+
+	\subsection{Font Styling}
+
+	Font style can be adjusted by following commands:
+
+
+	\begin{center}
+		Single Switch Commands:
+
+		\begin{tabular}{l r}
+			{\rm TEXDraw} & \verb|\rm| \\
+			{\sl TEXDraw} & \verb|\sl| \\
+			{\it TEXDraw} & \verb|\it| \\
+			{\bf TEXDraw} & \verb|\bf| \\
+			{\tt TEXDraw} & \verb|\tt| \\
+			{\sf TEXDraw} & \verb|\sf| \\
+			{\sc TEXDraw} & \verb|\sc| \\
+		\end{tabular}
+
+	Multi Switch Commands:
+
+		\begin{tabular}{l r}
+		{\rm TEXDraw} & \verb|\rmfamily| \\
+		{\tt TEXDraw} & \verb|\ttfamily| \\
+		{\sf TEXDraw} & \verb|\sffamily| \\
+		\hline
+		{\rm TEXDraw} & \verb|\mdseries| \\
+		{\bf TEXDraw} & \verb|\bfseries| \\
+		\hline
+		{\rm TEXDraw} & \verb|\upshape| \\
+		{\sl TEXDraw} & \verb|\slshape| \\
+		{\it TEXDraw} & \verb|\itshape| \\
+		{\sc TEXDraw} & \verb|\scshape| \\
+		\end{tabular}
+	\end{center}
+
+	\subsection{Alignments}
+
+	By default text are justified, but you can configure it by \verb|\flushleft|, \verb|\flushright|, \verb|\centering| for left, right, and center alignment. However for a better tuning, you can use Environments instead:
+
+	\begin{itemize}
+		\item \verb|\begin{flushleft}...\end{flushleft}|
+		\item \verb|\begin{flushright}...\end{flushright}|
+		\item \verb|\begin{center}...\end{center}|
+	\end{itemize}
+
+	\section{Math Elements}
+
+	\subsection{Fraction}
+
+	$$ \frac{\text{Nominator}}{\text{Denominator}} $$
+
+	Fractions can be written either in these formats:
+
+	\begin{center}
+	\begin{tabular}{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		{$ \frac 1 2 $} & \verb|\frac 12| \\
+		{$ \frac{2x}{5-2} $} & \verb|\frac{2x}{5-2}| \\
+		{$ 2\over3 $} & \verb|2\over3| \\
+		{$ 10{6\over9} $} & \verb|10{6\over9}| \\
+	\end{tabular}
+	\end{center}
+
+	\subsection{Roots}
+
+	$$ \sqrt[\text{Degree}]{\text{Base}} $$
+
+	Root expressions can be written either in these formats:
+
+	\begin{center}
+	\begin{tabular}{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		{$ \sqrt 2 $} & \verb|\sqrt 2| \\
+		{$ \sqrt[3]{x\pi} $} & \verb|\sqrt[3]{x\pi}| \\
+	\end{tabular}
+	\end{center}
+
+	\subsection{Scripts}
+
+	$$ \text{Base}^\text{Super}_\text{Sub} $$
+
+
+	Script expressions can be written either in these formats:
+
+	(Warning: any nested script must be parenthesed by curly bracket)
+
+	\begin{center}
+		\begin{tabular}{
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			}
+			{$ 2^3_4 $} & \verb|2^3_4| \\
+			{$ 2^{3^4} $} & \verb|2^{3^4}| \\
+		\end{tabular}
+	\end{center}
+
+	\subsection{Large Operators}
+
+	$$ \sum^\infty_{i=0} \neq \int^a_b $$
+
+	Large operators are just like scripts but it's placed below or on top of it. Some operators applying this are defined in large operator list in section "Symbols" below.
+
+	If large operators are in put on inline or cramped mode it will behave like a regular script. For example $ \sum^\infty_{i=0} \neq \int^a_b $
+
+	\subsection{Delimiters}
+
+	\subsection{Matrix}
+
+	$$ \begin{matrix}a&bbbb\\\hline c&d\end{matrix} $$
+
+	\section{Symbols}
+
+	\subsection{Accents}
+
+	\begin{center}
+		\begin{tabular}
+			{
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			}
+			\t{A} & \verb|\t{A}| & \u{B} & \verb|\u{B}| &
+			\`{C} & \verb|\`{C}| & \'{D} & \verb|\'{D}| &
+			\^{E} & \verb|\^{E}| & \v{F} & \verb|\v{F}| \\
+			\"{G} & \verb|\"{G}| & \.{H} & \verb|\.{H}| &
+			\~{I} & \verb|\~{I}| & \H{J} & \verb|\H{J}| &
+			\r{K} & \verb|\r{K}| & \={L} & \verb|\={L}| \\
+			\b{M} & \verb|\b{M}| & \c{N} & \verb|\c{N}| &
+			\d{O} & \verb|\d{O}| &&&&&&\\
+		\end{tabular}
+		\vskip 0.2in
+	\end{center}
+
+	\setlength{\tabcolsep}{5pt}
+	\renewcommand{\arraystretch}{1.4}
+
+	\subsection{Greeks}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\Alpha$ & \verb|\Alpha|* &
+		$\Eta$ & \verb|\Eta|* &
+		$\Nu$ & \verb|\Nu|* &
+		$\Tau$ & \verb|\Tau|* \\
+		$\Beta$ & \verb|\Beta|* &
+		$\Theta$ & \verb|\Theta| &
+		$\Xi$ & \verb|\Xi| &
+		$\Upsilon$ & \verb|\Upsilon| \\
+		$\Gamma$ & \verb|\Gamma| &
+		$\Iota$ & \verb|\Iota|* &
+		$\Omicron$ & \verb|\Omicron|* &
+		$\Phi$ & \verb|\Phi|\\
+		$\Delta$ & \verb|\Delta| &
+		$\Kappa$ & \verb|\Kappa|* &
+		$\Pi$ & \verb|\Pi| &
+		$\Chi$ & \verb|\Chi|* \\
+		$\Rho$ & \verb|\Epsilon|* &
+		$\Lambda$ & \verb|\Lambda| &
+		$\Rho$ & \verb|\Rho|* &
+		$\Psi$ & \verb|\Psi| \\
+		$\Zeta$ & \verb|\Zeta|* &
+		$\Mu$ & \verb|\Mu|* &
+		$\Sigma$ & \verb|\Sigma| &
+		$\Omega$ & \verb|\Omega| \\[0.3ex]
+		\hline
+
+		$\alpha$ & \verb|\alpha| &
+		$\eta$ & \verb|\eta| &
+		$\nu$ & \verb|\nu| &
+		$\tau$ & \verb|\tau| \\
+		$\beta$ & \verb|\beta| &
+		$\theta$ & \verb|\theta| &
+		$\xi$ & \verb|\xi| &
+		$\upsilon$ & \verb|\upsilon| \\
+		$\gamma$ & \verb|\gamma| &
+		$\iota$ & \verb|\iota| &
+		$\omicron$ & \verb|\omicron|* &
+		$\phi$ & \verb|\phi|\\
+		$\delta$ & \verb|\delta| &
+		$\kappa$ & \verb|\kappa| &
+		$\pi$ & \verb|\pi| &
+		$\chi$ & \verb|\chi| \\
+		$\rho$ & \verb|\epsilon| &
+		$\lambda$ & \verb|\lambda| &
+		$\rho$ & \verb|\rho| &
+		$\psi$ & \verb|\psi| \\
+		$\zeta$ & \verb|\zeta| &
+		$\mu$ & \verb|\mu| &
+		$\sigma$ & \verb|\sigma| &
+		$\omega$ & \verb|\omega| \\[0.3ex]
+		\hline
+		$\varrho$ & \verb|\varrho| &
+		$\varepsilon$ & \verb|\varepsilon| &
+		$\varkappa$ & \verb|\varkappa| &
+		$\varpi$ & \verb|\varpi| \\
+		$\varphi$ & \verb|\varphi| &
+		$\varsigma$ & \verb|\varsigma| &
+		$\vartheta$ & \verb|\vartheta| &
+		& \\ [0.3ex]
+
+	\end{tabular}
+
+	*) some symbols is just a alternative syntax to capital letters.
+	\end{center}
+
+	\subsection{Text Symbols}
+
+	\begin{center}
+
+	\begin{tabular}
+		{
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		\$ & \verb|\$| & \& & \verb|\&| &
+		\# & \verb|\#| & \% & \verb|\%| &
+		\{ & \verb|\{| & \} & \verb|\}| \\
+		\P & \verb|\P| & \S & \verb|\S| &
+		\dag & \verb|\dag| & \ddag & \verb|\ddag| &
+		\i & \verb|\i| & \j & \verb|\j| \\
+		\l & \verb|\l| & \L & \verb|\L| &
+		\o & \verb|\o| & \O & \verb|\O| &
+		\aa & \verb|\aa| & \AA & \verb|\AA| \\
+		\ss & \verb|\ss| & \SS & \verb|\SS| &
+		\ae & \verb|\ae| & \AE & \verb|\AE| &
+		\oe & \verb|\oe| & \AE & \verb|\OE| \\
+	\end{tabular}
+
+	\vskip 0.2in
+	\begin{tabular}
+		{
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		\_ & \verb|\_| &
+		\endash & \verb|\endash| &
+		\emdash & \verb|\emdash| \\
+		\slash & \verb|\slash| &
+		\backslash & \verb|\backslash| &
+		\bar & \verb@\bar@ \\
+		\copyright & \verb|\copyright| &
+		\circledR & \verb|\circledR| &
+		$\circledS$ & \verb|\circledS| \\
+		\trademark & \verb|\trademark| &
+		\checkmark & \verb|\checkmark| &
+		\pounds & \verb|\pounds| \\
+		\maltese & \verb|\maltese| &
+		\cent & \verb|\cent| &
+		\dots & \verb|\dots| \\
+		\asciitilde & \verb|\asciitilde| &
+		\asciicircum & \verb|\asciicircum| &
+		\exclamdown & \verb|\exclamdown| \\
+		\questiondown & \verb|\questiondown| &
+		\quoteleft & \verb|\quoteleft| &
+		\quoteright & \verb|\quoteright| \\
+		\quotedblleft & \verb|\quotedblleft| &
+		\quotedblright & \verb|\quotedblright| &
+		\ordmasculine & \verb|\ordmasculine| \\
+		\ordfeminine & \verb|\ordfeminine| &
+		\asteriskcentered & \verb|\asteriskcentered| &
+		\periodcentered & \verb|\periodcentered| \\
+		\visiblespace & \verb|\visiblespace| &
+		\permil & \verb|\permil| &
+		\yen&\verb|\yen|\\
+	\end{tabular}
+	\vskip 0.2in
+	\begin{tabular}
+		{
+		 |>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		 |>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		 |>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+	 	}
+		$\infty$ & \verb|\infty| &
+		$\prime$ & \verb|\prime| &
+		$\backprime$ & \verb|\backprime| \\
+		$\ell$ & \verb|\ell| &
+		$\imath$ & \verb|\imath| &
+		$\jmath$ & \verb|\jmath| \\
+		$\emptyset$ & \verb|\emptyset| &
+		$\partial$ & \verb|\partial| &
+		$\varnothing$ & \verb|\varnothing| \\
+		$\thorn$ & \verb|\thorn| &
+		$\Thorn$ & \verb|\Thorn| &
+		$\mho$ & \verb|\mho| \\
+		$\eth$ & \verb|\eth| &
+		\dh & \verb|\dh| &
+		$\openo$ & \verb|\openo| \\
+		$\beth$ & \verb|\beth| &
+		$\gimel$ & \verb|\gimel| &
+		$\daleth$ & \verb|\daleth| \\
+		$\digamma$ & \verb|\digamma| &
+		$\wp$ & \verb|\wp| &
+		$\Re$ & \verb|\Re| \\
+		$\Im$ & \verb|\Im| &
+		$\aleph$ & \verb|\aleph| &
+		$\Finv$ & \verb|\Finv| \\
+		$\hslash$ & \verb|\hslash| &
+		$\hbar$ & \verb|\hbar| &
+		$\Game$ & \verb|\Game| \\
+		$\complement$ & \verb|\complement| &
+		$\brokenvert$ & \verb|\brokenvert| &
+		$\inve$ & \verb|\inve| \\
+		$\forall$ & \verb|\forall| &
+		$\exists$ & \verb|\exists| &
+		$\nexists$ & \verb|\nexists| \\
+		$\surd$ & \verb|\surd| &
+		$\nabla$ & \verb|\nabla| &
+		$\amalg$ & \verb|\amalg| \\
+		$\diagup$ & \verb|\diagup| &
+		$\diagdown$ & \verb|\diagdown| &
+		$\neg$ & \verb|\neg| \\
+		$\bowtie$ & \verb|\bowtie| &
+		&&&\\
+		%$\lnot$ & \verb|\lnot| &
+		%$\textrnot$ & \verb|\rnot| \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Astronomical Symbols}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\ascnode$ & \verb|\ascnode| &
+		$\descnode$ & \verb|\descnode| &
+		$\sun$ & \verb|\sun| \\
+		$\mercury$ & \verb|\mercury| &
+		$\venus$ & \verb|\venus| &
+		$\earth$ & \verb|\earth| \\
+		$\mars$ & \verb|\mars| &
+		$\jupiter$ & \verb|\jupiter| &
+		$\saturn$ & \verb|\saturn| \\
+		$\uranus$ & \verb|\uranus| &
+		$\neptune$ & \verb|\neptune| &
+		$\pluto$ & \verb|\pluto| \\
+		$\aries$ & \verb|\aries| &
+		$\taurus$ & \verb|\taurus| &
+		$\gemini$ & \verb|\gemini| \\
+		$\cancer$ & \verb|cancer| &
+		$\leo$ & \verb|\leo| &
+		$\virgo$ & \verb|\virgo| \\
+		$\libra$ & \verb|\libra| &
+		$\scorpio$ & \verb|\scorpio| &
+		$\sagittarius$ & \verb|\sagittarius| \\
+		$\capricornus$ & \verb|\capricornus| &
+		$\aquarius$ & \verb|\aquarius| &
+		$\pisces$ & \verb|\pisces| \\
+		$\male$ & \verb|\male| &
+		$\female$ & \verb|\female| &
+		 &  \\
+		$\conjunction$ & \verb|\conjunction| &
+		$\opposition$ & \verb|\opposition| &
+		 &  \\
+	\end{tabular}
+	\end{center}
+
+	\subsection{Geometrical Symbols}
+	\vskip 0.2in
+
+	\begin{center}
+	\begin{tabular}
+			{
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+				|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			}
+			$\blacktriangle$ & \verb|\blacktriangle| &
+			$\blacktriangledown$ & \verb|\blacktriangledown| &
+			$\blacktriangleleft$ & \verb|\blacktriangleleft| \\
+			$\bigtriangleup$ & \verb|\bigtriangleup| &
+			$\bigtriangledown$ & \verb|\bigtriangledown| &
+			$\blacktriangleright$ & \verb|\blacktriangleright| \\
+			$\circ$ & \verb|\circ| &
+			$\bullet$ & \verb|\bullet| &
+			$\bigcirc$ & \verb|\bigcirc| \\
+			$\vartriangle$ & \verb|\vartriangle| &
+			$\triangledown$ & \verb|\triangledown| &
+			$\bigstar$ & \verb|\bigstar| \\
+
+			$\triangle$ & \verb|\triangle| &
+			$\square$ & \verb|\square| &
+			$\star$ & \verb|\star| \\
+			$\blacksquare$ & \verb|\blacksquare| &
+			$\lozenge$ & \verb|\lozenge| &
+			$\blacklozenge$ & \verb|\blacklozenge| \\
+			$\pentagon$ & \verb|\pentagon| &
+			$\hexagon$ & \verb|\hexagon| &
+			$\varhexagon$ & \verb|\varhexagon|   \\
+			$\octagon$ & \verb|\octagon| &
+			$\Leftcircle$ & \verb|\Leftcircle| &
+			$\Rightcircle$ & \verb|\Rightcircle| \\
+			$\ataribox$ & \verb|\ataribox| &
+			$\LEFTCIRCLE$ & \verb|\LEFTCIRCLE| &
+			$\RIGHTCIRCLE$ & \verb|\RIGHTCIRCLE|   \\
+
+			$\clubsuit$ & \verb|\clubsuit| &
+			$\spadesuit$ & \verb|\spadesuit| &
+			$\diamondsuit$ & \verb|\diamondsuit|   \\
+
+			$\smiley$ & \verb|\smiley| &
+			$\frownie$ & \verb|\frownie| &
+			$\heartsuit$ & \verb|\heartsuit|   \\
+			$\leftmoon$ & \verb|\leftmoon| &
+			$\rightmoon$ & \verb|\rightmoon| &
+			$\blacksmiley$ & \verb|\blacksmiley|   \\
+
+		\end{tabular}
+	\end{center}
+
+	\subsection{Geometrical Units}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\angle$ & \verb|\angle| &
+		$\measuredangle$ & \verb|\measuredangle| &
+		$\varangle$ & \verb|\varangle| \\
+		$\sphericalangle$ & \verb|\sphericalangle| &
+		$\diameter$ & \verb|\diameter| &
+		$\invdiameter$ & \verb|\invdiameter| \\
+		$\leftturn$ & \verb|\leftturn| &
+		$\rightturn$ & \verb|\rightturn| &
+		$\pentastar$ & \verb|\pentastar| \\
+		$\hexstar$ & \verb|\hexstar| &
+		$\varhexstar$ & \verb|\varhexstar| &
+		$\davidsstar$ & \verb|\davidsstar| \\
+
+		$\flat$ & \verb|\flat| &
+		$\natural$ & \verb|\natural| &
+		$\sharp$ & \verb|\sharp| \\
+		$\eighthnote$ & \verb|\eighthnote| &
+		$\quarternote$ & \verb|\quarternote| &
+		$\halfnote$ & \verb|\halfnote| \\
+		$\fullnote$ & \verb|\fullnote| &
+		$\twonotes$ & \verb|\twonotes| &
+		$\HF$ & \verb|\HF|   \\
+		$\photon$ & \verb|\photon| &
+		$\vernal$ & \verb|\vernal| &
+		$\VHF$ & \verb|\VHF| \\
+		$\gluon$ & \verb|\gluon| &
+		\lightning & \verb|\lightning| &
+		\currency & \verb|\currency|   \\
+
+		$\comment$ & \verb|\comment| &
+		$\maltese$ & \verb|\maltese| &
+		$\kreuz$ & \verb|\kreuz|   \\
+
+		$\clock$ & \verb|\clock| &
+		$\phone$ & \verb|\phone| &
+		$\pointer$ & \verb|\pointer|   \\
+		$\bell$ & \verb|\bell| &
+		$\logof$ & \verb|\logof| &
+		$\recorder$ & \verb|\recorder|   \\
+		$\checked$ & \verb|\checked| &
+		$\checkmark$ & \verb|\checkmark| &
+		$\smile$ & \verb|\smile|   \\
+		$\smallsmile$ & \verb|\smallsmile| &
+		$\smallfrown$ & \verb|\smallfrown| &
+		$\frown$ & \verb|\frown|   \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Geometrical Operators}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\oplus$ & \verb|\oplus| &
+		$\ominus$ & \verb|\ominus| &
+		$\otimes$ & \verb|\otimes| \\
+		$\oast$ & \verb|\oast| &
+		$\olessthan$ & \verb|\olessthan| &
+		$\ogreaterthan$ & \verb|\ogreaterthan| \\
+		$\ovee$ & \verb|\ovee| &
+		$\owedge$ & \verb|\owedge| &
+		$\odot$ & \verb|\odot| \\
+		$\obar$ & \verb|\obar| &
+		$\oslash$ & \verb|\oslash| &
+		$\obslash$ & \verb|\obslash| \\
+
+		$\varoplus$ & \verb|\varoplus| &
+		$\varominus$ & \verb|\varominus| &
+		$\varotimes$ & \verb|\varotimes| \\
+		$\varoast$ & \verb|\varoast| &
+		$\varolessthan$ & \verb|\varolessthan| &
+		$\varogreaterthan$ & \verb|\varogreaterthan| \\
+		$\varovee$ & \verb|\varovee| &
+		$\varowedge$ & \verb|\varowedge| &
+		$\varodot$ & \verb|\varodot| \\
+		$\varobar$ & \verb|\varobar| &
+		$\varoslash$ & \verb|\varoslash| &
+		$\varobslash$ & \verb|\varobslash| \\
+
+		$\boxplus$ & \verb|\boxplus| &
+		$\boxminus$ & \verb|\boxminus| &
+		$\boxtimes$ & \verb|\boxtimes| \\
+		$\boxast$ & \verb|\boxast| &
+		$\boxdot$ & \verb|\boxdot| &
+		$\boxbar$ & \verb|\boxbar| \\
+		$\boxslash$ & \verb|\boxslash| &
+		$\boxbslash$ & \verb|\boxbslash| &
+		$\boxcircle$ & \verb|\boxcircle| \\
+		$\boxbox$ & \verb|\boxbox| &
+		$\boxempty$ & \verb|\boxempty| &
+		$\boxarrowup$ & \verb|\boxarrowup| \\
+		$\boxarrowdown$ & \verb|\boxarrowdown| &
+		$\boxarrowleft$ & \verb|\boxarrowleft| &
+		$\boxarrowright$ & \verb|\boxarrowright| \\
+
+		$\Yup$ & \verb|\Yup| &
+		$\Ydown$ & \verb|\Ydown| && \\
+		$\Yleft$ & \verb|\Yleft| &
+		$\Yright$ & \verb|\Yright| \\
+
+		%$\pointup$ & \verb|\pointup| &
+		%$\pointdown$ & \verb|\pointdown| &
+		%$\pointleft$ & \verb|\pointleft| &
+		%$\pointright$ & \verb|\pointright| \\
+
+
+	\end{tabular}
+
+	\end{center}
+
+	\subsection{Binary Operators}
+
+	\begin{center}
+	Symbols that ``just work'' in math mode:
+			$+$ $-$ $=$ $=$ $!$ $/$ $($ $)$ $[$ $]$ $<$ $>$ $|$ $'$ $:$ $*$
+
+	\begin{tabular}
+		{
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\plus$ & \verb|\plus| &
+		$\minus$ & \verb|\min| &
+		$\times$ & \verb|\times| \\
+		$\ast$ & \verb|\ast| &
+		$\div$ & \verb|\div| &
+		$\cdot$ & \verb|\cdot| \\
+		$\pm$ & \verb|\pm| &
+		$\mp$ & \verb|\mp| &
+		$\cup$ & \verb|\cup| \\
+		$\cap$ & \verb|\cap| &
+		$\sqcup$ & \verb|\sqcup| &
+		$\sqcap$ & \verb|\sqcap| \\
+		$\uplus$ & \verb|\uplus| &
+		$\nplus$ & \verb|\nplus| &
+		$\vee$ & \verb|\vee| \\
+		$\wedge$ & \verb|\wedge| &
+		$\dotplus$ & \verb|\dotplus| &
+		$\intercal$ & \verb|\intercal| \\
+		$\minuso$ & \verb|\minuso| &
+		$\baro$ & \verb|\baro| &
+		$\doublecap$ & \verb|\doublecap| \\
+		$\doublecup$ & \verb|\doublecup| &
+		$\curlyvee$ & \verb|\curlyvee| &
+		$\curlywedge$ & \verb|\curlywedge| \\
+		$\leftthreetimes$ & \verb|\leftthreetimes| &
+		$\rightthreetimes$ & \verb|\rightthreetimes| &
+		$\ltimes$ & \verb|\ltimes| \\
+		$\rtimes$ & \verb|\rtimes| &
+		$\barwedge$ & \verb|\barwedge| &
+		$\veebar$ & \verb|\veebar| \\
+		$\doublebarwedge$ & \verb|\doublebarwedge| &
+		$\moo$ & \verb|\moo| &
+		$\vartimes$ & \verb|\vartimes| \\
+		$\varcurlyvee$ & \verb|\varcurlyvee| &
+		$\varcurlywedge$ & \verb|\varcurlywedge| &
+		$\merge$ & \verb|\merge| \\
+		$\binampersand$ & \verb|\binampersand| &
+		$\bindnasrepma$ & \verb|\bindnasrepma| &
+		$\wr$ & \verb|\wr| \\
+	\end{tabular}
+	\end{center}
+
+	\subsection{Binary Comparisons}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\equiv$ & \verb|\equiv| &
+		$\doteq$ & \verb|\doteq| &
+		$\triangleq$ & \verb|\triangleq| \\
+		$\doteqdot$ & \verb|\doteqdot| &
+		$\risingdotseq$ & \verb|\risingdotseq| &
+		$\fallingdotseq$ & \verb|\fallingdotseq| \\
+		$\asymp$ & \verb|\asymp| &
+		$\propto$ & \verb|\propto| &
+		$\bumpeq$ & \verb|\bumpeq| \\
+		$\Bumpeq$ & \verb|\Bumpeq| &
+		$\eqcirc$ & \verb|\eqcirc| &
+		$\circeq$ & \verb|\circeq| \\
+		$\sim$ & \verb|\sim| &
+		$\approx$ & \verb|\approx| &
+		$\thicksim$ & \verb|\thicksim| \\
+		$\thickapprox$ & \verb|\thickapprox| &
+		$\simeq$ & \verb|\simeq| &
+		$\eqsim$ & \verb|\eqsim| \\
+		$\backsim$ & \verb|\backsim| &
+		$\backsimeq$ & \verb|\backsimeq| &
+		$\approxeq$ & \verb|\approxeq| \\
+
+		$\Vvdash$ & \verb|\Vvdash| &
+		$\vdash$ & \verb|\vdash| &
+		$\dashv$ & \verb|\dashv| \\
+		$\Vdash$ & \verb|\Vdash| &
+		$\vDash$ & \verb|\vDash| &
+
+		$\in$ & \verb|\in| \\
+		$\ni$ & \verb|\ni| &
+		$\inplus$ & \verb|\inplus| &
+		$\niplus$ & \verb|\niplus| \\
+		$\therefore$ & \verb|\therefore| &
+		$\because$ & \verb|\because| &
+		$\interleave$ & \verb|\interleave| \\
+		$\varpropto$ & \verb|\varpropto| &
+		$\mid$ & \verb|\mid| &
+		$\parallel$ & \verb|\parallel| \\
+		$\shortmid$ & \verb|\shortmid| &
+		$\shortparallel$ & \verb|\shortparallel| &
+
+		$\pitchfork$ & \verb|\pitchfork| \\
+		$\between$ & \verb|\between| \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Binary Relations}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\less$ & \verb|\less| &
+		$\gtr$ & \verb|\gtr| \\
+		$\leq$ & \verb|\leq| &
+		$\geq$ & \verb|\geq| \\
+		$\leqslant$ & \verb|\leqslant| &
+		$\geqslant$ & \verb|\geqslant| \\
+		$\leqq$ & \verb|\leqq| &
+		$\geqq$ & \verb|\geqq| \\
+		$\lesssim$ & \verb|\lesssim| &
+		$\gtrsim$ & \verb|\gtrsim| \\
+		$\lessapprox$ & \verb|\lessapprox| &
+		$\gtrapprox$ & \verb|\gtrapprox| \\
+		$\eqslantless$ & \verb|\eqslantless| &
+		$\eqslantgtr$ & \verb|\eqslantgtr| \\
+		$\lessgtr$ & \verb|\lessgtr| &
+		$\gtrless$ & \verb|\gtrless| \\
+		$\lesseqgtr$ & \verb|\lesseqgtr| &
+		$\gtreqless$ & \verb|\gtreqless| \\
+		$\lesseqqgtr$ & \verb|\lesseqqgtr| &
+		$\gtreqqless$ & \verb|\gtreqqless| \\
+		$\ll$ & \verb|\ll| &
+		$\gg$ & \verb|\gg| \\
+		$\lll$ & \verb|\lll| &
+		$\ggg$ & \verb|\ggg| \\
+		$\lessdot$ & \verb|\lessdot| &
+		$\gtrdot$ & \verb|\gtrdot| \\
+
+		$\prec$ & \verb|\prec| &
+		$\succ$ & \verb|\succ| \\
+		$\preceq$ & \verb|\preceq| &
+		$\succeq$ & \verb|\succeq| \\
+		$\precsim$ & \verb|\precsim| &
+		$\succsim$ & \verb|\succsim| \\
+		$\precapprox$ & \verb|\precapprox| &
+		$\succapprox$ & \verb|\succapprox| \\
+		$\preccurlyeq$ & \verb|\preccurlyeq| &
+		$\succcurlyeq$ & \verb|\succcurlyeq| \\
+		$\curlyeqprec$ & \verb|\curlyeqprec| &
+		$\curlyeqsucc$ & \verb|\curlyeqsucc| \\
+
+		$\subset$ & \verb|\subset| &
+		$\supset$ & \verb|\supset| \\
+		$\subseteq$ & \verb|\subseteq| &
+		$\supseteq$ & \verb|\supseteq| \\
+		$\sqsubset$ & \verb|\sqsubset| &
+		$\sqsupset$ & \verb|\sqsupset| \\
+		$\sqsubseteq$ & \verb|\sqsubseteq| &
+		$\sqsupseteq$ & \verb|\sqsupseteq| \\
+		$\subsetplus$ & \verb|\subsetplus| &
+		$\supsetplus$ & \verb|\supsetplus| \\
+		$\subsetpluseq$ & \verb|\subsetpluseq| &
+		$\supsetpluseq$ & \verb|\supsetpluseq| \\
+		$\Subset$ & \verb|\Subset| &
+		$\Supset$ & \verb|\Supset| \\
+		$\subseteqq$ & \verb|\subseteqq| &
+		$\supseteqq$ & \verb|\supseteqq| \\
+
+		$\triangleleft$ & \verb|\triangleleft| &
+		$\triangleright$ & \verb|\triangleright| \\
+		$\vartriangleleft$ & \verb|\vartriangleleft| &
+		$\vartriangleright$ & \verb|\vartriangleright| \\
+		$\trianglelefteq$ & \verb|\trianglelefteq| &
+		$\trianglerighteq$ & \verb|\trianglerighteq| \\
+		$\trianglelefteqslant$ & \verb|\trianglelefteqslant| &
+		$\trianglerighteqslant$ & \verb|\trianglerighteqslant| \\
+		$\leftslice$ & \verb|\leftslice| &
+		$\rightslice$ & \verb|\rightslice| \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Negated Relations}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\nless$ & \verb|\nless| &
+		$\ngtr$ & \verb|\ngtr| \\
+		$\nleq$ & \verb|\nleq| &
+		$\ngeq$ & \verb|\ngeq| \\
+		$\nleqslant$ & \verb|\nleqslant| &
+		$\ngeqslant$ & \verb|\ngeqslant| \\
+		$\nleqq$ & \verb|\nleqq| &
+		$\ngeqq$ & \verb|\ngeqq| \\
+		$\lnsim$ & \verb|\lnsim| &
+		$\gnsim$ & \verb|\gnsim| \\
+		$\lnapprox$ & \verb|\lnapprox| &
+		$\gnapprox$ & \verb|\gnapprox| \\
+		$\lneq$ & \verb|\lneq| &
+		$\gneq$ & \verb|\gneq| \\
+		$\lneqq$ & \verb|\lneqq| &
+		$\gneqq$ & \verb|\gneqq| \\
+
+		$\nprec$ & \verb|\nprec| &
+		$\nsucc$ & \verb|\nsucc| \\
+		$\npreceq$ & \verb|\npreceq| &
+		$\nsucceq$ & \verb|\nsucceq| \\
+		$\precnsim$ & \verb|\precnsim| &
+		$\succnsim$ & \verb|\succnsim| \\
+		$\precnapprox$ & \verb|\precnapprox| &
+		$\succnapprox$ & \verb|\succnapprox| \\
+		$\precneqq$ & \verb|\precneqq| &
+		$\succneqq$ & \verb|\succneqq| \\
+		%$\curlyeqprec$ & \verb|\curlyeqprec| &
+		%$\curlyeqsucc$ & \verb|\curlyeqsucc| \\
+
+		$\nsubseteq$ & \verb|\nsubseteq| &
+		$\nsupseteq$ & \verb|\nsupseteq| \\
+		$\subsetneq$ & \verb|\subsetneq| &
+		$\supsetneq$ & \verb|\supsetneq| \\
+		$\nsubseteqq$ & \verb|\nsubseteqq| &
+		$\nsupseteqq$ & \verb|\nsupseteqq| \\
+		$\varsubsetneq$ & \verb|\varsubsetneq| &
+		$\varsupsetneq$ & \verb|\varsupsetneq| \\
+		$\subsetneqq$ & \verb|\subsetneqq| &
+		$\supsetneqq$ & \verb|\supsetneqq| \\
+		$\varsubsetneqq$ & \verb|\varsubsetneqq| &
+		$\varsupsetneqq$ & \verb|\varsupsetneqq| \\
+
+		$\ntriangleleft$ & \verb|\ntriangleleft| &
+		$\ntriangleright$ & \verb|\ntriangleright| \\
+		$\ntrianglelefteq$ & \verb|\ntrianglelefteq| &
+		$\ntrianglerighteq$ & \verb|\ntrianglerighteq| \\
+		$\ntrianglelefteqslant$ & \verb|\ntrianglelefteqslant| &
+		$\ntrianglerighteqslant$ & \verb|\ntrianglerighteqslant| \\
+		$\nsim$ & \verb|\nsim| &
+		$\ncong$ & \verb|\ncong| \\
+
+		$\nvdash$ & \verb|\nvdash| &
+		$\nvDash$ & \verb|\nvDash| \\
+		$\nVdash$ & \verb|\nVdash| &
+		$\nVDash$ & \verb|\nVDash| \\
+		$\nmid$ & \verb|\nmid| &
+		$\nparallel$ & \verb|\nparallel| \\
+		$\nshortmid$ & \verb|\nshortmid| &
+		$\nshortparallel$ & \verb|\nshortparallel| \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Arrows}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$\uparrow$ & \verb|\uparrow| &
+		$\Uparrow$ & \verb|\Uparrow| \\
+		$\downarrow$ & \verb|\downarrow| &
+		$\Downarrow$ & \verb|\Downarrow| \\
+		$\leftarrow$ & \verb|\leftarrow| &
+		$\Leftarrow$ & \verb|\Leftarrow| \\
+		$\rightarrow$ & \verb|\rightarrow| &
+		$\Rightarrow$ & \verb|\Rightarrow| \\
+		$\updownarrow$ & \verb|\updownarrow| &
+		$\Updownarrow$ & \verb|\Updownarrow| \\
+		$\leftrightarrow$ & \verb|\leftrightarrow| &
+		$\Leftrightarrow$ & \verb|\Leftrightarrow| \\
+
+		$\leftharpoonup$ & \verb|\leftharpoonup| &
+		$\leftharpoondown$ & \verb|\leftharpoondown| \\
+		$\rightharpoonup$ & \verb|\rightharpoonup| &
+		$\rightharpoondown$ & \verb|\rightharpoondown| \\
+		$\upharpoonleft$ & \verb|\upharpoonleft| &
+		$\upharpoonright$ & \verb|\upharpoonright| \\
+		$\downharpoonleft$ & \verb|\downharpoonleft| &
+		$\downharpoonright$ & \verb|\downharpoonright| \\
+
+		$\nearrow$ & \verb|\nearrow| &
+		$\searrow$ & \verb|\searrow| \\
+		$\swarrow$ & \verb|\swarrow| &
+		$\nwarrow$ & \verb|\nwarrow| \\
+		$\nnearrow$ & \verb|\nnearrow| &
+		$\ssearrow$ & \verb|\ssearrow| \\
+		$\sswarrow$ & \verb|\sswarrow| &
+		$\nnwarrow$ & \verb|\nnwarrow| \\
+		$\curvearrowleft$ & \verb|\curvearrowleft| &
+		$\curvearrowright$ & \verb|\curvearrowright| \\
+		$\circlearrowleft$ & \verb|\circlearrowleft| &
+		$\circlearrowright$ & \verb|\circlearrowright| \\
+
+		$\shortuparrow$ & \verb|\shortuparrow| &
+		$\shortdownarrow$ & \verb|\shortdownarrow| \\
+		$\shortleftarrow$ & \verb|\shortleftarrow| &
+		$\shortrightarrow$ & \verb|\shortrightarrow| \\
+
+		$\upuparrows$ & \verb|\upuparrows| &
+		$\downdownarrows$ & \verb|\downdownarrows| \\
+		$\leftleftarrows$ & \verb|\leftleftarrows| &
+		$\rightrightarrows$ & \verb|\rightrightarrows| \\
+
+		$\leftrightharpoons$ & \verb|\leftrightharpoons| &
+		$\rightleftharpoons$ & \verb|\rightleftharpoons| \\
+		$\leftrightarrows$ & \verb|\leftrightarrows| &
+		$\rightleftarrows$ & \verb|\rightleftarrows| \\
+
+		$\nleftarrow$ & \verb|\nleftarrow| &
+		$\nLeftarrow$ & \verb|\nLeftarrow| \\
+		$\nrightarrow$ & \verb|\nrightarrow| &
+		$\nRightarrow$ & \verb|\nRightarrow| \\
+		$\nleftrightarrow$ & \verb|\nleftrightarrow| &
+		$\nLeftrightarrow$ & \verb|\nLeftrightarrow| \\
+		$\multimap$ & \verb|\multimap| \\
+
+		$\twoheadleftarrow$ & \verb|\twoheadleftarrow| &
+		$\Lleftarrow$ & \verb|\Lleftarrow| \\
+		$\twoheadrightarrow$ & \verb|\twoheadrightarrow| &
+		$\Rrightarrow$ & \verb|\Rrightarrow| \\
+
+		$\Lsh$ & \verb|\Lsh| &
+		$\looparrowleft$ & \verb|\looparrowleft| \\
+		$\Rsh$ & \verb|\Rsh| &
+		$\looparrowright$ & \verb|\looparrowright| \\
+		$\leftarrowtail$ & \verb|\leftarrowtail| &
+		$\rightsquigarrow$ & \verb|\rightsquigarrow| \\
+		$\rightarrowtail$ & \verb|\rightarrowtail| &
+		$\leftrightsquigarrow$ & \verb|\leftrightsquigarrow| \\
+		$\leftarrowtriangle$ & \verb|\leftarrowtriangle| &
+		$\rightarrowtriangle$ & \verb|\rightarrowtriangle| \\
+		$\leftrightarrowtriangle$ & \verb|\leftrightarrowtriangle| &
+		$\leftrightarroweq$ & \verb|\leftrightarroweq| \\
+
+	\end{tabular}
+	\end{center}
+
+	\subsection{Delimiters}
+
+	\begin{center}
+	\begin{tabular}
+		{
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+			|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+		}
+		$(\big(\Big(\bigg(\Bigg($ & \verb|(| &
+		$\Bigg)\bigg)\Big)\big))$ & \verb|)| \\
+		$\Bigg[\bigg[\Big[\big[[$ & \verb|[| &
+		$]\big]\Big]\bigg]\Bigg]$ & \verb|]| \\
+		$\lbrace\big\lbrace\Big\lbrace\bigg\lbrace\Bigg\lbrace$ & \verb|\lbrace| &
+	    $\Bigg\rbrace\bigg\rbrace\Big\rbrace\big\rbrace\rbrace$ & \verb|\rbrace| \\
+		$\Bigg\langle\bigg\langle\Big\langle\big\langle\langle$ & \verb|\langle| &
+	    $\rangle\big\rangle\Big\rangle\bigg\rangle\Bigg\rangle$ & \verb|\langle| \\
+		$\lceil\big\lceil\Big\lceil\bigg\lceil\Bigg\lceil$ & \verb|\lceil| &
+		$\Bigg\rceil\bigg\rceil\Big\rceil\big\rceil\rceil$ & \verb|\rceil| \\
+		$\Bigg\lfloor\bigg\lfloor\Big\lfloor\big\lfloor\lfloor$ & \verb|\lfloor| &
+		$\rfloor\big\rfloor\Big\rfloor\bigg\rfloor\Bigg\rfloor$ & \verb|\rfloor| \\
+		$\llbracket\big\llbracket\Big\llbracket\bigg\llbracket\Bigg\llbracket$ & \verb|\llbracket| &
+		$\Bigg\rrbracket\bigg\rrbracket\Big\rrbracket\big\rrbracket\rrbracket$ & \verb|\rrbracket| \\
+		$\Bigg\vert\bigg\vert\Big\vert\big\vert\vert$ & \verb|\vert| &
+		$\Vert\big\Vert\Big\Vert\bigg\Vert\Bigg\Vert$ & \verb|\Vert| \\
+		$\uparrow\big\uparrow\Big\uparrow\bigg\uparrow\Bigg\uparrow$ & \verb|\uparrow| &
+		$\Bigg\Uparrow\bigg\Uparrow\Big\Uparrow\big\Uparrow\Uparrow$ & \verb|\Uparrow| \\
+		$\Bigg\downarrow\bigg\downarrow\Big\downarrow\big\downarrow\downarrow$ & \verb|\downarrow| &
+		$\Downarrow\big\Downarrow\Big\Downarrow\bigg\Downarrow\Bigg\Downarrow$ & \verb|\Downarrow| \\
+		$\updownarrow\big\updownarrow\Big\updownarrow\bigg\updownarrow\Bigg\updownarrow$ & \verb|\updownarrow| &
+		$\Bigg\Updownarrow\bigg\Updownarrow\Big\Updownarrow\big\Updownarrow\Updownarrow$ & \verb|\Updownarrow| \\
+		$\Bigg\lmoustache\bigg\lmoustache\Big\lmoustache\big\lmoustache\lmoustache$ & \verb|\lmoustache| &
+		$\rmoustache\big\rmoustache\Big\rmoustache\bigg\rmoustache\Bigg\rmoustache$ & \verb|\rmoustache| \\
+		$\lgroup\big\lgroup\Big\lgroup\bigg\lgroup\Bigg\lgroup$ & \verb|\lgroup| &
+		$\Bigg\rgroup\bigg\rgroup\Big\rgroup\big\rgroup\rgroup$ & \verb|\rgroup| \\
+
+	\end{tabular}
+	\end{center}
+\subsection{Big Operators}
+\begin{center}
+	\begin{tabular}
+	{
+	|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+	|>{\columncolor[gray]{0.2}\color{white}\Large}c|l
+	}
+	$\int\displaystyle\int$ & \verb|\int| &
+	$\varint\displaystyle\varint$ & \verb|\varint| \\
+	$\iint\displaystyle\iint$ & \verb|\iint| &
+	$\iiint\displaystyle\iiint$ & \verb|\iiint| \\
+	$\oint\displaystyle\oint$ & \verb|\oint| &
+	$\varoint\displaystyle\varoint$ & \verb|\varoint| \\
+	$\oiint\displaystyle\oiint$ & \verb|\oiint| &
+	$\sum\displaystyle\sum$ & \verb|\sum| \\
+	$\prod\displaystyle\prod$ & \verb|\prod| &
+	$\coprod\displaystyle\coprod$ & \verb|\coprod| \\
+	$\bigcup\displaystyle\bigcup$ & \verb|\bigcup| &
+	$\bigcap\displaystyle\bigcap$ & \verb|\bigcap| \\
+	$\bigsqcup\displaystyle\bigsqcup$ & \verb|\bigsqcup| &
+	$\bigsqcap\displaystyle\bigsqcap$ & \verb|\bigsqcap| \\
+	$\bigoplus\displaystyle\bigoplus$ & \verb|\bigoplus| &
+	$\bigotimes\displaystyle\bigotimes$ & \verb|\bigotimes| \\
+	$\bigparallel\displaystyle\bigparallel$ & \verb|\bigparallel| &
+	$\biginterleave\displaystyle\biginterleave$ & \verb|\biginterleave| \\
+	$\bigtriangleup\displaystyle\bigtriangleup$ & \verb|\bigtriangleup| &
+	$\bigtriangledown\displaystyle\bigtriangledown$ & \verb|\bigtriangledown| \\
+	$\bigbox\displaystyle\bigbox$ & \verb|\bigbox| \\
+
+	\end{tabular}
+\end{center}
+
+	\subsection{Functions}
+
+	Built-in defined functions:
+
+	\begin{center}
+	$\cos$ $\bullet$
+	$\sec$ $\bullet$
+	$\arccos$ $\bullet$
+	$\cosh$ $\bullet$
+	$\coth$ $\bullet$
+	$\sin$ $\bullet$
+	$\csc$ $\bullet$
+	$\arcsin$ $\bullet$
+	$\sinh$ $\bullet$
+	$\tan$ $\bullet$
+	$\cot$ $\bullet$
+	$\arctan$ $\bullet$
+	$\tanh$ \\
+	$\arg$ $\bullet$
+	$\dim$ $\bullet$
+	$\hom$ $\bullet$
+	$\lg$ $\bullet$
+	$\max$ $\bullet$
+	$\sup$ $\bullet$
+	$\deg$ $\bullet$
+	$\exp$ $\bullet$
+	$\inf$ $\bullet$
+	$\lim$ $\bullet$
+	$\min$ $\bullet$
+	$\det$ $\bullet$
+	$\gcd$ $\bullet$
+	$\ker$ $\bullet$
+	$\sup$
+	\end{center}
+
+    Other functions can be written using \verb|\operatorname{name}| such as in $y = \operatorname{f}(x)$ be written as \verb|$y = \operatorname{f}(x)$|
+
+
+
+\end{document}

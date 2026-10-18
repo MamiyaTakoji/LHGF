@@ -1,0 +1,2721 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3323630c18e2a9e4babea8cdc09f40f6, type: 3}
+  m_Name: cmex
+  m_EditorClassIdentifier: 
+  assetIndex: 0
+  editorMetadata:
+    catalogs: a100a200a300a400a500a600a700a800a900aa00ad00ae00af00b000b100b200b300b400b500b6001922b800b900ba00bb00bc00bd00be00bf00c000c100c200c3002100220023002400250026002700280029002a002b002c002d002e002f0030003100320033003400350036003700380039003a003b003c003d003e003f0040004100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a005b005c005d005e005f0060006100620063006400650066006700680069006a006b006c006d006e006f0070007100720073007400750076007700780079007a007b007c007d007e00c400
+    catalogsToken: \xA1-\xAA \xAD-\xB6 \x2219 \xB8-\xC3 \x21-\x7E \xC4
+    assetPath: Assets/Plugins/TEXDraw/Fonts/Math/cmex.ttf
+    category: Mathematical Fonts
+    order: 0
+    variantAssetNames: []
+  metadata:
+    height: 0
+    depth: 0
+    width: 0
+    preferUnicode: 0
+    style: 0
+    category: 0
+    baseAsset: {fileID: 0}
+    variantAssets: []
+  chars:
+  - characterIndex: 161
+    type: 0
+    symbol: parenleftbig
+    larger:
+      font: cmex
+      character: 179
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 162
+    type: 0
+    symbol: parenrightbig
+    larger:
+      font: cmex
+      character: 180
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 163
+    type: 0
+    symbol: bracketleftbig
+    larger:
+      font: cmex
+      character: 104
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 164
+    type: 0
+    symbol: bracketrightbig
+    larger:
+      font: cmex
+      character: 105
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 165
+    type: 0
+    symbol: floorleftbig
+    larger:
+      font: cmex
+      character: 106
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 166
+    type: 0
+    symbol: floorrightbig
+    larger:
+      font: cmex
+      character: 107
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 167
+    type: 0
+    symbol: ceilingleftbig
+    larger:
+      font: cmex
+      character: 108
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 168
+    type: 0
+    symbol: ceilingrightbig
+    larger:
+      font: cmex
+      character: 109
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 169
+    type: 0
+    symbol: braceleftbig
+    larger:
+      font: cmex
+      character: 110
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 170
+    type: 0
+    symbol: bracerightbig
+    larger:
+      font: cmex
+      character: 111
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 173
+    type: 0
+    symbol: angbracketleftbig
+    larger:
+      font: cmex
+      character: 68
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 174
+    type: 0
+    symbol: angbracketrightbig
+    larger:
+      font: cmex
+      character: 69
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 175
+    type: 0
+    symbol: vextendsingle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 175
+      horizontal: 0
+  - characterIndex: 176
+    type: 0
+    symbol: vextenddouble
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 176
+      horizontal: 0
+  - characterIndex: 177
+    type: 0
+    symbol: slashbig
+    larger:
+      font: cmex
+      character: 46
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 178
+    type: 0
+    symbol: backslashbig
+    larger:
+      font: cmex
+      character: 47
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 179
+    type: 0
+    symbol: parenleftBig
+    larger:
+      font: cmex
+      character: 181
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 180
+    type: 0
+    symbol: parenrightBig
+    larger:
+      font: cmex
+      character: 182
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 181
+    type: 0
+    symbol: parenleftbigg
+    larger:
+      font: cmex
+      character: 195
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 182
+    type: 0
+    symbol: parenrightbigg
+    larger:
+      font: cmex
+      character: 33
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 8729
+    type: 0
+    symbol: bracketleftbigg
+    larger:
+      font: cmex
+      character: 34
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 184
+    type: 0
+    symbol: bracketrightbigg
+    larger:
+      font: cmex
+      character: 35
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 185
+    type: 0
+    symbol: floorleftbigg
+    larger:
+      font: cmex
+      character: 36
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 186
+    type: 0
+    symbol: floorrightbigg
+    larger:
+      font: cmex
+      character: 37
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 187
+    type: 0
+    symbol: ceilingleftbigg
+    larger:
+      font: cmex
+      character: 38
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 188
+    type: 0
+    symbol: ceilingrightbigg
+    larger:
+      font: cmex
+      character: 39
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 189
+    type: 0
+    symbol: braceleftbigg
+    larger:
+      font: cmex
+      character: 40
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 190
+    type: 0
+    symbol: bracerightbigg
+    larger:
+      font: cmex
+      character: 41
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 191
+    type: 0
+    symbol: angbracketleftbigg
+    larger:
+      font: cmex
+      character: 42
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 192
+    type: 0
+    symbol: angbracketrightbigg
+    larger:
+      font: cmex
+      character: 43
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 193
+    type: 0
+    symbol: slashbigg
+    larger:
+      font: cmex
+      character: 44
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 194
+    type: 0
+    symbol: backslashbigg
+    larger:
+      font: cmex
+      character: 45
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 195
+    type: 0
+    symbol: parenleftBigg
+    larger:
+      font: cmex
+      character: 66
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 33
+    type: 0
+    symbol: parenrightBigg
+    larger:
+      font: cmex
+      character: 67
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 34
+    type: 0
+    symbol: bracketleftBigg
+    larger:
+      font: cmex
+      character: 54
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 35
+    type: 0
+    symbol: bracketrightBigg
+    larger:
+      font: cmex
+      character: 55
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 36
+    type: 0
+    symbol: floorleftBigg
+    larger:
+      font: cmex
+      character: 52
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 37
+    type: 0
+    symbol: floorrightBigg
+    larger:
+      font: cmex
+      character: 53
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 38
+    type: 0
+    symbol: ceilingleftBigg
+    larger:
+      font: cmex
+      character: 50
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 39
+    type: 0
+    symbol: ceilingrightBigg
+    larger:
+      font: cmex
+      character: 51
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 40
+    type: 0
+    symbol: braceleftBigg
+    larger:
+      font: cmex
+      character: 60
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 41
+    type: 0
+    symbol: bracerightBigg
+    larger:
+      font: cmex
+      character: 61
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 42
+    type: 0
+    symbol: angbracketleftBigg
+    larger:
+      font: cmex
+      character: 44
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 43
+    type: 0
+    symbol: angbracketrightBigg
+    larger:
+      font: cmex
+      character: 45
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 44
+    type: 0
+    symbol: slashBigg
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 44
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 45
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 45
+    type: 0
+    symbol: backslashBigg
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 45
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 44
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 46
+    type: 0
+    symbol: slashBig
+    larger:
+      font: cmex
+      character: 193
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 47
+    type: 0
+    symbol: backslashBig
+    larger:
+      font: cmex
+      character: 194
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 48
+    type: 0
+    symbol: parenlefttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 49
+    type: 0
+    symbol: parenrighttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 50
+    type: 0
+    symbol: bracketlefttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 50
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 54
+      horizontal: 0
+  - characterIndex: 51
+    type: 0
+    symbol: bracketrighttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 51
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 55
+      horizontal: 0
+  - characterIndex: 52
+    type: 0
+    symbol: bracketleftbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 52
+      repeat:
+        font: cmex
+        character: 54
+      horizontal: 0
+  - characterIndex: 53
+    type: 0
+    symbol: bracketrightbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 53
+      repeat:
+        font: cmex
+        character: 55
+      horizontal: 0
+  - characterIndex: 54
+    type: 0
+    symbol: bracketleftex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 50
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 52
+      repeat:
+        font: cmex
+        character: 54
+      horizontal: 0
+  - characterIndex: 55
+    type: 0
+    symbol: bracketrightex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 51
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 53
+      repeat:
+        font: cmex
+        character: 55
+      horizontal: 0
+  - characterIndex: 56
+    type: 5
+    symbol: bracelefttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 56
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 59
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 57
+    type: 6
+    symbol: bracerighttp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 57
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 58
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 58
+    type: 3
+    symbol: braceleftbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 56
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 58
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 59
+    type: 3
+    symbol: bracerightbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 57
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 59
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 60
+    type: 0
+    symbol: braceleftmid
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 56
+      mid:
+        font: cmex
+        character: 60
+      bottom:
+        font: cmex
+        character: 58
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 61
+    type: 0
+    symbol: bracerightmid
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 57
+      mid:
+        font: cmex
+        character: 61
+      bottom:
+        font: cmex
+        character: 59
+      repeat:
+        font: cmex
+        character: 62
+      horizontal: 0
+  - characterIndex: 62
+    type: 0
+    symbol: braceex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 63
+    type: 0
+    symbol: arrowvertex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 120
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 121
+      repeat:
+        font: cmex
+        character: 63
+      horizontal: 0
+  - characterIndex: 64
+    type: 0
+    symbol: parenleftbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 65
+    type: 0
+    symbol: parenrightbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 66
+    type: 8
+    symbol: parenleftex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 48
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 64
+      repeat:
+        font: cmex
+        character: 66
+      horizontal: 0
+  - characterIndex: 67
+    type: 0
+    symbol: parenrightex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 49
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 65
+      repeat:
+        font: cmex
+        character: 67
+      horizontal: 0
+  - characterIndex: 68
+    type: 0
+    symbol: angbracketleftBig
+    larger:
+      font: cmex
+      character: 191
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 69
+    type: 0
+    symbol: angbracketrightBig
+    larger:
+      font: cmex
+      character: 192
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 70
+    type: 7
+    symbol: unionsqtext
+    larger:
+      font: cmex
+      character: 71
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 71
+    type: 0
+    symbol: unionsqdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 72
+    type: 7
+    symbol: contintegraltext
+    larger:
+      font: cmex
+      character: 73
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 73
+    type: 7
+    symbol: contintegraldisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 74
+    type: 7
+    symbol: circledottext
+    larger:
+      font: cmex
+      character: 75
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 75
+    type: 7
+    symbol: circledotdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 76
+    type: 7
+    symbol: circleplustext
+    larger:
+      font: cmex
+      character: 77
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 77
+    type: 7
+    symbol: circleplusdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 78
+    type: 7
+    symbol: circlemultiplytext
+    larger:
+      font: cmex
+      character: 79
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 79
+    type: 7
+    symbol: circlemultiplydisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 80
+    type: 7
+    symbol: summationtext
+    larger:
+      font: cmex
+      character: 88
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 81
+    type: 7
+    symbol: producttext
+    larger:
+      font: cmex
+      character: 89
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 82
+    type: 7
+    symbol: integraltext
+    larger:
+      font: cmex
+      character: 90
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 83
+    type: 7
+    symbol: uniontext
+    larger:
+      font: cmex
+      character: 91
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 84
+    type: 7
+    symbol: intersectiontext
+    larger:
+      font: cmex
+      character: 92
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 85
+    type: 7
+    symbol: unionmultitext
+    larger:
+      font: cmex
+      character: 93
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 86
+    type: 7
+    symbol: logicalandtext
+    larger:
+      font: cmex
+      character: 94
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 87
+    type: 7
+    symbol: logicalortext
+    larger:
+      font: cmex
+      character: 95
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 88
+    type: 7
+    symbol: summationdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 89
+    type: 7
+    symbol: productdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 90
+    type: 7
+    symbol: integraldisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 91
+    type: 7
+    symbol: uniondisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 92
+    type: 7
+    symbol: intersectiondisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 93
+    type: 7
+    symbol: unionmultidisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 94
+    type: 7
+    symbol: logicalanddisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 95
+    type: 7
+    symbol: logicalordisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 96
+    type: 7
+    symbol: coproducttext
+    larger:
+      font: cmex
+      character: 97
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 97
+    type: 7
+    symbol: coproductdisplay
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 98
+    type: 9
+    symbol: hatwide
+    larger:
+      font: cmex
+      character: 99
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 99
+    type: 0
+    symbol: hatwider
+    larger:
+      font: cmex
+      character: 100
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 100
+    type: 0
+    symbol: hatwidest
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 101
+    type: 9
+    symbol: tildewide
+    larger:
+      font: cmex
+      character: 102
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 102
+    type: 0
+    symbol: tildewider
+    larger:
+      font: cmex
+      character: 103
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 103
+    type: 0
+    symbol: tildewidest
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 104
+    type: 0
+    symbol: bracketleftBig
+    larger:
+      font: cmex
+      character: 8729
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 105
+    type: 0
+    symbol: bracketrightBig
+    larger:
+      font: cmex
+      character: 184
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 106
+    type: 0
+    symbol: floorleftBig
+    larger:
+      font: cmex
+      character: 185
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 107
+    type: 0
+    symbol: floorrightBig
+    larger:
+      font: cmex
+      character: 186
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 108
+    type: 0
+    symbol: ceilingleftBig
+    larger:
+      font: cmex
+      character: 187
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 109
+    type: 0
+    symbol: ceilingrightBig
+    larger:
+      font: cmex
+      character: 188
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 110
+    type: 0
+    symbol: braceleftBig
+    larger:
+      font: cmex
+      character: 189
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 111
+    type: 0
+    symbol: bracerightBig
+    larger:
+      font: cmex
+      character: 190
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 112
+    type: 8
+    symbol: radicalbig
+    larger:
+      font: cmex
+      character: 113
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 113
+    type: 0
+    symbol: radicalBig
+    larger:
+      font: cmex
+      character: 114
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 114
+    type: 0
+    symbol: radicalbigg
+    larger:
+      font: cmex
+      character: 115
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 115
+    type: 0
+    symbol: radicalBigg
+    larger:
+      font: cmex
+      character: 116
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 116
+    type: 0
+    symbol: radicalbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 118
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 116
+      repeat:
+        font: cmex
+        character: 117
+      horizontal: 0
+  - characterIndex: 117
+    type: 0
+    symbol: radicalvertex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 118
+    type: 0
+    symbol: radicaltp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 119
+    type: 0
+    symbol: arrowvertexdbl
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 126
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 196
+      repeat:
+        font: cmex
+        character: 119
+      horizontal: 0
+  - characterIndex: 120
+    type: 0
+    symbol: arrowtp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 120
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 63
+      horizontal: 0
+  - characterIndex: 121
+    type: 0
+    symbol: arrowbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 121
+      repeat:
+        font: cmex
+        character: 63
+      horizontal: 0
+  - characterIndex: 122
+    type: 0
+    symbol: bracehtipdownleft
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 123
+    type: 0
+    symbol: bracehtipdownright
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 124
+    type: 0
+    symbol: bracehtipupleft
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 125
+    type: 0
+    symbol: bracehtipupright
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 126
+    type: 0
+    symbol: arrowdbltp
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: cmex
+        character: 126
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: cmex
+        character: 119
+      horizontal: 0
+  - characterIndex: 196
+    type: 0
+    symbol: arrowdblbt
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: cmex
+        character: 255
+      repeat:
+        font: cmex
+        character: 119
+      horizontal: 0
+  asset: {fileID: 12800000, guid: 05e636abe7d96894a9a3b58f890a12e9, type: 3}

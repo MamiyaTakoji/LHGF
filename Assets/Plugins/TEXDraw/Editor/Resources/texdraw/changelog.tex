@@ -1,0 +1,439 @@
+% !TeX encoding = UTF-8- 
+\documentclass[12pt]{article}
+% Hacks that doesn't exist in LaTeX but in TEXDraw
+\usepackage{verbatim,listings,hyperref}
+\def\subtitle#1{\author{#1}}
+\newenvironment{code}{\verbatim}{\endverbatim}
+\def\TEXDraw{\textit{TEXDraw}}
+% End of Hacks
+\title{\TEXDraw\\ Changelog}
+\subtitle{\TeX-typing plugin for Unity}
+\date{Version 5.0.0\\2019 August}
+
+\begin{document}
+	\maketitle
+	
+\section{CURRENT VERSION} 
+
+TEXDraw 4.4.0
+
+June 18, 2018
+
+\section{LINKS} 
+
+\href{http://u3d.as/mFe}{Asset Store} 
+\href{https://wellosoft.net}{Wello Soft} 
+
+Look at TEXDraw menu and documentations for integrations with other assets.
+
+\section{RELEASE NOTES}
+
+4.4 - June 18, 2018: 
+
+New feature includes TEXInput allows user to edit TEXDraw in runtime.
+
+Also added more Scripting API and bugfixes to ease TEXDraw integration.
+
+\begin{itemize}
+\item NEW: Use double braces in TEXInput to lock/prevent modifications for specific syntax
+\item NEW: Support for Unity UI RectMask2D
+\item FIX: Improved TEXInput regex bracket matching
+\item FIX: Incorrect color cache invalidation
+\item FIX: Improved Editor material validation wording
+\item FIX: Threading issue when enabling TMP Integration
+\end{itemize}
+
+4.3 - March 31, 2018: The New Input System
+> SUMMARY: New feature TEXInput allows user to edit TEXDraw in runtime.
+> Also added more Scripting API and bugfixes to ease TEXDraw integration.
+
+\begin{itemize}
+\item NEW: TEXInput to allow users edit and input expressions in runtime
+\item NEW: TEXInputCursor + TEXInputLogger (additional components accompanying TEXInput)
+\item NEW: Sample scene for TEXInput demonstration
+\item NEW: \verb|\vlink| to create links without input box margin
+\item NEW: FillHelper.ReadMesh + DrawingParams.GetAreaXXX()
+\item NEW: "Copy Raw Syntax" dropdown button in TEXDraw and TEXDraw 3D
+\item NEW: \verb|\meta[font=xxx]| where xxx is font name (was only allowed as font index)
+\item CHANGE: \verb|\meta[]| short tokens are deprecated
+\item CHANGE: \verb|\hold| without specifying minimum size will no longer recenter the expression inside
+\item CHANGE: \verb|TEXDRAW_PROFILE| renamed to \verb|TEXDRAW_DEBUG| and more debug-only features covered behind the flag
+\item FIX: \verb|\<fontid>| without style throws IndexOutOfRangeException
+\item FIX: empty \verb|{}| creates an extra whitespace (TEXInput)
+\item FIX: Character kerning get lost if wrapped in specific attributes
+\item FIX: \verb|\meta[font=xxx]| is not working properly
+\item FIX: TEXLink didn't listening to UI RaycastTarget
+\item FIX: EditorTEXFontSwapper throw null errors
+\item FIX: Visual Studio can't debug nor compile because of TEXDraw code
+\item FIX: Compiler error on Build and \verb|TEXDRAW_TMP| (v4.2 regression)
+\end{itemize}
+
+4.2 - March 7, 2018: Extension got Extended
+> SUMMARY: Fixes bugs appearing in supplements and former examples.
+> Now it's possible to type Rich Tag (HTML) and Markdown in TEXDraw.
+
+\begin{itemize}
+\item NEW: TexSupTranslator to transpile Basic HTML + Markdown into LaTeX.
+\item NEW: Example scene for demonstrating HTML and Markdown syntax in TEXDraw
+\item NEW: Set a custom cursor when mouse hovering a link in TEXLink
+\item NEW: Showcase example now navigatable in gameplay using arrow keys
+\item CHANGE: Braces \verb|{}| without commands will *group* the text (hence prevent wrapping)
+\item CHANGE: Math number is now set back as \verb|cmr| (was using \verb|cmmi|)
+\item CHANGE: \verb|\ulink| now removes its additional margin for underline
+\item FIX: Incosistent wrapping using \verb|\size| and \verb|\style| in particular cases
+\item FIX: Missing normal + tangents when using Surface Shaders
+\item FIX: Missing `DontSave` flags for generated mesh in TEXDraw 3D
+\item FIX: Remove Skies on example scenes
+\item FIX: Tooltips on TEXLink inspector
+\item FIX: Errors in TEXSupTransformFill
+\item FIX: Outdated NGUI Shaders and Scroll View
+\end{itemize}
+
+4.1 - February 3, 2018: Bugfixes
+> SUMMARY: The code that handles layout is more readable and
+> it's possible to make more consistent line height across components.
+
+\begin{itemize}
+\item NEW: Set minimum height and depth in each line via TEXConfiguration
+\item CHANGE: Deprecate individual `space size` in favor to `line space` metric in TEXConfiguration
+\item FIX: Text don't wrap (again) if wrapped inside \verb|\font|, \verb|\math|, \verb|\size|, \verb|\style|, \verb|\color|
+\item FIX: NullReferenceException in \verb|\hold| and scripts with empty parameters
+\item FIX: Sprites with unknown char will have warning instead of throwing error to console.
+\item FIX: Editor character map don't clamp on navigation via keyboard
+\end{itemize}
+
+4.0 - January 1, 2018: Negative Code
+> SUMMARY: This version aims to increase the readability of TEXDraw codebase by removing old
+> code and logics. This results in improvements in many areas including build size and performance.
+
+\begin{itemize}
+\item NEW: \verb|\style[]| to change font bold/italic styling
+\item NEW: \verb|\border[]| to add box border (can be customized)
+\item NEW: 'Automatic' TMP and NGUI integration, with single click
+\item CHANGE: Sprites now must be imported with unity's multisprite editor
+\item CHANGE: Minimum unity version leveled up from 5.2.1 to 5.6.0p3
+\item CHANGE: UV2 moved to UV3 and Tangents moved to UV2
+\item CHANGE: Font metadata now implented as different inheritance based on asset type
+\item CHANGE: TEXPreference.main is a field (loaded eagerly by TEXDraw components)
+\item CHANGE: XML data is removed
+\item CHANGE: Removed Emit logic/speedhack (unreliable)
+\item CHANGE: TexSupFixTMP and TexSupTransformFollow is obsoleted (now handled automatically)
+\item FIX: Removed unnecessary heavy payload in TEXDraw metadata on build
+\item FIX: Corrupt graphics because transformation of tangents
+\item FIX: Code cleanup (over +2500 lines of code get stripped)
+\item FIX: Faster font metadata rebuild
+\item FIX: NGUI shaders not included in build
+\item FIX: Shader warning at import for 5.6 and up
+\end{itemize}
+
+3.8 - June 17, 2017: Easebility
+\begin{itemize}
+\item NEW: TexSupTranslator to translate different popular text syntaxes!
+\item NEW: \verb|\size[]| for reset scale to absolute 1
+\item NEW: \verb|\sqrt| for \verb|\root| equivalent
+\item CHANGE: Documentation is split to two: Manual \& Reference
+\item CHANGE: New syntax \& fix issues for importing custom characters
+\item FIX: 5.6 Compiler error with TMP integration
+\item FIX: \verb|\nfrac| now have consistent margins with FractionGapNoLine
+\item FIX: Issue of Reversed wrapping justified with best fit.
+\item FIX: TexSupLinkAsLayouter doesn't scale with canvas.scaleFactor
+\item FIX: Improvements in RTL Bidirectional Detection
+\end{itemize}
+
+
+3.7 - May 10, 2017: Another urgent fixes
+\begin{itemize}
+\item NEW: \verb|\meta|'s new wrap parameter
+\item FIX: Rebuilding font doesn't reupdate its font index
+\item FIX: NGUI depth issue and update to recent version
+\item FIX: font eufm is not listed in font stack at import
+\item FIX: several improvements in TEXSupLinkAsLayouter
+\item FIX: now TEXSupLinkAsLayouter, TEXSupTransformFollow, TEXSupRTLSupport, TEXSupDepthEffect is marked as stable
+\end{itemize}
+
+3.6 - May 4, 2017: Rolling for Unity 5.6
+\begin{itemize}
+\item NEW: TEXSupLinkAsLayouter for bind UI transforms to given links
+\item NEW: \verb|\hold[x,y]| for fixed size in both width and height
+\item NEW: Major performance improvement in post-effects for 5.6 using new Mesh.Get API
+\item NEW: orientation marker with \verb|\rtl| and \verb|\ltr|. Only used when Bidirectional RTL is enabled.
+\item CHANGE: Now users will warned to add TexSupTransformFollow if they rotate TEXDraw UI without tangent fixer in editor
+\item CHANGE: TEXDraw's custom material editor will no longer appear in 5.6 because the inspector have do it already
+\item FIX: Compability issue for Unity 5.6 and 2017.1 beta
+\item FIX: In 5.6, set canvas AdditionalShaderChannels automatically when using TEXDraw
+\item FIX: Rotation fixer of TexSupTransformFollow now calculate correctly when canvas is set to world and rotated
+\item FIX: Bidirectional RTL is now completed and can parse expression correctly
+\end{itemize}
+
+3.5 - April 22, 2017: Stability bugfixes
+\begin{itemize}
+\item NEW: Repolished example (demo) scene
+\item NEW: Use triple scripts \verb|^^^| or \verb|___| for smaller over/underscript
+\item NEW: \verb|\bg| or \verb|\vbg| for drawing background colors below given expression
+\item NEW: Exposed debugging tools available in TexConfiguration
+\item FIX: missing symbol \verb|\angle| and others in both config and XML
+\item FIX: Bidirectional RTL feature isn't smart enough
+\item FIX: Regex issue with TexSupNewLine
+\item FIX: \verb|\vhold| now can extend on fixed height correctly
+\end{itemize}
+
+3.4 - March 30, 2017: RTL \& Samples Development
+\begin{itemize}
+\item NEW: RTL support as an supplement with Arabic and Persian support from external code source.
+\item NEW: Reversed wrapping modes for RTL text (this is optional, so need to be toggled on first on menus).
+\item NEW: Few example scenes with some improvements
+\item NEW: Benchmark tool now measures supplement and posteffects too
+\item NEW: TexSupTransformFollow contains fix for UI rotation glitches
+\item NEW: TexConfiguration for a new and consistent way to save and adjust configurations
+\item NEW: TEXDraw editor accepts Tab characters, though requires supplement to make it work properly
+\item NEW: Menu toggles for more ease to integrate with other assets
+\item NEW: Up to 25\% boxing speed improvement for Non-AOT platfroms (credit to FastReflector by vexe)
+\item CHANGE: Added and changed some options in TexConfiguration compared from the old one.
+\item CHANGE: Editor changes made in TEXPreference editor for more readable code and layout
+\item CHANGE: Restoring a missing change from V3.0 (Color console palette)
+\item CHANGE: \verb|\text| now support styling and now follows the font which choosed in the component instead
+\item CHANGE: scripted \verb|\hold| with big-operator now no longer change to under-overscript for consistency
+\item CHANGE: Parser now ignore \verb|\r| char so CRLF characters won't print an unwanted blank space
+\item FIX: Justify with right-aligned text is misaligned
+\item FIX: TEXPreference can't be fully recovered when accidentally deleted/corrupt
+\item FIX: Aspect ratio was ignored when previewing characters in preference
+\item FIX: MeshEffect spamming error in console when saved inside of prefab
+\item FIX: Unnecessary usings and files in source (good for VSCode users)
+\item FIX: Editor of supplements isn't available for multiple edit
+\item FIX: API updater is triggered when imported to Unity +5.5
+\end{itemize}
+
+3.3 - March 16, 2017: Supplement Upgrade
+\begin{itemize}
+\item NEW: A new example scene for keeping formulas in the game
+\item NEW: Reset button in preference context menu (suitable if you really stuck in a problem)
+\item NEW: Editor and additional notes for each supplement
+\item NEW: Editor toggle for showing supplement info, optionally (show is default)
+\item NEW: TEXSupDepthEffect for giving a depth effect for 3D Based UI
+\item NEW: TEXSupTrimSpaces for cleaning unneeded spaces in each paragraph
+\item NEW: (Undocumented yet) Modifiable template for creating TEXDraw objects (can be accessed via menu)
+\item FIX: Dirty isn't flagged at import which result in Font meta data won't be saved
+\item FIX: Dirty isn't flagged at editor change which result in Font meta data won't be saved
+\item FIX: (Only in editor) Shadow \& Other built-in UI effect is not picked up automatically
+\item FIX: console errors isn't readable enough
+\item FIX: Possible error on internal part of SerializedDictionary
+\end{itemize}
+
+3.2 – Feb 18, 2017: Demo Released
+\begin{itemize}
+\item NEW: Demo (Windows build) is released for asset demonstration
+\item CHANGE: Integral over/underscript now aligned automatically
+\item CHANGE: Script without base will be right-aligned (useful for script-before-base cases)
+\item FIX: Infinite stack overflow when backslash typed after scripts
+\item FIX: ‘Iconic’ asset compression setting
+\end{itemize}
+
+3.1 - Feb 2, 2017: Bug Sweeping
+\begin{itemize}
+\item NEW: Basic Editor for TEXFont arbitrary assets
+\item NEW: Extra editor info for font import setup
+\item CHANGE: Importer will throw warn in console, if '-Regular' is used in font name
+\item FIX: Delimiter is not growing in particular cases
+\item FIX: Updated NGUI Scripts \& Mask Shaders
+\item FIX: Build compilation exception \& warning
+\item FIX: EOL consistency issue in script
+\item FIX: Preference will marked as 'dirty' after reimporting fonts.
+\end{itemize}
+
+3.0 – Dec 31, 2016: Repolished API
+\begin{itemize}
+\item NEW: Built-in TextMeshPro Integration
+\item NEW: Built-in SDF Importer and Shader for TMP Integration
+\item NEW: \verb|\meta| command to apply paragraph-wide styling setting
+\item NEW: Rootsign of \verb|\root| can be changed
+\item NEW: \verb|\hold| command to reserve a fixed amount of space
+\item NEW: \verb|\trs| and \verb|\mtrs| to apply 3D transformation on character
+\item NEW: Best Fit mode in Autofit
+\item NEW: Local Continous and World Continus in Autofill Options
+\item NEW: 7 Additional supplements in package
+\item NEW: TEXDraw 3D accepts Rect Transform
+\item NEW: TEXDraw Menu items in Tools/TEXDraw
+\item NEW: Customizable character sets
+\item NEW: Benchmark tool, Font Swapper tool, and many else
+\item NEW: Material Assistant for quick management of different Materials
+\item NEW: Rebuild material now automatically choose best samples if available
+\item CHANGE: Improved TexDrawPerCharacterBase regex filter
+\item CHANGE: UV2 and tangents data is swapped for consistency
+\item CHANGE: Redefinition of \verb|\clr| console color choices for consistency
+\item CHANGE: Deprecation of XML Data, through it is still supported to read from
+\item CHANGE: FontData now separated from Preference for data consistency
+\item CHANGE: TEXDraw no longer checks for UI mesh effect every rebuild time
+\item CHANGE: TEXDraw Preference now saved in Resource
+\item CHANGE: Improved TEXDraw 3D Editor
+\item CHANGE: Tables now only add outer border if necessary
+\item CHANGE: Renamed ‘4 Passes’ to ‘Full’, and ‘X Passes’ to ‘X Samples’
+\item CHANGE: Fonts that have incompatible character will be ignored
+\item CHANGE: Font texture will resized if rescaled to keep it crisp on screen
+\item FIX: Unity 5.6 Compatibility
+\item FIX: TEXDraw 3D double render issue in some frequent cases
+\item FIX: Delimiters now can consistently grow bigger if necessary
+\item FIX: Scripts now consistent with unbraced expressions
+\item FIX: Accents now only wrap more than a character if it braced
+\item FIX: Preference now do null checks before previewing fonts
+\item FIX: Small performance improvement on rebuild time
+\end{itemize}
+
+2.7 – Oct 1, 2016: Improved Editor \& API
+\begin{itemize}
+\item NEW: TEXDrawSupplement API to modify text similar to UI effects
+\item NEW: 4 Built-in Supplements component
+\item NEW: Editor Highlight system for text property
+\item NEW: \verb|\size[.]| will decrease font size into scripts level
+\item CHANGE: Splitting of parser script for ease of customization
+\item CHANGE: Debug Information now hiding if there is no problem
+\item CHANGE: One hex letter \verb|\color| code now follows modified 4-bit colorful index
+\item CHANGE: Vertical delimiter now be rotated if used as horizontal delimiter
+\item CHANGE: font size texture is limited to 1024, prevent memory crashes
+\item FIX: Eliminating use of System.Linq for all runtime scripts
+\item FIX: Optimized Parser, minimum usage for StringBuilder
+\item FIX: Nested script no longer need to braced separately
+\item FIX: Editor improvements for NGUI extension
+\item FIX: Unity 5.5 compatibility
+\item FIX: \verb|\color| glitch when resizing UI
+\item FIX: symbol definition for \verb|\angle|
+\item FIX: Horizontal Extension’s width shows less than actual requirement
+\item FIX: Preference font preview sometimes not match with inspected font
+\end{itemize}
+
+2.6 – Aug 8, 2016: Parser Stability
+\begin{itemize}
+\item NEW: Parser now more tolerant to incomplete typos
+\item NEW: Braces after commands is now optional
+\item NEW: Font styling (Bold/Italic) included in custom font tags (\verb|\font|)
+\item NEW: Accents can hold by more than one character
+\item NEW: Bump Lit shader
+\item NEW: Support for Horizontal Extension
+\item NEW: \verb|\math| for turning off modified custom font tag
+\item NEW: offset control for \verb|\size|
+\item NEW: Showcase example scene
+\item NEW: Added (Bonus) Editor pool check for checking pooled resources
+\item CHANGE: 2 user fonts now changed into more useful one
+\item CHANGE: behavior when imports configuration in XML files (and upgrading process)
+\item CHANGE: \verb|\not| now have a very extensive customization
+\item CHANGE: Characters now used pixel-perfect font size according to their actual size
+\item CHANGE: Shader now wrapped in one .cginc file, improves shader readability
+\item FIX: Faster and less GC overhead when parsing string
+\item FIX: NGUI Extension Glitch 'IM HIT'
+\item FIX: \verb|\text| and \verb|\font| doesn't parsing backslashes
+\item FIX: radical top line floats in incorrect position
+\item FIX: issue with Unicode characters
+\item FIX: \verb|\font| and \verb|\color| isn’t able to wrap
+\item FIX: nested delimiter doesn't expand it's height
+\item FIX: Unicode characters still do incorrect glyph sizes
+\item FIX: Unicode not working in inside \verb|\font| block
+\item FIX: Progress bar doesn’t update when Preference imports
+\end{itemize}
+
+2.5 – Jul 28, 2016: Interactive Link
+\begin{itemize}
+\item NEW: Official support for NGUI, included as an external .unitypackage file
+\item NEW: UV3 filling, unlocking many shader features and variants
+\item NEW: Gradient and Texture overlay shader for TEXDraw
+\item NEW: TEXLink component, put links over TEXDraw!
+\item NEW: Underline and overlined text style
+\item NEW: Color command variants (\verb|\clr| and \verb|\mclr|)
+\item NEW: \verb|\size| command for having variant in sizes.
+\item CHANGE: Improved autofit mode
+\item CHANGE: straight lines now rendered last
+\item CHANGE: shader paths now detached from GUI\..
+\item CHANGE: Latin symbol now follow their override font, not the default math rule.
+\item FIX (critical): incorrect glyph sizes on large characters
+\item FIX: Improved performance, only few bytes GC inprints on repaint.
+\item FIX: Pixel-perfect behaviour for UI
+\item FIX: Pathfinding of  Preference is now automated
+\item FIX: Compatibility for Webplayer
+\end{itemize}
+
+2.4 – Jun 20, 2016: Sprite Import
+\begin{itemize}
+\item NEW: Import sprites as grid-based characters
+\item NEW: HTML names for \verb|\color|
+\item NEW: more scene example and improved stress test scene.
+\item CHANGE: Shaders now split into 4 passes
+\item CHANGE: Increasing font limit from 15 to 31 fonts.
+\item CHANGE: Tabbed Symbols tab on preference
+\item CHANGE: Removal of Shadow lit
+\item FIX: Improved Performance, more less GC overhead at render.
+\end{itemize}
+
+2.3 – Apr 20, 2016: Performance Upgrade
+\begin{itemize}
+\item NEW: Autowrap and Justify alignment
+\item NEW: Stress Test example scene
+\item NEW: Font Index selection in  Components
+\item CHANGE: API now using Resource Pooling
+\item FIX: Performance problem with Garbage Collector
+\end{itemize}
+
+2.2 – Apr 13, 2016: Unicodes
+\begin{itemize}
+\item NEW: Unicode Support
+\item NEW: \verb|\color| command for custom text colors.
+\item FIX (critical):  Imported fonts showing only white boxes.
+\item FIX: Mobile Shader now using two passes instead of one
+\end{itemize}
+
+2.1 – Apr 4, 2016: Compabilities
+\begin{itemize}
+\item NEW: TEXDraw Lit Shader (with Shadows)
+\item FIX: Shader Compilation for PS 3.0/4.0 and Mobile
+\item FIX: Problem in UI Layout and their Functionality
+\item FIX: Unity 5.3 Compability
+\end{itemize}
+
+2.0 – Mar 29, 2016: Package Rewrite
+\begin{itemize}
+\item NEW: 15 fonts data included in Package
+\item NEW: Symbols catalog is increased with total of +600 symbols
+\item NEW: TEXDraw Preference Editor
+\item NEW: Dynamic Global Preference
+\item NEW: Ability to change/import custom Fonts
+\item NEW: Expandable Delimiters (previously just scale the character)
+\item NEW: Accent support
+\item NEW: Lines above characters (aka. Negations)
+\item NEW: TEXDraw 3D Component
+\item CHANGE: Internal scripts now released from DLL
+\item CHANGE: Assets now released from Resources
+\item CHANGE: Rewriting of Documentation
+\item CHANGE: Spaces now used instead of \verb|\w|
+\item FIX: Unity 5.4 Compatibility
+\item FIX: Support for UI Effects
+\item FIX: Assets now loading much faster (serialized on build)
+\end{itemize}
+
+1.0 – Jan 9, 2016: First Release
+
+
+
+
+
+
+
+\tiny
+\begin{verbatim}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --/\-        -/\-- |      ------   /------
+.      **     **      *  **        *                          *       -   \--    --/   - |      |    |  -      |
+._____________________________________   **      *      **            /     \    /     \ |      |    | |   ||  /
+.|^^^||^^^|^| |^^^^^|^\ \   // |  ___ \    _       _       ^       ^  \  \   \--/   /  / |      |    |  \  _  |
+.|   ||   | | |     |  \ \ //  | |   \ \ _____   ____/|   __    _  ___ \              /  |      |    |  |     |
+.    ||     | |--|      \ \/   | |   | |/  __ | /     |  /  \  / / \ | \     *        /  |      |    |  |     /
+.    ||     | |--|       \ \   | |   | |  /  ||/  /|  | /// /  / / / |  \     *      /|  |      |    |  |    |
+.    ||     | |     |   //\ \  | |___/ / /   ///  |/  |// \ \_/  /_/ /   \    *     / |  |      |    |   \   |
+.  __||__  _| |____ |  //  \ \ |      /| |   ^ /   // //   \        /     \        /  | .\------/.   |   |   /
+.  ^^^^^^  ^^^^^^^^^|^^^^   ^^^^^^^^^/  ^^     /__/  \/     ^^/^\--/       \______/   |              |   |/--
+.                                                      **                   -    -    |   \/\/\/\    |   - +++
+.            *   **    **        *   **        *             *  *            ----     |              /    +   +
+*************************************************************************************  \------------/      ++++
+\end{verbatim}
+Thank you for choosing TEXDraw!
+
+Follow me @willnode on Twitter for updates.
+
+	
+\end{document}

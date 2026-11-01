@@ -1,0 +1,117 @@
+﻿================ LHGF Error Log ================
+Time:    2026-10-24 15:08:57
+Version: 1.0
+Unity:   2022.3.54f1c1
+Platform:WindowsEditor
+OS:      Windows 11  (10.0.26200) 64bit
+Log dir: F:\Unity\LHGF2609\ErrorLog
+=================================================
+
+[15:08:57.023][Error][+2.85s] [LHGFErrorTest] Single test error: the error window should appear.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:96)
+-----------------------------------------------
+[15:09:01.904][Error][+7.73s] [LHGFErrorTest] Single test error: the error window should appear.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:96)
+-----------------------------------------------
+[15:09:04.393][Error][+10.21s] [LHGFErrorTest] Single test error: the error window should appear.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:96)
+-----------------------------------------------
+[15:09:20.032][Error][+25.85s] [LHGFErrorTest] Repeated test error: only one window, others are suppressed.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:103)
+-----------------------------------------------
+[15:09:20.035][Error][+25.86s] [LHGFErrorTest] Repeated test error: only one window, others are suppressed.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:103)
+-----------------------------------------------
+[15:09:20.035][Error][+25.86s] [LHGFErrorTest] Repeated test error: only one window, others are suppressed.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:103)
+-----------------------------------------------
+[15:09:20.035][Error][+25.86s] [LHGFErrorTest] Repeated test error: only one window, others are suppressed.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:103)
+-----------------------------------------------
+[15:09:20.037][Error][+25.86s] [LHGFErrorTest] Repeated test error: only one window, others are suppressed.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:103)
+-----------------------------------------------
+[15:09:24.266][Exception][+30.09s] InvalidOperationException: Simulated exception thrown on purpose to verify the error window catches LogType.Exception.
+LHGFDiagnostics.LHGFErrorTestRunner.TriggerException () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:129)
+LHGFDiagnostics.LHGFErrorTestRunner.Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:109)
+-----------------------------------------------
+[15:09:26.865][Error][+32.69s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:27.658][Error][+33.48s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.184][Error][+34.01s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.354][Error][+34.17s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.503][Error][+34.33s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.672][Error][+34.49s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.832][Error][+34.65s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:28.991][Error][+34.81s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.161][Error][+34.98s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.329][Error][+35.15s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.488][Error][+35.31s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.655][Error][+35.48s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.823][Error][+35.65s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:29.984][Error][+35.81s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:30.135][Error][+35.96s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:30.279][Error][+36.10s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:31.480][Error][+37.30s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------
+[15:09:31.812][Error][+37.63s] [LHGFErrorTest] Error storm: this should be suppressed while the window is open.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:120)
+-----------------------------------------------

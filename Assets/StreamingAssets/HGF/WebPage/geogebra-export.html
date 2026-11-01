@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta charset="utf-8"/>
+<title>函数图像 · 全屏</title>
+<style>
+    /* 彻底清除边距 / 滚动 / 溢出：让整个页面只有函数图像 */
+    * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
+
+    html, body {
+        width: 100%; height: 100%;
+        overflow: hidden; overscroll-behavior: none;
+        background: #ffffff;
+        position: fixed; top: 0; left: 0;
+    }
+
+    #ggbApplet {
+        position: fixed; top: 0; left: 0;
+        width: 100vw !important; height: 100vh !important;
+        display: block; border: none; outline: none;
+        background: #ffffff; overflow: hidden !important;
+    }
+
+    #ggbApplet * { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; box-sizing: border-box !important; overflow: hidden !important; }
+
+    #ggbApplet canvas, #ggbApplet iframe, #ggbApplet object, #ggbApplet embed {
+        display: block !important; width: 100% !important; height: 100% !important;
+        border: none !important; margin: 0 !important; padding: 0 !important;
+    }
+
+    /* 隐藏滚动条 */
+    ::-webkit-scrollbar { display: none; width: 0; height: 0; }
+    * { scrollbar-width: none; -ms-overflow-style: none; }
+</style>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+<body>
+<div id="ggbApplet"></div>
+
+<script>
+// ===== 可调配置 =====
+var CONFIG = {
+    "marginRatio": 0.01,          // 曲线与屏幕边缘留白（0=贴边）
+    "samplePoints": 120,          // 采样点数（一般不用动）
+
+    // ---- 曲线样式 ----
+    "curveColor": [255, 0, 0],    // RGB 颜色：如红=[255,0,0] 蓝=[0,0,255] 黑=[0,0,0]
+    "curveThickness": 10,          // 线宽（像素）
+    "curveLineStyle": 3,          // 线型：0=实线 1=虚线 2=点线 3=点划线
+
+    // ---- 坐标刻度字体大小 ----
+    "axisLabelFontSize": 300       // 刻度数字的字体大小（像素）
+};
+var ggbWrapper = null; // GGBApplet 包装对象（用于 setSize 强制全屏尺寸）
+var ggbApi = null;     // GeoGebra 内核 API（加载完成后赋值）
+
+var parameters = {
+    "id": "ggbApplet",
+    "width": "100%",
+    "height": "100%",
+
+    // 关闭所有界面组件，让画面只剩函数图像
+    "showMenuBar": false,
+    "showAlgebraInput": false,
+    "showToolBar": false,
+    "showToolBarHelp": false,
+    "showResetIcon": false,
+    "showFullscreenButton": false,
+    "showZoomButtons": false,
+    "allowStyleBar": false,
+    "enableRightClick": false,
+    "enableLabelDrags": false,
+    "enableShiftDragZoom": true,
+    "errorDialogsActive": false,
+    "useBrowserForJS": false,
+    "preventFocus": false,
+    "capturingThreshold": 3,
+
+    // 加载完成后：让函数图像填满整个屏幕
+    "appletOnLoad": function(api) {
+        ggbApi = api;
+        console.log('✅ 绘图区已加载，正在设置全屏…');
+
+        // ============ 0. 应用样式：曲线颜色/粗细/线型 + 刻度字体大小 ============
+        function applyStyle() {
+            var names = [];
+            try { names = api.getAllObjectNames(); } catch (e) { names = []; }
+            for (var k = 0; k < names.length; k++) {
+                var nm = names[k];
+                var type = null;
+                try { type = api.getObjectType(nm); } catch (e) {}
+                if (type !== 'function' && type !== 'line' && type !== 'conic') continue;
+                try {
+                    api.setColor(nm, CONFIG.curveColor[0], CONFIG.curveColor[1], CONFIG.curveColor[2]);
+                } catch (e) {}
+                try { api.setLineThickness(nm, CONFIG.curveThickness); } catch (e) {}
+                try { api.setLineStyle(nm, CONFIG.curveLineStyle); } catch (e) {}
+            }
+            // 刻度字号：部分版本支持 setFontSize（参数 fontSize 已同时下发）
+            if (typeof api.setFontSize === 'function') {
+                try { api.setFontSize(CONFIG.axisLabelFontSize); } catch (e) {}
+            }
+        }
+        applyStyle();
+
+        // 记录首次加载时的原始视图范围（作为扫描与对齐基准，避免缩放/重试后漂移）
+        var INITIAL_VIEW = null;
+        try {
+            INITIAL_VIEW = {
+                xmin: api.getXmin(), xmax: api.getXmax(),
+                ymin: api.getYmin(), ymax: api.getYmax()
+            };
+            if (!isFinite(INITIAL_VIEW.xmin) || !isFinite(INITIAL_VIEW.xmax) ||
+                !isFinite(INITIAL_VIEW.ymin) || !isFinite(INITIAL_VIEW.ymax) ||
+                INITIAL_VIEW.xmax - INITIAL_VIEW.xmin < 1e-9 ||
+                INITIAL_VIEW.ymax - INITIAL_VIEW.ymin < 1e-9) {
+                throw new Error('degenerate initial view');
+            }
+        } catch (e) {
+            INITIAL_VIEW = { xmin: -10, xmax: 10, ymin: -10, ymax: 10 };
+        }
+        console.log('ℹ️ 初始视图：x=[%d, %d]  y=[%d, %d]', INITIAL_VIEW.xmin, INITIAL_VIEW.xmax, INITIAL_VIEW.ymin, INITIAL_VIEW.ymax);
+        // 再尝试从 .ggb 文件自身解析“保存时的视图范围”（更可靠，不受运行时影响）
+        var SAVED_VIEW = parseSavedViewFromXML();
+        if (SAVED_VIEW) {
+            console.log('💾 文件保存视图：x=[%d, %d]  y=[%d, %d]', SAVED_VIEW.xmin, SAVED_VIEW.xmax, SAVED_VIEW.ymin, SAVED_VIEW.ymax);
+        }
+
+        // ============ 1. 画布尺寸与窗口保持一致 ============
+        function resizeApplet() {
+            var w = Math.max(1, window.innerWidth);
+            var h = Math.max(1, window.innerHeight);
+            if (ggbWrapper && typeof ggbWrapper.setSize === 'function') {
+                try { ggbWrapper.setSize(w, h); } catch (e) {}
+            }
+            if (api && typeof api.setSize === 'function') {
+                try { api.setSize(w, h); } catch (e) {}
+            }
+        }
+
+        // ============ 2. 采样求值，估算函数图像的真实范围 ============
+        // 对每个函数对象 f(x) 逐点 evalCommand('_ggbfs = f(x_i)') 再读取数值，
+        // 同步可靠，不依赖 setValue 等在不同版本中行为不一致的 API。
+        function sampleContentBox(xmin, xmax) {
+            var names = [];
+            try { names = api.getAllObjectNames(); } catch (e) { names = []; }
+
+            var N = CONFIG.samplePoints;
+            var ymin = Infinity, ymax = -Infinity, found = false;
+
+            try { api.deleteObject('_ggbfs'); } catch (e) {}
+
+            for (var k = 0; k < names.length; k++) {
+                var nm = names[k];
+                try { if (api.getObjectType(nm) !== 'function') continue; } catch (e) { continue; }
+                for (var i = 0; i <= N; i++) {
+                    var x = xmin + (xmax - xmin) * i / N;
+                    var v = NaN;
+                    try {
+                        api.evalCommand('_ggbfs = ' + nm + '(' + x + ')');
+                        v = api.getValue('_ggbfs');
+                    } catch (e) { v = NaN; }
+                    if (typeof v === 'number' && isFinite(v)) {
+                        if (!found) { found = true; ymin = v; ymax = v; }
+                        else {
+                            if (v < ymin) ymin = v;
+                            if (v > ymax) ymax = v;
+                        }
+                    }
+                }
+            }
+
+            try { api.deleteObject('_ggbfs'); } catch (e) {}
+
+            if (!found || !isFinite(ymin) || !isFinite(ymax)) return null;
+            return { ymin: ymin, ymax: ymax };
+        }
+
+        // ============ 2.5 从 .ggb 文件自身解析“保存时的视图范围” ============
+        // 通过 api.getXML() 读取文件里的 <coordSystem> 与 <size>，还原作者保存的坐标系，
+        // 不依赖运行时视图（运行时视图可能被 Applet 自动缩放/劣化）。
+        function parseSavedViewFromXML() {
+            try {
+                if (typeof api.getXML !== 'function') return null;
+                var xml = api.getXML();
+                var mCoord = /<coordSystem[^>]*xZero="([-\d.eE]+)"[^>]*yZero="([-\d.eE]+)"[^>]*scale="([\d.eE]+)"/.exec(xml);
+                if (!mCoord) return null;
+                var mSize = /<size[^>]*width="([\d.]+)"[^>]*height="([\d.]+)"/.exec(xml);
+                if (!mSize) return null;
+                var xZero = parseFloat(mCoord[1]);
+                var yZero = parseFloat(mCoord[2]);
+                var scale = parseFloat(mCoord[3]);
+                var w = parseFloat(mSize[1]);
+                var h = parseFloat(mSize[2]);
+                if (!isFinite(xZero) || !isFinite(yZero) || !isFinite(scale) || scale <= 0 ||
+                    !isFinite(w) || !isFinite(h) || w <= 0 || h <= 0) return null;
+                return {
+                    xmin: -xZero / scale,
+                    xmax: (w - xZero) / scale,
+                    ymin: (yZero - h) / scale,
+                    ymax: yZero / scale
+                };
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // ============ 3. 设置坐标系 ============
+        function applyView(x0, x1, y0, y1) {
+            if (typeof api.setCoordSystem === 'function') {
+                api.setCoordSystem(x0, x1, y0, y1);
+            } else if (typeof api.setView === 'function') {
+                api.setView(x0, x1, y0, y1);
+            }
+            if (typeof api.refreshViews === 'function') {
+                try { api.refreshViews(); } catch (e) {}
+            }
+            console.log('📐 视图：x=[%d, %d]  y=[%d, %d]', x0, x1, y0, y1);
+        }
+
+        // ============ 4. 核心：让函数图像填满整个屏幕 ============
+        function fitGraphToScreen() {
+            // 扫描域：优先用 .ggb 文件保存的视图范围；拿不到再退回运行时视图，
+            // 且半宽至少 10 个单位（防止 Applet 启动后被压缩成原点附近极小区域时采样失真）
+            var base = SAVED_VIEW || INITIAL_VIEW;
+            var scanCx = (base.xmin + base.xmax) / 2;
+            var scanHalf = Math.max((base.xmax - base.xmin) / 2, 10);
+            var xmin = scanCx - scanHalf, xmax = scanCx + scanHalf;
+            console.log('📡 扫描域：x=[%d, %d]', xmin, xmax);
+
+            // 内容包围盒：x 沿用扫描域，y 使用采样结果（更贴紧曲线本身）
+            var bxmin = xmin, bxmax = xmax;
+            var bymin = INITIAL_VIEW.ymin, bymax = INITIAL_VIEW.ymax;
+
+            var sampled = sampleContentBox(xmin, xmax);
+            if (sampled && (sampled.ymax - sampled.ymin) > 0.1) {
+                // 采样结果可信（曲线有实际高度）→ 用它贴紧曲线
+                bymin = sampled.ymin;
+                bymax = sampled.ymax;
+            } else {
+                // 采样不可用或结果退化（曲线几乎水平）：忽略采样，
+                // 运行时范围若也退化，则用合理默认范围兜底
+                console.log('⚠️ 采样结果不可用，使用兜底范围');
+                if (!isFinite(bymin) || !isFinite(bymax) || bymax - bymin < 1) {
+                    bymin = -2; bymax = 2;
+                }
+            }
+            console.log('🧪 采样结果：y=[%d, %d]', bymin, bymax);
+
+            var bw = bxmax - bxmin, bh = bymax - bymin;
+            var cx = (bxmin + bxmax) / 2, cy = (bymin + bymax) / 2;
+            var aspect = window.innerWidth / Math.max(1, window.innerHeight);
+            var pad = 1 + CONFIG.marginRatio;
+
+            var x0, x1, y0, y1;
+            if (bh * 8 < bw) {
+                // 横向长曲线（如 sin(x)）：把曲线“高度”拉满整个屏幕
+                var halfY = (bh / 2) * pad;
+                var halfX = halfY * aspect;
+                x0 = cx - halfX; x1 = cx + halfX;
+                y0 = cy - halfY; y1 = cy + halfY;
+            } else if (bw * 8 < bh) {
+                // 纵向长曲线：把曲线“宽度”拉满整个屏幕
+                var halfX = (bw / 2) * pad;
+                var halfY = halfX / aspect;
+                x0 = cx - halfX; x1 = cx + halfX;
+                y0 = cy - halfY; y1 = cy + halfY;
+            } else {
+                // 一般 2D 内容：完整可见，并按窗口比例铺满（cover）
+                var halfX = Math.max(bw / 2, (bh / 2) * aspect) * pad;
+                var halfY = Math.max(bh / 2, (bw / 2) / aspect) * pad;
+                x0 = cx - halfX; x1 = cx + halfX;
+                y0 = cy - halfY; y1 = cy + halfY;
+            }
+
+            // 最终兜底：任何情况下视图都不能退化成原点附近的小方块
+            if ((x1 - x0) < 0.02 || (y1 - y0) < 0.02) {
+                var h = 10 * pad;
+                x0 = -h; x1 = h;
+                y0 = -h / aspect; y1 = h / aspect;
+            }
+
+            // 安全网：只要曲线跨越坐标轴，就保证画面里两条坐标轴都可见
+            if (bxmin <= 0 && 0 <= bxmax && (x0 > 0 || x1 < 0)) {
+                var hx = (x1 - x0) / 2;
+                x0 = -hx; x1 = hx;
+            }
+            if (bymin <= 0 && 0 <= bymax && (y0 > 0 || y1 < 0)) {
+                var hy = (y1 - y0) / 2;
+                y0 = -hy; y1 = hy;
+            }
+
+            applyView(x0, x1, y0, y1);
+        }
+
+        // ============ 5. 装配：加载后立即适配，窗口变化时重新适配 ============
+        function fitAll() {
+            resizeApplet();                     // 先让画布 = 窗口大小
+            setTimeout(fitGraphToScreen, 120);  // 等画布重排完成后再算视图
+        }
+
+        fitAll();
+
+        var resizeTimer = null;
+        window.addEventListener('resize', function() {
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(fitAll, 150);
+        });
+
+        // 移动端 / 慢速设备兜底重试
+        setTimeout(fitAll, 500);
+        setTimeout(fitAll, 1000);
+    },
+
+    "buttonRounding": 0.7,
+    "buttonShadows": false,
+    "language": "zh-CN",
+    // 坐标刻度字体大小（部分版本支持此参数，配合 setFontSize 双保险）
+    "fontSize": CONFIG.axisLabelFontSize,
+    "appName": "classic",
+    "scale": 1,
+    "disableAutoScale": false,
+    "allowUpscale": false,
+    "clickToLoad": false,
+    "ggbBase64": "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"
+};
+// 只保留绘图视图（EV1），其余视图全部关闭
+var views = {'is3D': 0,'AV': 0,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var applet = new GGBApplet(parameters, '5.0', views);
+ggbWrapper = applet;
+window.onload = function() { applet.inject('ggbApplet'); };
+applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+</script>
+</body>
+</html>

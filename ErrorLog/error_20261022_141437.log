@@ -1,0 +1,22 @@
+﻿================ LHGF 错误日志 ================
+时间: 2026-10-22 14:14:37
+版本: 1.0
+Unity: 2022.3.54f1c1
+平台: WindowsEditor
+系统: Windows 11  (10.0.26200) 64bit
+根目录: F:\Unity\LHGF2609\ErrorLog
+===============================================
+
+[14:14:37.067][Error][+3.39s] [LHGFErrorTest] 这是一条测试错误：单条错误应弹出窗口。
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:93)
+-----------------------------------------------
+[14:15:18.876][Error][+45.20s] No Locale could be selected:
+No Locales were available. Did you build the Addressables?
+The following (3) IStartupLocaleSelectors were used:
+	UnityEngine.Localization.Settings.CommandLineLocaleSelector
+	UnityEngine.Localization.Settings.SystemLocaleSelector
+	UnityEngine.Localization.Settings.SpecificLocaleSelector
+
+UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&)
+-----------------------------------------------

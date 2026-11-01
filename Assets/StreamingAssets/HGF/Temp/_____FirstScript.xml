@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <MainPlot>
+    <PlotNode Id="FirstScript-MAINBRANCH-0" NextId="FirstScript-MAINBRANCH-0a">
+      <Speak SpeakerName="LHGF" Content="Test。"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-0a" NextId="FirstScript-MAINBRANCH-1">
+      <Speak SpeakerName="LHGF" Content="WebView 层测试开始。点击继续,将打开本地页面 geogebra-export.html。"/>
+      <WebView Url="geogebra-export.html" State="1" PosInfo="UpperCenter" SizeX="0.9" SizeY="0.9"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-1" NextId="FirstScript-MAINBRANCH-2">
+      <Speak SpeakerName="LHGF" Content="本地页面已加载(加载完成后可继续)。下面切换到外部网页。"/>
+      <WebView Url="https://example.com" State="1" PosInfo="UpperCenter" SizeX="0.8" SizeY="0.8"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-2" NextId="FirstScript-MAINBRANCH-3">
+      <Speak SpeakerName="LHGF" Content="外部网页已切换。现在关闭网页面板。"/>
+      <WebView State="0"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-3" NextId="GAMEFINISH">
+      <Speak SpeakerName="LHGF" Content="测试结束,感谢游玩!"/>
+    </PlotNode>
+  </MainPlot>
+</Root>

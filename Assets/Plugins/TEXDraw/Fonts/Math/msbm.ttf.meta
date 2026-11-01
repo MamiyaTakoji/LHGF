@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2706affc27cda5d4899f47b265ef792b
+timeCreated: 1495550690
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 20
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters: "\xC0\xC1\xC2\xC3\xC4\xC5\xC6\xC7\xC8\xC9\xCA\xCB\xCC\xCD\xCE\xCF\xB0\xD1\xD2\xD3\xD4\xD5\xD6\xB7\xD8\xD9\xDA\xDB\xDC\xB5\xB6\xDF\xEF!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\xFF"
+  fontRenderingMode: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

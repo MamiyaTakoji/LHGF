@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<Root>
+  <MainPlot>
+    <!-- 手机聊天层测试剧本。起点由 GameConfig.json 的 RootNodeId 指定：FirstScript-MAINBRANCH-0
+
+         每个 PhoneChat 命令处理一条消息；同一个 PlotNode 里的多条命令会依次执行
+         （Forward 会遍历该节点的全部命令），所以一整段对话可以放在一个节点里。
+
+         本剧本不使用 Image / Gif（不需要额外准备图片资源）。
+
+         属性速查
+           PhoneState  0/1     显示 / 隐藏手机（默认 1）
+           Continue    0/1     1=续写，0=先清空聊天框（默认 1）
+           TalkerName  string  聊天对象名字，不写=不改
+           ContentType TMP / File / TimeStamp（默认 TMP）
+           Content     string  正文 / 时间戳；File 类型时是文件名
+           RightSide   0/1     1=自己（靠右），0=对方（默认 0）
+           Skip        0/1     跳过弹出动画（默认 0）
+           AvatarPath  string  头像路径，不写=用预制体默认头像
+           TypingTime  float   气泡出现前的"对方正在输入"等待秒数（默认 0）
+           TypingText  string  等待期间的状态文字，不写=用控制器配的"对方正在输入"
+           Icon / FileSize     File 类型专用
+
+         输入效果的两种用法
+           <PhoneChat Content="算了。" TypingTime="1.5"/>   先显示"正在输入"1.5 秒，再弹出气泡
+           <PhoneChat TypingTime="2"/>                     只显示"正在输入"2 秒，什么都不发（欲言又止）
+    -->
+
+    <!-- 0 开场 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-0" NextId="FirstScript-MAINBRANCH-1">
+      <ChangeImageBackground BgImage="cafebar.jpg"/>
+      <Speak SpeakerName=" " Content="（手机聊天层测试。这一节没有输入等待，气泡直接弹出。）"/>
+    </PlotNode>
+
+    <!-- 1 打开手机、清空、改名 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-1" NextId="FirstScript-MAINBRANCH-2">
+      <PhoneChat PhoneState="1" Continue="0" TalkerName="象山"/>
+      <PhoneChat Content="在吗？"/>
+      <PhoneChat Content="在。" RightSide="1"/>
+      <Speak SpeakerName=" " Content="（上面两条是普通弹出，没有等待。继续。）"/>
+    </PlotNode>
+
+    <!-- 2 输入等待：先说"正在输入"，再弹气泡 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-2" NextId="FirstScript-MAINBRANCH-3">
+      <Speak SpeakerName=" " Content="（下一条会先显示“对方正在输入”，等 2 秒才出现。注意顶部状态文字的变化。）"/>
+      <PhoneChat Content="那个案子的资料我整理好了。" TypingTime="20"/>
+      <!-- <PhoneChat Content="不过有个地方我拿不准。" TypingTime="1.5"/> -->
+      <Speak SpeakerName=" " Content="（两条都有等待。期间按推进键会被挡住，因为 Finish() 在等。）"/>
+    </PlotNode>
+
+    <!-- 3 欲言又止：只显示输入状态，不产生消息 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-3" NextId="FirstScript-MAINBRANCH-4">
+      <Speak SpeakerName=" " Content="（下一条只有 TypingTime、没有 Content：只会看到“正在输入”闪 2 秒，然后什么都不发。）"/>
+      <PhoneChat TypingTime="2"/>
+      <PhoneChat Content="……没事。" TypingTime="1"/>
+      <Speak SpeakerName=" " Content="（可以按跳过键试试：等待会被立刻结束，气泡马上出现。）"/>
+    </PlotNode>
+
+    <!-- 4 自定义输入文字 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-4" NextId="FirstScript-MAINBRANCH-5">
+      <Speak SpeakerName=" " Content="（下面这条把输入提示改成了“对方输入中…”。）"/>
+      <PhoneChat Content="嗯，我在。" TypingTime="1.5" TypingText="对方输入中…"/>
+    </PlotNode>
+
+    <!-- 5 带头像 + 时间戳 + 文件 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-5" NextId="FirstScript-MAINBRANCH-6">
+      <PhoneChat ContentType="TimeStamp" Content="2024-01-01 12:00" Skip="1"/>
+      <PhoneChat Content="这是整理好的报告。" TypingTime="1.5"
+                 AvatarPath="HGF/Texture2D/Portrait/Z2/Normal.png"/>
+      <PhoneChat ContentType="File" RightSide="1"
+                 Content="验尸报告.pdf"
+                 FileSize="2.1 MB"
+                 Icon="HGF/Texture2D/Portrait/Z2/Normal.png"/>
+    </PlotNode>
+
+    <!-- 6 连续多条 Skip=1（瞬间出现），对比有无动画 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-6" NextId="FirstScript-MAINBRANCH-7">
+      <Speak SpeakerName=" " Content="（下面三条 Skip=1，会瞬间出现，没有弹出动画。）"/>
+      <PhoneChat Content="一。" Skip="1"/>
+      <PhoneChat Content="二。" Skip="1"/>
+      <PhoneChat Content="三。" Skip="1"/>
+    </PlotNode>
+
+    <!-- 7 输入等待 + Skip=1：等完之后不播弹出动画 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-7" NextId="FirstScript-MAINBRANCH-8">
+      <Speak SpeakerName=" " Content="（下面这条既有等待又 Skip=1：等 1.5 秒，然后直接出现、不弹。）"/>
+      <PhoneChat Content="到了。" TypingTime="1.5" Skip="1"/>
+    </PlotNode>
+
+    <!-- 8 清空重开 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-8" NextId="FirstScript-MAINBRANCH-9">
+      <Speak SpeakerName=" " Content="（接下来清空聊天框并换人。）"/>
+      <PhoneChat Continue="0" TalkerName="舞冬"/>
+      <PhoneChat Content="换人了，之前的都清掉了。" TypingTime="1.5"/>
+    </PlotNode>
+
+    <!-- 9 关闭手机 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-9" NextId="FirstScript-MAINBRANCH-10">
+      <PhoneChat PhoneState="0"/>
+      <Speak SpeakerName=" " Content="（手机收起来了。）"/>
+    </PlotNode>
+
+    <!-- 10 重新打开 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-10" NextId="FirstScript-MAINBRANCH-11">
+      <PhoneChat PhoneState="1"/>
+      <Speak SpeakerName=" " Content="（手机又打开了。之前的消息还在。）"/>
+    </PlotNode>
+
+    <!-- 11 回撤测试：连续发 4 条，方便逐步回退观察 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-11" NextId="FirstScript-MAINBRANCH-12">
+      <PhoneChat Continue="0" TalkerName="象山"/>
+      <Speak SpeakerName=" " Content="（这一段发 4 条，用来测回撤：从后往前退，每次应该少一条。）"/>
+      <PhoneChat Content="回撤测试 1" Skip="1"/>
+      <PhoneChat Content="回撤测试 2" Skip="1"/>
+      <PhoneChat Content="回撤测试 3" Skip="1"/>
+      <PhoneChat Content="回撤测试 4" Skip="1"/>
+    </PlotNode>
+
+    <!-- 12 收尾 -->
+    <PlotNode Id="FirstScript-MAINBRANCH-12" NextId="GAMEFINISH">
+      <Speak SpeakerName=" " Content="（测试结束。继续前进会走到 GAMEFINISH。）"/>
+    </PlotNode>
+  </MainPlot>
+</Root>

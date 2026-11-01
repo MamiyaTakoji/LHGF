@@ -1,0 +1,13 @@
+﻿================ LHGF Error Log ================
+Time:    2026-10-24 14:42:56
+Version: 1.0
+Unity:   2022.3.54f1c1
+Platform:WindowsEditor
+OS:      Windows 11  (10.0.26200) 64bit
+Log dir: F:\Unity\LHGF2609\ErrorLog
+=================================================
+
+[14:42:56.072][Error][+17.02s] [LHGFErrorTest] Single test error: the error window should appear.
+UnityEngine.Debug:LogError (object)
+LHGFDiagnostics.LHGFErrorTestRunner:Update () (at Assets/HGF/Scripts/Structure_New/Diagnostics/LHGFErrorTestRunner.cs:96)
+-----------------------------------------------

@@ -1,0 +1,1 @@
+ImageCharacterIllustration: normal2.png (来自节点 FirstScript-MAINBRANCH-12) -> HGF\Texture2D\Portrait\A

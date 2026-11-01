@@ -1,0 +1,147 @@
+% !TeX encoding = UTF-8
+\documentclass[12pt]{article}
+% Hacks that doesn't exist in LaTeX but in TEXDraw
+\usepackage{verbatim,listings,hyperref}
+\def\subtitle#1{\author{#1}}
+\newenvironment{code}{\verbatim}{\endverbatim}
+\def\TEXDraw{\textit{TEXDraw}}
+% End of Hacks
+\title{\TEXDraw\\ Manual}
+\subtitle{\TeX-typing plugin for Unity}
+\date{Version 5.0.0\\2019 August}
+\begin{document}
+	\maketitle
+	\section{Introduction to \TeX}
+	
+	\TEXDraw\ brings the creation of equations and other beauties of \TeX-typing in Unity. For those who don't know what's \TeX: \TeX\ is a typesetting system mostly designed by \textbf{Donald E. Knuth} and first released around 1987. 
+	
+	At the time it became popular in the eye of academia: from scientist to mathematician, because how easily TeX can produce high quality book with minimal effort. TeX is then heavily improved with other derivation works such as LaTex and ConTeXt. Until today it's still used by thousand TeX enthusiasts around the world. 
+	
+	TeX was rising primilary because it can generate high quality mathematics equations with little effort, for instance:
+	
+	$$-b \pm \sqrt{b^2 - 4ac} \over 2a$$
+	That can be generated from:
+		\begin{code}
+	$$-b \pm \sqrt{b^2 - 4ac} \over 2a$$	
+		\end{code}
+
+	Another benefit from using TeX is that it's packaged with over thousands definitions of new symbols and commands, such that it enables you to:
+	
+	\begin{enumerate}
+		\item Use accents and special characters, e.g.:
+		\begin{itemize}
+			\item sen\~orita from \verb|sen\~orita|
+			\item m\={\i}n\u{u}s from \verb|m\={\i}n\u{u}s|
+			\item {\AE}sop's {\OE}uvres en fran\c{c}ais from\\ \verb|{\AE}sop's {\OE}uvres en fran\c{c}ais|
+		\end{itemize}
+		\item Use greek letters, e.g.:			
+		\begin{itemize}
+			\item $\Theta$, $\Phi$, $\Psi$ from \verb|$\Theta$|, \verb|$\Phi$|, \verb|$\Psi$|
+			\item $\alpha$, $\beta$, $\gamma$ from \verb|$\alpha$|, \verb|$\beta$|, \verb|$\gamma$|
+		\end{itemize}
+		\item Use font ligatures, e.g.:
+		\begin{itemize}
+			\item affirmative from \verb|affirmative|
+			\item en--dash and em---dash from \verb|en--dash| and \verb|em---dash|
+			\item ``smart quotes'' from \verb|``smart quotes''|
+		\end{itemize}
+	    \item Use font variants, e.g.:
+	    \begin{itemize}
+	    	\item \textsl{Slanted} text
+	    	\item \textit{Italic} text
+	    	\item \textbf{Boldface} text
+	    	\item \texttt{Typewriter} text
+	    	\item \textsf{Sans-serif} text
+	    	\item \textsc{Smallcase} text
+	    	\item \textit{\textbf{Any} \textsf{combination} of \texttt{above}}.
+    	\end{itemize}
+	    
+	\end{enumerate}
+	 
+	 You can discover more from separate \verb|reference.tex| file or other \TeX\ sources like \href{http://www.ctex.org/documents/shredder/src/texbook.pdf}{The TeXBook} written by Knuth itself. Also take a note: TeX has been developed for more than thirty years in form of its successor, like \LaTeX --- So there's much to discover more to learn about TeX. 
+	 
+	 \section{What \TEXDraw\ Offers}
+	 
+	 \TEXDraw\ is a plugin to let you type \TeX\ in Unity. It displays text from interpreting your \TeX either directly or reading from file (such as Resources folder). \TEXDraw\ aims to output 1:1 with plain \TeX\ or \LaTeX\ so it also integrates well with other services using \TeX\ technology.
+	 
+	 One of reasons you need \TEXDraw\ in your Unity project is:
+ 	\begin{enumerate}
+ 		\item You need to write math equations in Unity.
+ 		\item You need to display documentations written in \TeX.
+ 		\item You need a component that handles static long-winded text reliably
+ 		\item You need one of other features that \TeX\ or \TEXDraw\ only offers (tabular text, RTL mode, etc.)
+ 	\end{enumerate}
+ 
+ 	Starting to write in TEXDraw is easy: You just have to create a new TEXDraw Gameobject with is available via \verb|Create -> UI -> TEXDraw| in Hierarchy dropdown, then start typing \TeX\ inside of TEXDraw component in inspector.
+ 	
+ 	\section{What \TEXDraw\ Differs}
+ 	
+ 	TEXDraw aims to close with \TeX\ but it will never be the same, because major difference in backend technology. Most of differences factor in the fact that \TeX\ is a statistically compiled typesetting, but \TEXDraw\ is designed to be dynamically interpreted. 
+ 	
+ 	This means TEXDraw can render most of the TeX features in small fraction of second without any preliminary checking --- and it's good since you want your project keep to running smoothly during initial rendering. Also, unlike other compilers, \TEXDraw\ will not complain when there's anything wrong with your TeX file so you can see the change in instant anytime you change your TeX file.
+ 	
+ 	But as compiled vs. interpreted wars going on, there's some features in \TeX\ that is not getting into TEXDraw as it's either impossible or would waste a good amount of render time:
+ 	
+ 	\begin{itemize}
+ 		\item You can't extend TEXDraw with \verb|\usepackage|.
+ 		\item TEXDraw only renders to Mesh buffers, hence can't render to external files like .DVI or .PDF.
+ 		\item TEXDraw can't autodetect hypenation and ``badness'' out of the box.\\(FYI: Hypenation is a good feature to ``sp-lit wo-rd in-to syl-la-bels'' so your document can break wraps in syllabels if necessary, hence your document will still looking good)
+ 		\item You can't create new variables or environments with \verb|\def| or \verb|\newenvironment| --- You have to do it on either at code-level or project-wide configurations. This is also true for logic gates \verb|\ifx|, macros, value-tokens, etc.
+ 		\item \TeX\ gives you unlimited choices for choosing which font variations to suit your documents. \TEXDraw\ is not, and it's capped at 31 font variations for one project. (and all of them already been used by built-in package (altough you can remove some of them anyway))
+ 	\end{itemize}
+ 	
+ 	\section{Changing the Default Stuff in \TEXDraw}
+ 	
+ 	In every TEXDraw GameObject you can change overall document size in the component, like document size, font, color, padding, and scrolling area. Now your question is, {\sl what if want more than that?}
+ 	
+ 	First things first, if you want to change few settings for specific section of your document, you can always do that with \TeX\ commands (e.g. {\it italics word} by \verb|{\it italics word}|). \TEXDraw\ has hundreds of them and we have covered them in separate document \verb|reference.tex|. 
+ 	
+ 	Now, if you want to change properties for whole TEXDraw instances, or something that can't be configured just by \TeX\ commands alone, then this section is for you. Read thoughtfully because this section is slightly long-winded.
+ 	
+ 	\subsection{Adding or Removing Fonts}
+ 	
+	\subsection{Activating SDF Font Rendering}
+ 	
+ 	\subsection{Tweaking Default Configs}
+ 	
+ 	\section{Extending \TEXDraw}
+ 	
+ 	\subsection{Adding Macros}
+ 	
+ 	\subsection{Dealing with Sprites}
+ 	
+ 	\subsection{Dealing with Links}
+ 	 	
+ 	\subsection{Dealing with Images and other Media}
+	 	
+    \subsection{Dealing with Interactive Scrolling}
+
+  	\subsection{Dealing with Right-to-Left}
+ 	
+ 	\subsection{TeX Input}
+ 	
+ 	\section{Advanced Topics}
+ 	
+ 	\subsection{How TEXDraw Works}
+ 	
+ 	\subsection{Alignment Behaviour}
+ 	
+ 	\subsection{Dealing Inputs from User}
+ 	
+ 	\subsection{Extending TeX Supplements}
+ 	
+ 	\subsection{Extending Macros at Code-Level}
+ 	
+ 	\subsection{Extending Shaders}
+ 	
+ 	\subsection{Upgrading prior to v5.0}
+ 	
+ 	\section{About \TEXDraw, Credits and Legal}
+ 	
+ 	\subsection{About \TEXDraw}
+ 	
+ 	\subsection{BaKoMa Fonts}
+ 	
+ 	\subsection{Credits}
+ 	
+\end{document}

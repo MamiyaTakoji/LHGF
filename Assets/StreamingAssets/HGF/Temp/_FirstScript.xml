@@ -1,0 +1,26 @@
+<Root>
+  <MainPlot>
+    <PlotNode Id="FirstScript-MAINBRANCH-0" NextId="FirstScript-MAINBRANCH-1">
+        <Speak Content="你好。" SpeakerName=" "/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-1" NextId="FirstScript-MAINBRANCH-2">
+        <Speak Content="收集了新的证据" SpeakerName=" "/>
+        <AddEvidence ChapterName = "序章" EvidenceName = "里岛一年的证词1" EffectiveSoundPath = "GetEvidence.wav" />
+        <AddEvidence ChapterName = "序章" EvidenceName = "测试证据1"/>
+        <AddEvidence ChapterName = "序章" EvidenceName = "测试证据2"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-2" NextId="FirstScript-MAINBRANCH-3%%FirstScript-SubBRANCH-0">
+        <EvidenceChoice NextId = "FirstScript-MAINBRANCH-3%%FirstScript-SubBRANCH-0" ChapterName = "序章%%序章" EvidenceName = "测试证据1%%测试证据2"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-3" NextId="FirstScript-MAINBRANCH-4">
+        <Speak Content="选择了测试证据1" SpeakerName=" "/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-MAINBRANCH-4" NextId="FirstScript-MAINBRANCH-5">
+        <Speak Content="添加了新的人物信息" SpeakerName=" "/>
+        <CharacterDescribe CharacterID="W" Info="0%0%0"/>
+    </PlotNode>
+    <PlotNode Id="FirstScript-SubBRANCH-0" NextId="FirstScript-MAINBRANCH-2">
+        <Speak Content="选择了错误的证据" SpeakerName=" "/>
+    </PlotNode>
+  </MainPlot>
+</Root>

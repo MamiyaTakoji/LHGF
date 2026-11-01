@@ -1,0 +1,39 @@
+﻿================ LHGF Error Log ================
+Time:    2026-10-24 16:06:00
+Version: 1.0
+Unity:   2022.3.54f1c1
+Platform:WindowsEditor
+OS:      Windows 11  (10.0.26200) 64bit
+Log dir: F:\Unity\LHGF2609\ErrorLog
+=================================================
+
+[16:06:00.216][Exception][+10.78s] KeyNotFoundException: The given key 'Content' was not present in the dictionary.
+System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) (at <819cf46d02f74ba4ae2d757a73aa5ae9>:0)
+LHGFData.DialogLayer+SpeakData..ctor (LHGFData.LayerCommand command, DataLayer dataLayer) (at Assets/HGF/Scripts/Structure_New/Layers/DialogLayer/LHGFDialogLayer.cs:43)
+LHGFData.DialogLayer.Next (LHGFData.LayerCommand command) (at Assets/HGF/Scripts/Structure_New/Layers/DialogLayer/LHGFDialogLayer.cs:165)
+LHGFGameProgress.LHGF_GameProgress.Forward (LHGFGameProgress.LHGF_GameData data) (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameProgress.cs:204)
+LHGFGameMain.Forward () (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameMain.cs:161)
+LHGFMainScenceControler.<Start>b__22_0 () (at Assets/HGF/Scripts/Structure_New/Progress/Menu/LHGFMainScenceControler.cs:46)
+UnityEngine.Events.InvokableCall.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.Events.UnityEvent.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.UI.Button.Press () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:70)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:114)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:57)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+-----------------------------------------------
+[16:06:24.790][Exception][+35.36s] KeyNotFoundException: The given key 'Content' was not present in the dictionary.
+System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) (at <819cf46d02f74ba4ae2d757a73aa5ae9>:0)
+LHGFData.DialogLayer+SpeakData..ctor (LHGFData.LayerCommand command, DataLayer dataLayer) (at Assets/HGF/Scripts/Structure_New/Layers/DialogLayer/LHGFDialogLayer.cs:43)
+LHGFData.DialogLayer.Next (LHGFData.LayerCommand command) (at Assets/HGF/Scripts/Structure_New/Layers/DialogLayer/LHGFDialogLayer.cs:165)
+LHGFGameProgress.LHGF_GameProgress.Forward (LHGFGameProgress.LHGF_GameData data) (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameProgress.cs:204)
+LHGFGameMain.Forward () (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameMain.cs:161)
+LHGFMainScenceControler.<Start>b__22_0 () (at Assets/HGF/Scripts/Structure_New/Progress/Menu/LHGFMainScenceControler.cs:46)
+UnityEngine.Events.InvokableCall.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.Events.UnityEvent.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.UI.Button.Press () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:70)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:114)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:57)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+-----------------------------------------------

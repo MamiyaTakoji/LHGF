@@ -1,0 +1,2721 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3323630c18e2a9e4babea8cdc09f40f6, type: 3}
+  m_Name: stmary
+  m_EditorClassIdentifier: 
+  assetIndex: 7
+  editorMetadata:
+    catalogs: a100a200a300a400a500a600a700a800a900aa00ad00ae00af00b000b100b200b300b400b500b6001922b800b900ba00bb00bc00bd00be00bf00c000c100c200c3002100220023002400250026002700280029002a002b002c002d002e002f0030003100320033003400350036003700380039003a003b003c003d003e003f0040004100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a005b005c005d005e005f0060006100620063006400650066006700680069006a006b006c006d006e006f0070007100720073007400750076007700780079007a007b007c007d007e00c400
+    catalogsToken: \xA1-\xAA \xAD-\xB6 \x2219 \xB8-\xC3 \x21-\x7E \xC4
+    assetPath: Assets/Plugins/TEXDraw/Fonts/Extras/stmary.ttf
+    category: Mathematical Fonts
+    order: 0
+    variantAssetNames: []
+  metadata:
+    height: 0
+    depth: 0
+    width: 0
+    preferUnicode: 0
+    style: 0
+    category: 0
+    baseAsset: {fileID: 0}
+    variantAssets: []
+  chars:
+  - characterIndex: 161
+    type: 0
+    symbol: shortleftarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 162
+    type: 0
+    symbol: shortrightarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 163
+    type: 0
+    symbol: shortuparrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 164
+    type: 0
+    symbol: shortdownarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 165
+    type: 0
+    symbol: Yup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 166
+    type: 0
+    symbol: Ydown
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 167
+    type: 0
+    symbol: Yleft
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 168
+    type: 0
+    symbol: Yright
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 169
+    type: 0
+    symbol: varcurlyvee
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 170
+    type: 0
+    symbol: varcurlywedge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 173
+    type: 0
+    symbol: minuso
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 174
+    type: 0
+    symbol: baro
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 175
+    type: 0
+    symbol: sslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 176
+    type: 0
+    symbol: bbslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 177
+    type: 0
+    symbol: moo
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 178
+    type: 0
+    symbol: varotimes
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 179
+    type: 0
+    symbol: varoast
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 180
+    type: 0
+    symbol: varobar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 181
+    type: 0
+    symbol: varodot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 182
+    type: 0
+    symbol: varoslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 8729
+    type: 0
+    symbol: varobslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 184
+    type: 0
+    symbol: varocircle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 185
+    type: 0
+    symbol: varoplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 186
+    type: 0
+    symbol: varominus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 187
+    type: 0
+    symbol: boxast
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 188
+    type: 0
+    symbol: boxbar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 189
+    type: 0
+    symbol: boxdot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 190
+    type: 0
+    symbol: boxslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 191
+    type: 0
+    symbol: boxbslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 192
+    type: 0
+    symbol: boxcircle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 193
+    type: 0
+    symbol: boxbox
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 194
+    type: 0
+    symbol: boxempty
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 195
+    type: 0
+    symbol: lightning
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 33
+    type: 0
+    symbol: merge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 34
+    type: 0
+    symbol: vartimes
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 35
+    type: 0
+    symbol: fatsemi
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 36
+    type: 0
+    symbol: ssearrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 37
+    type: 0
+    symbol: sswarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 38
+    type: 0
+    symbol: curlywedgeuparrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 39
+    type: 0
+    symbol: curlywedgedownarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 40
+    type: 0
+    symbol: fatslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 41
+    type: 0
+    symbol: fatbslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 42
+    type: 0
+    symbol: lbag
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 43
+    type: 0
+    symbol: rbag
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 44
+    type: 0
+    symbol: varbigcirc
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 45
+    type: 0
+    symbol: leftrightarroweq
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 46
+    type: 0
+    symbol: curlyveedownarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 47
+    type: 0
+    symbol: curlyveeuparrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 48
+    type: 0
+    symbol: nnwarrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 49
+    type: 0
+    symbol: nnearrow
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 50
+    type: 0
+    symbol: leftslice
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 51
+    type: 0
+    symbol: rightslice
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 52
+    type: 0
+    symbol: varolessthan
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 53
+    type: 0
+    symbol: varogreaterthan
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 54
+    type: 0
+    symbol: varovee
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 55
+    type: 0
+    symbol: varowedge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 56
+    type: 0
+    symbol: talloblong
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 57
+    type: 0
+    symbol: interleave
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 58
+    type: 0
+    symbol: obar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 59
+    type: 0
+    symbol: obslash
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 60
+    type: 0
+    symbol: olessthan
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 61
+    type: 0
+    symbol: ogreaterthan
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 62
+    type: 0
+    symbol: ovee
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 63
+    type: 0
+    symbol: owedge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 64
+    type: 0
+    symbol: oblong
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 65
+    type: 0
+    symbol: inplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 66
+    type: 0
+    symbol: niplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 67
+    type: 0
+    symbol: nplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 68
+    type: 0
+    symbol: subsetplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 69
+    type: 0
+    symbol: supsetplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 70
+    type: 0
+    symbol: subsetpluseq
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 71
+    type: 0
+    symbol: supsetpluseq
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 72
+    type: 0
+    symbol: Lbag
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 73
+    type: 0
+    symbol: Rbag
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 74
+    type: 0
+    symbol: llbracket
+    larger:
+      font: stmary
+      character: 113
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 75
+    type: 0
+    symbol: rrbracket
+    larger:
+      font: stmary
+      character: 121
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 76
+    type: 0
+    symbol: llparenthesis
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 77
+    type: 0
+    symbol: rrparenthesis
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 78
+    type: 0
+    symbol: binampersand
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 79
+    type: 0
+    symbol: bindnasrepma
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 80
+    type: 0
+    symbol: trianglelefteqslant
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 81
+    type: 0
+    symbol: trianglerighteqslant
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 82
+    type: 0
+    symbol: ntrianglelefteqslant
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 83
+    type: 0
+    symbol: ntrianglerighteqslant
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 84
+    type: 0
+    symbol: llfloor
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 85
+    type: 0
+    symbol: rrfloor
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 86
+    type: 0
+    symbol: llceil
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 87
+    type: 0
+    symbol: rrceil
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 88
+    type: 0
+    symbol: arrownot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 89
+    type: 0
+    symbol: Arrownot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 90
+    type: 0
+    symbol: Mapstochar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 91
+    type: 0
+    symbol: mapsfromchar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 92
+    type: 0
+    symbol: Mapsfromchar
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 93
+    type: 0
+    symbol: leftrightarrowtriangle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 94
+    type: 0
+    symbol: leftarrowtriangle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 95
+    type: 0
+    symbol: rightarrowtriangle
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 96
+    type: 0
+    symbol: bigtriangledown
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 97
+    type: 0
+    symbol: bigtriangleup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 98
+    type: 0
+    symbol: bigcurlyvee
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 99
+    type: 0
+    symbol: bigcurlywedge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 100
+    type: 0
+    symbol: bigsqcap
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 101
+    type: 0
+    symbol: bigbox
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 102
+    type: 0
+    symbol: bigparallel
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 103
+    type: 0
+    symbol: biginterleave
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 104
+    type: 0
+    symbol: hugetriangledown
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 105
+    type: 0
+    symbol: hugetriangleup
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 106
+    type: 0
+    symbol: hugecurlyvee
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 107
+    type: 0
+    symbol: hugecurlywedge
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 108
+    type: 0
+    symbol: hugesqcap
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 109
+    type: 0
+    symbol: hugebox
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 110
+    type: 0
+    symbol: hugeparallel
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 111
+    type: 0
+    symbol: hugeinterleave
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 112
+    type: 0
+    symbol: hugenplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 113
+    type: 0
+    symbol: largellbracket
+    larger:
+      font: stmary
+      character: 114
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 114
+    type: 0
+    symbol: Largellbracket
+    larger:
+      font: stmary
+      character: 115
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 115
+    type: 0
+    symbol: LARGEllbracket
+    larger:
+      font: stmary
+      character: 116
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 116
+    type: 0
+    symbol: hugellbracket
+    larger:
+      font: stmary
+      character: 119
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 117
+    type: 0
+    symbol: Hugellbrackettop
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 118
+    type: 0
+    symbol: Hugellbracketbot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 119
+    type: 0
+    symbol: Hugellbracketex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: stmary
+        character: 117
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: stmary
+        character: 118
+      repeat:
+        font: stmary
+        character: 119
+      horizontal: 0
+  - characterIndex: 120
+    type: 0
+    symbol: Hugenplus
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 121
+    type: 0
+    symbol: largerrbracket
+    larger:
+      font: stmary
+      character: 122
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 122
+    type: 0
+    symbol: Largerrbracket
+    larger:
+      font: stmary
+      character: 123
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 123
+    type: 0
+    symbol: LARGErrbracket
+    larger:
+      font: stmary
+      character: 124
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 124
+    type: 0
+    symbol: hugerrbracket
+    larger:
+      font: stmary
+      character: 196
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 125
+    type: 0
+    symbol: Hugerrbrackettop
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 126
+    type: 0
+    symbol: Hugerrbracketbot
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 0
+      top:
+        font: 
+        character: 0
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: 
+        character: 0
+      repeat:
+        font: 
+        character: 0
+      horizontal: 0
+  - characterIndex: 196
+    type: 0
+    symbol: Hugerrbracketex
+    larger:
+      font: 
+      character: 0
+    extension:
+      enabled: 1
+      top:
+        font: stmary
+        character: 125
+      mid:
+        font: 
+        character: 0
+      bottom:
+        font: stmary
+        character: 126
+      repeat:
+        font: stmary
+        character: 196
+      horizontal: 0
+  asset: {fileID: 12800000, guid: a90399e5f87d6094fa9e466ab33dbc50, type: 3}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <MainPlot>
+    <!-- ============================================================
+         TextType 自动识别测试剧本
+         起点：TextTypeTest-MAINBRANCH-0（测试时把 GameConfig.json 的 RootNodeId 指过来）
+
+         验证目标
+           1. 不写 TextType 时：纯文本走 TMP，出现成对 $...$ / $$...$$ 才走 TexDraw
+           2. 写了 TextType 时：以显式值为准（大小写不敏感）
+           3. @@ 段落标记：TMP 变一个换行，TexDraw 变两个换行
+           4. 长对话 / 黑板不再继承上一条的 TextType
+           5. 选项 TextType 可省略、可只写其中几项
+           ============================================================ -->
+
+    <!-- ============ A 段：对话框，自动判断 ============ -->
+
+    <!-- A0：纯中文 → 期望 TMP（不出现 $\text{}$ 原始标记，字体为 TMP 字体） -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-0" NextId="TextTypeTest-MAINBRANCH-1">
+      <ChangeImageBackground BgImage="Black.png"/>
+      <Speak SpeakerName=" " Content="A0 纯中文：这一段没有公式，应该使用 TMP 渲染，不应出现美元符号或 text 命令。"/>
+    </PlotNode>
+
+    <!-- A1：中文夹一个行内公式 → 期望 TexDraw，公式正常显示为数学符号 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-1" NextId="TextTypeTest-MAINBRANCH-2">
+      <Speak SpeakerName=" " Content="A1 行内公式：当 $x^2+1=0$ 时，方程无实数解。"/>
+    </PlotNode>
+
+    <!-- A2：未闭合的美元符号 → 期望判为非公式，走 TMP，原样显示 $5 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-2" NextId="TextTypeTest-MAINBRANCH-3">
+      <Speak SpeakerName=" " Content="A2 未闭合符号：这件东西价格 $5，但不是公式，应该原样显示。"/>
+    </PlotNode>
+
+    <!-- A3：转义的美元符号 → 期望判为非公式，走 TMP -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-3" NextId="TextTypeTest-MAINBRANCH-4">
+      <Speak SpeakerName=" " Content="A3 转义符号：这里写 \$5 表示字面的美元，不应触发公式模式。"/>
+    </PlotNode>
+
+    <!-- A4：独立行间公式 $$...$$ → 期望 TexDraw -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-4" NextId="TextTypeTest-MAINBRANCH-5">
+      <Speak SpeakerName=" " Content="A4 行间公式：$$a^2+b^2=c^2$$"/>
+    </PlotNode>
+
+    <!-- A5：@@ 段落标记 + 纯文本 → 期望 TMP，@@ 变成一个换行 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-5" NextId="TextTypeTest-MAINBRANCH-6">
+      <Speak SpeakerName=" " Content="A5 段落标记：第一段@@第二段（TMP 下应换一行）"/>
+    </PlotNode>
+
+    <!-- A6：\\ 换行命令 → 期望 TMP，显示为真正的换行而不是两个反斜杠 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-6" NextId="TextTypeTest-MAINBRANCH-7">
+      <Speak SpeakerName=" " Content="A6 反斜杠换行：第一行\\第二行"/>
+    </PlotNode>
+
+    <!-- A7：中文 + 公式 + @@ 混合 → 期望 TexDraw，@@ 变成两个换行，中文逐字包装 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-7" NextId="TextTypeTest-MAINBRANCH-8">
+      <Speak SpeakerName=" " Content="A7 混合：前面是中文@@后面是公式 $E=mc^2$"/>
+    </PlotNode>
+
+    <!-- ============ B 段：对话框，显式指定 ============ -->
+
+    <!-- B0：显式 TMP + 公式 → 期望按 TMP 处理，原样显示 $x$ 不被渲染 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-8" NextId="TextTypeTest-MAINBRANCH-9">
+      <Speak SpeakerName=" " TextType="TMP" Content="B0 强制 TMP：这一行的 $x^2$ 应该原样显示成文本。"/>
+    </PlotNode>
+
+    <!-- B1：显式 TexDraw + 纯中文 → 期望走 TexDraw（中文会被逐字包装，视觉上仍正常） -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-9" NextId="TextTypeTest-MAINBRANCH-10">
+      <Speak SpeakerName=" " TextType="TexDraw" Content="B1 强制 TexDraw：这一行没有公式，但要求用 TEXDraw 渲染。"/>
+    </PlotNode>
+
+    <!-- B2：小写 tmp → 期望归一化为 TMP，行为同 B0 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-10" NextId="TextTypeTest-MAINBRANCH-11">
+      <Speak SpeakerName=" " TextType="tmp" Content="B2 小写类型：$y=mx+b$ 应该原样显示，证明大小写不敏感。"/>
+    </PlotNode>
+
+    <!-- B3：带空格的类型值 → 期望 Trim 后按 TMP 处理 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-11" NextId="TextTypeTest-MAINBRANCH-12">
+      <Speak SpeakerName=" " TextType=" TMP " Content="B3 带空格：类型值前后有空格，应该仍然按 TMP 处理，$z$ 原样显示。"/>
+    </PlotNode>
+
+    <!-- ============ C 段：长对话 ============ -->
+
+    <!-- C0：长对话纯中文 → 期望 TMP -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-12" NextId="TextTypeTest-MAINBRANCH-13">
+      <LongSpeak Continue="0" Content="C0 长对话纯中文：这是一段长对话内容，没有公式，期望用 TMP 渲染。@@这是加了段落标记的第二段。"/>
+    </PlotNode>
+
+    <!-- C1：长对话含公式 → 期望 TexDraw -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-13" NextId="TextTypeTest-MAINBRANCH-14">
+      <LongSpeak Continue="0" Content="C1 长对话公式：根据质能方程 $E=mc^2$，可以得出……期望这一段用 TEXDraw 渲染。"/>
+    </PlotNode>
+
+    <!-- C2：长对话显式 TMP + 公式 → 期望原样显示 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-14" NextId="TextTypeTest-MAINBRANCH-15">
+      <LongSpeak Continue="0" TextType="TMP" Content="C2 长对话强制 TMP：$a+b$ 应该原样显示为文本。"/>
+    </PlotNode>
+
+    <!-- C3：长对话显式 Image → 期望显示 LongSpeakImage 目录下的图片（与文本类型无关） -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-15" NextId="TextTypeTest-MAINBRANCH-16">
+      <LongSpeak Continue="0" TextType="Image" Content="fig11.png" Rate="0.2"/>
+    </PlotNode>
+
+    <!-- ============ D 段：黑板 ============ -->
+
+    <!-- D0：黑板纯中文（上一条是公式，验证不再继承类型）→ 期望 TMP -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-16" NextId="TextTypeTest-MAINBRANCH-17">
+      <Blackboard Content="D0 黑板纯中文：上一段是公式，这里没有公式，应该回落到 TMP。" PosInfo="UpperCenter" SizeX="0.6" SizeY="0.5" Continue="0"/>
+    </PlotNode>
+
+    <!-- D1：黑板含公式 → 期望 TexDraw -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-17" NextId="TextTypeTest-MAINBRANCH-18">
+      <Blackboard Content="D1 黑板公式：积分 $\int_0^1 x^2 dx = \frac{1}{3}$ 的结果。" PosInfo="UpperCenter" SizeX="0.6" SizeY="0.5" Continue="0"/>
+    </PlotNode>
+
+    <!-- D2：黑板显式 TMP + 公式 → 期望原样显示 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-18" NextId="TextTypeTest-MAINBRANCH-19">
+      <Blackboard Content="D2 黑板强制 TMP：$\alpha+\beta$ 原样显示。" TextType="TMP" PosInfo="UpperCenter" SizeX="0.6" SizeY="0.5" Continue="0"/>
+    </PlotNode>
+
+    <!-- D3：不带 Content 的关闭命令 → 期望只关黑板，不报错、不追加空内容 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-19" NextId="TextTypeTest-MAINBRANCH-20">
+      <Blackboard BlackboardState="0"/>
+      <Speak SpeakerName=" " Content="D3 黑板已关闭。如果这一行正常出现，说明无内容命令没有触发空渲染。"/>
+    </PlotNode>
+
+    <!-- ============ E 段：选项 ============
+
+         注意：框架的 LayerShower 会先把 ChoiceLayer 关掉再按命令打开，
+         上一组按钮点击后又会在 Forward 之后 SetActive(false)，
+         所以「连续两个 Choice 节点」在现有框架里显示不出来（第二个不弹）。
+         这里把三组用例合并成一组 6 个选项：
+           选项1 纯中文                      → 自动 TMP
+           选项2 含公式 $x^2$                → 自动 TexDraw
+           选项3 纯中文                      → 自动 TMP
+           选项4 显式 TMP + 公式             → 原样显示（大小写不敏感）
+           选项5 TextType 只写一项（第 6 项留空）→ 不报错，留空项自动判断
+           选项6 显式 TexDraw + 纯中文       → 走 TEXDraw
+         点任意一个都进入 E1 节点。 -->
+
+    <PlotNode Id="TextTypeTest-MAINBRANCH-20" NextId="TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21">
+      <Speak SpeakerName=" " Content="E0 六个选项：1/3 纯中文（自动 TMP），2 含公式（自动 TexDraw），4 强制 tmp，5/6 验证缺项与强制 TexDraw。点任意一个都进入下一句。"/>
+      <Choice NextId="TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21%%TextTypeTest-MAINBRANCH-21"
+              TextType="%%  %%%%TMP%%%%TexDraw"
+              Content="一：纯中文%%二：含公式 $x^2$%%三：也是纯中文%%四：强制 tmp，$a^2$ 原样显示%%五：缺项自动判断%%六：强制 TexDraw 的纯中文"/>
+    </PlotNode>
+
+    <!-- E1：结束 -->
+    <PlotNode Id="TextTypeTest-MAINBRANCH-21" NextId="GAMEFINISH">
+      <Speak SpeakerName=" " Content="测试结束。若以上每一段都按预期渲染，说明 TextType 自动识别与显式指定均已生效。"/>
+    </PlotNode>
+
+  </MainPlot>
+</Root>

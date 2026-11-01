@@ -1,0 +1,18 @@
+﻿================ LHGF Error Log ================
+Time:    2026-10-25 15:16:35
+Version: 1.0
+Unity:   2022.3.54f1c1
+Platform:WindowsEditor
+OS:      Windows 11  (10.0.26200) 64bit
+Log dir: F:\Unity\LHGF2609\ErrorLog
+=================================================
+
+[15:16:35.113][Error][+87.34s] No Locale could be selected:
+No Locales were available. Did you build the Addressables?
+The following (3) IStartupLocaleSelectors were used:
+	UnityEngine.Localization.Settings.CommandLineLocaleSelector
+	UnityEngine.Localization.Settings.SystemLocaleSelector
+	UnityEngine.Localization.Settings.SpecificLocaleSelector
+
+UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&)
+-----------------------------------------------

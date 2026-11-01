@@ -1,0 +1,24 @@
+﻿================ LHGF Error Log ================
+Time:    2026-10-25 15:11:21
+Version: 1.0
+Unity:   2022.3.54f1c1
+Platform:WindowsEditor
+OS:      Windows 11  (10.0.26200) 64bit
+Log dir: F:\Unity\LHGF2609\ErrorLog
+=================================================
+
+[15:11:21.908][Exception][+33.72s] NullReferenceException: Object reference not set to an instance of an object
+LHGFLongDialogLayerControler._AddTextContent (LHGFData.LongDialogLayer+LongSpeakData longSpeakData, System.Boolean IsSkip) (at Assets/HGF/Scripts/Structure_New/Layers/LongDialogLayer/LHGFLongDialogLayerControler.cs:50)
+LHGFLongDialogLayerControler.AddTextContent (System.Collections.Generic.List`1[T] longSpeakDatas, System.Boolean IsOnLoad) (at Assets/HGF/Scripts/Structure_New/Layers/LongDialogLayer/LHGFLongDialogLayerControler.cs:77)
+LHGFData.LongDialogLayer.Next (LHGFData.LayerCommand command) (at Assets/HGF/Scripts/Structure_New/Layers/LongDialogLayer/LHGFLongDialogLayer.cs:122)
+LHGFGameProgress.LHGF_GameProgress.Forward (LHGFGameProgress.LHGF_GameData data) (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameProgress.cs:204)
+LHGFGameMain.Forward () (at Assets/HGF/Scripts/Structure_New/Progress/LHGFGameMain.cs:161)
+LHGFMainScenceControler.<Start>b__22_0 () (at Assets/HGF/Scripts/Structure_New/Progress/Menu/LHGFMainScenceControler.cs:46)
+UnityEngine.Events.InvokableCall.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.Events.UnityEvent.Invoke () (at <0c06aab94fea47c687b0fd311c155d5a>:0)
+UnityEngine.UI.Button.Press () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:70)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs:114)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:57)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+-----------------------------------------------

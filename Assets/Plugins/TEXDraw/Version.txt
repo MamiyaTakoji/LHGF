@@ -1,0 +1,611 @@
+﻿
+CURRENT VERSION --------------------------------------------
+
+TEXDraw 6.0.4-BETA
+June 29, 2022
+
+RELEASE NOTES -----------------------------------
+
+6.0.4 - Apr 10, 2022: 
+> SUMMARY: Patch fixes on rendering and text inside math
+
++ NEW: Support for under/overarrows and under/overset
++ NEW: Support for adding custom vertical space in softbreaks and table breaks
++ CHANGE: Minimum Unity version now is 2019.4 (LTS)
++ CHANGE: Fraction without brackets is now made consistent with LaTeX behavior
++ CHANGE: Added vertical spacing for each line in align environment 
++ FIX: Use float parsing with invariant culture
++ FIX: Rotated character display with TextMeshPro
++ FIX: Keep centering tables when width is too short
++ FIX: Dash (emdash and endash) ligatures
++ FIX: Better font display in TEXDraw Preference editor
+
+6.0.3 - Apr 10, 2022: 
+> SUMMARY: Patch fixes on rendering and text inside math
+
++ NEW: \text and support for text mode inside math
++ NEW: Optional config toggle to disable centering in math block
++ CHANGE: Pair delimiter symbol type will be overrided for consistent spacing
++ FIX: Fraction line not displayed on initial render
++ FIX: Better detection between minus and negative sign
++ FIX: Set math functions type as punctuation (for better spacing)
++ FIX: Better complex root height by manual calibration
++ FIX: Complex root size too big when inside a fraction
++ FIX: Removed unnecessary additional height on inlined display math block
++ FIX: Removed unnecessary fraction clearance inside nested fraction
++ FIX: Equalized superscript offset by line median
+
+6.0.2 - Mar 1, 2022: 
+> SUMMARY: Patch fixes and new input system integration
+
++ NEW: Support for new Input System in TEXLink
++ NEW: Support for non alpha-only sprite
++ NEW: \ulink for link with underlines
++ NEW: TEXLink interaction padding
++ NEW: Negative thin space command (\!)
++ FIX: Improper masking for TEXDraw UI at startup
++ FIX: Swapped medium and thick space values
++ FIX: Math mode reverted with usage of some commands
+
+6.0.1 - Jan 8, 2022: 
+> SUMMARY: Patch fixes and new editor feature
+
++ NEW: Dedicated LaTeX Editor Window
++ NEW: Special code for converting Unicode scripts
++ NEW: Added medium and thick blank space command
++ NEW: Added separate tabular padding width for matrices
++ NEW: Support for multi atlas in TMP dynamic rendering
++ CHANGE: ScrollArea attribute is now hidden from inspector
++ FIX: Handle a blank space inside limsup & liminf
++ FIX: tabular interpreter is messed up with scripts
++ FIX: Set matrix alignment back to center
++ FIX: Delimited matrix is not vertically aligned correctly
++ FIX: Superscript margin set too low
++ FIX: Importing progress bar display
+
+6.0 - Jan 2, 2022: 
+> SUMMARY: Big Stability while Getting Closer to LaTeX
+
++ NEW: Add new scene samples
++ NEW: Support for TMP dynamic rendering 
++ NEW: \justifying to enable justify alignment
++ NEW: TEXEmbed Component for embedding a UI inside TEXDraw flow
++ NEW: "array" environment for inline tables/stacked math
++ NEW: Ability for proper indenting in itemize and enumerate
++ NEW: Support for omitting symbol in \left or \right using dot char
++ NEW: Ability to combine font styles (bfseries, itshape, etc.)
++ NEW: Added math fonts functions (mathbb, mathrm, mathcal, etc.)
++ NEW: Added overridable symbol type macros (mathord, mathbin, etc.)
++ NEW: Added more limit operator (det, min, max, Pr, etc.)
++ NEW: Added cfrac (continous fraction), smallmatrix, binom (latex \choose)
++ NEW: Added limit overrides (ie. limits and nolimits option) for big operators
++ NEW: Added raisebox and kern commands, also enabling macros like \TeX and \LaTeX 
++ NEW: Support for normalfont, setlength, vcenter and vtop command
++ NEW: Support for flexible column and double border style in tabular mode
++ CHANGE: Upper greek in math mode is set upright (was slanted)
++ CHANGE: Auto delimiters now aligned properly with baseline
++ CHANGE: Synchronized "pt" definition across configuration
++ CHANGE: Moderate display adjustment for big operator, scripts, fraction
++ CHANGE: Glue spaces now using specified thin, medium, thick space
++ CHANGE: Added paragraph space after block math or tabular
++ FIX: TEXDraw layout not updating after window resizing
++ FIX: Added lead offset for integral symbols
++ FIX: Accent followed by whitespace is not discarded
++ FIX: Can't do justify when breaking words with hyphen
++ FIX: Properly implement cramped mode in fractions
++ FIX: Fraction styling is not applied with \over command
++ FIX: TEXDraw 3D wasn't cleaning old render properly
++ FIX: Removed extra space in paragraphs for too-wide tabular column bugfix
++ FIX: Rare macros layoutcontent append bug with delimiters
++ FIX: Broken some symbol definitions (langle, lvert, etc.)
+
+5.6 - Oct 26, 2021:
+> SUMMARY: Unicode Auto Converter
+
++ NEW: Automatically recognize Unicode to appropriate latex symbols
++ NEW: Add an option to disable Unicode recognition (enabled by default for opens)
++ NEW: Complete support for LaTeX based accents
++ NEW: i and j with accents is substituted with dotless i or j
++ CHANGE: Math Functions is now assumed as an operator (adding extra spaces)
++ FIX: Greater than, Less than, Underscore symbol fix in text mode
++ FIX: Set arrow symbols as relations (from operators)
++ FIX: Removed extra space when using empty base scripts
++ FIX: Compress iconic on build
+
+5.5 - Aug 27, 2021:
+> SUMMARY: Consistency improvements
+
++ NEW: Improved consistency for flexible width/height for layout
++ NEW: Ability to breaks word with a hyphen (- or \-)
++ NEW: Torture test scene (for compatibility with other LaTeX interpreters)
++ NEW: Help URL link in inspector now leads to the documentation page
++ CHANGE: Use DownScale overflow mode to preserve aspect ratio with CSF
++ CHANGE: Negate atom uses negated symbol now for correct display (eg. \neq)
++ FIX: NullException error on an incomplete root
++ FIX: Incorrect vertical center of fraction
++ FIX: Rendering update call inconsistency in the editor
++ FIX: Improved TMP rendering with proper padding
++ FIX: Atom glues is now properly set with their respective types
+
+5.4 - Jun 29, 2021:
+> SUMMARY: Performance improvements and bugfixes
+
++ NEW: Improved loading performance by reusing shared parser instance across runtime
++ NEW: Improved documentation
++ FIX: Incorrect fit scaling offset
++ FIX: Inconsistencies in TEXConfiguration due to canvas.ScaleFactor
++ FIX: Corrected Glue editor and line median default
++ FIX: AssetImporter namespace change for Unity 2020.2+
+
+5.3 - Mar 25, 2021:
+> SUMMARY: Update to introduce overflow modes
+
++ NEW: Four modes of overflow modes (hidden, visible, downscale, best fit)
++ NEW: Hidden overflow mode now able to crop automatically without RectMask2D
++ FIX: Spamming errors due to Invalid RectTransform
++ FIX:  Exceptions due to corner cases in TEXInput
+
+5.2 - Feb 5, 2021:
+> SUMMARY: No new features but important bugfixes
+
++ NEW: minipage enviroment
++ FIX: Updated scene examples
++ FIX: SDF Importing errors due to recent changes with TMP (don't forget to update your TMP!)
++ FIX: Slow rendering due to excess garbage collection
++ FIX: Incorrect delimiter extension calculation (was extending too much)
++ FIX: Smarter Word lookup (\right lookup was incorrectly matches ex. \rightmoon)
+
+5.1 - Nov 15, 2020:
+> SUMMARY: Fixes couple of new features (primarily in table) that was unfinished during 5.0 work
+
++ NEW: Table lines (currently only support basic/uniform, not partial line)
++ NEW: Can adjust table cell width and make it word-wrappable
++ NEW: Heavily improved TEXInput behaviour (still need more improvement)
++ CHANGE: Default TEXDraw font size increased from 16 to 36
++ CHANGE: All blank space in math mode now ignored (conforms latex behavior)
++ CHANGE: Removed escape input/navigation config in TEXInput
++ FIX: Corrected excess line height when on script mode
++ FIX: Glue padding in most math expression now has been corrected
++ FIX: Typescript mode was not working due to incorrect font variant order in config
++ FIX: Improved TEXDraw engine handling corner cases input
+
+5.0.2 - Oct 2, 2020:
+> Add Open Sans and fixed compiling issues with 2020.x
+
+5.0.1 - July 16, 2020:
+> Fixed Importing and Rendering Issues with TextMeshPro
+
+5.0 - July 10, 2020:
+> SUMMARY: This is a major version upgrade with engine code restarted from stratch.
+> A lot stuff breaks with previous version, please make backups and read the documentation for upgrade steps.
+
+Because this is a very long and overdue changes (over two years!),
+we split this release note into two sections:
+
+Changes to the product:
+- NEW: Unity 2019 LTS and SRP Support (HDRP and URP)
+- NEW: TEXScroll for built-in scroll interactivity
+- NEW: Padding and scroll area parameter in TEXDraw component
+- NEW: Added more 16 font variants (mostly new font style combinations)
+- NEW: Web based documentation (and dropping PDF-based documentation)
+- NEW: TEXDraw now auto-clips out-of-bound quads (saving rendering time)
+- NEW: New syntaxes that mostly compatible with LaTeX in other softwares
+- NEW: Command aliases and macros in TEXConfiguration for easy extension
+- NEW: Better debugging features (available when activating TEXDRAW_DEBUG)
+- CHANGE: Relocated to Plugins directory
+- CHANGE: Updated minimum version to Unity 2019.3
+- CHANGE: Major adjustments on how TEXInput works
+- CHANGE: Dropped support for .NET 3.5
+- CHANGE: Dropped custom shaders (might restored later)
+- CHANGE: Dropped support for RTL and NGUI (might restored later)
+- CHANGE: Dropped font limit (was 31); it's now unlimited virtually
+- CHANGE: Dropped TEX Supplements and Vertex Modifers (might restored later)
+- CHANGE: Dropped support for auto highlighting editor (might restored later)
+- CHANGE: Dropped support for auto-fit modes (might be restored later)
+- CHANGE: Dropped support for auto-wrap modes (use built-in UI components instead)
+- CHANGE: Dropped support for auto-fill modes (as vertex modifiers has been dropped)
+- CHANGE: Dropped material management (no longer needs as no need custom shaders)
+- CHANGE: Dropped second symbol name for characters (in favor of new symbol aliases)
+- CHANGE: All parameters in TEXConfiguration has been relocated and renamed
+- CHANGE: Separating non-essential built-in fonts to Fonts/Extras folder (it's safe to delete them)
+- FIX: TextMeshPro Support for latest version
+- FIX: Cropped character selections in TEXPreference Editor
+- FIX: Some updates to example scenes; Might feel different than previous version
+- FIX: Some operation like undo or save shortcut is not working inside TEXDraw text editor
+
+Changes to the syntax and its features:
+- NEW: Ligatures support in text mode
+- NEW: TeX comments using percent (%) or comment env
+- NEW: Environment blocks, begin and ends with \begin{env}...\end{env}
+- NEW: Built-in numbering and bullets using enumerate and itemize envs
+- NEW: Built-in tabular env with column aligment and macros
+- NEW: Use pair of $ for inline math mode and $$ for block math mode
+- NEW: Use \\ for soft line break and \par for forcing new paragraph
+- NEW: Font size aliases, namely from \tiny, \small until \HUGE
+- NEW: Use \over for \frac without separate braces, e.g. {2\over3}
+- NEW: Built-in raw syntax mode using \verb and \begin{code} envs
+- NEW: Support for string processors (\uppercase, \lowercase, \roman etc.)
+- NEW: Supported environments include math, code, tabular, itemize, matrix, etc.
+- NEW: Support for manual adapting delimiter sizes using \big, \bigg, \Bigg, etc.
+- NEW: Support for aligning math syntax over multiple lines using \begin{align*} env
+- NEW: Support for unit metrics (pt, px, em, mm, etc. available for \size, \hbox, etc.)
+- NEW: Support for counter atoms (\the, \advance, \count etc.) used internally for enumerate env
+- NEW: \hbox, \hss, \hfil, \hfill and their vertical variants (this replaces \hold previously)
+- CHANGE: New text mode is used as the default mode
+- CHANGE: Dropped generic roots (might restored later)
+- CHANGE: Consecutive blank spaces is assumed as single space
+- CHANGE: Consecutive blank lines is assumed as separate paragrah
+- CHANGE: Dropped \clr and \mclr, use \color with braces instead
+- CHANGE: Renamed \over and \under to \overline and \underline
+- CHANGE: Use \\ for matrix/table new row, rather than |, previously
+- CHANGE: Big operators and \lim now use different style when using inline math
+- CHANGE: Use \raggedleft, \raggedright and \centering as a way to change aligment
+- CHANGE: Unknown command now discarded or invisible instead of treated as math functions
+- CHANGE: Dropped line shift using \size with braces (also it's now alias to \fontsize)
+- CHANGE: Dropped \meta, \trs, \hold, \border, \bg as is was unstandard (might restored later)
+- CHANGE: Dropped \table and \matrix, use \begin{tabular} and \begin{matrix} envs respectively
+- CHANGE: Dropped Auto adapting delimiter sizes, explicitly use \left and \right instead
+
+
+4.4 - June 18, 2018:
+> SUMMARY: New feature TEXInput allows user to edit TEXDraw in runtime.
+> Also added more Scripting API and bugfixes to ease TEXDraw integration.
+
+- NEW: Use double braces in TEXInput to lock/prevent modifications for specific syntax
+- NEW: Support for Unity UI RectMask2D
+- FIX: Improved TEXInput regex bracket matching
+- FIX: Incorrect color cache invalidation
+- FIX: Improved Editor material validation wording
+- FIX: Threading issue when enabling TMP Integration
+
+4.3 - March 31, 2018: The New Input System
+> SUMMARY: New feature TEXInput allows user to edit TEXDraw in runtime.
+> Also added more Scripting API and bugfixes to ease TEXDraw integration.
+
+- NEW: TEXInput to allow users edit and input expressions in runtime
+- NEW: TEXInputCursor + TEXInputLogger (additional components accompanying TEXInput)
+- NEW: Sample scene for TEXInput demonstration
+- NEW: \vlink to create links without input box margin
+- NEW: FillHelper.ReadMesh + DrawingParams.GetAreaXXX()
+- NEW: "Copy Raw Syntax" dropdown button in TEXDraw and TEXDraw 3D
+- NEW: \meta[font=xxx] where xxx is font name (was only allowed as font index)
+- CHANGE: \meta[] short tokens are deprecated
+- CHANGE: \hold without specifying minimum size will no longer recenter the expression inside
+- CHANGE: TEXDRAW_PROFILE renamed to TEXDRAW_DEBUG and more debug-only features covered behind the flag
+- FIX: \<fontid> without style throws IndexOutOfRangeException
+- FIX: empty {} creates an extra whitespace (TEXInput)
+- FIX: Character kerning get lost if wrapped in specific attributes
+- FIX: \meta[font=xxx] is not working properly
+- FIX: TEXLink didn't listening to UI RaycastTarget
+- FIX: EditorTEXFontSwapper throw null errors
+- FIX: Visual Studio can't debug nor compile because of TEXDraw code
+- FIX: Compiler error on Build and TEXDRAW_TMP (v4.2 regression)
+
+4.2 - March 7, 2018: Extension got Extended
+> SUMMARY: Fixes bugs appearing in supplements and former examples.
+> Now it's possible to type Rich Tag (HTML) and Markdown in TEXDraw.
+
+- NEW: TexSupTranslator to transpile Basic HTML + Markdown into LaTeX.
+- NEW: Example scene for demonstrating HTML and Markdown syntax in TEXDraw
+- NEW: Set a custom cursor when mouse hovering a link in TEXLink
+- NEW: Showcase example now navigatable in gameplay using arrow keys
+- CHANGE: Braces {} without commands will *group* the text (hence prevent wrapping)
+- CHANGE: Math number is now set back as `cmr` (was using `cmmi`)
+- CHANGE: \ulink now removes its additional margin for underline
+- FIX: Incosistent wrapping using \size and \style in particular cases
+- FIX: Missing normal + tangents when using Surface Shaders
+- FIX: Missing `DontSave` flags for generated mesh in TEXDraw 3D
+- FIX: Remove Skies on example scenes
+- FIX: Tooltips on TEXLink inspector
+- FIX: Errors in TEXSupTransformFill
+- FIX: Outdated NGUI Shaders and Scroll View
+
+4.1 - February 3, 2018: Bugfixes
+> SUMMARY: The code that handles layout is more readable and
+> it's possible to make more consistent line height across components.
+
+- NEW: Set minimum height and depth in each line via TEXConfiguration
+- CHANGE: Deprecate individual `space size` in favor to `line space` metric in TEXConfiguration
+- FIX: Text don't wrap (again) if wrapped inside \font, \math, \size, \style, \color
+- FIX: NullReferenceException in \hold and scripts with empty parameters
+- FIX: Sprites with unknown char will have warning instead of throwing error to console.
+- FIX: Editor character map don't clamp on navigation via keyboard
+
+4.0 - January 1, 2018: Negative Code
+> SUMMARY: This version aims to increase the readability of TEXDraw codebase by removing old
+> code and logics. This results in improvements in many areas including build size and performance.
+
+- NEW: \style[] to change font bold/italic styling
+- NEW: \border[] to add box border (can be customized)
+- NEW: 'Automatic' TMP and NGUI integration, with single click
+- CHANGE: Sprites now must be imported with unity's multisprite editor
+- CHANGE: Minimum unity version leveled up from 5.2.1 to 5.6.0p3
+- CHANGE: UV2 moved to UV3 and Tangents moved to UV2
+- CHANGE: Font metadata now implented as different inheritance based on asset type
+- CHANGE: TEXPreference.main is a field (loaded eagerly by TEXDraw components)
+- CHANGE: XML data is removed
+- CHANGE: Removed Emit logic/speedhack (unreliable)
+- CHANGE: TexSupFixTMP and TexSupTransformFollow is obsoleted (now handled automatically)
+- FIX: Removed unnecessary heavy payload in TEXDraw metadata on build
+- FIX: Corrupt graphics because transformation of tangents
+- FIX: Code cleanup (over +2500 lines of code get stripped)
+- FIX: Faster font metadata rebuild
+- FIX: NGUI shaders not included in build
+- FIX: Shader warning at import for 5.6 and up
+
+3.8 - June 17, 2017: Easebility
+- NEW: TexSupTranslator to translate different popular text syntaxes!
+- NEW: \size[] for reset scale to absolute 1
+- NEW: \sqrt for \root equivalent
+- CHANGE: Documentation is split to two: Manual & Reference
+- CHANGE: New syntax & fix issues for importing custom characters
+- FIX: 5.6 Compiler error with TMP integration
+- FIX: \nfrac now have consistent margins with FractionGapNoLine
+- FIX: Issue of Reversed wrapping justified with best fit.
+- FIX: TexSupLinkAsLayouter doesn't scale with canvas.scaleFactor
+- FIX: Improvements in RTL Bidirectional Detection
+
+
+3.7 - May 10, 2017: Another urgent fixes
+- NEW: \meta's new wrap parameter
+- FIX: Rebuilding font doesn't reupdate its font index
+- FIX: NGUI depth issue and update to recent version
+- FIX: font eufm is not listed in font stack at import
+- FIX: several improvements in TEXSupLinkAsLayouter
+- FIX: now TEXSupLinkAsLayouter, TEXSupTransformFollow, TEXSupRTLSupport, TEXSupDepthEffect is marked as stable
+
+3.6 - May 4, 2017: Rolling for Unity 5.6
+- NEW: TEXSupLinkAsLayouter for bind UI transforms to given links
+- NEW: \hold[x,y] for fixed size in both width and height
+- NEW: Major performance improvement in post-effects for 5.6 using new Mesh.Get API
+- NEW: orientation marker with \rtl and \ltr. Only used when Bidirectional RTL is enabled.
+- CHANGE: Now users will warned to add TexSupTransformFollow if they rotate TEXDraw UI without tangent fixer in editor
+- CHANGE: TEXDraw's custom material editor will no longer appear in 5.6 because the inspector have do it already
+- FIX: Compability issue for Unity 5.6 and 2017.1 beta
+- FIX: In 5.6, set canvas AdditionalShaderChannels automatically when using TEXDraw
+- FIX: Rotation fixer of TexSupTransformFollow now calculate correctly when canvas is set to world and rotated
+- FIX: Bidirectional RTL is now completed and can parse expression correctly
+
+
+3.5 - April 22, 2017: Stability bugfixes
+- NEW: Repolished example (demo) scene
+- NEW: Use triple scripts ^^^ or ___ for smaller over/underscript
+- NEW: \bg or \vbg for drawing background colors below given expression
+- NEW: Exposed debugging tools available in TexConfiguration
+- FIX: missing symbol \angle and others in both config and XML
+- FIX: Bidirectional RTL feature isn't smart enough
+- FIX: Regex issue with TexSupNewLine
+- FIX: \vhold now can extend on fixed height correctly
+
+3.4 - March 30, 2017: RTL & Samples Development
+- NEW: RTL support as an supplement with Arabic and Persian support from external code source.
+- NEW: Reversed wrapping modes for RTL text (this is optional, so need to be toggled on first on menus).
+- NEW: Few example scenes with some improvements
+- NEW: Benchmark tool now measures supplement and posteffects too
+- NEW: TexSupTransformFollow contains fix for UI rotation glitches
+- NEW: TexConfiguration for a new and consistent way to save and adjust configurations
+- NEW: TEXDraw editor accepts Tab characters, though requires supplement to make it work properly
+- NEW: Menu toggles for more ease to integrate with other assets
+- NEW: Up to 25% boxing speed improvement for Non-AOT platfroms (credit to FastReflector by vexe)
+- CHANGE: Added and changed some options in TexConfiguration compared from the old one.
+- CHANGE: Editor changes made in TEXPreference editor for more readable code and layout
+- CHANGE: Restoring a missing change from V3.0 (Color console palette)
+- CHANGE: \text now support styling and now follows the font which choosed in the component instead
+- CHANGE: scripted \hold with big-operator now no longer change to under-overscript for consistency
+- CHANGE: Parser now ignore '\r' char so CRLF characters won't print an unwanted blank space
+- FIX: Justify with right-aligned text is misaligned
+- FIX: TEXPreference can't be fully recovered when accidentally deleted/corrupt
+- FIX: Aspect ratio was ignored when previewing characters in preference
+- FIX: MeshEffect spamming error in console when saved inside of prefab
+- FIX: Unnecessary usings and files in source (good for VSCode users)
+- FIX: Editor of supplements isn't available for multiple edit
+- FIX: API updater is triggered when imported to Unity +5.5
+
+3.3 - March 16, 2017: Supplement Upgrade
+- NEW: A new example scene for keeping formulas in the game
+- NEW: Reset button in preference context menu (suitable if you really stuck in a problem)
+- NEW: Editor and additional notes for each supplement
+- NEW: Editor toggle for showing supplement info, optionally (show is default)
+- NEW: TEXSupDepthEffect for giving a depth effect for 3D Based UI
+- NEW: TEXSupTrimSpaces for cleaning unneeded spaces in each paragraph
+- NEW: (Undocumented yet) Modifiable template for creating TEXDraw objects (can be accessed via menu)
+- FIX: Dirty isn't flagged at import which result in Font meta data won't be saved
+- FIX: Dirty isn't flagged at editor change which result in Font meta data won't be saved
+- FIX: (Only in editor) Shadow & Other built-in UI effect is not picked up automatically
+- FIX: console errors isn't readable enough
+- FIX: Possible error on internal part of SerializedDictionary
+
+3.2 – Feb 18, 2017: Demo Released
+- NEW: Demo (Windows build) is released for asset demonstration
+- CHANGE: Integral over/underscript now aligned automatically
+- CHANGE: Script without base will be right-aligned (useful for script-before-base cases)
+- FIX: Infinite stack overflow when backslash typed after scripts
+- FIX: ‘Iconic’ asset compression setting
+
+3.1 - Feb 2, 2017: Bug Sweeping
+- NEW: Basic Editor for TEXFont arbitrary assets
+- NEW: Extra editor info for font import setup
+- CHANGE: Importer will throw warn in console, if '-Regular' is used in font name
+- FIX: Delimiter is not growing in particular cases
+- FIX: Updated NGUI Scripts & Mask Shaders
+- FIX: Build compilation exception & warning
+- FIX: EOL consistency issue in script
+- FIX: Preference will marked as 'dirty' after reimporting fonts.
+
+3.0 – Dec 31, 2016: Repolished API
+- NEW: Built-in TextMeshPro Integration
+- NEW: Built-in SDF Importer and Shader for TMP Integration
+- NEW: \meta command to apply paragraph-wide styling setting
+- NEW: Rootsign of \root can be changed
+- NEW: \hold command to reserve a fixed amount of space
+- NEW: \trs and \mtrs to apply 3D transformation on character
+- NEW: Best Fit mode in Autofit
+- NEW: Local Continous and World Continus in Autofill Options
+- NEW: 7 Additional supplements in package
+- NEW: TEXDraw 3D accepts Rect Transform
+- NEW: TEXDraw Menu items in Tools/TEXDraw
+- NEW: Customizable character sets
+- NEW: Benchmark tool, Font Swapper tool, and many else
+- NEW: Material Assistant for quick management of different Materials
+- NEW: Rebuild material now automatically choose best samples if available
+- CHANGE: Improved TexDrawPerCharacterBase regex filter
+- CHANGE: UV2 and tangents data is swapped for consistency
+- CHANGE: Redefinition of \clr console color choices for consistency
+- CHANGE: Deprecation of XML Data, through it is still supported to read from
+- CHANGE: FontData now separated from Preference for data consistency
+- CHANGE: TEXDraw no longer checks for UI mesh effect every rebuild time
+- CHANGE: TEXDraw Preference now saved in Resource
+- CHANGE: Improved TEXDraw 3D Editor
+- CHANGE: Tables now only add outer border if necessary
+- CHANGE: Renamed ‘4 Passes’ to ‘Full’, and ‘X Passes’ to ‘X Samples’
+- CHANGE: Fonts that have incompatible character will be ignored
+- CHANGE: Font texture will resized if rescaled to keep it crisp on screen
+- FIX: Unity 5.6 Compatibility
+- FIX: TEXDraw 3D double render issue in some frequent cases
+- FIX: Delimiters now can consistently grow bigger if necessary
+- FIX: Scripts now consistent with unbraced expressions
+- FIX: Accents now only wrap more than a character if it braced
+- FIX: Preference now do null checks before previewing fonts
+- FIX: Small performance improvement on rebuild time
+
+2.7 – Oct 1, 2016: Improved Editor & API
+- NEW: TEXDrawSupplement API to modify text similar to UI effects
+- NEW: 4 Built-in Supplements component
+- NEW: Editor Highlight system for text property
+- NEW: \size[.] will decrease font size into scripts level
+- CHANGE: Splitting of parser script for ease of customization
+- CHANGE: Debug Information now hiding if there is no problem
+- CHANGE: One hex letter \color code now follows modified 4-bit colorful index
+- CHANGE: Vertical delimiter now be rotated if used as horizontal delimiter
+- CHANGE: font size texture is limited to 1024, prevent memory crashes
+- FIX: Eliminating use of System.Linq for all runtime scripts
+- FIX: Optimized Parser, minimum usage for StringBuilder
+- FIX: Nested script no longer need to braced separately
+- FIX: Editor improvements for NGUI extension
+- FIX: Unity 5.5 compatibility
+- FIX: \color glitch when resizing UI
+- FIX: symbol definition for \angle
+- FIX: Horizontal Extension’s width shows less than actual requirement
+- FIX: Preference font preview sometimes not match with inspected font
+
+2.6 – Aug 8, 2016: Parser Stability
+- NEW: Parser now more tolerant to incomplete typos
+- NEW: Braces after commands is now optional
+- NEW: Font styling (Bold/Italic) included in custom font tags (\font)
+- NEW: Accents can hold by more than one character
+- NEW: Bump Lit shader
+- NEW: Support for Horizontal Extension
+- NEW: \math for turning off modified custom font tag
+- NEW: offset control for \size
+- NEW: Showcase example scene
+- NEW: Added (Bonus) Editor pool check for checking pooled resources
+- CHANGE: 2 user fonts now changed into more useful one
+- CHANGE: behavior when imports configuration in XML files (and upgrading process)
+- CHANGE: \not now have a very extensive customization
+- CHANGE: Characters now used pixel-perfect font size according to their actual size
+- CHANGE: Shader now wrapped in one .cginc file, improves shader readability
+- FIX: Faster and less GC overhead when parsing string
+- FIX: NGUI Extension Glitch 'IM HIT'
+- FIX: \text and \font doesn't parsing backslashes
+- FIX: radical top line floats in incorrect position
+- FIX: issue with Unicode characters
+- FIX: \font and \color isn’t able to wrap
+- FIX: nested delimiter doesn't expand it's height
+- FIX: Unicode characters still do incorrect glyph sizes
+- FIX: Unicode not working in inside \font block
+- FIX: Progress bar doesn’t update when Preference imports
+
+2.5 – Jul 28, 2016: Interactive Link
+- NEW: Official support for NGUI, included as an external .unitypackage file
+- NEW: UV3 filling, unlocking many shader features and variants
+- NEW: Gradient and Texture overlay shader for TEXDraw
+- NEW: TEXLink component, put links over TEXDraw!
+- NEW: Underline and overlined text style
+- NEW: Color command variants (\clr and \mclr)
+- NEW: \size command for having variant in sizes.
+- CHANGE: Improved autofit mode
+- CHANGE: straight lines now rendered last
+- CHANGE: shader paths now detached from GUI\..
+- CHANGE: Latin symbol now follow their override font, not the default math rule.
+- FIX (critical): incorrect glyph sizes on large characters
+- FIX: Improved performance, only few bytes GC inprints on repaint.
+- FIX: Pixel-perfect behaviour for UI
+- FIX: Pathfinding of  Preference is now automated
+- FIX: Compatibility for Webplayer
+
+2.4 – Jun 20, 2016: Sprite Import
+- NEW: Import sprites as grid-based characters
+- NEW: HTML names for \color
+- NEW: more scene example and improved stress test scene.
+- CHANGE: Shaders now split into 4 passes
+- CHANGE: Increasing font limit from 15 to 31 fonts.
+- CHANGE: Tabbed Symbols tab on preference
+- CHANGE: Removal of Shadow lit
+- FIX: Improved Performance, more less GC overhead at render.
+
+2.3 – Apr 20, 2016: Performance Upgrade
+- NEW: Autowrap and Justify alignment
+- NEW: Stress Test example scene
+- NEW: Font Index selection in  Components
+- CHANGE: API now using Resource Pooling
+- FIX: Performance problem with Garbage Collector
+
+2.2 – Apr 13, 2016: Unicodes
+- NEW: Unicode Support
+- NEW: \color command for custom text colors.
+- FIX (critical):  Imported fonts showing only white boxes.
+- FIX: Mobile Shader now using two passes instead of one
+
+2.1 – Apr 4, 2016: Compabilities
+- NEW: TEXDraw Lit Shader (with Shadows)
+- FIX: Shader Compilation for PS 3.0/4.0 and Mobile
+- FIX: Problem in UI Layout and their Functionality
+- FIX: Unity 5.3 Compability
+
+2.0 – Mar 29, 2016: Package Rewrite
+- NEW: 15 fonts data included in Package
+- NEW: Symbols catalog is increased with total of +600 symbols
+- NEW: TEXDraw Preference Editor
+- NEW: Dynamic Global Preference
+- NEW: Ability to change/import custom Fonts
+- NEW: Expandable Delimiters (previously just scale the character)
+- NEW: Accent support
+- NEW: Lines above characters (aka. Negations)
+- NEW: TEXDraw 3D Component
+- CHANGE: Internal scripts now released from DLL
+- CHANGE: Assets now released from Resources
+- CHANGE: Rewriting of Documentation
+- CHANGE: Spaces now used instead of \w
+- FIX: Unity 5.4 Compatibility
+- FIX: Support for UI Effects
+- FIX: Assets now loading much faster (serialized on build)
+
+1.0 – Jan 9, 2016: First Release
+
+
+
+
+
+
+
+
+
+TIDBITS -----------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --/\-        -/\-- |      ------   /------
+       **     **      *  **        *                          *       -   \--    --/   - |      |    |  -      |
+ _____________________________________   **      *      **            /     \    /     \ |      |    | |   ||  /
+ |^^^||^^^|^| |^^^^^|^\ \   // |  ___ \    _       _       ^       ^  \  \   \--/   /  / |      |    |  \  _  |
+ |   ||   | | |     |  \ \ //  | |   \ \ _____   ____/|   __    _  ___ \              /  |      |    |  |     |
+     ||     | |--|      \ \/   | |   | |/  __ | /     |  /  \  / / \ | \     *        /  |      |    |  |     /
+     ||     | |--|       \ \   | |   | |  /  ||/  /|  | /// /  / / / |  \     *      /|  |      |    |  |    |
+     ||     | |     |   //\ \  | |___/ / /   ///  |/  |// \ \_/  /_/ /   \    *     / |  |      |    |   \   |
+   __||__  _| |____ |  //  \ \ |      /| |   ^ /   // //   \        /     \        /  | .\------/.   |   |   /
+   ^^^^^^  ^^^^^^^^^|^^^^   ^^^^^^^^^/  ^^     /__/  \/     ^^/^\--/       \______/   |              |   |/--
+                                                       **                   -    -    |   \/\/\/\    |   - +++
+*            *   **    **        *   **        *             *  *            ----     |              /    +   +
+ ************************************************************************************  \------------/      ++++
+
+Thank you for choosing TEXDraw!
+
+Follow me @willnode on Twitter for updates.
